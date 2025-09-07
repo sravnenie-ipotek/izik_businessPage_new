@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Content Manager - Admin</title>
+  
+  <!-- Include the script that builds the page and powers Netlify CMS -->
+  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+  
+  <!-- Include Netlify Identity Widget -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  
+  <style>
+    /* Custom admin styles */
+    .nc-githubAuthenticationPage-logo {
+      background-image: url('/images/logo.svg') !important;
+      background-size: contain !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- This is where the CMS interface will be injected -->
+  
+  <script>
+    // Initialize the CMS
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+    
+    // Custom CMS configuration
+    CMS.registerPreviewStyle('/css/normandpllc-styles.css');
+    
+    // Custom editor components for better UX
+    CMS.registerEditorComponent({
+      id: "emoji",
+      label: "Emoji Icon",
+      fields: [{name: 'emoji', label: 'Emoji', widget: 'string'}],
+      pattern: /{{emoji (.*?)}}/,
+      fromBlock: function(match) {
+        return {
+          emoji: match[1]
+        };
+      },
+      toBlock: function(obj) {
+        return obj.emoji;
+      },
+      toPreview: function(obj) {
+        return obj.emoji;
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NormandPLLC Menu - Complete Test</title>
+  
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  
+  <!-- Custom GSAP Eases Plugin for advanced animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CustomEase.min.js"></script>
+  
+  <!-- Menu Styles -->
+  <link rel="stylesheet" href="css/normandpllc-menu.css">
+  
+  <!-- Additional Test Styles -->
+  <style>
+    /* Test Content Styles */
+    .test-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2em;
+    }
+    
+    .test-section {
+      margin: 3em 0;
+      padding: 2em;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .test-section h2 {
+      color: #fc5a2b;
+      margin-bottom: 1em;
+    }
+    
+    .test-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2em;
+      margin-top: 2em;
+    }
+    
+    .test-card {
+      padding: 1.5em;
+      background: #f8f8f8;
+      border-left: 4px solid #fc5a2b;
+    }
+    
+    /* Device Preview Indicators */
+    .device-indicator {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      background: #010101;
+      color: white;
+      border-radius: 25px;
+      font-size: 12px;
+      z-index: 10000;
+    }
+    
+    /* Animation Test Triggers */
+    .animation-test-buttons {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      z-index: 10000;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .test-btn {
+      padding: 10px 20px;
+      background: #fc5a2b;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.3s;
+    }
+    
+    .test-btn:hover {
+      background: #e04a1b;
+      transform: translateX(5px);
+    }
+    
+    /* Performance Monitor */
+    .performance-monitor {
+      position: fixed;
+      top: 60px;
+      right: 20px;
+      background: rgba(1,1,1,0.9);
+      color: #fc5a2b;
+      padding: 15px;
+      border-radius: 5px;
+      font-family: monospace;
+      font-size: 12px;
+      z-index: 9999;
+    }
+    
+    @media screen and (min-width: 960px) {
+      .animation-test-buttons {
+        left: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Navigation Implementation -->
+  <header id="masthead" class="site-header">
+    <nav id="site-navigation" class="main-navigation nav--toggle-sub nav--toggle-small" aria-label="Primary Navigation">
+      
+      <!-- Menu Toggle Button -->
+      <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+        <span>Menu</span>
+      </button>
+      
+      <!-- Close Button -->
+      <button class="menu-toggle-close" aria-label="Close menu">
+        <span>Close</span>
+      </button>
+      
+      <!-- Menu Border -->
+      <span class="menu-border"></span>
+      
+      <!-- Quick Contact -->
+      <div class="menu-quick-contact-link">
+        <a href="#contact" class="quick-contact-link">Contact</a>
+      </div>
+      
+      <!-- Primary Menu Container -->
+      <div class="primary-menu-container">
+        <ul id="primary-menu" class="menu" role="menu">
+          <li class="menu-item current-menu-item">
+            <a href="#home">Home</a>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a href="#class-action">Class Action</a>
+            <ul class="sub-menu">
+              <li class="menu-item"><a href="#privacy">Privacy</a></li>
+              <li class="menu-item"><a href="#consumer">Consumer Protection</a></li>
+              <li class="menu-item"><a href="#insurance">Insurance</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="#results">Status & Results</a>
+          </li>
+          <li class="menu-item">
+            <a href="#team">Our Team</a>
+          </li>
+          <li class="menu-item">
+            <a href="#news">News & Articles</a>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a href="#contact">Contact</a>
+            <ul class="sub-menu">
+              <li class="menu-item"><a href="#contact-us">Contact Us</a></li>
+              <li class="menu-item"><a href="#disclaimer">Disclaimer</a></li>
+              <li class="menu-item"><a href="#privacy-policy">Privacy Policy</a></li>
+            </ul>
+          </li>
+        </ul>
+        
+        <!-- Contact Links -->
+        <div class="contact-links">
+          <nav class="social-menu">
+            <a href="#" class="facebook-link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20">
+                <path fill="#fc5a2b" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/>
+              </svg>
+            </a>
+            <a href="#" class="instagram-link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20">
+                <path fill="#fc5a2b" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+              </svg>
+            </a>
+            <a href="#" class="linkedin-link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20">
+                <path fill="#fc5a2b" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+              </svg>
+            </a>
+          </nav>
+          <a href="#" class="site-name contact-link">Your Company</a>
+          <a href="tel:4076036031" class="phone-link contact-link">Phone: 407-603-6031</a>
+          <a href="mailto:office@example.com" class="email-link contact-link">Email: office@example.com</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- Main Content -->
+  <main class="site-main">
+    <div class="test-content">
+      <!-- Hero Section -->
+      <div class="hero-section">
+        <h1>NormandPLLC Menu System</h1>
+        <p>Complete implementation with animations and responsive behavior</p>
+      </div>
+      
+      <!-- Feature Showcase -->
+      <div class="test-section">
+        <h2>Key Features Implemented</h2>
+        <div class="test-grid">
+          <div class="test-card">
+            <h3>GSAP Animations</h3>
+            <p>Smooth timeline-based animations with staggered effects</p>
+          </div>
+          <div class="test-card">
+            <h3>Responsive Design</h3>
+            <p>Mobile horizontal menu, desktop vertical menu</p>
+          </div>
+          <div class="test-card">
+            <h3>Hover Effects</h3>
+            <p>Scaling background animations on menu items</p>
+          </div>
+          <div class="test-card">
+            <h3>Accessibility</h3>
+            <p>ARIA attributes and keyboard navigation</p>
+          </div>
+          <div class="test-card">
+            <h3>Performance</h3>
+            <p>Hardware acceleration with force3D</p>
+          </div>
+          <div class="test-card">
+            <h3>Submenu Support</h3>
+            <p>Nested navigation with proper animations</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Animation Details -->
+      <div class="test-section">
+        <h2>Animation Flow</h2>
+        <ol>
+          <li><strong>Menu Open:</strong>
+            <ul>
+              <li>Button text rotates out (rotationX: 90, yPercent: 100)</li>
+              <li>Container slides in from left (xPercent: -100 to 0)</li>
+              <li>Menu items stagger in from top (yPercent: -100 to 0)</li>
+              <li>Social and contact links appear last</li>
+            </ul>
+          </li>
+          <li><strong>Menu Close:</strong>
+            <ul>
+              <li>Reverse animations with different timing</li>
+              <li>Container slides out (xPercent: 0 to -100)</li>
+              <li>Button text rotates back in</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+      
+      <!-- Integration Guide -->
+      <div class="test-section">
+        <h2>Integration Steps</h2>
+        <ol>
+          <li>Include GSAP library in your HTML head</li>
+          <li>Add the normandpllc-menu.css stylesheet</li>
+          <li>Copy the navigation HTML structure</li>
+          <li>Include normandpllc-menu.js script</li>
+          <li>Customize colors and fonts in CSS variables</li>
+        </ol>
+      </div>
+    </div>
+  </main>
+  
+  <!-- Device Indicator -->
+  <div class="device-indicator">
+    <span id="device-type">Desktop</span>
+  </div>
+  
+  <!-- Animation Test Buttons -->
+  <div class="animation-test-buttons">
+    <button class="test-btn" onclick="testMenuSpeed('slow')">Test Slow</button>
+    <button class="test-btn" onclick="testMenuSpeed('normal')">Test Normal</button>
+    <button class="test-btn" onclick="testMenuSpeed('fast')">Test Fast</button>
+    <button class="test-btn" onclick="togglePerformance()">Toggle Stats</button>
+  </div>
+  
+  <!-- Performance Monitor -->
+  <div class="performance-monitor" style="display: none;">
+    <div>FPS: <span id="fps">60</span></div>
+    <div>Animation: <span id="anim-status">Idle</span></div>
+    <div>Menu State: <span id="menu-state">Closed</span></div>
+  </div>
+  
+  <!-- Menu JavaScript -->
+  <script src="js/normandpllc-menu.js"></script>
+  
+  <!-- Test Scripts -->
+  <script>
+    // Device type indicator
+    function updateDeviceIndicator() {
+      const indicator = document.getElementById('device-type');
+      const width = window.innerWidth;
+      
+      if (width < 768) {
+        indicator.textContent = 'Mobile';
+      } else if (width < 960) {
+        indicator.textContent = 'Tablet';
+      } else if (width < 1440) {
+        indicator.textContent = 'Desktop';
+      } else {
+        indicator.textContent = 'Large Desktop';
+      }
+    }
+    
+    // Update on load and resize
+    updateDeviceIndicator();
+    window.addEventListener('resize', updateDeviceIndicator);
+    
+    // Test different animation speeds
+    function testMenuSpeed(speed) {
+      const menu = document.querySelector('.menu-toggle');
+      const timeline = gsap.timeline();
+      
+      switch(speed) {
+        case 'slow':
+          gsap.globalTimeline.timeScale(0.5);
+          break;
+        case 'fast':
+          gsap.globalTimeline.timeScale(2);
+          break;
+        default:
+          gsap.globalTimeline.timeScale(1);
+      }
+      
+      // Trigger menu click
+      menu.click();
+      
+      // Reset after 3 seconds
+      setTimeout(() => {
+        gsap.globalTimeline.timeScale(1);
+      }, 3000);
+    }
+    
+    // Performance monitoring
+    let performanceVisible = false;
+    function togglePerformance() {
+      const monitor = document.querySelector('.performance-monitor');
+      performanceVisible = !performanceVisible;
+      monitor.style.display = performanceVisible ? 'block' : 'none';
+      
+      if (performanceVisible) {
+        startPerformanceMonitoring();
+      }
+    }
+    
+    function startPerformanceMonitoring() {
+      let lastTime = performance.now();
+      let frames = 0;
+      
+      function updateFPS() {
+        frames++;
+        const currentTime = performance.now();
+        
+        if (currentTime >= lastTime + 1000) {
+          const fps = Math.round(frames * 1000 / (currentTime - lastTime));
+          document.getElementById('fps').textContent = fps;
+          frames = 0;
+          lastTime = currentTime;
+        }
+        
+        if (performanceVisible) {
+          requestAnimationFrame(updateFPS);
+        }
+      }
+      
+      updateFPS();
+      
+      // Monitor menu state
+      const menuToggle = document.querySelector('.menu-toggle');
+      const menuStateEl = document.getElementById('menu-state');
+      const animStatusEl = document.getElementById('anim-status');
+      
+      // Create observer for menu state
+      const observer = new MutationObserver(() => {
+        const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuStateEl.textContent = isOpen ? 'Open' : 'Closed';
+      });
+      
+      observer.observe(menuToggle, { attributes: true });
+      
+      // Monitor GSAP animations
+      gsap.ticker.add(() => {
+        const activeAnimations = gsap.globalTimeline.getChildren().filter(t => t.isActive());
+        animStatusEl.textContent = activeAnimations.length > 0 ? 'Active' : 'Idle';
+      });
+    }
+    
+    // Keyboard shortcuts for testing
+    document.addEventListener('keydown', (e) => {
+      if (e.ctrlKey && e.key === 'm') {
+        e.preventDefault();
+        document.querySelector('.menu-toggle').click();
+      }
+    });
+    
+    // Log animation events
+    if (typeof gsap !== 'undefined') {
+      console.log('GSAP Version:', gsap.version);
+      console.log('Menu system initialized successfully');
+    }
+  </script>
+</body>
+</html>

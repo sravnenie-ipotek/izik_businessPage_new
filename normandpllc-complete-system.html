@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NormandPLLC Complete Animation System</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- GSAP Core -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CustomEase.min.js"></script>
+  
+  <!-- Locomotive Scroll -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js"></script>
+  
+  <!-- NormandPLLC Styles -->
+  <link rel="stylesheet" href="css/normandpllc-menu.css">
+  <link rel="stylesheet" href="css/normandpllc-animations.css">
+  
+  <style>
+    /* Base styles for demo */
+    :root {
+      --color-theme-primary: #fc5a2b;
+      --color-theme-black: #010101;
+      --color-theme-white: #fff;
+      --color-theme-grey: #ccc;
+      --font-primary: 'Montserrat', sans-serif;
+      --font-heading: 'Oswald', sans-serif;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: var(--font-primary);
+      background: var(--color-theme-white);
+      color: var(--color-theme-black);
+      overflow-x: hidden;
+    }
+    
+    /* Demo sections */
+    .demo-section {
+      min-height: 100vh;
+      padding: 4em 2em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    
+    .demo-section:nth-child(even) {
+      background: #f5f5f5;
+    }
+    
+    .content-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    
+    h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(3rem, 8vw, 6rem);
+      text-transform: uppercase;
+      line-height: 1.1;
+      margin-bottom: 0.5em;
+    }
+    
+    h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      text-transform: uppercase;
+      margin-bottom: 0.5em;
+    }
+    
+    .demo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2em;
+      margin-top: 3em;
+    }
+    
+    .demo-card {
+      background: white;
+      padding: 2em;
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    
+    /* Slideshow Demo */
+    .slideshow-container {
+      overflow: hidden;
+      margin: 3em 0;
+    }
+    
+    .slideshow {
+      display: flex;
+      width: fit-content;
+    }
+    
+    .slide {
+      flex: 0 0 auto;
+      width: 300px;
+      height: 200px;
+      margin-right: 20px;
+      background: linear-gradient(135deg, var(--color-theme-primary), var(--color-theme-black));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2em;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Preloader -->
+  <div class="preloader">
+    <svg viewBox="0 0 672 173.27">
+      <path d="M57.17,170,35.86,101.55,28.33,78.23V170H0V3H29.59L48.9,71.46,55.66,95V3H83.75V170Z"/>
+      <path d="M137.41,173.27c-22.82,0-40.62-15.8-40.62-38.62V38.36C96.79,15.55,114.59,0,137.41,0,160,0,177.78,15.55,177.78,38.36v96.29C177.78,157.47,160,173.27,137.41,173.27Zm7.52-136.91c0-4.51-3.26-7.27-7.52-7.27s-7.77,2.76-7.77,7.27v100.3c0,4.51,3.51,7.27,7.77,7.27s7.52-2.76,7.52-7.27Z"/>
+      <path d="M245.48,170c-5,0-7.77-15.3-7.77-25.83V110.83c0-4.26-2.26-8.77-6.77-8.77h-7.53V170H191.07V3H235.7c15.8,0,32.1,10,32.1,32.35V68.71c0,8.27-5,15.79-13.29,20.56,8.27,4.51,13.79,12.28,13.79,20.56v32.35c0,10.53,2,19,4.26,27.08V170ZM237,37.61c0-5.52-2-7.52-5.51-7.52h-8V77.23h8c3.51,0,5.51-2,5.51-7.52Z"/>
+      <path d="M362.83,170V50.15l-5.27,39.62L346,170H325.47L314.94,89.77l-4.77-39.62V170H281.84V3h42.37L334.5,68.45l3.75,33.86L342,68.45,352.05,3h41.62V170Z"/>
+      <path d="M454.1,170l-2.26-26.83h-19L430,170H400.94L425.26,3h37.12l24.07,167ZM443.57,52.16l-7.28,64.94h12.79Z"/>
+      <path d="M551.14,170l-21.32-68.46L522.3,78.23V170H494V3h29.59l19.3,68.45L549.63,95V3h28.09V170Z"/>
+      <path d="M633.63,170H592V3h41.62C655.45,3,672,16.8,672,41.88v91.27c0,25.07-16.55,36.85-38.37,36.85zm6.27-128.37c0-7-2.76-10.79-9-10.79h-6.53v111.34h6.53c6.26,0,9-3.51,9-10.54Z"/>
+    </svg>
+    <div class="preloader-percentage">0%</div>
+  </div>
+  
+  <!-- Custom Cursor -->
+  <div class="custom-cursor"></div>
+  
+  <!-- Navigation -->
+  <header id="masthead" class="site-header">
+    <nav id="site-navigation" class="main-navigation nav--toggle-sub nav--toggle-small" aria-label="Primary Navigation">
+      <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+        <span>Menu</span>
+      </button>
+      <button class="menu-toggle-close" aria-label="Close menu">
+        <span>Close</span>
+      </button>
+      <span class="menu-border"></span>
+      <div class="menu-quick-contact-link">
+        <a href="#contact" class="quick-contact-link">Contact</a>
+      </div>
+      
+      <div class="primary-menu-container">
+        <ul id="primary-menu" class="menu" role="menu">
+          <li class="menu-item current-menu-item" role="menuitem">
+            <a href="#home">Home</a>
+          </li>
+          <li class="menu-item menu-item-has-children" role="menuitem">
+            <a href="#services">Services</a>
+            <ul class="sub-menu">
+              <li class="menu-item"><a href="#service-1">Service 1</a></li>
+              <li class="menu-item"><a href="#service-2">Service 2</a></li>
+              <li class="menu-item"><a href="#service-3">Service 3</a></li>
+            </ul>
+          </li>
+          <li class="menu-item" role="menuitem">
+            <a href="#about">About</a>
+          </li>
+          <li class="menu-item" role="menuitem">
+            <a href="#team">Team</a>
+          </li>
+          <li class="menu-item" role="menuitem">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        
+        <div class="contact-links">
+          <nav class="social-menu">
+            <a href="#" class="facebook-link">FB</a>
+            <a href="#" class="instagram-link">IG</a>
+            <a href="#" class="linkedin-link">LI</a>
+          </nav>
+          <a href="#" class="site-name contact-link">Your Company</a>
+          <a href="tel:1234567890" class="phone-link contact-link">123-456-7890</a>
+          <a href="mailto:info@example.com" class="email-link contact-link">info@example.com</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- Main Content with Locomotive Scroll -->
+  <div data-scroll-container>
+    <main data-scroll-section>
+      
+      <!-- Hero Section -->
+      <section class="demo-section hero-section" id="home">
+        <div class="hero-portrait"></div>
+        <div class="content-wrapper">
+          <div class="hero-tagline fade-in">NORMANDPLLC</div>
+          <div class="hero-subtitle fade-in">COMPLETE ANIMATION SYSTEM</div>
+          <h1 class="hero-title fade-in">WE ARE FLOW</h1>
+          <div class="hero-secondary fade-in">Scroll to explore ↓</div>
+        </div>
+      </section>
+      
+      <!-- Features Section -->
+      <section class="demo-section" data-scroll-section>
+        <div class="content-wrapper">
+          <h2 class="section-title fade-in">Key Features</h2>
+          <p class="fade-in">Complete implementation of normandpllc.com animations and flow</p>
+          
+          <div class="demo-grid stagger-list">
+            <div class="demo-card card">
+              <h3>Preloader System</h3>
+              <p>SVG path animations with percentage counter on homepage</p>
+            </div>
+            <div class="demo-card card">
+              <h3>Locomotive Scroll</h3>
+              <p>Smooth scrolling with parallax effects and speed control</p>
+            </div>
+            <div class="demo-card card">
+              <h3>Custom Cursor</h3>
+              <p>Smooth following cursor with hover interactions</p>
+            </div>
+            <div class="demo-card card">
+              <h3>GSAP Animations</h3>
+              <p>Timeline-based animations with ScrollTrigger integration</p>
+            </div>
+            <div class="demo-card card">
+              <h3>Menu System</h3>
+              <p>Advanced menu with staggered animations and transforms</p>
+            </div>
+            <div class="demo-card card">
+              <h3>Page Transitions</h3>
+              <p>Smooth transitions between pages with exit/enter animations</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Slideshow Demo -->
+      <section class="demo-section" data-scroll-section>
+        <div class="content-wrapper">
+          <h2 class="section-title fade-in">Continuous Slideshow</h2>
+          <p class="fade-in">Infinite loop animation like normandpllc.com</p>
+          
+          <div class="slideshow-container">
+            <div class="slideshow">
+              <div class="slide">Slide 1</div>
+              <div class="slide">Slide 2</div>
+              <div class="slide">Slide 3</div>
+              <div class="slide">Slide 4</div>
+              <div class="slide">Slide 5</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Parallax Section -->
+      <section class="demo-section" data-scroll-section>
+        <div class="content-wrapper">
+          <h2 class="section-title fade-in" data-scroll data-scroll-speed="2">Parallax Effects</h2>
+          <p class="fade-in" data-scroll data-scroll-speed="1">Different scroll speeds create depth</p>
+          
+          <div class="demo-grid">
+            <div class="demo-card fade-in-left" data-scroll data-scroll-speed="0.5">
+              <h3>Slow Speed</h3>
+              <p>Scrolls slower than normal</p>
+            </div>
+            <div class="demo-card fade-in" data-scroll data-scroll-speed="1">
+              <h3>Normal Speed</h3>
+              <p>Scrolls at regular speed</p>
+            </div>
+            <div class="demo-card fade-in-right" data-scroll data-scroll-speed="2">
+              <h3>Fast Speed</h3>
+              <p>Scrolls faster than normal</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Animation Showcase -->
+      <section class="demo-section" data-scroll-section>
+        <div class="content-wrapper">
+          <h2 class="section-title fade-in">Animation Triggers</h2>
+          <p class="fade-in">Scroll-triggered animations with GSAP ScrollTrigger</p>
+          
+          <div style="height: 200vh; display: flex; align-items: center; justify-content: center;">
+            <div class="scale-in" style="font-size: 3em; text-align: center;">
+              This scales in as you scroll
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+  </div>
+  
+  <!-- Load JavaScript -->
+  <script src="js/normandpllc-menu.js"></script>
+  <script src="js/normandpllc-page-system.js"></script>
+  
+  <script>
+    // Additional demo-specific code
+    document.addEventListener('DOMContentLoaded', () => {
+      console.log('NormandPLLC Complete System Loaded');
+      
+      // Add some demo interactions
+      const cards = document.querySelectorAll('.card');
+      cards.forEach(card => {
+        card.addEventListener('click', () => {
+          gsap.to(card, {
+            scale: 0.95,
+            duration: 0.1,
+            yoyo: true,
+            repeat: 1,
+            ease: 'power2.inOut'
+          });
+        });
+      });
+      
+      // Demo button for testing page transitions
+      const testTransition = () => {
+        if (window.normandPageSystem) {
+          window.normandPageSystem.handlePageTransition('#');
+        }
+      };
+      
+      // Log system status
+      setTimeout(() => {
+        console.log('System Status:', {
+          GSAP: typeof gsap !== 'undefined',
+          ScrollTrigger: typeof ScrollTrigger !== 'undefined',
+          LocomotiveScroll: typeof LocomotiveScroll !== 'undefined',
+          PageSystem: window.normandPageSystem !== undefined,
+          MenuSystem: document.querySelector('.menu-toggle') !== null
+        });
+      }, 1000);
+    });
+  </script>
+</body>
+</html>
