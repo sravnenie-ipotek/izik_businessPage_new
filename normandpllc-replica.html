@@ -295,7 +295,8 @@
       z-index: 1;
     }
     
-    .hero-portrait::after {
+    /* Placeholder will only show if no image is set */
+    .hero-portrait:not([style*="background-image"])::after {
       content: "";
       position: absolute;
       top: 0;
