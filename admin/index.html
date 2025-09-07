@@ -1,78 +1,178 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Content Manager - Admin</title>
   
-  <!-- Include the script that builds the page and powers Netlify CMS -->
-  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-  
-  <!-- Include Netlify Identity Widget -->
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  
   <style>
+    /* Loading styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f8f9fa;
+    }
+    
+    #cms-loading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      flex-direction: column;
+      color: #666;
+    }
+    
+    .loading-spinner {
+      border: 3px solid #f3f3f3;
+      border-top: 3px solid #3498db;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin-bottom: 20px;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
     /* Custom admin styles */
     .nc-githubAuthenticationPage-logo {
       background-image: url('/images/logo.svg') !important;
       background-size: contain !important;
     }
+    
+    /* Ensure CMS has proper container */
+    #netlify-cms-root {
+      height: 100vh;
+    }
   </style>
 </head>
 <body>
-  <!-- This is where the CMS interface will be injected -->
+  <!-- Loading indicator -->
+  <div id="cms-loading">
+    <div class="loading-spinner"></div>
+    <p>Loading Content Management System...</p>
+  </div>
+  
+  <!-- CMS will be injected here -->
+  <div id="netlify-cms-root"></div>
+  
+  <!-- Include Netlify Identity Widget -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  
+  <!-- Include the script that builds the page and powers Netlify CMS -->
+  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
   
   <script>
-    // Wait for DOM and scripts to load
-    document.addEventListener('DOMContentLoaded', function() {
-      // Initialize Netlify Identity
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
-          }
-        });
+    // Hide loading indicator when CMS loads
+    function hideLoader() {
+      const loader = document.getElementById('cms-loading');
+      if (loader) {
+        loader.style.display = 'none';
       }
-      
-      // Wait for CMS to be available
-      function initCMS() {
-        if (typeof CMS !== 'undefined') {
-          // Custom CMS configuration
-          try {
-            CMS.registerPreviewStyle('/css/normandpllc-styles.css');
-            
-            // Custom editor components for better UX
-            CMS.registerEditorComponent({
-              id: "emoji",
-              label: "Emoji Icon",
-              fields: [{name: 'emoji', label: 'Emoji', widget: 'string'}],
-              pattern: /{{emoji (.*?)}}/,
-              fromBlock: function(match) {
-                return {
-                  emoji: match[1]
-                };
-              },
-              toBlock: function(obj) {
-                return obj.emoji;
-              },
-              toPreview: function(obj) {
-                return obj.emoji;
-              }
-            });
-          } catch (error) {
-            console.warn('CMS customization failed:', error);
-          }
-        } else {
-          // CMS not ready yet, try again in 100ms
-          setTimeout(initCMS, 100);
+    }
+    
+    // Show error if CMS fails to load
+    function showError(message) {
+      const loader = document.getElementById('cms-loading');
+      if (loader) {
+        loader.innerHTML = `
+          <div style="color: #e74c3c; text-align: center;">
+            <h3>⚠️ CMS Loading Error</h3>
+            <p>${message}</p>
+            <button onclick="location.reload()" style="padding: 10px 20px; background: #3498db; color: white; border: none; border-radius: 4px; cursor: pointer;">
+              Retry
+            </button>
+          </div>
+        `;
+      }
+    }
+    
+    // Initialize when everything is ready
+    function initializeAdmin() {
+      try {
+        // Ensure we have the required DOM elements
+        const root = document.getElementById('netlify-cms-root');
+        if (!root) {
+          showError('CMS root element not found');
+          return;
         }
+        
+        // Initialize Netlify Identity
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", user => {
+            hideLoader();
+            if (!user) {
+              window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+              });
+            }
+          });
+          
+          // Initialize identity
+          window.netlifyIdentity.init();
+        }
+        
+        // Wait for CMS to be available and initialize it
+        function waitForCMS(attempts = 0) {
+          if (typeof CMS !== 'undefined') {
+            try {
+              console.log('CMS loaded successfully');
+              hideLoader();
+              
+              // Custom CMS configuration
+              CMS.registerPreviewStyle('/css/normandpllc-styles.css');
+              
+              // Custom editor components for better UX
+              CMS.registerEditorComponent({
+                id: "emoji",
+                label: "Emoji Icon",
+                fields: [{name: 'emoji', label: 'Emoji', widget: 'string'}],
+                pattern: /{{emoji (.*?)}}/,
+                fromBlock: function(match) {
+                  return { emoji: match[1] };
+                },
+                toBlock: function(obj) {
+                  return obj.emoji;
+                },
+                toPreview: function(obj) {
+                  return obj.emoji;
+                }
+              });
+              
+              // Initialize CMS
+              CMS.init();
+              
+            } catch (error) {
+              console.error('CMS initialization failed:', error);
+              showError('CMS initialization failed: ' + error.message);
+            }
+          } else if (attempts < 100) {
+            // CMS not ready yet, try again in 100ms (max 10 seconds)
+            setTimeout(() => waitForCMS(attempts + 1), 100);
+          } else {
+            showError('CMS failed to load after 10 seconds. Please check your internet connection.');
+          }
+        }
+        
+        // Start waiting for CMS
+        waitForCMS();
+        
+      } catch (error) {
+        console.error('Admin initialization failed:', error);
+        showError('Admin initialization failed: ' + error.message);
       }
-      
-      // Start CMS initialization
-      initCMS();
-    });
+    }
+    
+    // Start initialization when DOM is ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initializeAdmin);
+    } else {
+      initializeAdmin();
+    }
   </script>
 </body>
 </html>
