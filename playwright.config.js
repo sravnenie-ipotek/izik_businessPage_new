@@ -3,7 +3,7 @@ const { defineConfig } = require('@playwright/test');
 
 module.exports = defineConfig({
   testDir: '.',
-  testMatch: ['test-cms-workflow.js', 'test-visibility.js', 'test-direct-save.js', 'test-language-switching.js', 'test-admin-cms.js', 'tests/normandpllc-system.spec.js', 'tests/comprehensive-site-test.spec.js', 'tests/test-class-action.spec.js', 'tests/test-navigation-flow.spec.js', 'tests/test-simple-navigation.spec.js', 'tests/test-privacy-page.spec.js', 'tests/test-consumer-protection.spec.js', 'tests/test-insurance-class-action.spec.js', 'tests/compare-with-normandpllc.spec.js', 'tests/verify-animations.spec.js', 'tests/debug-privacy-animations.spec.js', 'tests/test-proper-scroll.spec.js', 'tests/verify-color-scheme.spec.js'],
+  testMatch: ['test-cms-workflow.js', 'test-visibility.js', 'test-direct-save.js', 'test-language-switching.js', 'test-admin-cms.js', 'tests/normandpllc-system.spec.js', 'tests/comprehensive-site-test.spec.js', 'tests/test-class-action.spec.js', 'tests/test-navigation-flow.spec.js', 'tests/test-simple-navigation.spec.js', 'tests/test-privacy-page.spec.js', 'tests/test-consumer-protection.spec.js', 'tests/test-insurance-class-action.spec.js', 'tests/compare-with-normandpllc.spec.js', 'tests/verify-animations.spec.js', 'tests/debug-privacy-animations.spec.js', 'tests/test-proper-scroll.spec.js', 'tests/verify-color-scheme.spec.js', 'tests/verify-class-action-section.spec.js'],
   fullyParallel: false,
   forbidOnly: !!process.env.CI,
   retries: 0,

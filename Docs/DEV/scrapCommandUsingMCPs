@@ -1,0 +1,167 @@
+Perfect — since you’ve got Graphviz installed and you’re building **static HTML + Strapi (JAMstack)**, here’s a **ready-to-paste Claude Code prompt** that runs Firecrawl MCP → Playwright MCP → builds block maps → renders a flow graph via Graphviz → outputs Tailwind HTML sections + Strapi schema suggestions. It targets **[https://www.normandpllc.com/](https://www.normandpllc.com/)** and avoids copying any proprietary content.
+
+---
+
+# Claude Code — Layout Mimic & Flow Mapper (Static HTML + Strapi)
+
+**Role:** You are my **Layout Mimic + Flow Mapper** for a JAMstack site.
+**Stack:** Static HTML frontend (+ Tailwind), Strapi CMS for content.
+**Reference (structure only, no content copy):** [https://www.normandpllc.com/](https://www.normandpllc.com/)
+
+**Assumptions:**
+
+* Graphviz (`dot`) is installed locally (via Homebrew).
+* Firecrawl MCP and Playwright MCP are available in Claude Code.
+* Goal is to copy **structure & flow** (color rhythm, block order, CTA counts/positions), **not** content or assets.
+
+---
+
+## Objectives
+
+1. **Crawl** the site (depth=2, same-origin) → build a simple sitemap.
+2. For homepage and top-level pages: derive an **ordered “block map”** by visual sections (e.g., black → orange → black → white).
+3. Build a **site flow graph** (Graphviz): page → CTA edges.
+4. Generate **static HTML + Tailwind** section files (one per block, placeholders only).
+5. Propose **Strapi schemas** (components + collections) compatible with these blocks.
+
+---
+
+## Tools (MCPs)
+
+* **Firecrawl MCP** → discover pages/links (depth=2).
+* **Playwright MCP** → open pages, scroll to reveal lazy content, read DOM + computed styles.
+* **Graphviz MCP** → render DOT → PNG.
+
+---
+
+## Block Extraction Heuristics
+
+Treat a **block** as a full-width section determined by any of:
+
+* `<section>`, `<header>`, `<main>`, `<footer>` tags
+* Large vertical padding (≥ 40px total)
+* Clear **background color** change (computed style)
+* Height ≥ 160px (skip thin strips/bars)
+* Merge adjacent sections if same bg color or gap < 24px
+
+For each block, collect:
+
+```json
+{
+  "order": 1,
+  "color": "black|orange|white|<normalized rgba/hex short label>",
+  "headingSample": "<first H1/H2/H3 text or null>",
+  "approxHeight": 0,
+  "ctas": [{ "label": "Placeholder", "href": "/path-or-absolute" }],
+  "rawBg": "rgba(...)"
+}
+```
+
+Color bucketing:
+
+* contains `0,0,0` or `#000` → `black`
+* contains `255,255,255` or `#fff` → `white`
+* contains `255,165,0` or named `orange` → `orange`
+* else → keep short normalized RGBA/HEX
+
+**CTA detection:** first 12 `a,button` inside each block. Normalize hrefs relative to the page URL.
+
+---
+
+## Output (write these files)
+
+* `./output/sitemap.json` — routes, titles (when available)
+* `./output/<pageSlug>.blocks.json` — per page block map (+ full page screenshot `./output/<pageSlug>.png`)
+* `./output/site-flow.dot` + `./output/site-flow.png` — Graphviz DOT + rendered PNG
+* `./scaffold/sections/<pageSlug>-block-<n>.html` — **static HTML** per block using Tailwind placeholders
+* `./strapi/schemas/components.json` — **suggested** Strapi component schemas (JSON draft)
+* `./strapi/schemas/collections.json` — **suggested** Strapi collection types (JSON draft)
+* `./README.MIMIC.md` — how to stitch static sections + map Strapi content
+
+---
+
+## Tailwind Conventions (for scaffolds)
+
+* Containers: `max-w-7xl mx-auto px-4 md:px-6`
+* Vertical rhythm: `py-16 md:py-24`
+* Color mapping:
+
+  * black → `bg-black text-white`
+  * white → `bg-white text-gray-900`
+  * orange → `bg-orange-500 text-white`
+  * other → `bg-gray-50 text-gray-900` (note approximation in README)
+* CTA placeholders: `<a class="inline-flex items-center gap-2 rounded-md px-5 py-3 text-sm font-medium border">Button</a>` (don’t copy labels; use generic text)
+* Keep **CTA counts and rough positions**.
+
+---
+
+## Strapi Schema Suggestions
+
+**Components (sections):**
+
+* `hero_section` { title, subtitle, rich\_text, media, ctas\[], theme { bg: enum\[black,white,orange,custom], invertText: boolean } }
+* `feature_band` { title, items\[], ctas\[] , theme }
+* `split_media` { title, rich\_text, media\_position: enum\[left,right], media, ctas\[], theme }
+* `logo_wall` { title, logos\[], theme }
+* `cta_band` { title, rich\_text, ctas\[], theme }
+* `faq_section` { title, faqs\[], theme }
+* `contact_band` { title, fields\[], ctas\[], theme }
+
+**Collections:**
+
+* `pages` { slug, title, seo, sections: dynamic zone (above components) }
+* `navigation` { header\_links\[], footer\_links\[] }
+* `settings` { theme\_tokens, brand\_colors, social }
+
+*(Output as JSON drafts; we’ll manually create them in Strapi.)*
+
+---
+
+## Constraints & Ethics
+
+* **Do NOT copy** text, images, icons, or CSS from the reference.
+* Only preserve **structure/order**, color rhythm, block count, CTA counts/positions.
+* Use placeholders for all copy/media.
+* If any boundary is ambiguous, note it in the README.
+
+---
+
+## Workflow (execute in order)
+
+1. **Crawl** `https://www.normandpllc.com/` with Firecrawl MCP (depth=2, same-origin). Save `./output/sitemap.json`.
+2. For homepage + top-level pages:
+
+   * Open with Playwright MCP at \~1366×900.
+   * Scroll in steps to load lazy content.
+   * Evaluate DOM + computed styles to produce `./output/<slug>.blocks.json`; also save a full-page screenshot.
+3. Build **site-flow\.dot** from (page → CTA destinations), on-domain only. Render to **site-flow\.png** via Graphviz MCP.
+4. Generate **Tailwind HTML** scaffolds per block under `./scaffold/sections/`, preserving order and CTA counts with placeholders.
+5. Emit **Strapi schema suggestions** (`components.json`, `collections.json`).
+6. Write **README.MIMIC.md** with:
+
+   * How to include Tailwind in a static build (e.g., PostCSS CLI, Eleventy, or Next static export).
+   * How to map Strapi dynamic zones to the generated sections.
+   * Any notes on color approximations, sticky bars, carousels, or modals skipped.
+
+---
+
+## Acceptance Criteria
+
+* Homepage + at least 3 top-level pages have block maps & scaffolds.
+* Flow graph has ≥ 5 edges from homepage CTAs.
+* Strapi schemas are generic and reusable.
+* No proprietary content copied.
+
+---
+
+## Kickoff Command (inside Claude)
+
+Start now. When finished, list created files and provide a compact summary per page:
+
+* `/<slug>` → N blocks, color sequence (e.g., `black → white → orange → white`)
+* CTA count discovered
+* Notes on sticky headers/footers, modals, or ambiguous merges
+
+---
+
+*(End of prompt — paste this whole block into Claude Code.)*

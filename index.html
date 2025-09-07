@@ -6,10 +6,7 @@
   <title>Normand PLLC - Experts in Class Action</title>
   <meta name="description" content="Normand PLLC attorneys represent consumers around the world in important and often unprecedented complex class actions.">
   
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Oswald:wght@300;400;500;600;700&family=Anton&display=swap" rel="stylesheet">
+  <!-- Using System Fonts Only - No External Font Loading -->
   
   <!-- GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -22,11 +19,11 @@
   <style>
     /* CSS Custom Properties - Exact from normandpllc */
     :root {
-      /* Typography - Using Web Font Alternatives */
-      --global-font-family: "Gotham-Medium", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      --highlight-font-family: "Knockout", "Oswald", "Impact", sans-serif;
-      --h1-special-font: "Knockout-Full", "Anton", "Oswald", "Impact", sans-serif;
-      --body-font-alt: "Gotham-Book", "Montserrat", sans-serif;
+      /* Typography - System Fonts Only (matching normandpllc.com) */
+      --global-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
+      --highlight-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
+      --h1-special-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
+      --body-font-alt: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
       
       /* Font Sizes (Responsive - Exact from site) */
       --global-font-size: 14px;
@@ -389,18 +386,118 @@
     /* Service Sections */
     .service-section {
       padding: var(--spacing-80) 0;
-      background: var(--color-theme-primary);
-      color: var(--color-theme-white);
+      background: var(--color-theme-white);
+      color: var(--color-theme-black);
     }
     
-    .service-section h2 {
-      color: var(--color-theme-black);
-      text-align: center;
+    .class-action-section {
+      padding: 80px 0 120px 0;
+      background: #fc5a2b;
+      color: #010101;
+      position: relative;
+    }
+    
+    .overlapping-title {
+      position: absolute;
+      bottom: -40px;
+      right: 60px;
+      z-index: 10;
+    }
+    
+    .overlapping-title h2 {
+      font-size: clamp(60px, 10vw, 120px);
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      color: #010101;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    
+    @media (max-width: 960px) {
+      .overlapping-title {
+        right: 20px;
+        bottom: -30px;
+      }
+      
+      .overlapping-title h2 {
+        font-size: clamp(40px, 8vw, 80px);
+      }
+    }
+    
+    .service-label {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      margin-bottom: 20px;
+      color: #ffffff;
+      font-weight: 600;
+    }
+    
+    .service-title {
+      font-size: clamp(60px, 9vw, 110px);
+      font-weight: 900;
+      line-height: 0.85;
+      letter-spacing: -0.03em;
+      margin-bottom: 35px;
+      color: #010101;
+      text-transform: uppercase;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial Black, Helvetica, sans-serif;
+    }
+    
+    .service-description {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #010101;
+      max-width: 600px;
+    }
+    
+    .service-intro-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      max-width: 1200px;
+      margin: 0 auto;
     }
     
     .service-intro {
-      text-align: center;
-      margin-bottom: var(--spacing-80);
+      flex: 1;
+      text-align: left;
+    }
+    
+    .service-intro-image {
+      flex: 0 0 45%;
+      max-width: 500px;
+    }
+    
+    .legal-image-placeholder {
+      width: 100%;
+      height: 400px;
+      background: #f8f8f8;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    
+    @media (max-width: 960px) {
+      .service-intro-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+      }
+      
+      .service-intro {
+        text-align: center;
+      }
+      
+      .service-title {
+        font-size: clamp(36px, 6vw, 72px);
+      }
+      
+      .service-intro-image {
+        flex: 1;
+        max-width: 100%;
+      }
     }
     
     .services-grid {
@@ -724,13 +821,38 @@
       </section>
 
       <!-- Our Services Section -->
-      <section class="service-section" id="class-action">
+      <section class="class-action-section" id="class-action">
         <div class="content-container">
-          <div class="service-intro fade-in">
-            <div style="font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 20px;">OUR SERVICES</div>
-            <h2>WE ARE CLASS ACTION</h2>
-            <p>Normand PLLC attorneys represent consumers around the world in important and often unprecedented complex class actions. The Firm has been lead counsel in many of the largest insurance class action cases in the United States. The firm has successfully pursued Class Action cases involving consumer fraud, privacy, individuals victimized by</p>
+          <div class="service-intro-wrapper">
+            <div class="service-intro fade-in">
+              <div class="service-label">OUR SERVICES</div>
+              <h2 class="service-title">WE ARE<br>CLASS<br>ACTION</h2>
+              <p class="service-description">Normand PLLC attorneys represent consumers around the world in important and often unprecedented complex class actions. The Firm has been lead counsel in many of the largest insurance class action cases in the United States. The firm has successfully pursued Class Action cases involving consumer fraud, privacy, individuals victimized by abusive telemarketing practices, and deceptive consumer sales practices.</p>
+            </div>
+            <div class="service-intro-image fade-in">
+              <div class="legal-image-placeholder">
+                <svg width="100%" height="100%" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Gavel illustration -->
+                  <rect width="500" height="400" fill="#1a1a1a"/>
+                  <!-- Gavel handle -->
+                  <rect x="150" y="180" width="200" height="40" rx="20" fill="#4a4a4a"/>
+                  <!-- Gavel head -->
+                  <ellipse cx="350" cy="200" rx="60" ry="30" fill="#5a5a5a"/>
+                  <ellipse cx="150" cy="200" rx="60" ry="30" fill="#5a5a5a"/>
+                  <!-- Credit cards underneath -->
+                  <rect x="180" y="250" width="140" height="90" rx="8" fill="#2a2a2a"/>
+                  <rect x="200" y="260" width="140" height="90" rx="8" fill="#3a3a3a"/>
+                  <!-- Card details -->
+                  <rect x="210" y="280" width="60" height="8" fill="#666"/>
+                  <rect x="210" y="295" width="40" height="6" fill="#666"/>
+                </svg>
+              </div>
+            </div>
           </div>
+        </div>
+        <!-- Overlapping Title -->
+        <div class="overlapping-title">
+          <h2>PRIVACY CLASS<br>ACTION</h2>
         </div>
       </section>
 
