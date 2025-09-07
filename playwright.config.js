@@ -3,7 +3,7 @@ const { defineConfig } = require('@playwright/test');
 
 module.exports = defineConfig({
   testDir: '.',
-  testMatch: ['test-cms-workflow.js', 'test-visibility.js', 'test-direct-save.js'],
+  testMatch: ['test-cms-workflow.js', 'test-visibility.js', 'test-direct-save.js', 'test-language-switching.js'],
   fullyParallel: false,
   forbidOnly: !!process.env.CI,
   retries: 0,
@@ -29,7 +29,7 @@ module.exports = defineConfig({
   webServer: {
     command: 'python3 -m http.server 4000',
     url: 'http://localhost:4000',
-    reuseExistingServer: !process.env.CI,
+    reuseExistingServer: true, // Always reuse existing server
     timeout: 10000,
   },
 });

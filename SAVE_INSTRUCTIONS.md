@@ -36,7 +36,7 @@ Desktop
     ├── css/
     ├── js/
     ├── images/
-    └── normandpllc-replica.html
+    └── index.html
 ```
 
 ### ⚡ QUICK TIP:
@@ -47,7 +47,7 @@ Desktop
 
 ### 🔄 AFTER SAVING:
 1. **Close the file picker**
-2. **Refresh normandpllc-replica.html** 
+2. **Refresh index.html** 
 3. **Your changes appear immediately!**
 
 ---

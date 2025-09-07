@@ -59,7 +59,7 @@ For advanced users, you can integrate with:
 2. **Test Changes:**
    ```bash
    python3 -m http.server 4000
-   # Open: http://localhost:4000/normandpllc-replica.html
+   # Open: http://localhost:4000/index.html
    ```
 
 3. **Deploy:**
@@ -79,7 +79,7 @@ For advanced users, you can integrate with:
 │   ├── content-manager.js         # Content injection system
 │   └── normandpllc-animations.js  # GSAP animations  
 ├── content-editor.html            # Visual content editor
-├── normandpllc-replica.html       # Main website
+├── index.html       # Main website
 └── CONTENT_MANAGEMENT.md          # This guide
 ```
 

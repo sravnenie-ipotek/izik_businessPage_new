@@ -1,10 +1,10 @@
 const { test, expect } = require('@playwright/test');
 
-test('Verify text is visible on normandpllc-replica.html', async ({ page }) => {
+test('Verify text is visible on index.html', async ({ page }) => {
   console.log('🔍 Testing text visibility...');
   
   // Go to the page
-  await page.goto('http://localhost:4000/normandpllc-replica.html');
+  await page.goto('http://localhost:4000/index.html');
   
   // Wait for content to load and animations to start
   await page.waitForTimeout(4000);

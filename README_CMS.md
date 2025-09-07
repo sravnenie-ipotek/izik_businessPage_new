@@ -45,7 +45,7 @@ Your new **all-in-one Content Management System** is ready!
    cd "/Users/michaelmishayev/Desktop/aiziks-stellar-site.webflow (1)"
    mv ~/Downloads/site-content.json content/site-content.json
    ```
-5. **Test changes:** Refresh normandpllc-replica.html
+5. **Test changes:** Refresh index.html
 6. **Deploy:** Git commit and push
 
 ## 🖼️ **Image Management Made Easy**
@@ -78,7 +78,7 @@ CMS Dashboard
 
 ## ⚡ **Quick Actions Available**
 
-- 🌐 **View Website** - Opens normandpllc-replica.html
+- 🌐 **View Website** - Opens index.html
 - 📖 **Image Guide** - Complete image documentation
 - 📚 **Documentation** - Full CMS guide
 - 🔄 **Reload Content** - Refresh from JSON

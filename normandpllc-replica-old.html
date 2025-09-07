@@ -177,6 +177,48 @@
       }
     }
     
+    /* Language Switcher Styles */
+    .language-switcher {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1002;
+      display: flex;
+      gap: 5px;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 5px;
+      border-radius: 25px;
+    }
+    
+    .lang-btn {
+      background: transparent;
+      color: var(--color-theme-white);
+      border: none;
+      padding: 8px 15px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      opacity: 0.7;
+    }
+    
+    .lang-btn:hover {
+      opacity: 1;
+      background: rgba(252, 90, 43, 0.2);
+    }
+    
+    .lang-btn.active {
+      background: var(--color-theme-primary);
+      opacity: 1;
+    }
+    
+    @media screen and (min-width: 960px) {
+      .language-switcher {
+        right: 80px;
+      }
+    }
+    
     /* Navigation Toggle */
     .menu-toggle {
       width: 100%;
@@ -639,6 +681,12 @@
     <header class="site-header">
       <button class="menu-toggle" id="menu-toggle">Menu</button>
       
+      <!-- Language Switcher -->
+      <div class="language-switcher">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ru">RU</button>
+      </div>
+      
       <nav class="main-navigation" id="main-navigation">
         <div class="nav-menu">
           <a href="#home">Home</a>
@@ -838,6 +886,44 @@
       
       // Make content manager globally available
       window.contentManager = contentManager;
+      
+      // Initialize language switcher
+      initializeLanguageSwitcher(contentManager);
+    }
+    
+    function initializeLanguageSwitcher(contentManager) {
+      const langButtons = document.querySelectorAll('.lang-btn');
+      
+      // Set active button based on current language
+      langButtons.forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === contentManager.currentLanguage);
+      });
+      
+      // Handle language switch clicks
+      langButtons.forEach(btn => {
+        btn.addEventListener('click', async (e) => {
+          const newLang = e.target.dataset.lang;
+          
+          // Don't reload if same language
+          if (newLang === contentManager.currentLanguage) return;
+          
+          // Update active states
+          langButtons.forEach(b => b.classList.remove('active'));
+          e.target.classList.add('active');
+          
+          // Show loading state
+          document.body.style.opacity = '0.5';
+          
+          // Switch language and reload content
+          await contentManager.setLanguage(newLang);
+          contentManager.injectContent();
+          
+          // Restore opacity
+          document.body.style.opacity = '1';
+          
+          console.log(`✅ Language switched to ${newLang}`);
+        });
+      });
     }
 
     function startPageAnimations() {

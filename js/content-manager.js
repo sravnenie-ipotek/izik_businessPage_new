@@ -2,21 +2,38 @@
 // Loads JSON content and injects into DOM before animations
 
 class ContentManager {
-  constructor(contentUrl = 'content/site-content.json') {
-    this.contentUrl = contentUrl;
+  constructor() {
+    this.currentLanguage = this.getStoredLanguage() || 'en';
     this.content = null;
+    this.contentUrls = {
+      en: 'content/site-content.json',
+      ru: 'content/site-content-ru.json'
+    };
+  }
+
+  getStoredLanguage() {
+    return localStorage.getItem('siteLanguage') || 'en';
+  }
+
+  setLanguage(lang) {
+    this.currentLanguage = lang;
+    localStorage.setItem('siteLanguage', lang);
+    return this.loadContent();
   }
 
   async loadContent() {
     try {
+      // Get the appropriate content URL based on current language
+      const contentUrl = this.contentUrls[this.currentLanguage] || this.contentUrls.en;
+      
       // Add cache-busting parameter to prevent browser caching
       const cacheBuster = `?v=${Date.now()}`;
-      const response = await fetch(this.contentUrl + cacheBuster);
+      const response = await fetch(contentUrl + cacheBuster);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       this.content = await response.json();
-      console.log('✅ Content loaded successfully (cache-busted)', this.content);
+      console.log(`✅ Content loaded successfully (${this.currentLanguage})`, this.content);
       return this.content;
     } catch (error) {
       console.error('❌ Error loading content:', error);

@@ -8,7 +8,7 @@ Your CMS now includes a powerful screenshot capture tool for documentation and t
 ## 🔥 **Features**
 
 ### **📸 Screenshot Website**
-- Captures your normandpllc-replica.html site
+- Captures your index.html site
 - Perfect for documentation and showcasing
 - Automatically opens website in new tab
 - High-quality PNG downloads
@@ -29,7 +29,7 @@ Your CMS now includes a powerful screenshot capture tool for documentation and t
 ### **Method 1: Website Screenshots**
 1. **Open CMS:** http://localhost:4000/cms.html
 2. **Go to Media Manager tab**
-3. **Click "Open Website"** - Opens normandpllc-replica.html
+3. **Click "Open Website"** - Opens index.html
 4. **Switch back to CMS tab**
 5. **Click "Screenshot Website"** - Captures the site
 6. **Download automatically starts**

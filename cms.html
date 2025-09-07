@@ -75,6 +75,30 @@
       border-bottom-color: #fc5a2b;
       background: #fff5f2;
     }
+    
+    /* Language Selector */
+    .lang-selector {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    
+    .lang-selector select {
+      background: #fc5a2b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    
+    .lang-selector select:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(252, 90, 43, 0.2);
+    }
 
     /* Main Container */
     .container {
@@ -439,6 +463,14 @@
     <button class="nav-tab" onclick="showTab('preview')">
       👁️ Preview & Save
     </button>
+    
+    <!-- Language Selector -->
+    <div class="lang-selector">
+      <select id="cms-language" onchange="switchCMSLanguage(this.value)">
+        <option value="en">🇬🇧 English</option>
+        <option value="ru">🇷🇺 Русский</option>
+      </select>
+    </div>
   </nav>
 
   <div class="container">
@@ -662,10 +694,10 @@
 
         <div class="save-path">
           <strong>📁 Direct Save (Recommended):</strong><br>
-          Save directly to: <code>content/site-content.json</code><br><br>
+          <span id="save-path-display">Save directly to: <code>content/site-content.json</code></span><br><br>
           <strong>🔄 Fallback (if downloaded):</strong><br>
           cd "/Users/michaelmishayev/Desktop/aiziks-stellar-site.webflow (1)"<br>
-          mv ~/Downloads/site-content.json content/site-content.json
+          <span id="fallback-command">mv ~/Downloads/site-content.json content/site-content.json</span>
         </div>
 
         <div class="btn-group">
@@ -692,7 +724,7 @@
       <div class="card">
         <h2>🚀 Quick Actions</h2>
         <div class="btn-group">
-          <button class="btn btn-secondary" onclick="window.open('normandpllc-replica.html', '_blank')">
+          <button class="btn btn-secondary" onclick="window.open('index.html', '_blank')">
             🌐 View Website
           </button>
           <button class="btn btn-secondary" onclick="window.open('IMAGES_GUIDE.md', '_blank')">
@@ -708,7 +740,14 @@
 
   <script>
     let currentContent = {};
+    let currentCMSLanguage = 'en';
     let serviceCardCount = 0;
+    
+    // Content URLs for different languages
+    const contentUrls = {
+      en: 'content/site-content.json',
+      ru: 'content/site-content-ru.json'
+    };
 
     // Tab Navigation
     function showTab(tabName) {
@@ -730,17 +769,41 @@
     }
 
     // Load content on page load
+    // Switch CMS language
+    async function switchCMSLanguage(lang) {
+      currentCMSLanguage = lang;
+      console.log(`Switching CMS to ${lang}`);
+      await loadContent();
+      updateSavePathDisplay();
+      showMessage(`✅ Switched to ${lang === 'ru' ? 'Russian' : 'English'}`, 'success');
+    }
+    
+    // Update save path display based on language
+    function updateSavePathDisplay() {
+      const fileName = currentCMSLanguage === 'ru' ? 'site-content-ru.json' : 'site-content.json';
+      const savePathDisplay = document.getElementById('save-path-display');
+      const fallbackCommand = document.getElementById('fallback-command');
+      
+      if (savePathDisplay) {
+        savePathDisplay.innerHTML = `Save directly to: <code>content/${fileName}</code>`;
+      }
+      if (fallbackCommand) {
+        fallbackCommand.textContent = `mv ~/Downloads/${fileName} content/${fileName}`;
+      }
+    }
+    
     async function loadContent() {
       try {
-        const response = await fetch('content/site-content.json');
+        const contentUrl = contentUrls[currentCMSLanguage] || contentUrls.en;
+        const response = await fetch(contentUrl);
         if (!response.ok) throw new Error('Content not found');
         
         currentContent = await response.json();
         populateAllForms();
-        showMessage('✅ Content loaded successfully!', 'success');
+        showMessage(`✅ ${currentCMSLanguage.toUpperCase()} content loaded successfully!`, 'success');
       } catch (error) {
         console.error('Error loading content:', error);
-        showMessage('⚠️ Could not load existing content. Using empty form.', 'info');
+        showMessage(`⚠️ Could not load ${currentCMSLanguage} content. Using empty form.`, 'info');
         currentContent = getDefaultContent();
         populateAllForms();
       }
@@ -921,8 +984,9 @@
         if ('showSaveFilePicker' in window) {
           try {
             // Use File System Access API for direct save
+            const fileName = currentCMSLanguage === 'ru' ? 'site-content-ru.json' : 'site-content.json';
             const fileHandle = await window.showSaveFilePicker({
-              suggestedName: 'site-content.json',
+              suggestedName: fileName,
               startIn: 'desktop',
               types: [
                 {
@@ -954,9 +1018,10 @@
         const blob = new Blob([jsonContent], { type: 'application/json' });
         const url = URL.createObjectURL(blob);
         
+        const fileName = currentCMSLanguage === 'ru' ? 'site-content-ru.json' : 'site-content.json';
         const a = document.createElement('a');
         a.href = url;
-        a.download = 'site-content.json';
+        a.download = fileName;
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
@@ -1024,7 +1089,7 @@
     let screenshotWindow = null;
 
     function openWebsiteForScreenshot() {
-      const websiteUrl = 'normandpllc-replica.html';
+      const websiteUrl = 'index.html';
       screenshotWindow = window.open(websiteUrl, 'websiteScreenshot', 'width=1200,height=800');
       
       showMessage('🌐 Website opened! Switch to the new tab, then click "Screenshot Website" to capture it.', 'info');

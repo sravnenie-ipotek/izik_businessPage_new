@@ -4,7 +4,7 @@ const path = require('path');
 
 // Test configuration
 const CMS_URL = 'http://localhost:4000/cms.html';
-const WEBSITE_URL = 'http://localhost:4000/normandpllc-replica.html';
+const WEBSITE_URL = 'http://localhost:4000/index.html';
 const CONTENT_JSON_PATH = path.join(__dirname, 'content/site-content.json');
 
 test.describe('CMS E2E Workflow Test', () => {
