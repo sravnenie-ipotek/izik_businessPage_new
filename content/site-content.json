@@ -1,0 +1,126 @@
+{
+  "hero": {
+    "tagline": "NORMAND",
+    "subtitle": "EXPERTS IN CLASS ACTIONnnnnnnn",
+    "title": "WE ARE RESULTS",
+    "scrollText": "SCROLL DOWN ↓",
+    "portraitImage": "images/professional-portrait.jpg"
+  },
+  "services": {
+    "sectionLabel": "OUR SERVICES",
+    "title": "WE ARE CLASS ACTION",
+    "description": "Normand PLLC attorneys represent consumers around the world in important and often unprecedented complex class actions. The Firm has been lead counsel in many of the largest insurance class action cases in the United States. The firm has successfully pursued Class Action cases involving consumer fraud, privacy, individuals victimized by",
+    "cards": [
+      {
+        "icon": "🔒",
+        "title": "Privacy Class Action",
+        "description": "You have a right to privacy in your home, in your personal life and with your private information."
+      },
+      {
+        "icon": "🛡️",
+        "title": "Consumer Protection Class Action",
+        "description": "False advertising, bait and switch practices, unconscionable or illegal pricing schemes, deceptive credit reporting, identity theft, violations of consumer protection laws, debt collection violations, and other consumer rights violations."
+      },
+      {
+        "icon": "☂️",
+        "title": "Insurance Class Action",
+        "description": "When you pay your insurance premium and the time comes to make a claim you have a right to any and all benefits provided by the insurance policy."
+      }
+    ]
+  },
+  "caseStudies": {
+    "title": "Case Studies",
+    "wonCases": "5",
+    "yearsRange": "2021 - 2024"
+  },
+  "testimonial": {
+    "quote": "We are not insular: we are compassion. We know that when one is cheated we all suffer.",
+    "attribution": "Client testimonial"
+  },
+  "team": {
+    "title": "Our Team",
+    "members": [
+      {
+        "name": "Edmund Normand",
+        "bio": "Edmund Normand started his practice in 1991, specializing in personal injury law.",
+        "photo": "images/team/edmund-normand.jpg"
+      }
+    ]
+  },
+  "images": {
+    "hero": {
+      "portrait": "images/hero-portrait.jpg",
+      "background": ""
+    },
+    "services": {
+      "backgroundImage": "images/services-bg.jpg"
+    },
+    "team": {
+      "defaultPhoto": "images/team/default-member.jpg"
+    },
+    "logos": {
+      "main": "images/logo.svg",
+      "alternate": "images/alternate-logo.svg"
+    }
+  },
+  "contact": {
+    "title": "Contact Information",
+    "office": "Orlando Office:",
+    "phone": "407-603-6031",
+    "email": "office@normandpllc.com",
+    "fax": "888-974-2175",
+    "address": "3165 McCrory Place Suite 175, Orlando, FL 32803"
+  },
+  "footer": {
+    "copyright": "Copyright © Normand PLLC 2025",
+    "credit": "Website by ultramodern ✨"
+  },
+  "navigation": {
+    "items": [
+      {
+        "label": "Home",
+        "href": "#home"
+      },
+      {
+        "label": "Class Action",
+        "href": "#class-action"
+      },
+      {
+        "label": "Privacy",
+        "href": "#privacy"
+      },
+      {
+        "label": "Consumer Protection",
+        "href": "#consumer"
+      },
+      {
+        "label": "Insurance",
+        "href": "#insurance"
+      },
+      {
+        "label": "Status & Results",
+        "href": "#results"
+      },
+      {
+        "label": "Our Team",
+        "href": "#team"
+      },
+      {
+        "label": "News & Articles",
+        "href": "#news"
+      },
+      {
+        "label": "Contact Us",
+        "href": "#contact"
+      },
+      {
+        "label": "Disclaimer",
+        "href": "#disclaimer"
+      },
+      {
+        "label": "Privacy Policy",
+        "href": "#privacy-policy"
+      }
+    ]
+  }
+}

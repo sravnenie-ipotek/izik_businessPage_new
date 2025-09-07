@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug Text Visibility</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .debug { background: #f0f0f0; padding: 10px; margin: 10px 0; border-radius: 5px; }
+        .error { background: #ffebeb; color: #d00; }
+        .success { background: #e8f5e8; color: #080; }
+        .info { background: #e8f0ff; color: #008; }
+    </style>
+</head>
+<body>
+    <h1>🔍 Debug Text Visibility Issue</h1>
+    <div id="results"></div>
+
+    <script>
+        async function debugVisibility() {
+            const results = document.getElementById('results');
+            
+            try {
+                // Open the website in iframe to check visibility
+                const iframe = document.createElement('iframe');
+                iframe.src = 'http://localhost:4000/normandpllc-replica.html';
+                iframe.style.width = '100%';
+                iframe.style.height = '600px';
+                iframe.style.border = '2px solid #ccc';
+                
+                results.innerHTML = '<div class="info">Loading website iframe...</div>';
+                
+                iframe.onload = function() {
+                    setTimeout(() => {
+                        try {
+                            const iframeDoc = iframe.contentDocument;
+                            const tagline = iframeDoc.querySelector('.hero-tagline');
+                            const title = iframeDoc.querySelector('.hero-title');  
+                            const subtitle = iframeDoc.querySelector('.hero-subtitle');
+                            
+                            let output = '<h2>Element Analysis:</h2>';
+                            
+                            if (tagline) {
+                                const style = iframe.contentWindow.getComputedStyle(tagline);
+                                output += `<div class="debug">
+                                    <strong>Tagline:</strong><br>
+                                    Text: "${tagline.textContent}"<br>
+                                    Opacity: ${style.opacity}<br>
+                                    Transform: ${style.transform}<br>
+                                    Display: ${style.display}<br>
+                                    Visibility: ${style.visibility}
+                                </div>`;
+                            }
+                            
+                            if (title) {
+                                const style = iframe.contentWindow.getComputedStyle(title);
+                                output += `<div class="debug">
+                                    <strong>Title:</strong><br>
+                                    Text: "${title.textContent}"<br>
+                                    Opacity: ${style.opacity}<br>
+                                    Transform: ${style.transform}<br>
+                                    Display: ${style.display}<br>
+                                    Visibility: ${style.visibility}
+                                </div>`;
+                            }
+                            
+                            if (subtitle) {
+                                const style = iframe.contentWindow.getComputedStyle(subtitle);
+                                output += `<div class="debug">
+                                    <strong>Subtitle:</strong><br>
+                                    Text: "${subtitle.textContent}"<br>
+                                    Opacity: ${style.opacity}<br>
+                                    Transform: ${style.transform}<br>
+                                    Display: ${style.display}<br>
+                                    Visibility: ${style.visibility}
+                                </div>`;
+                            }
+                            
+                            // Check if GSAP is loaded
+                            const hasGSAP = !!iframe.contentWindow.gsap;
+                            output += `<div class="${hasGSAP ? 'success' : 'error'}">
+                                <strong>GSAP Loaded:</strong> ${hasGSAP ? 'Yes' : 'No'}
+                            </div>`;
+                            
+                            // Check if ContentManager is loaded
+                            const hasContentManager = !!iframe.contentWindow.ContentManager;
+                            output += `<div class="${hasContentManager ? 'success' : 'error'}">
+                                <strong>ContentManager Loaded:</strong> ${hasContentManager ? 'Yes' : 'No'}
+                            </div>`;
+                            
+                            results.innerHTML = output;
+                            
+                        } catch (error) {
+                            results.innerHTML = `<div class="error">Cross-origin error: ${error.message}</div>`;
+                        }
+                        
+                        // Add iframe for visual inspection
+                        results.appendChild(document.createElement('br'));
+                        results.appendChild(iframe);
+                        
+                    }, 3000); // Wait 3 seconds for animations
+                };
+                
+                document.body.appendChild(iframe);
+                
+            } catch (error) {
+                results.innerHTML = `<div class="error">Error: ${error.message}</div>`;
+            }
+        }
+        
+        debugVisibility();
+    </script>
+</body>
+</html>

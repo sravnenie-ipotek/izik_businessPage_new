@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Editor - Static Site Manager</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    
+    .header {
+      background: #fc5a2b;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+    
+    .section {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .section h2 {
+      color: #010101;
+      border-bottom: 2px solid #fc5a2b;
+      padding-bottom: 10px;
+    }
+    
+    .form-group {
+      margin-bottom: 15px;
+    }
+    
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: #333;
+    }
+    
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+      transition: border-color 0.3s;
+    }
+    
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #fc5a2b;
+    }
+    
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+    
+    .service-card {
+      border: 1px solid #eee;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      background: #fafafa;
+    }
+    
+    .service-card h3 {
+      margin-top: 0;
+      color: #fc5a2b;
+    }
+    
+    .buttons {
+      text-align: center;
+      margin: 30px 0;
+    }
+    
+    .btn {
+      background: #fc5a2b;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 0 10px;
+      transition: background 0.3s;
+    }
+    
+    .btn:hover {
+      background: #e54921;
+    }
+    
+    .btn-secondary {
+      background: #010101;
+    }
+    
+    .btn-secondary:hover {
+      background: #333;
+    }
+    
+    .preview {
+      background: #010101;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      font-family: monospace;
+      font-size: 12px;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+    
+    .success {
+      background: #d4edda;
+      color: #155724;
+      padding: 15px;
+      border-radius: 6px;
+      margin: 20px 0;
+      border: 1px solid #c3e6cb;
+    }
+    
+    .error {
+      background: #f8d7da;
+      color: #721c24;
+      padding: 15px;
+      border-radius: 6px;
+      margin: 20px 0;
+      border: 1px solid #f5c6cb;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>📝 Content Editor</h1>
+    <p>Edit your website content without touching code. Changes are saved to JSON and automatically applied.</p>
+  </div>
+
+  <div id="message"></div>
+
+  <!-- Hero Section -->
+  <div class="section">
+    <h2>🎯 Hero Section</h2>
+    <div class="form-group">
+      <label for="hero-tagline">Tagline (Top small text):</label>
+      <input type="text" id="hero-tagline" placeholder="NORMAND">
+    </div>
+    <div class="form-group">
+      <label for="hero-subtitle">Subtitle:</label>
+      <input type="text" id="hero-subtitle" placeholder="EXPERTS IN CLASS ACTION">
+    </div>
+    <div class="form-group">
+      <label for="hero-title">Main Title:</label>
+      <input type="text" id="hero-title" placeholder="WE ARE RESULTS">
+    </div>
+    <div class="form-group">
+      <label for="hero-scroll">Scroll Text:</label>
+      <input type="text" id="hero-scroll" placeholder="SCROLL DOWN ↓">
+    </div>
+    <div class="form-group">
+      <label for="hero-portrait">Portrait Image:</label>
+      <input type="text" id="hero-portrait" placeholder="images/hero-portrait.jpg">
+      <small>📁 Upload image to /images/ folder, then enter filename here</small>
+    </div>
+  </div>
+
+  <!-- Services Section -->
+  <div class="section">
+    <h2>🛠️ Services Section</h2>
+    <div class="form-group">
+      <label for="services-label">Section Label:</label>
+      <input type="text" id="services-label" placeholder="OUR SERVICES">
+    </div>
+    <div class="form-group">
+      <label for="services-title">Main Title:</label>
+      <input type="text" id="services-title" placeholder="WE ARE CLASS ACTION">
+    </div>
+    <div class="form-group">
+      <label for="services-description">Description:</label>
+      <textarea id="services-description" placeholder="Describe your services..."></textarea>
+    </div>
+
+    <h3>Service Cards</h3>
+    <div id="service-cards">
+      <!-- Service cards will be populated here -->
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="section">
+    <h2>📞 Contact Information</h2>
+    <div class="form-group">
+      <label for="contact-phone">Phone:</label>
+      <input type="text" id="contact-phone" placeholder="407-603-6031">
+    </div>
+    <div class="form-group">
+      <label for="contact-email">Email:</label>
+      <input type="email" id="contact-email" placeholder="office@normandpllc.com">
+    </div>
+    <div class="form-group">
+      <label for="contact-address">Address:</label>
+      <textarea id="contact-address" placeholder="3165 McCrory Place Suite 175, Orlando, FL 32803"></textarea>
+    </div>
+  </div>
+
+  <!-- Image Upload Instructions -->
+  <div class="section">
+    <h2>🖼️ How to Add Images</h2>
+    <div style="background: #f0f8ff; padding: 15px; border-radius: 6px; border-left: 4px solid #fc5a2b;">
+      <h3>📝 Step-by-Step Image Guide:</h3>
+      <ol>
+        <li><strong>Upload images</strong> to the <code>/images/</code> folder</li>
+        <li><strong>Recommended folders:</strong>
+          <ul>
+            <li><code>images/hero/</code> - Hero/portrait images</li>
+            <li><code>images/team/</code> - Team member photos</li>
+            <li><code>images/services/</code> - Service-related images</li>
+          </ul>
+        </li>
+        <li><strong>Enter path</strong> in the form fields (e.g., <code>images/hero/portrait.jpg</code>)</li>
+        <li><strong>Save changes</strong> and replace the JSON file</li>
+      </ol>
+      
+      <h3>💡 Pro Tips:</h3>
+      <ul>
+        <li>Use <strong>JPG</strong> for photos, <strong>PNG</strong> for logos with transparency</li>
+        <li><strong>Optimize images</strong> - compress before uploading (use TinyPNG)</li>
+        <li><strong>Portrait images:</strong> Recommended 800x1200px</li>
+        <li><strong>Team photos:</strong> Recommended 400x500px</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Buttons -->
+  <div class="buttons">
+    <button class="btn" onclick="saveContent()">💾 Save Changes</button>
+    <button class="btn btn-secondary" onclick="previewContent()">👁️ Preview JSON</button>
+    <button class="btn btn-secondary" onclick="loadContent()">🔄 Reload Content</button>
+  </div>
+  
+  <!-- Save Instructions -->
+  <div class="section">
+    <h2>💾 How to Save Changes</h2>
+    <div style="background: #fff3cd; padding: 15px; border-radius: 6px; border-left: 4px solid #ffc107;">
+      <h3>📋 Save Workflow:</h3>
+      <ol>
+        <li><strong>Click "Save Changes"</strong> - Downloads <code>site-content.json</code> to your Downloads folder</li>
+        <li><strong>Replace the original file:</strong>
+          <pre style="background: #f8f9fa; padding: 10px; border-radius: 4px;">cd "/Users/michaelmishayev/Desktop/aiziks-stellar-site.webflow (1)"
+mv ~/Downloads/site-content.json content/site-content.json</pre>
+        </li>
+        <li><strong>Test changes:</strong> Refresh <code>normandpllc-replica.html</code></li>
+        <li><strong>Commit & push:</strong>
+          <pre style="background: #f8f9fa; padding: 10px; border-radius: 4px;">git add .
+git commit -m "Update content"
+git push</pre>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- JSON Preview -->
+  <div class="section">
+    <h2>📄 JSON Preview</h2>
+    <div class="preview" id="json-preview">
+      Click "Preview JSON" to see the current content structure
+    </div>
+  </div>
+
+  <script>
+    let currentContent = {};
+
+    async function loadContent() {
+      try {
+        const response = await fetch('content/site-content.json');
+        currentContent = await response.json();
+        populateForm();
+        showMessage('Content loaded successfully!', 'success');
+      } catch (error) {
+        console.error('Error loading content:', error);
+        showMessage('Error loading content. Check if the JSON file exists.', 'error');
+      }
+    }
+
+    function populateForm() {
+      // Hero section
+      document.getElementById('hero-tagline').value = currentContent.hero?.tagline || '';
+      document.getElementById('hero-subtitle').value = currentContent.hero?.subtitle || '';
+      document.getElementById('hero-title').value = currentContent.hero?.title || '';
+      document.getElementById('hero-scroll').value = currentContent.hero?.scrollText || '';
+      document.getElementById('hero-portrait').value = currentContent.hero?.portraitImage || '';
+
+      // Services section
+      document.getElementById('services-label').value = currentContent.services?.sectionLabel || '';
+      document.getElementById('services-title').value = currentContent.services?.title || '';
+      document.getElementById('services-description').value = currentContent.services?.description || '';
+
+      // Contact section
+      document.getElementById('contact-phone').value = currentContent.contact?.phone || '';
+      document.getElementById('contact-email').value = currentContent.contact?.email || '';
+      document.getElementById('contact-address').value = currentContent.contact?.address || '';
+
+      // Service cards
+      populateServiceCards();
+    }
+
+    function populateServiceCards() {
+      const container = document.getElementById('service-cards');
+      container.innerHTML = '';
+
+      if (currentContent.services?.cards) {
+        currentContent.services.cards.forEach((card, index) => {
+          const cardDiv = document.createElement('div');
+          cardDiv.className = 'service-card';
+          cardDiv.innerHTML = `
+            <h3>Service ${index + 1}</h3>
+            <div class="form-group">
+              <label>Icon (emoji):</label>
+              <input type="text" id="service-icon-${index}" value="${card.icon || ''}" maxlength="2">
+            </div>
+            <div class="form-group">
+              <label>Title:</label>
+              <input type="text" id="service-title-${index}" value="${card.title || ''}">
+            </div>
+            <div class="form-group">
+              <label>Description:</label>
+              <textarea id="service-description-${index}">${card.description || ''}</textarea>
+            </div>
+          `;
+          container.appendChild(cardDiv);
+        });
+      }
+    }
+
+    function collectFormData() {
+      // Update current content with form data
+      currentContent.hero = {
+        tagline: document.getElementById('hero-tagline').value,
+        subtitle: document.getElementById('hero-subtitle').value,
+        title: document.getElementById('hero-title').value,
+        scrollText: document.getElementById('hero-scroll').value,
+        portraitImage: document.getElementById('hero-portrait').value
+      };
+
+      currentContent.services = {
+        sectionLabel: document.getElementById('services-label').value,
+        title: document.getElementById('services-title').value,
+        description: document.getElementById('services-description').value,
+        cards: []
+      };
+
+      // Collect service cards
+      if (currentContent.services.cards) {
+        currentContent.services.cards.forEach((_, index) => {
+          const iconEl = document.getElementById(`service-icon-${index}`);
+          const titleEl = document.getElementById(`service-title-${index}`);
+          const descEl = document.getElementById(`service-description-${index}`);
+
+          if (iconEl && titleEl && descEl) {
+            currentContent.services.cards[index] = {
+              icon: iconEl.value,
+              title: titleEl.value,
+              description: descEl.value
+            };
+          }
+        });
+      }
+
+      currentContent.contact = {
+        ...currentContent.contact,
+        phone: document.getElementById('contact-phone').value,
+        email: document.getElementById('contact-email').value,
+        address: document.getElementById('contact-address').value
+      };
+
+      return currentContent;
+    }
+
+    async function saveContent() {
+      try {
+        const updatedContent = collectFormData();
+        
+        // In a real implementation, you'd send this to a server
+        // For now, we'll just download the JSON file
+        const blob = new Blob([JSON.stringify(updatedContent, null, 2)], 
+          { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'site-content.json';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+
+        showMessage('Content saved! Replace the JSON file in your content/ folder with the downloaded file.', 'success');
+      } catch (error) {
+        console.error('Error saving content:', error);
+        showMessage('Error saving content', 'error');
+      }
+    }
+
+    function previewContent() {
+      const updatedContent = collectFormData();
+      const preview = document.getElementById('json-preview');
+      preview.textContent = JSON.stringify(updatedContent, null, 2);
+    }
+
+    function showMessage(text, type) {
+      const messageDiv = document.getElementById('message');
+      messageDiv.className = type;
+      messageDiv.textContent = text;
+      
+      setTimeout(() => {
+        messageDiv.textContent = '';
+        messageDiv.className = '';
+      }, 5000);
+    }
+
+    // Load content on page load
+    loadContent();
+  </script>
+</body>
+</html>

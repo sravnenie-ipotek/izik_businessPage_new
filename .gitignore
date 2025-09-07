@@ -55,6 +55,14 @@ temp/
 *.jpeg
 screenshots/
 
+# Test files and results
+test-results/
+downloads/
+cms-direct-save-interface.png
+
+# Package manager files (only if not needed for deployment)
+package-lock.json
+
 # Claude/MCP specific
 .claude/
 ~/.claude/mcp_config.json

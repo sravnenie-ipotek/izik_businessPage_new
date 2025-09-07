@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Save Behavior</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test-button { 
+            background: #007bff; color: white; padding: 15px 30px; 
+            border: none; border-radius: 5px; font-size: 16px; cursor: pointer;
+            margin: 10px;
+        }
+        .result { 
+            background: #f8f9fa; padding: 15px; margin: 10px 0; 
+            border-radius: 5px; border-left: 4px solid #007bff;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔍 Test CMS Save Behavior</h1>
+    <div id="results"></div>
+    
+    <h2>Test Options:</h2>
+    <button class="test-button" onclick="testFileSystemAPI()">Test File System Access API</button>
+    <button class="test-button" onclick="testTraditionalDownload()">Test Traditional Download</button>
+    
+    <script>
+        async function testFileSystemAPI() {
+            const results = document.getElementById('results');
+            
+            try {
+                // Check if API is available
+                if ('showSaveFilePicker' in window) {
+                    results.innerHTML += '<div class="result">✅ File System Access API is available</div>';
+                    
+                    // Try to show save picker
+                    const fileHandle = await window.showSaveFilePicker({
+                        suggestedName: 'site-content.json',
+                        startIn: 'desktop',
+                        types: [
+                            {
+                                description: 'JSON files',
+                                accept: {
+                                    'application/json': ['.json'],
+                                },
+                            },
+                        ],
+                    });
+                    
+                    // Write test content
+                    const writable = await fileHandle.createWritable();
+                    await writable.write(JSON.stringify({
+                        test: "This is a test save",
+                        timestamp: new Date().toISOString()
+                    }, null, 2));
+                    await writable.close();
+                    
+                    results.innerHTML += '<div class="result">🎉 File saved successfully using File System Access API!</div>';
+                    results.innerHTML += '<div class="result">📁 You should have been able to choose exactly where to save the file</div>';
+                    
+                } else {
+                    results.innerHTML += '<div class="result">❌ File System Access API not available in this browser</div>';
+                }
+                
+            } catch (error) {
+                if (error.name === 'AbortError') {
+                    results.innerHTML += '<div class="result">💭 Save cancelled by user</div>';
+                } else {
+                    results.innerHTML += '<div class="result">❌ Error: ' + error.message + '</div>';
+                }
+            }
+        }
+        
+        function testTraditionalDownload() {
+            const results = document.getElementById('results');
+            
+            try {
+                const content = JSON.stringify({
+                    test: "This is a traditional download test",
+                    timestamp: new Date().toISOString()
+                }, null, 2);
+                
+                const blob = new Blob([content], { type: 'application/json' });
+                const url = URL.createObjectURL(blob);
+                
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'test-download.json';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+                
+                results.innerHTML += '<div class="result">📁 Traditional download initiated - check your Downloads folder</div>';
+                
+            } catch (error) {
+                results.innerHTML += '<div class="result">❌ Error: ' + error.message + '</div>';
+            }
+        }
+        
+        // Initial check
+        document.addEventListener('DOMContentLoaded', () => {
+            const results = document.getElementById('results');
+            results.innerHTML = '<div class="result">🌍 Browser: ' + navigator.userAgent + '</div>';
+            results.innerHTML += '<div class="result">💻 File System Access API available: ' + ('showSaveFilePicker' in window ? 'Yes' : 'No') + '</div>';
+        });
+    </script>
+</body>
+</html>

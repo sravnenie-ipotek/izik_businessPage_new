@@ -14,6 +14,7 @@
   <!-- GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="js/content-manager.js"></script>
   
   <style>
     /* CSS Custom Properties - Exact from normandpllc */
@@ -820,10 +821,40 @@
       });
     }
 
-    // Start animations immediately (no preloader)
-    document.addEventListener('DOMContentLoaded', startPageAnimations);
+    // Initialize with content management
+    document.addEventListener('DOMContentLoaded', initializeWithContent);
+
+    async function initializeWithContent() {
+      // Initialize content manager
+      const contentManager = new ContentManager();
+      
+      // Load and inject content first
+      await contentManager.loadContent();
+      contentManager.injectContent();
+      
+      // Then start animations with populated content
+      startPageAnimations();
+      
+      // Make content manager globally available
+      window.contentManager = contentManager;
+    }
 
     function startPageAnimations() {
+      console.log('🚀 Starting page animations...');
+      
+      // Check if GSAP is loaded
+      if (typeof gsap === 'undefined') {
+        console.error('❌ GSAP not loaded! Making elements visible immediately.');
+        // Fallback: make elements visible immediately
+        document.querySelectorAll('.hero-tagline, .hero-subtitle, .hero-title, .hero-secondary').forEach(el => {
+          el.style.opacity = '1';
+          el.style.transform = 'translateY(0)';
+        });
+        return;
+      }
+      
+      console.log('✅ GSAP loaded, starting animations...');
+      
       // Hero animations with staggered delay
       const tl = gsap.timeline({ delay: 0.5 });
       
@@ -831,19 +862,22 @@
         opacity: 1,
         y: 0,
         duration: 1,
-        ease: "power3.out"
+        ease: "power3.out",
+        onComplete: () => console.log('📝 Tagline animation complete')
       })
       .to('.hero-subtitle', {
         opacity: 1,
         y: 0,
         duration: 0.8,
-        ease: "power3.out"
+        ease: "power3.out",
+        onComplete: () => console.log('📝 Subtitle animation complete')
       }, "-=0.6")
       .to('.hero-title', {
         opacity: 1,
         y: 0,
         duration: 1.2,
-        ease: "power3.out"
+        ease: "power3.out",
+        onComplete: () => console.log('📝 Title animation complete')
       }, "-=0.4")
       .to('.hero-secondary', {
         opacity: 1,
