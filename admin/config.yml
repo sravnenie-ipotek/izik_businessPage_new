@@ -5,45 +5,34 @@ backend:
 media_folder: "images"
 public_folder: "/images"
 
-# Language configuration
-i18n:
-  structure: multiple_files
-  locales: [en, ru]
-  default_locale: en
-
 collections:
-  - name: "content"
-    label: "Website Content"
-    i18n: true
+  - name: "english-content"
+    label: "English Content"
     files:
-      - name: "homepage"
-        label: "Homepage"
+      - name: "english-homepage"
+        label: "Homepage (English)"
         file: "content/site-content.json"
-        i18n:
-          structure: single_file
-          locales: [en, ru]
         fields:
           - label: "Hero Section"
             name: "hero"
             widget: "object"
             fields:
-              - {label: "Company Name", name: "tagline", widget: "string", i18n: true}
-              - {label: "Subtitle", name: "subtitle", widget: "string", i18n: true}
-              - {label: "Main Title", name: "title", widget: "string", i18n: true}
-              - {label: "Scroll Text", name: "scrollText", widget: "string", i18n: true}
+              - {label: "Company Name", name: "tagline", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - {label: "Main Title", name: "title", widget: "string"}
+              - {label: "Scroll Text", name: "scrollText", widget: "string"}
               - {label: "Portrait Image", name: "portraitImage", widget: "image", required: false}
           
           - label: "Services Section"
             name: "services"
             widget: "object"
             fields:
-              - {label: "Section Label", name: "sectionLabel", widget: "string", i18n: true}
-              - {label: "Section Title", name: "title", widget: "string", i18n: true}
-              - {label: "Description", name: "description", widget: "text", i18n: true}
+              - {label: "Section Label", name: "sectionLabel", widget: "string"}
+              - {label: "Section Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
               - label: "Service Cards"
                 name: "cards"
                 widget: "list"
-                i18n: true
                 fields:
                   - {label: "Icon", name: "icon", widget: "string"}
                   - {label: "Title", name: "title", widget: "string"}
@@ -53,7 +42,7 @@ collections:
             name: "caseStudies"
             widget: "object"
             fields:
-              - {label: "Title", name: "title", widget: "string", i18n: true}
+              - {label: "Title", name: "title", widget: "string"}
               - {label: "Won Cases", name: "wonCases", widget: "string"}
               - {label: "Years Range", name: "yearsRange", widget: "string"}
           
@@ -61,18 +50,17 @@ collections:
             name: "testimonial"
             widget: "object"
             fields:
-              - {label: "Quote", name: "quote", widget: "text", i18n: true}
-              - {label: "Attribution", name: "attribution", widget: "string", i18n: true}
+              - {label: "Quote", name: "quote", widget: "text"}
+              - {label: "Attribution", name: "attribution", widget: "string"}
           
           - label: "Team Section"
             name: "team"
             widget: "object"
             fields:
-              - {label: "Title", name: "title", widget: "string", i18n: true}
+              - {label: "Title", name: "title", widget: "string"}
               - label: "Team Members"
                 name: "members"
                 widget: "list"
-                i18n: true
                 fields:
                   - {label: "Name", name: "name", widget: "string"}
                   - {label: "Bio", name: "bio", widget: "text"}
@@ -82,8 +70,8 @@ collections:
             name: "contact"
             widget: "object"
             fields:
-              - {label: "Title", name: "title", widget: "string", i18n: true}
-              - {label: "Office", name: "office", widget: "string", i18n: true}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Office", name: "office", widget: "string"}
               - {label: "Phone", name: "phone", widget: "string"}
               - {label: "Email", name: "email", widget: "string"}
               - {label: "Fax", name: "fax", widget: "string"}
@@ -93,5 +81,83 @@ collections:
             name: "footer"
             widget: "object"
             fields:
-              - {label: "Copyright", name: "copyright", widget: "string", i18n: true}
-              - {label: "Credit", name: "credit", widget: "string", i18n: true}
+              - {label: "Copyright", name: "copyright", widget: "string"}
+              - {label: "Credit", name: "credit", widget: "string"}
+
+  - name: "russian-content"
+    label: "Russian Content"
+    files:
+      - name: "russian-homepage"
+        label: "Homepage (Russian)"
+        file: "content/site-content-ru.json"
+        fields:
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Company Name", name: "tagline", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - {label: "Main Title", name: "title", widget: "string"}
+              - {label: "Scroll Text", name: "scrollText", widget: "string"}
+              - {label: "Portrait Image", name: "portraitImage", widget: "image", required: false}
+          
+          - label: "Services Section"
+            name: "services"
+            widget: "object"
+            fields:
+              - {label: "Section Label", name: "sectionLabel", widget: "string"}
+              - {label: "Section Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - label: "Service Cards"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - {label: "Icon", name: "icon", widget: "string"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Description", name: "description", widget: "text"}
+          
+          - label: "Case Studies"
+            name: "caseStudies"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Won Cases", name: "wonCases", widget: "string"}
+              - {label: "Years Range", name: "yearsRange", widget: "string"}
+          
+          - label: "Testimonial"
+            name: "testimonial"
+            widget: "object"
+            fields:
+              - {label: "Quote", name: "quote", widget: "text"}
+              - {label: "Attribution", name: "attribution", widget: "string"}
+          
+          - label: "Team Section"
+            name: "team"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - label: "Team Members"
+                name: "members"
+                widget: "list"
+                fields:
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "Bio", name: "bio", widget: "text"}
+                  - {label: "Photo", name: "photo", widget: "image", required: false}
+          
+          - label: "Contact Information"
+            name: "contact"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Office", name: "office", widget: "string"}
+              - {label: "Phone", name: "phone", widget: "string"}
+              - {label: "Email", name: "email", widget: "string"}
+              - {label: "Fax", name: "fax", widget: "string"}
+              - {label: "Address", name: "address", widget: "text"}
+          
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - {label: "Copyright", name: "copyright", widget: "string"}
+              - {label: "Credit", name: "credit", widget: "string"}

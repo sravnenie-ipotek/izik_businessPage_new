@@ -23,37 +23,55 @@
   <!-- This is where the CMS interface will be injected -->
   
   <script>
-    // Initialize the CMS
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-    
-    // Custom CMS configuration
-    CMS.registerPreviewStyle('/css/normandpllc-styles.css');
-    
-    // Custom editor components for better UX
-    CMS.registerEditorComponent({
-      id: "emoji",
-      label: "Emoji Icon",
-      fields: [{name: 'emoji', label: 'Emoji', widget: 'string'}],
-      pattern: /{{emoji (.*?)}}/,
-      fromBlock: function(match) {
-        return {
-          emoji: match[1]
-        };
-      },
-      toBlock: function(obj) {
-        return obj.emoji;
-      },
-      toPreview: function(obj) {
-        return obj.emoji;
+    // Wait for DOM and scripts to load
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize Netlify Identity
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
       }
+      
+      // Wait for CMS to be available
+      function initCMS() {
+        if (typeof CMS !== 'undefined') {
+          // Custom CMS configuration
+          try {
+            CMS.registerPreviewStyle('/css/normandpllc-styles.css');
+            
+            // Custom editor components for better UX
+            CMS.registerEditorComponent({
+              id: "emoji",
+              label: "Emoji Icon",
+              fields: [{name: 'emoji', label: 'Emoji', widget: 'string'}],
+              pattern: /{{emoji (.*?)}}/,
+              fromBlock: function(match) {
+                return {
+                  emoji: match[1]
+                };
+              },
+              toBlock: function(obj) {
+                return obj.emoji;
+              },
+              toPreview: function(obj) {
+                return obj.emoji;
+              }
+            });
+          } catch (error) {
+            console.warn('CMS customization failed:', error);
+          }
+        } else {
+          // CMS not ready yet, try again in 100ms
+          setTimeout(initCMS, 100);
+        }
+      }
+      
+      // Start CMS initialization
+      initCMS();
     });
   </script>
 </body>
