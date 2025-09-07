@@ -88,6 +88,19 @@ class NormandMenu {
       item.addEventListener('mouseenter', () => this.handleItemHover(item, true));
       item.addEventListener('mouseleave', () => this.handleItemHover(item, false));
     });
+    
+    // Close menu when clicking on menu items
+    const allMenuLinks = document.querySelectorAll('.menu-item a, .sub-menu a');
+    allMenuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (this.isMenuOpen) {
+          // Small delay to allow navigation to process
+          setTimeout(() => {
+            this.hideMenu();
+          }, 100);
+        }
+      });
+    });
   }
   
   showMenu() {

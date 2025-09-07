@@ -11,47 +11,47 @@
     "items": [
       {
         "label": "Home",
-        "href": "#home"
+        "href": "index.html"
       },
       {
         "label": "Class Action",
-        "href": "#class-action"
+        "href": "class-action.html"
       },
       {
         "label": "Privacy",
-        "href": "#privacy"
+        "href": "privacy-class-action.html"
       },
       {
         "label": "Consumer Protection",
-        "href": "#consumer"
+        "href": "consumer-protection.html"
       },
       {
         "label": "Insurance",
-        "href": "#insurance"
+        "href": "insurance-class-action.html"
       },
       {
         "label": "Status & Results",
-        "href": "#results"
+        "href": "status-results.html"
       },
       {
         "label": "Our Team",
-        "href": "#team"
+        "href": "our-team.html"
       },
       {
         "label": "News & Articles",
-        "href": "#news"
+        "href": "news-articles.html"
       },
       {
         "label": "Contact Us",
-        "href": "#contact"
+        "href": "contact.html"
       },
       {
         "label": "Disclaimer",
-        "href": "#disclaimer"
+        "href": "disclaimer.html"
       },
       {
         "label": "Privacy Policy",
-        "href": "#privacy-policy"
+        "href": "privacy-policy.html"
       }
     ]
   },

@@ -245,6 +245,9 @@ class NormandPageSystem {
     
     // Scroll-triggered animations
     this.initScrollAnimations();
+    
+    // Professional hover effects
+    this.initHoverEffects();
   }
   
   animatePageHeader() {
@@ -319,9 +322,70 @@ class NormandPageSystem {
       });
     });
     
-    // Stagger animations for lists
+    // Fade in left (professional law firm pattern)
+    gsap.utils.toArray('.fade-in-left').forEach(element => {
+      gsap.from(element, {
+        scrollTrigger: {
+          trigger: element,
+          start: 'top 85%',
+          scroller: this.locomotiveScroll ? '[data-scroll-container]' : null
+        },
+        x: -60,
+        autoAlpha: 0,
+        duration: 1.2,
+        ease: 'power3.out'
+      });
+    });
+    
+    // Fade in right (professional law firm pattern)
+    gsap.utils.toArray('.fade-in-right').forEach(element => {
+      gsap.from(element, {
+        scrollTrigger: {
+          trigger: element,
+          start: 'top 85%',
+          scroller: this.locomotiveScroll ? '[data-scroll-container]' : null
+        },
+        x: 60,
+        autoAlpha: 0,
+        duration: 1.2,
+        ease: 'power3.out'
+      });
+    });
+    
+    // Scale in animation (for important elements like CTAs)
+    gsap.utils.toArray('.scale-in').forEach(element => {
+      gsap.from(element, {
+        scrollTrigger: {
+          trigger: element,
+          start: 'top 80%',
+          scroller: this.locomotiveScroll ? '[data-scroll-container]' : null
+        },
+        scale: 0.8,
+        autoAlpha: 0,
+        duration: 1.0,
+        ease: 'back.out(1.7)'
+      });
+    });
+    
+    // Text reveal animation (professional split-text effect)
+    gsap.utils.toArray('.text-reveal').forEach(element => {
+      gsap.from(element, {
+        scrollTrigger: {
+          trigger: element,
+          start: 'top 90%',
+          scroller: this.locomotiveScroll ? '[data-scroll-container]' : null
+        },
+        yPercent: 100,
+        autoAlpha: 0,
+        duration: 1.4,
+        ease: 'power4.out',
+        transformOrigin: 'bottom center'
+      });
+    });
+    
+    // Stagger animations for lists and cards
     gsap.utils.toArray('.stagger-list').forEach(list => {
-      const items = list.querySelectorAll('li, .item');
+      const items = list.querySelectorAll('li, .item, .card, .demo-card');
       
       gsap.from(items, {
         scrollTrigger: {
@@ -329,26 +393,92 @@ class NormandPageSystem {
           start: 'top 75%',
           scroller: this.locomotiveScroll ? '[data-scroll-container]' : null
         },
-        y: 30,
+        y: 40,
         autoAlpha: 0,
         duration: 0.8,
-        stagger: 0.1,
+        stagger: {
+          amount: 0.6,  // Professional stagger timing
+          from: 'start'
+        },
         ease: 'power2.out'
       });
     });
     
-    // Parallax images
+    // Practice area cards animation (law firm specific)
+    gsap.utils.toArray('.practice-area-card, .service-card').forEach((card, index) => {
+      gsap.from(card, {
+        scrollTrigger: {
+          trigger: card,
+          start: 'top 80%',
+          scroller: this.locomotiveScroll ? '[data-scroll-container]' : null
+        },
+        y: 60,
+        autoAlpha: 0,
+        duration: 1.2,
+        delay: index * 0.1,
+        ease: 'power3.out'
+      });
+    });
+    
+    // Parallax images with professional subtle movement
     gsap.utils.toArray('.parallax-img').forEach(img => {
       gsap.to(img, {
         scrollTrigger: {
           trigger: img,
           start: 'top bottom',
           end: 'bottom top',
-          scrub: true,
+          scrub: 1.2,  // Smooth scrub for professional feel
           scroller: this.locomotiveScroll ? '[data-scroll-container]' : null
         },
-        yPercent: -20
+        yPercent: -15  // Subtle parallax movement
       });
+    });
+    
+    // Counter animations (for results/statistics)
+    gsap.utils.toArray('.counter').forEach(counter => {
+      const endValue = parseInt(counter.dataset.count || counter.textContent);
+      
+      gsap.to(counter, {
+        scrollTrigger: {
+          trigger: counter,
+          start: 'top 80%',
+          scroller: this.locomotiveScroll ? '[data-scroll-container]' : null
+        },
+        innerHTML: endValue,
+        duration: 2.5,
+        ease: 'power2.out',
+        snap: { innerHTML: 1 },
+        onUpdate: function() {
+          counter.innerHTML = Math.round(this.progress() * endValue);
+        }
+      });
+    });
+    
+    // Section titles with line reveal effect
+    gsap.utils.toArray('.section-title').forEach(title => {
+      const line = document.createElement('div');
+      line.style.cssText = 'position:absolute;bottom:0;left:0;width:0;height:3px;background:var(--color-theme-primary,#fc5a2b)';
+      title.style.position = 'relative';
+      title.appendChild(line);
+      
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: title,
+          start: 'top 85%',
+          scroller: this.locomotiveScroll ? '[data-scroll-container]' : null
+        }
+      })
+      .from(title, {
+        yPercent: 50,
+        autoAlpha: 0,
+        duration: 1.0,
+        ease: 'power2.out'
+      })
+      .to(line, {
+        width: '60px',
+        duration: 0.8,
+        ease: 'power2.inOut'
+      }, '-=0.3');
     });
   }
   
@@ -403,6 +533,145 @@ class NormandPageSystem {
     }, '-=0.3');
   }
   
+  // ============================================
+  // PROFESSIONAL HOVER EFFECTS
+  // ============================================
+  initHoverEffects() {
+    // Button hover effects (law firm standard)
+    const buttons = document.querySelectorAll('button, .btn, .cta-button, .contact-button');
+    buttons.forEach(btn => {
+      btn.addEventListener('mouseenter', () => {
+        gsap.to(btn, {
+          scale: 1.05,
+          y: -2,
+          duration: 0.3,
+          ease: 'power2.out'
+        });
+      });
+      
+      btn.addEventListener('mouseleave', () => {
+        gsap.to(btn, {
+          scale: 1,
+          y: 0,
+          duration: 0.3,
+          ease: 'power2.out'
+        });
+      });
+    });
+    
+    // Card hover effects (professional law firm pattern)
+    const cards = document.querySelectorAll('.card, .practice-area-card, .service-card, .demo-card');
+    cards.forEach(card => {
+      // Create shadow element if it doesn't exist
+      if (!card.querySelector('.card-shadow')) {
+        const shadow = document.createElement('div');
+        shadow.className = 'card-shadow';
+        shadow.style.cssText = `
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(252, 90, 43, 0.1);
+          opacity: 0;
+          pointer-events: none;
+          z-index: -1;
+          border-radius: inherit;
+        `;
+        card.style.position = 'relative';
+        card.appendChild(shadow);
+      }
+      
+      card.addEventListener('mouseenter', () => {
+        gsap.timeline()
+          .to(card, {
+            y: -8,
+            scale: 1.02,
+            duration: 0.4,
+            ease: 'power2.out'
+          })
+          .to(card.querySelector('.card-shadow'), {
+            opacity: 1,
+            duration: 0.3
+          }, 0);
+      });
+      
+      card.addEventListener('mouseleave', () => {
+        gsap.timeline()
+          .to(card, {
+            y: 0,
+            scale: 1,
+            duration: 0.4,
+            ease: 'power2.out'
+          })
+          .to(card.querySelector('.card-shadow'), {
+            opacity: 0,
+            duration: 0.3
+          }, 0);
+      });
+    });
+    
+    // Link hover effects (professional underline animation)
+    const links = document.querySelectorAll('a:not(.btn):not(.button):not(.menu-item a)');
+    links.forEach(link => {
+      if (!link.querySelector('.link-underline')) {
+        const underline = document.createElement('div');
+        underline.className = 'link-underline';
+        underline.style.cssText = `
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0;
+          height: 1px;
+          background: var(--color-theme-primary, #fc5a2b);
+          transition: width 0.3s ease;
+        `;
+        link.style.position = 'relative';
+        link.style.overflow = 'hidden';
+        link.appendChild(underline);
+      }
+      
+      link.addEventListener('mouseenter', () => {
+        gsap.to(link.querySelector('.link-underline'), {
+          width: '100%',
+          duration: 0.3,
+          ease: 'power2.out'
+        });
+      });
+      
+      link.addEventListener('mouseleave', () => {
+        gsap.to(link.querySelector('.link-underline'), {
+          width: '0%',
+          duration: 0.3,
+          ease: 'power2.out'
+        });
+      });
+    });
+    
+    // Image hover effects (professional zoom)
+    const images = document.querySelectorAll('.hover-zoom img, .portfolio-item img');
+    images.forEach(img => {
+      const container = img.closest('.image-container') || img.parentElement;
+      container.style.overflow = 'hidden';
+      
+      container.addEventListener('mouseenter', () => {
+        gsap.to(img, {
+          scale: 1.1,
+          duration: 0.6,
+          ease: 'power2.out'
+        });
+      });
+      
+      container.addEventListener('mouseleave', () => {
+        gsap.to(img, {
+          scale: 1,
+          duration: 0.6,
+          ease: 'power2.out'
+        });
+      });
+    });
+  }
+
   // ============================================
   // UTILITIES
   // ============================================

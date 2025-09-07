@@ -692,20 +692,20 @@
       
       <nav class="main-navigation" id="main-navigation">
         <div class="nav-menu">
-          <a href="#home">Home</a>
+          <a href="index.html">Home</a>
           <div class="nav-submenu">
-            <a href="#class-action">Class Action</a>
-            <a href="#privacy">Privacy</a>
-            <a href="#consumer">Consumer Protection</a>
-            <a href="#insurance">Insurance</a>
+            <a href="class-action.html">Class Action</a>
+            <a href="privacy-class-action.html">Privacy</a>
+            <a href="consumer-protection.html">Consumer Protection</a>
+            <a href="insurance-class-action.html">Insurance</a>
           </div>
-          <a href="#results">Status &amp; Results</a>
-          <a href="#team">Our Team</a>
-          <a href="#news">News &amp; Articles</a>
+          <a href="status-results.html">Status &amp; Results</a>
+          <a href="our-team.html">Our Team</a>
+          <a href="news-articles.html">News &amp; Articles</a>
           <div class="nav-submenu">
-            <a href="#contact">Contact Us</a>
-            <a href="#disclaimer">Disclaimer</a>
-            <a href="#privacy-policy">Privacy Policy</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="disclaimer.html">Disclaimer</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
           </div>
         </div>
       </nav>
@@ -724,7 +724,7 @@
       </section>
 
       <!-- Our Services Section -->
-      <section class="service-section">
+      <section class="service-section" id="class-action">
         <div class="content-container">
           <div class="service-intro fade-in">
             <div style="font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 20px;">OUR SERVICES</div>
@@ -738,19 +738,19 @@
       <section class="service-section">
         <div class="content-container">
           <div class="services-grid">
-            <div class="service-card fade-in">
+            <div class="service-card fade-in" id="privacy">
               <div class="service-icon privacy"></div>
               <h3>Privacy Class Action</h3>
               <p>You have a right to privacy in your home, in your personal life and with your private information.</p>
             </div>
             
-            <div class="service-card fade-in">
+            <div class="service-card fade-in" id="consumer">
               <div class="service-icon consumer"></div>
               <h3>Consumer Protection Class Action</h3>
               <p>False advertising, bait and switch practices, unconscionable or illegal pricing schemes, deceptive credit reporting, identity theft, violations of consumer protection laws, debt collection violations, and other consumer rights violations.</p>
             </div>
             
-            <div class="service-card fade-in">
+            <div class="service-card fade-in" id="insurance">
               <div class="service-icon insurance"></div>
               <h3>Insurance Class Action</h3>
               <p>When you pay your insurance premium and the time comes to make a claim you have a right to any and all benefits provided by the insurance policy.</p>
@@ -771,8 +771,8 @@
         </div>
       </section>
 
-      <!-- Testimonial -->
-      <section class="testimonial">
+      <!-- Testimonial / News -->
+      <section class="testimonial" id="news">
         <div class="content-container">
           <div class="quote fade-in">
             "We are not insular: we are compassion. We know that when one is cheated we all suffer."
@@ -811,6 +811,12 @@
     <!-- Footer -->
     <footer class="site-footer">
       <div class="content-container">
+        <div id="disclaimer">
+          <p><strong>Disclaimer:</strong> This website is for informational purposes only. No attorney-client relationship is formed.</p>
+        </div>
+        <div id="privacy-policy">
+          <p><strong>Privacy Policy:</strong> We respect your privacy and protect your personal information.</p>
+        </div>
         <p>Copyright © Normand PLLC 2025</p>
         <p>Website by ultramodern ✨</p>
       </div>
@@ -837,11 +843,23 @@
       force3D: true
     });
 
-    // Custom Cursor
-    if (window.innerWidth > 768) {
+    // Custom Cursor with null checks
+    function initializeCursor() {
+      if (window.innerWidth <= 768) return;
+      
       const cursor = document.getElementById('cursor');
+      if (!cursor) {
+        console.warn('Cursor element not found');
+        return;
+      }
+      
       const cursorInner = cursor.querySelector('.cursor-inner');
       const cursorOuter = cursor.querySelector('.cursor-outer');
+      
+      if (!cursorInner || !cursorOuter) {
+        console.warn('Cursor inner/outer elements not found');
+        return;
+      }
       
       let mouseX = 0, mouseY = 0;
       let posX = 0, posY = 0;
@@ -873,25 +891,34 @@
       });
     }
 
+    // Initialize cursor
+    initializeCursor();
+
     // Initialize with content management
     document.addEventListener('DOMContentLoaded', initializeWithContent);
 
     async function initializeWithContent() {
-      // Initialize content manager
-      const contentManager = new ContentManager();
+      try {
+        // Initialize content manager
+        const contentManager = new ContentManager();
+        
+        // Load and inject content first
+        await contentManager.loadContent();
+        contentManager.injectContent();
+        
+        // Make content manager globally available
+        window.contentManager = contentManager;
+        console.log('✅ Content management initialized successfully');
+      } catch (error) {
+        console.warn('⚠️ Content management initialization failed:', error);
+        // Continue with page initialization even if content management fails
+      }
       
-      // Load and inject content first
-      await contentManager.loadContent();
-      contentManager.injectContent();
-      
-      // Then start animations with populated content
+      // Always start animations regardless of content management status
       startPageAnimations();
       
-      // Make content manager globally available
-      window.contentManager = contentManager;
-      
       // Initialize language switcher
-      initializeLanguageSwitcher(contentManager);
+      initializeLanguageSwitcher(window.contentManager);
     }
     
     function initializeLanguageSwitcher(contentManager) {
@@ -1046,8 +1073,8 @@
       }
     });
 
-    // Close menu when clicking on links
-    document.querySelectorAll('.nav-menu a').forEach(link => {
+    // Close menu when clicking on links (both main menu and submenu)
+    document.querySelectorAll('.nav-menu a, .nav-submenu a').forEach(link => {
       link.addEventListener('click', () => {
         if (isMenuOpen) {
           menuToggle.click();

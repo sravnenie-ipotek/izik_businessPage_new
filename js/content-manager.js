@@ -78,6 +78,11 @@ class ContentManager {
   }
 
   injectHero() {
+    if (!this.content?.hero) {
+      console.warn('No hero content available');
+      return;
+    }
+    
     const hero = this.content.hero;
     const heroTagline = document.querySelector('.hero-tagline');
     const heroSubtitle = document.querySelector('.hero-subtitle');
@@ -115,6 +120,11 @@ class ContentManager {
   }
 
   injectServices() {
+    if (!this.content?.services) {
+      console.warn('No services content available');
+      return;
+    }
+    
     const services = this.content.services;
     
     // Service section label and title
@@ -146,6 +156,11 @@ class ContentManager {
   }
 
   injectCaseStudies() {
+    if (!this.content?.caseStudies) {
+      console.warn('No case studies content available');
+      return;
+    }
+    
     const caseStudies = this.content.caseStudies;
     const title = document.querySelector('.case-studies h2');
     const statNumber = document.querySelector('.stat-number');
@@ -164,18 +179,38 @@ class ContentManager {
     if (statNumber) statNumber.textContent = caseStudies.wonCases;
     if (wonCases) wonCases.textContent = "Won Cases";
     if (yearsRange) yearsRange.textContent = caseStudies.yearsRange;
+    
+    // If elements don't exist, log info but don't error
+    if (!title && !statNumber && !wonCases && !yearsRange) {
+      console.info('ℹ️ Case studies elements not found on this page - skipping injection');
+    }
   }
 
   injectTestimonial() {
+    if (!this.content?.testimonial) {
+      console.warn('No testimonial content available');
+      return;
+    }
+    
     const testimonial = this.content.testimonial;
     const quote = document.querySelector('.quote');
     const attribution = document.querySelector('.testimonial div:last-child');
 
     if (quote) quote.textContent = `"${testimonial.quote}"`;
     if (attribution) attribution.textContent = testimonial.attribution;
+    
+    // If elements don't exist, log info but don't error
+    if (!quote && !attribution) {
+      console.info('ℹ️ Testimonial elements not found on this page - skipping injection');
+    }
   }
 
   injectTeam() {
+    if (!this.content?.team) {
+      console.warn('No team content available');
+      return;
+    }
+    
     const team = this.content.team;
     const title = document.querySelector('.team-section h2');
     
@@ -183,8 +218,13 @@ class ContentManager {
 
     // Team members
     const teamMembers = document.querySelectorAll('.team-member');
+    if (teamMembers.length === 0) {
+      console.info('ℹ️ Team member elements not found on this page - skipping injection');
+      return;
+    }
+    
     teamMembers.forEach((member, index) => {
-      if (team.members[index]) {
+      if (team.members && team.members[index]) {
         const memberData = team.members[index];
         const name = member.querySelector('h3');
         const bio = member.querySelector('p');
@@ -204,6 +244,11 @@ class ContentManager {
   }
 
   injectContact() {
+    if (!this.content?.contact) {
+      console.warn('No contact content available');
+      return;
+    }
+    
     const contact = this.content.contact;
     const contactInfo = document.querySelector('.contact-info');
     
@@ -216,10 +261,17 @@ class ContentManager {
         <p>Fax: ${contact.fax}</p>
         <p>Address: ${contact.address}</p>
       `;
+    } else {
+      console.info('ℹ️ Contact info element not found on this page - skipping injection');
     }
   }
 
   injectFooter() {
+    if (!this.content?.footer) {
+      console.warn('No footer content available');
+      return;
+    }
+    
     const footer = this.content.footer;
     const footerContent = document.querySelector('.site-footer .content-container');
     
@@ -228,10 +280,17 @@ class ContentManager {
         <p>${footer.copyright}</p>
         <p>${footer.credit}</p>
       `;
+    } else {
+      console.info('ℹ️ Footer content element not found on this page - skipping injection');
     }
   }
 
   injectNavigation() {
+    if (!this.content?.navigation) {
+      console.warn('No navigation content available');
+      return;
+    }
+    
     const navigation = this.content.navigation;
     const navMenu = document.querySelector('.nav-menu');
     
@@ -246,6 +305,8 @@ class ContentManager {
         link.textContent = item.label;
         navMenu.appendChild(link);
       });
+    } else if (!navMenu) {
+      console.info('ℹ️ Navigation menu element not found on this page - skipping injection');
     }
   }
 
