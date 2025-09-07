@@ -1,0 +1,768 @@
+# 🚀 Complete Subagent & MCP Installation Guide
+
+## Table of Contents
+1. [Prerequisites](#prerequisites)
+2. [MCP (Model Context Protocol) Setup](#mcp-setup)
+3. [API Keys & Tokens](#api-keys--tokens)
+4. [Design Scraper Subagent Creation](#design-scraper-subagent)
+5. [Testing Your Setup](#testing)
+6. [Production Deployment](#production)
+
+---
+
+## Prerequisites
+
+### Required Software
+```bash
+# Check versions
+node --version  # Need v18+
+npm --version   # Need v8+
+python --version # Need 3.8+
+
+# Install if missing
+brew install node  # macOS
+apt install nodejs # Ubuntu
+```
+
+### Claude Desktop
+Download and install from: https://claude.ai/download
+
+---
+
+## MCP Setup
+
+### Step 1: Create MCP Configuration Directory
+```bash
+# Create config directory
+mkdir -p ~/.claude
+cd ~/.claude
+
+# Create the main config file
+touch claude_desktop_config.json
+```
+
+### Step 2: Configure MCP Servers
+```bash
+# Edit the configuration
+nano ~/.claude/claude_desktop_config.json
+```
+
+Add this complete configuration:
+
+```json
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/michaelmishayev/Desktop"
+      ],
+      "env": {
+        "NPX_CACHE": "/tmp/.npx"
+      }
+    },
+    "web-search": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-brave-search"
+      ],
+      "env": {
+        "BRAVE_API_KEY": "YOUR_BRAVE_API_KEY_HERE"
+      }
+    },
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "ghp_YOUR_GITHUB_TOKEN_HERE"
+      }
+    },
+    "slack": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-slack"
+      ],
+      "env": {
+        "SLACK_BOT_TOKEN": "xoxb-YOUR_SLACK_TOKEN_HERE"
+      }
+    },
+    "postgres": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-postgres",
+        "postgresql://username:password@localhost:5432/database"
+      ]
+    }
+  }
+}
+```
+
+### Step 3: Restart Claude Desktop
+```bash
+# macOS
+pkill "Claude Desktop"
+open -a "Claude Desktop"
+
+# Windows
+taskkill /F /IM "Claude Desktop.exe"
+start "" "C:\Program Files\Claude Desktop\Claude Desktop.exe"
+
+# Linux
+pkill claude-desktop
+claude-desktop &
+```
+
+---
+
+## API Keys & Tokens
+
+### 1. Brave Search API Key
+```bash
+# Get your API key
+1. Visit: https://api.search.brave.com/app/keys
+2. Sign up for free account
+3. Generate API key
+4. Add to MCP config:
+   "BRAVE_API_KEY": "YOUR_ACTUAL_KEY_HERE"
+
+# Example format:
+"BRAVE_API_KEY": "BSA_YOUR_KEY_HERE"
+```
+
+### 2. GitHub Personal Access Token
+```bash
+# Generate token
+1. Go to: https://github.com/settings/tokens
+2. Click "Generate new token (classic)"
+3. Select scopes:
+   ✓ repo (all)
+   ✓ workflow
+   ✓ write:packages
+   ✓ read:org
+4. Generate and copy token
+5. Add to MCP config:
+   "GITHUB_PERSONAL_ACCESS_TOKEN": "ghp_YOUR_TOKEN_HERE"
+
+# Example format:
+"GITHUB_PERSONAL_ACCESS_TOKEN": "ghp_YOUR_TOKEN_HERE"
+```
+
+### 3. Anthropic API Key
+```bash
+# Get your API key
+1. Visit: https://console.anthropic.com/settings/keys
+2. Create new key
+3. Save securely
+
+# Add to environment
+export ANTHROPIC_API_KEY="sk-ant-api03-YOUR_KEY_HERE"
+
+# Example format:
+export ANTHROPIC_API_KEY="sk-ant-api03-YOUR_KEY_HERE"
+```
+
+### 4. OpenAI API Key (Optional)
+```bash
+# Get your API key
+1. Visit: https://platform.openai.com/api-keys
+2. Create new secret key
+3. Save securely
+
+# Add to environment
+export OPENAI_API_KEY="sk-proj-YOUR_KEY_HERE"
+
+# Example format:
+export OPENAI_API_KEY="sk-proj-YOUR_KEY_HERE"
+```
+
+---
+
+## Design Scraper Subagent
+
+### Step 1: Create Project Structure
+```bash
+# Create project directory
+mkdir -p ~/Desktop/design-scraper
+cd ~/Desktop/design-scraper
+
+# Initialize npm project
+npm init -y
+
+# Install dependencies
+npm install @anthropic-ai/sdk @modelcontextprotocol/sdk puppeteer cheerio
+npm install -D @types/node typescript tsx
+```
+
+### Step 2: Create Scraper Subagent Code
+```bash
+# Create the main scraper file
+touch design-scraper.ts
+```
+
+Add this code to `design-scraper.ts`:
+
+```typescript
+import { Anthropic } from '@anthropic-ai/sdk';
+import puppeteer from 'puppeteer';
+import * as cheerio from 'cheerio';
+import { Server } from '@modelcontextprotocol/sdk/server/index.js';
+import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
+
+// Initialize Anthropic client
+const anthropic = new Anthropic({
+  apiKey: process.env.ANTHROPIC_API_KEY || 'sk-ant-api03-YOUR_KEY_HERE',
+});
+
+// Initialize MCP server
+const server = new Server(
+  {
+    name: 'design-scraper',
+    version: '1.0.0',
+    description: 'Scrapes and analyzes website design systems'
+  },
+  {
+    capabilities: {
+      tools: {}
+    }
+  }
+);
+
+// Design extraction functions
+async function scrapeWebsite(url: string) {
+  const browser = await puppeteer.launch({ 
+    headless: 'new',
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  });
+  
+  try {
+    const page = await browser.newPage();
+    await page.goto(url, { waitUntil: 'networkidle2' });
+    
+    // Extract design tokens
+    const designSystem = await page.evaluate(() => {
+      // Get computed styles
+      const styles = window.getComputedStyle(document.documentElement);
+      
+      // Extract colors
+      const colors = {
+        primary: styles.getPropertyValue('--primary-color') || '#0080ff',
+        secondary: styles.getPropertyValue('--secondary-color') || '#04193f',
+        accent: styles.getPropertyValue('--accent-color') || '#ffd659',
+        background: styles.getPropertyValue('--bg-color') || '#05051a',
+        text: styles.getPropertyValue('--text-color') || '#ffffff'
+      };
+      
+      // Extract typography
+      const typography = {
+        headingFont: styles.fontFamily.split(',')[0]?.trim() || 'Manrope',
+        bodyFont: styles.fontFamily.split(',')[1]?.trim() || 'Plus Jakarta Sans',
+        baseFontSize: styles.fontSize || '16px',
+        lineHeight: styles.lineHeight || '1.6'
+      };
+      
+      // Extract spacing
+      const spacing = {
+        small: '8px',
+        medium: '16px',
+        large: '32px',
+        xlarge: '64px'
+      };
+      
+      return { colors, typography, spacing };
+    });
+    
+    // Get HTML structure
+    const html = await page.content();
+    const $ = cheerio.load(html);
+    
+    // Extract components
+    const components = {
+      buttons: [],
+      cards: [],
+      navigation: [],
+      forms: []
+    };
+    
+    // Find buttons
+    $('button, .button, .btn, [class*="button"]').each((_, el) => {
+      const $el = $(el);
+      components.buttons.push({
+        text: $el.text().trim(),
+        classes: $el.attr('class'),
+        styles: $el.attr('style')
+      });
+    });
+    
+    // Find cards
+    $('.card, [class*="card"]').each((_, el) => {
+      const $el = $(el);
+      components.cards.push({
+        classes: $el.attr('class'),
+        structure: $el.html()?.substring(0, 200)
+      });
+    });
+    
+    // Get screenshots
+    await page.screenshot({ path: 'full-page.png', fullPage: true });
+    await page.screenshot({ path: 'viewport.png' });
+    
+    return {
+      url,
+      designSystem,
+      components,
+      structure: {
+        title: $('title').text(),
+        headings: $('h1, h2, h3').map((_, el) => $(el).text()).get(),
+        navigation: $('nav').html()?.substring(0, 500),
+        footer: $('footer').html()?.substring(0, 500)
+      }
+    };
+  } finally {
+    await browser.close();
+  }
+}
+
+// Analyze design with Claude
+async function analyzeDesign(scrapedData: any) {
+  const message = await anthropic.messages.create({
+    model: 'claude-3-sonnet-20240229',
+    max_tokens: 4000,
+    messages: [{
+      role: 'user',
+      content: `Analyze this scraped design data and provide:
+      
+1. Design System Overview
+2. Color Palette Analysis  
+3. Typography Hierarchy
+4. Component Patterns
+5. Layout Structure
+6. Responsive Patterns
+7. Animation & Interactions
+8. Accessibility Considerations
+9. Performance Optimizations
+10. Implementation Recommendations
+
+Data: ${JSON.stringify(scrapedData, null, 2)}`
+    }]
+  });
+  
+  return message.content[0].text;
+}
+
+// Register MCP tools
+server.setRequestHandler('tools/list', async () => ({
+  tools: [
+    {
+      name: 'scrape_design',
+      description: 'Scrape and analyze website design system',
+      inputSchema: {
+        type: 'object',
+        properties: {
+          url: { type: 'string', description: 'Website URL to scrape' },
+          depth: { type: 'string', enum: ['surface', 'deep'], description: 'Analysis depth' }
+        },
+        required: ['url']
+      }
+    },
+    {
+      name: 'extract_components',
+      description: 'Extract specific UI components',
+      inputSchema: {
+        type: 'object',
+        properties: {
+          url: { type: 'string' },
+          componentType: { 
+            type: 'string', 
+            enum: ['buttons', 'cards', 'navigation', 'forms', 'all']
+          }
+        },
+        required: ['url', 'componentType']
+      }
+    }
+  ]
+}));
+
+server.setRequestHandler('tools/call', async (request) => {
+  const { name, arguments: args } = request.params;
+  
+  switch (name) {
+    case 'scrape_design':
+      const scrapedData = await scrapeWebsite(args.url);
+      const analysis = await analyzeDesign(scrapedData);
+      return {
+        content: [
+          {
+            type: 'text',
+            text: JSON.stringify({
+              scraped: scrapedData,
+              analysis: analysis
+            }, null, 2)
+          }
+        ]
+      };
+      
+    case 'extract_components':
+      const data = await scrapeWebsite(args.url);
+      return {
+        content: [
+          {
+            type: 'text',
+            text: JSON.stringify(data.components[args.componentType] || data.components, null, 2)
+          }
+        ]
+      };
+      
+    default:
+      throw new Error(`Unknown tool: ${name}`);
+  }
+});
+
+// Start the server
+async function main() {
+  const transport = new StdioServerTransport();
+  await server.connect(transport);
+  console.error('Design Scraper MCP server running');
+}
+
+main().catch(console.error);
+```
+
+### Step 3: Create Package Configuration
+```bash
+# Update package.json
+cat > package.json << 'EOF'
+{
+  "name": "design-scraper",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "tsx design-scraper.ts",
+    "build": "tsc",
+    "dev": "tsx watch design-scraper.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.24.0",
+    "@modelcontextprotocol/sdk": "^0.5.0",
+    "puppeteer": "^22.0.0",
+    "cheerio": "^1.0.0-rc.12"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "tsx": "^4.0.0"
+  }
+}
+EOF
+```
+
+### Step 4: Create TypeScript Configuration
+```bash
+cat > tsconfig.json << 'EOF'
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "outDir": "./dist",
+    "rootDir": "./",
+    "resolveJsonModule": true
+  },
+  "include": ["*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
+EOF
+```
+
+### Step 5: Register Scraper with MCP
+```bash
+# Add to ~/.claude/claude_desktop_config.json
+{
+  "mcpServers": {
+    "design-scraper": {
+      "command": "node",
+      "args": [
+        "/Users/michaelmishayev/Desktop/design-scraper/design-scraper.js"
+      ],
+      "env": {
+        "ANTHROPIC_API_KEY": "sk-ant-api03-YOUR_KEY_HERE"
+      }
+    }
+  }
+}
+```
+
+---
+
+## Testing
+
+### Test MCP Connection
+```bash
+# Install MCP inspector
+npm install -g @modelcontextprotocol/inspector
+
+# Run inspector
+mcp-inspector
+
+# Should show all configured servers
+```
+
+### Test Design Scraper
+```javascript
+// test-scraper.js
+const { exec } = require('child_process');
+
+// Test scraping
+exec('node design-scraper.js', (error, stdout, stderr) => {
+  if (error) {
+    console.error(`Error: ${error}`);
+    return;
+  }
+  console.log(`Output: ${stdout}`);
+});
+```
+
+### Test in Claude Desktop
+1. Open Claude Desktop
+2. Start new conversation
+3. Type: "Use the design-scraper tool to analyze https://example.com"
+4. Should see scraped design analysis
+
+---
+
+## Production
+
+### Deploy to Cloud
+
+#### Option 1: Vercel
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy
+vercel --prod
+
+# Add environment variables
+vercel env add ANTHROPIC_API_KEY
+vercel env add BRAVE_API_KEY
+```
+
+#### Option 2: Railway
+```bash
+# Install Railway CLI
+npm i -g @railway/cli
+
+# Login and deploy
+railway login
+railway init
+railway up
+
+# Add environment variables
+railway variables set ANTHROPIC_API_KEY=your_key
+railway variables set BRAVE_API_KEY=your_key
+```
+
+#### Option 3: Docker
+```dockerfile
+# Dockerfile
+FROM node:20-alpine
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci
+COPY . .
+EXPOSE 3000
+CMD ["npm", "start"]
+```
+
+```bash
+# Build and run
+docker build -t design-scraper .
+docker run -p 3000:3000 \
+  -e ANTHROPIC_API_KEY=your_key \
+  -e BRAVE_API_KEY=your_key \
+  design-scraper
+```
+
+### Security Best Practices
+
+#### 1. Use Environment Variables
+```bash
+# .env.local (never commit)
+ANTHROPIC_API_KEY=sk-ant-api03-real_key_here
+BRAVE_API_KEY=BSA_real_key_here
+GITHUB_TOKEN=ghp_real_token_here
+
+# Load in code
+require('dotenv').config({ path: '.env.local' });
+```
+
+#### 2. Use Secrets Manager
+```javascript
+// AWS Secrets Manager
+const AWS = require('aws-sdk');
+const client = new AWS.SecretsManager({ region: 'us-east-1' });
+
+async function getSecret(secretName) {
+  const data = await client.getSecretValue({ SecretId: secretName }).promise();
+  return JSON.parse(data.SecretString);
+}
+
+// Usage
+const keys = await getSecret('api-keys');
+const anthropicKey = keys.ANTHROPIC_API_KEY;
+```
+
+#### 3. Rate Limiting
+```javascript
+// Implement rate limiting
+const rateLimit = {
+  requests: 0,
+  resetTime: Date.now() + 60000,
+  maxRequests: 100
+};
+
+function checkRateLimit() {
+  if (Date.now() > rateLimit.resetTime) {
+    rateLimit.requests = 0;
+    rateLimit.resetTime = Date.now() + 60000;
+  }
+  
+  if (rateLimit.requests >= rateLimit.maxRequests) {
+    throw new Error('Rate limit exceeded');
+  }
+  
+  rateLimit.requests++;
+}
+```
+
+---
+
+## Troubleshooting
+
+### Common Issues
+
+#### MCP Server Not Connecting
+```bash
+# Check server status
+ps aux | grep mcp
+
+# Restart Claude Desktop
+pkill "Claude Desktop" && open -a "Claude Desktop"
+
+# Check logs
+tail -f ~/.claude/logs/mcp.log
+```
+
+#### API Key Issues
+```bash
+# Verify API key format
+echo $ANTHROPIC_API_KEY | grep "^sk-ant-api03-"
+
+# Test API key
+curl https://api.anthropic.com/v1/messages \
+  -H "x-api-key: $ANTHROPIC_API_KEY" \
+  -H "anthropic-version: 2023-06-01" \
+  -H "content-type: application/json" \
+  -d '{"model":"claude-3-haiku-20240307","max_tokens":10,"messages":[{"role":"user","content":"Hi"}]}'
+```
+
+#### Puppeteer Issues
+```bash
+# Install Chrome dependencies (Ubuntu/Debian)
+sudo apt-get install -y \
+  gconf-service libasound2 libatk1.0-0 libc6 libcairo2 \
+  libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 \
+  libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 \
+  libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 \
+  libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 \
+  libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 \
+  libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation \
+  libappindicator1 libnss3 lsb-release xdg-utils wget
+
+# macOS - Install Chrome
+brew install --cask google-chrome
+```
+
+---
+
+## Quick Start Script
+
+Save this as `install.sh`:
+
+```bash
+#!/bin/bash
+
+echo "🚀 Installing Design Scraper Subagent..."
+
+# Create directories
+mkdir -p ~/.claude
+mkdir -p ~/Desktop/design-scraper
+
+# Create MCP config
+cat > ~/.claude/claude_desktop_config.json << 'EOF'
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "$HOME/Desktop"],
+      "env": { "NPX_CACHE": "/tmp/.npx" }
+    },
+    "web-search": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-brave-search"],
+      "env": { "BRAVE_API_KEY": "YOUR_BRAVE_API_KEY_HERE" }
+    },
+    "design-scraper": {
+      "command": "tsx",
+      "args": ["$HOME/Desktop/design-scraper/design-scraper.ts"],
+      "env": { "ANTHROPIC_API_KEY": "sk-ant-api03-YOUR_KEY_HERE" }
+    }
+  }
+}
+EOF
+
+# Setup design scraper
+cd ~/Desktop/design-scraper
+npm init -y
+npm install @anthropic-ai/sdk @modelcontextprotocol/sdk puppeteer cheerio
+npm install -D @types/node typescript tsx
+
+# Create scraper file
+curl -o design-scraper.ts https://raw.githubusercontent.com/your-repo/design-scraper/main/design-scraper.ts
+
+echo "✅ Installation complete!"
+echo "📝 Next steps:"
+echo "1. Add your ANTHROPIC_API_KEY to ~/.claude/claude_desktop_config.json"
+echo "2. Restart Claude Desktop"
+echo "3. Test with: 'Use design-scraper to analyze a website'"
+```
+
+Run installation:
+```bash
+chmod +x install.sh
+./install.sh
+```
+
+---
+
+## Support & Resources
+
+- **MCP Documentation**: https://modelcontextprotocol.io
+- **Anthropic API**: https://docs.anthropic.com
+- **Brave Search API**: https://api.search.brave.com/app/documentation
+- **GitHub Issues**: https://github.com/anthropics/claude-code/issues
+
+---
+
+*Created with ❤️ for AI Studio Platform*
