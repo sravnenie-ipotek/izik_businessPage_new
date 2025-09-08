@@ -17,6 +17,36 @@
             brandOrange: '#fc5a2b',
           },
           fontFamily: {
+            // Oswald is the closest free alternative to Knockout (condensed, bold)
+            'knockout': ['Oswald', 'Arial Narrow', 'Impact', 'sans-serif'],
+            // Barlow Condensed as secondary heading font
+            'knockout-alt': ['Barlow Condensed', 'Arial Narrow', 'sans-serif'],
+            // Montserrat is closest to Gotham Medium
+            'gotham': ['Montserrat', 'Helvetica Neue', 'Arial', 'sans-serif'],
+            // For navigation (Gotham Book equivalent)
+            'gotham-book': ['Nunito Sans', 'Helvetica', 'Arial', 'sans-serif'],
+          },
+          fontSize: {
+            'heading-xl': ['72px', '1'],
+            'heading-lg': ['48px', '1.1'],
+            'heading-md': ['36px', '1.2'],
+            'heading-sm': ['24px', '1.2'],
+            'heading-xs': ['18px', '1.3'],
+            'body-sm': ['14px', '1.7'],
+            'body-xs': ['12px', '1.5'],
+          },
+          letterSpacing: {
+            'knockout': '0.02em',
+            'gotham': '0.01em',
+          },
+          fontWeight: {
+            'knockout': '700',
+            'gotham': '500',
+          }
+        }
+      }
+    },
+          fontFamily: {
             heading: ['Bebas Neue', 'Impact', 'sans-serif'],
             body: ['Inter', 'system-ui', 'sans-serif'],
           },
@@ -41,20 +71,41 @@
       }
     }
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body { font-size: 14px; line-height: 1.7; }
     .text-stroke { -webkit-text-stroke: 2px currentColor; -webkit-text-fill-color: transparent; }
   </style>
+
+  <style>
+    body { 
+      font-size: 14px; 
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    /* Make headings more like Knockout */
+    .font-knockout, h1, h2, h3, h4 {
+      font-stretch: condensed;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+    /* Body text like Gotham */
+    .font-gotham {
+      letter-spacing: 0.01em;
+    }
+  </style>
 </head>
-<body class="font-body text-body-sm">
+<body class="font-gotham text-body-sm">
   
   <!-- Hero Section - 900px height with black transparent bg -->
   <header class="relative h-hero bg-transparent overflow-hidden">
     <!-- Navigation overlay -->
     <nav class="absolute top-0 left-0 right-0 z-50 px-8 py-6">
       <div class="flex justify-between items-center">
-        <div class="font-heading text-[24px] uppercase text-brandBg">Normand</div>
+        <div class="font-knockout text-[24px] uppercase text-brandBg">Normand</div>
         <div class="hidden lg:flex items-center space-x-8">
           <a href="/" class="text-brandGray hover:text-brandOrange transition-colors text-body-sm">HOME</a>
           <a href="/class-action" class="text-brandGray hover:text-brandOrange transition-colors text-body-sm">CLASS ACTION</a>
@@ -67,7 +118,7 @@
     <!-- Hero content -->
     <div class="h-full flex items-center justify-center px-8">
       <div class="text-center">
-        <h1 class="font-heading text-hero-sm md:text-hero-md lg:text-hero-lg xl:text-hero-xl uppercase text-brandBg">
+        <h1 class="font-knockout text-hero-sm md:text-hero-md lg:text-hero-lg xl:text-hero-xl uppercase text-brandBg">
           We Are<br/>
           <span class="text-brandOrange">Results</span><br/>
           <span class="text-stroke">Confidence</span><br/>
@@ -86,7 +137,7 @@
   <section class="relative bg-brandBg text-white h-hero">
     <div class="h-full flex items-center justify-center px-8">
       <div class="text-center max-w-6xl">
-        <h2 class="font-heading text-hero-sm md:text-hero-md lg:text-hero-lg uppercase mb-8">
+        <h2 class="font-knockout text-hero-sm md:text-hero-md lg:text-hero-lg uppercase mb-8">
           We Are<br/>
           <span class="text-brandOrange">Strategy</span>
         </h2>
@@ -104,17 +155,17 @@
       <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         <div class="text-center">
           <div class="h-32 bg-brandLightGray mb-4"></div>
-          <h3 class="font-heading text-2xl uppercase mb-2">Privacy<br/>Class Action</h3>
+          <h3 class="font-knockout text-2xl uppercase mb-2">Privacy<br/>Class Action</h3>
           <a href="/class-action/privacy" class="text-brandOrange hover:underline text-body-sm">Learn More →</a>
         </div>
         <div class="text-center">
           <div class="h-32 bg-brandLightGray mb-4"></div>
-          <h3 class="font-heading text-2xl uppercase mb-2">Consumer Protection<br/>Class Action</h3>
+          <h3 class="font-knockout text-2xl uppercase mb-2">Consumer Protection<br/>Class Action</h3>
           <a href="/class-action/consumer-protection" class="text-brandOrange hover:underline text-body-sm">Learn More →</a>
         </div>
         <div class="text-center">
           <div class="h-32 bg-brandLightGray mb-4"></div>
-          <h3 class="font-heading text-2xl uppercase mb-2">Insurance<br/>Class Action</h3>
+          <h3 class="font-knockout text-2xl uppercase mb-2">Insurance<br/>Class Action</h3>
           <a href="/class-action/insurance" class="text-brandOrange hover:underline text-body-sm">Learn More →</a>
         </div>
       </div>
@@ -125,7 +176,7 @@
   <section class="bg-brandOrange text-white py-section-lg" style="min-height: 1280px;">
     <div class="px-8">
       <div class="text-center mb-16">
-        <h2 class="font-heading text-hero-sm md:text-hero-md uppercase">
+        <h2 class="font-knockout text-hero-sm md:text-hero-md uppercase">
           We Are<br/>Success
         </h2>
       </div>
@@ -145,7 +196,7 @@
   <!-- Team section - white bg -->
   <section class="bg-white py-section-xl">
     <div class="px-8">
-      <h2 class="font-heading text-hero-sm md:text-hero-md uppercase text-center mb-16">
+      <h2 class="font-knockout text-hero-sm md:text-hero-md uppercase text-center mb-16">
         We Are<br/>Experienced
       </h2>
       
@@ -155,7 +206,7 @@
           <div class="h-96 bg-brandLightGray"></div>
           <div>
             <p class="text-brandOrange text-body-sm uppercase mb-2">Founder</p>
-            <h3 class="font-heading text-4xl uppercase mb-4">Edmund Normand</h3>
+            <h3 class="font-knockout text-4xl uppercase mb-4">Edmund Normand</h3>
             <p class="text-body-sm text-gray-600 mb-4">Placeholder bio text for team member.</p>
             <a href="/our-team/edmund-normand" class="text-brandOrange hover:underline text-body-sm">View Profile →</a>
           </div>
@@ -166,19 +217,19 @@
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
         <div class="text-center">
           <div class="h-48 bg-brandLightGray mb-4"></div>
-          <h4 class="font-heading text-xl uppercase">Team Member</h4>
+          <h4 class="font-knockout text-xl uppercase">Team Member</h4>
         </div>
         <div class="text-center">
           <div class="h-48 bg-brandLightGray mb-4"></div>
-          <h4 class="font-heading text-xl uppercase">Team Member</h4>
+          <h4 class="font-knockout text-xl uppercase">Team Member</h4>
         </div>
         <div class="text-center">
           <div class="h-48 bg-brandLightGray mb-4"></div>
-          <h4 class="font-heading text-xl uppercase">Team Member</h4>
+          <h4 class="font-knockout text-xl uppercase">Team Member</h4>
         </div>
         <div class="text-center">
           <div class="h-48 bg-brandLightGray mb-4"></div>
-          <h4 class="font-heading text-xl uppercase">Team Member</h4>
+          <h4 class="font-knockout text-xl uppercase">Team Member</h4>
         </div>
       </div>
     </div>
@@ -191,13 +242,13 @@
         <div class="grid md:grid-cols-2 gap-8">
           <article>
             <div class="h-64 bg-white mb-4"></div>
-            <h3 class="font-heading text-2xl uppercase mb-2">Data Breach Article</h3>
+            <h3 class="font-knockout text-2xl uppercase mb-2">Data Breach Article</h3>
             <p class="text-body-sm text-gray-600 mb-4">Placeholder article excerpt about recent data breach case.</p>
             <a href="#" class="text-brandOrange hover:underline text-body-sm">Read More →</a>
           </article>
           <article>
             <div class="h-64 bg-white mb-4"></div>
-            <h3 class="font-heading text-2xl uppercase mb-2">Legal Update</h3>
+            <h3 class="font-knockout text-2xl uppercase mb-2">Legal Update</h3>
             <p class="text-body-sm text-gray-600 mb-4">Placeholder article excerpt about legal developments.</p>
             <a href="#" class="text-brandOrange hover:underline text-body-sm">Read More →</a>
           </article>
@@ -215,7 +266,7 @@
   <section class="bg-brandOrange text-white py-section-xl" style="min-height: 1024px;">
     <div class="px-8">
       <div class="max-w-6xl mx-auto">
-        <h2 class="font-heading text-hero-sm md:text-hero-md uppercase text-center mb-16">
+        <h2 class="font-knockout text-hero-sm md:text-hero-md uppercase text-center mb-16">
           We Are<br/>Ready
         </h2>
         
@@ -230,7 +281,7 @@
               <input type="email" placeholder="Email" class="w-full h-[45px] px-4 bg-transparent border border-white/50 text-white placeholder-white/70 focus:border-white focus:outline-none text-body-sm">
               <input type="tel" placeholder="Phone" class="w-full h-[45px] px-4 bg-transparent border border-white/50 text-white placeholder-white/70 focus:border-white focus:outline-none text-body-sm">
               <textarea placeholder="How can we help?" rows="4" class="w-full px-4 py-3 bg-transparent border border-white/50 text-white placeholder-white/70 focus:border-white focus:outline-none resize-none text-body-sm"></textarea>
-              <button type="submit" class="h-[45px] px-10 bg-white text-brandOrange font-body uppercase tracking-wider hover:bg-white/90 transition-all text-body-sm">
+              <button type="submit" class="h-[45px] px-10 bg-white text-brandOrange font-gotham uppercase tracking-wider hover:bg-white/90 transition-all text-body-sm">
                 Submit
               </button>
             </form>
@@ -239,7 +290,7 @@
           <!-- Contact Info -->
           <div class="space-y-8">
             <div>
-              <h3 class="font-heading text-2xl uppercase mb-4">Office</h3>
+              <h3 class="font-knockout text-2xl uppercase mb-4">Office</h3>
               <p class="text-body-sm">
                 123 Main Street<br/>
                 Suite 100<br/>
@@ -249,7 +300,7 @@
             </div>
             
             <div>
-              <h3 class="font-heading text-2xl uppercase mb-4">Contact</h3>
+              <h3 class="font-knockout text-2xl uppercase mb-4">Contact</h3>
               <p class="text-body-sm">
                 <a href="tel:4076036031" class="text-white hover:underline">(407) 603-6031</a><br/>
                 <a href="tel:8889742175" class="text-white hover:underline">(888) 974-2175</a><br/>
@@ -266,7 +317,7 @@
   <footer class="bg-brandBg text-white py-6">
     <div class="px-8">
       <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
-        <p class="text-body-sm text-brandGray">© 2024 Normand PLLC. All rights reserved.</p>
+  <p class="text-body-sm text-brandGray">Created by AiStudio555</p>
         <div class="flex space-x-6 mt-4 md:mt-0">
           <a href="/privacy-policy" class="text-brandGray hover:text-white text-body-sm">Privacy Policy</a>
           <a href="/disclaimer" class="text-brandGray hover:text-white text-body-sm">Disclaimer</a>

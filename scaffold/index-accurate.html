@@ -17,6 +17,36 @@
             brandOrange: '#fc5a2b',
           },
           fontFamily: {
+            // Oswald is the closest free alternative to Knockout (condensed, bold)
+            'knockout': ['Oswald', 'Arial Narrow', 'Impact', 'sans-serif'],
+            // Barlow Condensed as secondary heading font
+            'knockout-alt': ['Barlow Condensed', 'Arial Narrow', 'sans-serif'],
+            // Montserrat is closest to Gotham Medium
+            'gotham': ['Montserrat', 'Helvetica Neue', 'Arial', 'sans-serif'],
+            // For navigation (Gotham Book equivalent)
+            'gotham-book': ['Nunito Sans', 'Helvetica', 'Arial', 'sans-serif'],
+          },
+          fontSize: {
+            'heading-xl': ['72px', '1'],
+            'heading-lg': ['48px', '1.1'],
+            'heading-md': ['36px', '1.2'],
+            'heading-sm': ['24px', '1.2'],
+            'heading-xs': ['18px', '1.3'],
+            'body-sm': ['14px', '1.7'],
+            'body-xs': ['12px', '1.5'],
+          },
+          letterSpacing: {
+            'knockout': '0.02em',
+            'gotham': '0.01em',
+          },
+          fontWeight: {
+            'knockout': '700',
+            'gotham': '500',
+          }
+        }
+      }
+    },
+          fontFamily: {
             heading: ['Bebas Neue', 'Impact', 'sans-serif'],
             body: ['Inter', 'system-ui', 'sans-serif'],
           },
@@ -34,17 +64,38 @@
       }
     }
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body { font-size: 14px; line-height: 1.7; }
   </style>
+
+  <style>
+    body { 
+      font-size: 14px; 
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    /* Make headings more like Knockout */
+    .font-knockout, h1, h2, h3, h4 {
+      font-stretch: condensed;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+    /* Body text like Gotham */
+    .font-gotham {
+      letter-spacing: 0.01em;
+    }
+  </style>
 </head>
-<body class="font-body text-body-sm">
+<body class="font-gotham text-body-sm">
   
   <!-- Top Navigation -->
   <nav class="absolute top-0 left-0 right-0 z-50 px-8 py-6">
     <div class="flex justify-between items-center">
-      <div class="font-heading text-[24px] uppercase text-brandBg">Normand</div>
+      <div class="font-knockout text-[24px] uppercase text-brandBg">Normand</div>
       <div class="hidden lg:flex items-center space-x-8">
         <a href="/" class="text-brandGray hover:text-brandOrange transition-colors text-body-sm uppercase">Home</a>
         <a href="/class-action" class="text-brandGray hover:text-brandOrange transition-colors text-body-sm uppercase">Class Action</a>
@@ -58,7 +109,7 @@
   <section class="bg-brandOrange text-white pt-24 pb-20">
     <div class="px-8">
       <div class="max-w-6xl mx-auto">
-        <h1 class="font-heading text-hero-sm md:text-hero-md uppercase mb-12">
+        <h1 class="font-knockout text-hero-sm md:text-hero-md uppercase mb-12">
           We Are Class Action
         </h1>
         
@@ -73,21 +124,21 @@
         <div class="grid md:grid-cols-3 gap-8 mt-16">
           <div class="bg-white/10 p-8">
             <div class="h-32 bg-white/20 mb-6"></div>
-            <h3 class="font-heading text-2xl uppercase mb-4">Privacy Class<br/>Action</h3>
+            <h3 class="font-knockout text-2xl uppercase mb-4">Privacy Class<br/>Action</h3>
             <p class="text-body-sm mb-4">Protecting consumer privacy rights and data security</p>
             <a href="#" class="inline-block px-6 py-2 bg-white text-brandOrange text-body-sm uppercase">Learn More</a>
           </div>
           
           <div class="bg-white/10 p-8">
             <div class="h-32 bg-white/20 mb-6"></div>
-            <h3 class="font-heading text-2xl uppercase mb-4">Consumer Protection<br/>Class Action</h3>
+            <h3 class="font-knockout text-2xl uppercase mb-4">Consumer Protection<br/>Class Action</h3>
             <p class="text-body-sm mb-4">Fighting unfair and deceptive business practices</p>
             <a href="#" class="inline-block px-6 py-2 bg-white text-brandOrange text-body-sm uppercase">Learn More</a>
           </div>
           
           <div class="bg-white/10 p-8">
             <div class="h-32 bg-white/20 mb-6"></div>
-            <h3 class="font-heading text-2xl uppercase mb-4">Insurance<br/>Class Action</h3>
+            <h3 class="font-knockout text-2xl uppercase mb-4">Insurance<br/>Class Action</h3>
             <p class="text-body-sm mb-4">Holding insurers accountable for coverage denials</p>
             <a href="#" class="inline-block px-6 py-2 bg-white text-brandOrange text-body-sm uppercase">Learn More</a>
           </div>
@@ -102,7 +153,7 @@
       <div class="max-w-6xl mx-auto">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 class="font-heading text-hero-sm md:text-hero-md uppercase mb-8">
+            <h2 class="font-knockout text-hero-sm md:text-hero-md uppercase mb-8">
               We Are<br/>Strategy
             </h2>
             <div class="space-y-4 text-body-sm text-gray-600">
@@ -141,7 +192,7 @@
   <section class="bg-brandOrange text-white py-32">
     <div class="px-8">
       <div class="max-w-6xl mx-auto">
-        <h2 class="font-heading text-hero-sm md:text-hero-md uppercase text-center mb-16">
+        <h2 class="font-knockout text-hero-sm md:text-hero-md uppercase text-center mb-16">
           We Are<br/>Success
         </h2>
         
@@ -156,7 +207,7 @@
             <div class="flex items-start mb-4">
               <div class="w-16 h-16 bg-white/20 rounded-full mr-4"></div>
               <div>
-                <h4 class="font-heading text-xl uppercase">Arthur Miller</h4>
+                <h4 class="font-knockout text-xl uppercase">Arthur Miller</h4>
                 <p class="text-body-sm opacity-80">Class Action Plaintiff</p>
               </div>
             </div>
@@ -170,7 +221,7 @@
             <div class="flex items-start mb-4">
               <div class="w-16 h-16 bg-white/20 rounded-full mr-4"></div>
               <div>
-                <h4 class="font-heading text-xl uppercase">Sean Domnick</h4>
+                <h4 class="font-knockout text-xl uppercase">Sean Domnick</h4>
                 <p class="text-body-sm opacity-80">Consumer Rights Advocate</p>
               </div>
             </div>
@@ -188,7 +239,7 @@
   <section class="bg-white py-32">
     <div class="px-8">
       <div class="max-w-6xl mx-auto">
-        <h2 class="font-heading text-hero-sm md:text-hero-md uppercase text-center mb-16">
+        <h2 class="font-knockout text-hero-sm md:text-hero-md uppercase text-center mb-16">
           We Are<br/>Experienced
         </h2>
         
@@ -197,7 +248,7 @@
           <div class="h-96 bg-brandLightGray"></div>
           <div>
             <p class="text-brandOrange text-body-sm uppercase mb-2">Founder</p>
-            <h3 class="font-heading text-4xl uppercase mb-4">Edmund Normand</h3>
+            <h3 class="font-knockout text-4xl uppercase mb-4">Edmund Normand</h3>
             <p class="text-body-sm text-gray-600 mb-6">
               Edmund Normand has dedicated his career to fighting for consumer rights 
               and holding corporations accountable. With over 15 years of experience 
@@ -211,22 +262,22 @@
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div class="text-center">
             <div class="h-48 bg-brandLightGray mb-4"></div>
-            <h4 class="font-heading text-xl uppercase">Alex<br/>Couch</h4>
+            <h4 class="font-knockout text-xl uppercase">Alex<br/>Couch</h4>
             <p class="text-body-sm text-gray-600">Senior Attorney</p>
           </div>
           <div class="text-center">
             <div class="h-48 bg-brandLightGray mb-4"></div>
-            <h4 class="font-heading text-xl uppercase">Christopher<br/>Hudon</h4>
+            <h4 class="font-knockout text-xl uppercase">Christopher<br/>Hudon</h4>
             <p class="text-body-sm text-gray-600">Associate</p>
           </div>
           <div class="text-center">
             <div class="h-48 bg-brandLightGray mb-4"></div>
-            <h4 class="font-heading text-xl uppercase">Amy<br/>Judkins</h4>
+            <h4 class="font-knockout text-xl uppercase">Amy<br/>Judkins</h4>
             <p class="text-body-sm text-gray-600">Paralegal</p>
           </div>
           <div class="text-center">
             <div class="h-48 bg-brandLightGray mb-4"></div>
-            <h4 class="font-heading text-xl uppercase">Janna<br/>Sherwood</h4>
+            <h4 class="font-knockout text-xl uppercase">Janna<br/>Sherwood</h4>
             <p class="text-body-sm text-gray-600">Case Manager</p>
           </div>
         </div>
@@ -238,12 +289,12 @@
   <section class="bg-brandLightGray py-32">
     <div class="px-8">
       <div class="max-w-6xl mx-auto">
-        <h2 class="font-heading text-4xl uppercase mb-12">Latest News & Articles</h2>
+        <h2 class="font-knockout text-4xl uppercase mb-12">Latest News & Articles</h2>
         
         <div class="grid md:grid-cols-2 gap-8">
           <article class="bg-white p-8">
             <div class="h-48 bg-brandLightGray mb-6"></div>
-            <h3 class="font-heading text-2xl uppercase mb-4">
+            <h3 class="font-knockout text-2xl uppercase mb-4">
               John Richard Collection<br/>Data Breach
             </h3>
             <p class="text-body-sm text-gray-600 mb-4">
@@ -255,7 +306,7 @@
           
           <article class="bg-white p-8">
             <div class="h-48 bg-brandLightGray mb-6"></div>
-            <h3 class="font-heading text-2xl uppercase mb-4">
+            <h3 class="font-knockout text-2xl uppercase mb-4">
               Fidelity National Information<br/>Services Data Breach Impacts
             </h3>
             <p class="text-body-sm text-gray-600 mb-4">
@@ -279,14 +330,14 @@
   <section class="bg-brandOrange text-white py-32">
     <div class="px-8">
       <div class="max-w-6xl mx-auto">
-        <h2 class="font-heading text-hero-sm md:text-hero-md uppercase text-center mb-16">
+        <h2 class="font-knockout text-hero-sm md:text-hero-md uppercase text-center mb-16">
           We Are<br/>Ready
         </h2>
         
         <div class="grid lg:grid-cols-2 gap-12">
           <!-- Contact Form -->
           <div>
-            <h3 class="font-heading text-2xl uppercase mb-6">Get In Touch</h3>
+            <h3 class="font-knockout text-2xl uppercase mb-6">Get In Touch</h3>
             <form class="space-y-4">
               <div class="grid md:grid-cols-2 gap-4">
                 <input type="text" placeholder="First Name" 
@@ -301,7 +352,7 @@
               <textarea placeholder="How can we help?" rows="6" 
                 class="w-full px-4 py-3 bg-transparent border border-white/50 text-white placeholder-white/70 focus:border-white focus:outline-none resize-none text-body-sm"></textarea>
               <button type="submit" 
-                class="px-8 py-3 bg-white text-brandOrange font-body uppercase hover:bg-white/90 transition-all text-body-sm">
+                class="px-8 py-3 bg-white text-brandOrange font-gotham uppercase hover:bg-white/90 transition-all text-body-sm">
                 Submit Message
               </button>
             </form>
@@ -309,10 +360,10 @@
           
           <!-- Contact Info -->
           <div>
-            <h3 class="font-heading text-2xl uppercase mb-6">Contact Information</h3>
+            <h3 class="font-knockout text-2xl uppercase mb-6">Contact Information</h3>
             <div class="space-y-8">
               <div>
-                <h4 class="font-heading text-xl uppercase mb-2">Office</h4>
+                <h4 class="font-knockout text-xl uppercase mb-2">Office</h4>
                 <p class="text-body-sm">
                   123 Main Street, Suite 100<br/>
                   Orlando, FL 32801
@@ -321,7 +372,7 @@
               </div>
               
               <div>
-                <h4 class="font-heading text-xl uppercase mb-2">Phone</h4>
+                <h4 class="font-knockout text-xl uppercase mb-2">Phone</h4>
                 <p class="text-body-sm">
                   <a href="tel:4076036031" class="text-white hover:underline">(407) 603-6031</a><br/>
                   <a href="tel:8889742175" class="text-white hover:underline">(888) 974-2175</a>
@@ -329,7 +380,7 @@
               </div>
               
               <div>
-                <h4 class="font-heading text-xl uppercase mb-2">Email</h4>
+                <h4 class="font-knockout text-xl uppercase mb-2">Email</h4>
                 <p class="text-body-sm">
                   <a href="mailto:office@normandpllc.com" class="text-white hover:underline">office@normandpllc.com</a>
                 </p>
@@ -346,7 +397,7 @@
     <div class="px-8">
       <div class="max-w-6xl mx-auto">
         <div class="flex flex-col md:flex-row justify-between items-center">
-          <p class="text-body-sm text-brandGray">© 2024 Normand PLLC. All rights reserved.</p>
+          <p class="text-body-sm text-brandGray">Created by AiStudio555</p>
           <div class="flex space-x-6 mt-4 md:mt-0">
             <a href="#" class="text-brandGray hover:text-white text-body-sm">Privacy Policy</a>
             <a href="#" class="text-brandGray hover:text-white text-body-sm">Disclaimer</a>

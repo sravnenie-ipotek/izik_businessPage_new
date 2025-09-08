@@ -12,8 +12,40 @@
           colors: {
             brandBg: '#010101',
             brandText: '#ffffff',
+            brandGray: '#b3b3b3',
+            brandLightGray: '#f2f2f2',
             brandOrange: '#fc5a2b',
           },
+          fontFamily: {
+            // Oswald is the closest free alternative to Knockout (condensed, bold)
+            'knockout': ['Oswald', 'Arial Narrow', 'Impact', 'sans-serif'],
+            // Barlow Condensed as secondary heading font
+            'knockout-alt': ['Barlow Condensed', 'Arial Narrow', 'sans-serif'],
+            // Montserrat is closest to Gotham Medium
+            'gotham': ['Montserrat', 'Helvetica Neue', 'Arial', 'sans-serif'],
+            // For navigation (Gotham Book equivalent)
+            'gotham-book': ['Nunito Sans', 'Helvetica', 'Arial', 'sans-serif'],
+          },
+          fontSize: {
+            'heading-xl': ['72px', '1'],
+            'heading-lg': ['48px', '1.1'],
+            'heading-md': ['36px', '1.2'],
+            'heading-sm': ['24px', '1.2'],
+            'heading-xs': ['18px', '1.3'],
+            'body-sm': ['14px', '1.7'],
+            'body-xs': ['12px', '1.5'],
+          },
+          letterSpacing: {
+            'knockout': '0.02em',
+            'gotham': '0.01em',
+          },
+          fontWeight: {
+            'knockout': '700',
+            'gotham': '500',
+          }
+        }
+      }
+    },
           fontFamily: {
             heading: ['Bebas Neue', 'Impact', 'sans-serif'],
             body: ['Inter', 'Roboto', 'sans-serif'],
@@ -22,6 +54,25 @@
       }
     }
   </script>
+
+  <style>
+    body { 
+      font-size: 14px; 
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    /* Make headings more like Knockout */
+    .font-knockout, h1, h2, h3, h4 {
+      font-stretch: condensed;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+    /* Body text like Gotham */
+    .font-gotham {
+      letter-spacing: 0.01em;
+    }
+  </style>
 </head>
 <body>
   <!-- Hero Section with extracted tokens -->
@@ -29,7 +80,7 @@
     <!-- Navigation Bar -->
     <nav class="absolute top-0 left-0 right-0 z-50 px-8 py-6">
       <div class="max-w-[1440px] mx-auto flex justify-between items-center">
-        <div class="text-2xl font-heading uppercase tracking-wideSm">Logo</div>
+        <div class="text-2xl font-knockout uppercase tracking-wideSm">Logo</div>
         <button class="lg:hidden">
           <span class="block w-6 h-0.5 bg-brandBg mb-1"></span>
           <span class="block w-6 h-0.5 bg-brandBg mb-1"></span>
@@ -50,18 +101,18 @@
         <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
           <!-- Left Column - Text -->
           <div class="animate-slideInUp">
-            <h1 class="font-heading text-[60px] md:text-[100px] lg:text-[140px] leading-[1.1] uppercase tracking-tightSm text-brandBg">
+            <h1 class="font-knockout text-[60px] md:text-[100px] lg:text-[140px] leading-[1.1] uppercase tracking-tightSm text-brandBg">
               Placeholder<br/>
               <span class="text-brandOrange">Heading</span>
             </h1>
-            <p class="mt-6 text-lg font-body leading-[1.7] text-gray-700 max-w-md">
+            <p class="mt-6 text-lg font-gotham leading-[1.7] text-gray-700 max-w-md">
               Placeholder body text demonstrating the typography system with proper line height and letter spacing.
             </p>
             <div class="mt-8 flex flex-col sm:flex-row gap-4">
-              <a href="#" class="inline-block px-8 py-3 bg-brandOrange text-white font-body uppercase tracking-wideSm hover:bg-opacity-90 transition-all">
+              <a href="#" class="inline-block px-8 py-3 bg-brandOrange text-white font-gotham uppercase tracking-wideSm hover:bg-opacity-90 transition-all">
                 Get Started
               </a>
-              <a href="#" class="inline-block px-8 py-3 border border-brandBg text-brandBg font-body uppercase tracking-wideSm hover:bg-brandBg hover:text-white transition-all">
+              <a href="#" class="inline-block px-8 py-3 border border-brandBg text-brandBg font-gotham uppercase tracking-wideSm hover:bg-brandBg hover:text-white transition-all">
                 Learn More
               </a>
             </div>
@@ -71,7 +122,7 @@
           <div class="hidden lg:block relative">
             <div class="absolute inset-0 bg-gradient-to-br from-brandOrange to-brandBg opacity-10 rounded-full blur-3xl"></div>
             <div class="relative bg-gray-100 aspect-square rounded-lg flex items-center justify-center">
-              <span class="text-gray-400 font-body">Visual Placeholder</span>
+              <span class="text-gray-400 font-gotham">Visual Placeholder</span>
             </div>
           </div>
         </div>
@@ -80,7 +131,7 @@
 
     <!-- Optional Rotated Menu Label (if exists in tokens) -->
     <div class="hidden lg:block absolute left-8 top-1/2 -translate-y-1/2 -rotate-90 origin-center">
-      <span class="font-heading text-sm uppercase tracking-[0.2em] text-gray-400">Menu</span>
+      <span class="font-knockout text-sm uppercase tracking-[0.2em] text-gray-400">Menu</span>
     </div>
   </section>
 </body>

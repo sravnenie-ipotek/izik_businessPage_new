@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Font Configuration Update</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandBg: '#010101',
+            brandText: '#ffffff',
+            brandGray: '#b3b3b3',
+            brandLightGray: '#f2f2f2',
+            brandOrange: '#fc5a2b',
+          },
+          fontFamily: {
+            // Knockout alternatives for headings
+            'heading-primary': ['Oswald', 'Arial Narrow', 'sans-serif'],
+            'heading-condensed': ['Barlow Condensed', 'Arial Narrow', 'sans-serif'],
+            // Gotham alternatives for body text
+            'body-primary': ['Montserrat', 'Helvetica Neue', 'sans-serif'],
+            'body-book': ['Nunito Sans', 'Helvetica', 'sans-serif'],
+          },
+          fontSize: {
+            'heading-xl': ['72px', '1'],
+            'heading-lg': ['48px', '1.1'],
+            'heading-md': ['36px', '1.2'],
+            'heading-sm': ['24px', '1.2'],
+            'heading-xs': ['18px', '1.3'],
+            'body-sm': ['14px', '1.7'],
+            'body-xs': ['12px', '1.5'],
+          },
+          letterSpacing: {
+            'heading': '0.05em',
+            'body': '0.01em',
+          },
+          fontWeight: {
+            'heading': '700',
+            'body': '500',
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Better font alternatives that match the feel of Knockout and Gotham -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { 
+      font-size: 14px; 
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    /* Heading styles to match Knockout */
+    .font-heading-primary {
+      font-stretch: condensed;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+    /* Make Oswald more condensed like Knockout */
+    h1, h2, h3, h4 {
+      font-stretch: condensed;
+    }
+  </style>
+</head>
+<body class="font-body-primary text-body-sm bg-white">
+  
+  <!-- Navigation - Black text on transparent -->
+  <nav class="absolute top-0 left-0 right-0 z-50 px-6 py-4 bg-white/90">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="font-heading-primary text-[20px] tracking-wider text-brandBg uppercase font-bold">NORMAND</div>
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="#" class="font-body-book text-brandBg text-xs uppercase tracking-wider hover:text-brandOrange">Home</a>
+        <a href="#" class="font-body-book text-brandBg text-xs uppercase tracking-wider hover:text-brandOrange">Class Action</a>
+        <a href="#" class="font-body-book text-brandBg text-xs uppercase tracking-wider hover:text-brandOrange">Our Team</a>
+        <a href="#" class="font-body-book text-brandBg text-xs uppercase tracking-wider hover:text-brandOrange">Contact</a>
+        <a href="#" class="font-body-book text-brandBg text-xs uppercase tracking-wider hover:text-brandOrange">News</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section with updated fonts -->
+  <section class="relative bg-brandOrange text-white pt-24 pb-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <h1 class="font-heading-condensed text-heading-xl uppercase font-bold tracking-tight">WE ARE CLASS ACTION</h1>
+      <p class="font-body-primary text-lg mt-4 max-w-2xl">Consumer protection attorneys advocating for your rights</p>
+    </div>
+  </section>
+
+  <!-- Sample content sections -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="font-heading-primary text-heading-lg uppercase font-bold mb-8">Our Strategy</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="font-heading-condensed text-heading-md uppercase font-semibold mb-4">Privacy Protection</h3>
+          <p class="font-body-primary text-body-sm">We protect your personal information and fight against data breaches.</p>
+        </div>
+        <div>
+          <h3 class="font-heading-condensed text-heading-md uppercase font-semibold mb-4">Consumer Rights</h3>
+          <p class="font-body-primary text-body-sm">Standing up for consumers against unfair business practices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team section -->
+  <section class="py-16 bg-brandLightGray">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="font-heading-primary text-heading-lg uppercase font-bold mb-8">Our Team</h2>
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="text-center">
+          <div class="bg-gray-300 h-48 mb-4"></div>
+          <h4 class="font-heading-condensed text-heading-sm uppercase font-semibold">Edmund Normand</h4>
+          <p class="font-body-book text-body-sm text-gray-600">Founding Partner</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
