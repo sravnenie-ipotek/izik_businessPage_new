@@ -1,0 +1,357 @@
+{
+  "id": "normandpllc_nightly",
+  "viewports": [
+    {
+      "label": "xl",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "label": "lg",
+      "width": 1024,
+      "height": 800
+    },
+    {
+      "label": "md",
+      "width": 768,
+      "height": 900
+    },
+    {
+      "label": "sm",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Homepage",
+      "url": "http://localhost:3000/",
+      "referenceUrl": "https://www.normandpllc.com/",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "contact-us",
+      "url": "http://localhost:3000/contact-us",
+      "referenceUrl": "https://www.normandpllc.com/contact-us",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "class-action",
+      "url": "http://localhost:3000/class-action",
+      "referenceUrl": "https://www.normandpllc.com/class-action",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "class-action privacy",
+      "url": "http://localhost:3000/class-action/privacy",
+      "referenceUrl": "https://www.normandpllc.com/class-action/privacy",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "class-action consumer-protection",
+      "url": "http://localhost:3000/class-action/consumer-protection",
+      "referenceUrl": "https://www.normandpllc.com/class-action/consumer-protection",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "class-action insurance",
+      "url": "http://localhost:3000/class-action/insurance",
+      "referenceUrl": "https://www.normandpllc.com/class-action/insurance",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "status-results",
+      "url": "http://localhost:3000/status-results",
+      "referenceUrl": "https://www.normandpllc.com/status-results",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "our-team",
+      "url": "http://localhost:3000/our-team",
+      "referenceUrl": "https://www.normandpllc.com/our-team",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "news-articles",
+      "url": "http://localhost:3000/news-articles",
+      "referenceUrl": "https://www.normandpllc.com/news-articles",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "disclaimer",
+      "url": "http://localhost:3000/disclaimer",
+      "referenceUrl": "https://www.normandpllc.com/disclaimer",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "privacy-policy",
+      "url": "http://localhost:3000/privacy-policy",
+      "referenceUrl": "https://www.normandpllc.com/privacy-policy",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "case-studies buffington-v-progressive-insurance",
+      "url": "http://localhost:3000/case-studies/buffington-v-progressive-insurance",
+      "referenceUrl": "https://www.normandpllc.com/case-studies/buffington-v-progressive-insurance",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "case-studies angellvgeico",
+      "url": "http://localhost:3000/case-studies/angellvgeico",
+      "referenceUrl": "https://www.normandpllc.com/case-studies/angellvgeico",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "case-studies volinoprogressivecasualityinsurance",
+      "url": "http://localhost:3000/case-studies/volinoprogressivecasualityinsurance",
+      "referenceUrl": "https://www.normandpllc.com/case-studies/volinoprogressivecasualityinsurance",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "case-studies carrie-andrews-v-state-auto-mutual-insurance-company",
+      "url": "http://localhost:3000/case-studies/carrie-andrews-v-state-auto-mutual-insurance-company",
+      "referenceUrl": "https://www.normandpllc.com/case-studies/carrie-andrews-v-state-auto-mutual-insurance-company",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "case-studies geico-insurance-class-actions",
+      "url": "http://localhost:3000/case-studies/geico-insurance-class-actions",
+      "referenceUrl": "https://www.normandpllc.com/case-studies/geico-insurance-class-actions",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "our-team edmund-normand",
+      "url": "http://localhost:3000/our-team/edmund-normand",
+      "referenceUrl": "https://www.normandpllc.com/our-team/edmund-normand",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "john-richard-collection-data-breach",
+      "url": "http://localhost:3000/john-richard-collection-data-breach",
+      "referenceUrl": "https://www.normandpllc.com/john-richard-collection-data-breach",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "fidelity-national-information-services-data-breach-are-you-at-risk",
+      "url": "http://localhost:3000/fidelity-national-information-services-data-breach-are-you-at-risk",
+      "referenceUrl": "https://www.normandpllc.com/fidelity-national-information-services-data-breach-are-you-at-risk",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "case-studies junior-v-infinity-insurance-company",
+      "url": "http://localhost:3000/case-studies/junior-v-infinity-insurance-company",
+      "referenceUrl": "https://www.normandpllc.com/case-studies/junior-v-infinity-insurance-company",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "case-studies sos-v-state-farm-mutual-insurance-company",
+      "url": "http://localhost:3000/case-studies/sos-v-state-farm-mutual-insurance-company",
+      "referenceUrl": "https://www.normandpllc.com/case-studies/sos-v-state-farm-mutual-insurance-company",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "case-studies resnick-v-avmed-inc",
+      "url": "http://localhost:3000/case-studies/resnick-v-avmed-inc",
+      "referenceUrl": "https://www.normandpllc.com/case-studies/resnick-v-avmed-inc",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "case-studies venerus-v-avis-budget",
+      "url": "http://localhost:3000/case-studies/venerus-v-avis-budget",
+      "referenceUrl": "https://www.normandpllc.com/case-studies/venerus-v-avis-budget",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "case-studies parker-v-universal",
+      "url": "http://localhost:3000/case-studies/parker-v-universal",
+      "referenceUrl": "https://www.normandpllc.com/case-studies/parker-v-universal",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "edmund-normand-joins-2024-super-lawyers",
+      "url": "http://localhost:3000/edmund-normand-joins-2024-super-lawyers",
+      "referenceUrl": "https://www.normandpllc.com/edmund-normand-joins-2024-super-lawyers",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "car-insurance-total-loss-claims",
+      "url": "http://localhost:3000/car-insurance-total-loss-claims",
+      "referenceUrl": "https://www.normandpllc.com/car-insurance-total-loss-claims",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "illegal-automated-robocalls-and-robotexts",
+      "url": "http://localhost:3000/illegal-automated-robocalls-and-robotexts",
+      "referenceUrl": "https://www.normandpllc.com/illegal-automated-robocalls-and-robotexts",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "practice-area total-loss",
+      "url": "http://localhost:3000/practice-area/total-loss",
+      "referenceUrl": "https://www.normandpllc.com/practice-area/total-loss",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": [
+    "browser"
+  ],
+  "engine": "playwright",
+  "engineOptions": {
+    "args": [
+      "--no-sandbox",
+      "--disable-font-subpixel-positioning"
+    ],
+    "headless": true,
+    "gotoTimeout": 30000
+  },
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false
+}

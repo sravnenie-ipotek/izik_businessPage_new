@@ -1,0 +1,260 @@
+[
+  {
+    "order": 1,
+    "selector": "header.site-header",
+    "color": "black",
+    "headingSample": null,
+    "approxHeight": 1024,
+    "approxTop": 0,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "#",
+        "type": "button"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "#",
+        "type": "button"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/contact-us/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/class-action/",
+        "type": "a"
+      }
+    ],
+    "hasForms": true,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 2,
+    "selector": "body.wp-singular",
+    "color": "white",
+    "headingSample": "Contact Us We Are Ready",
+    "approxHeight": 1204,
+    "approxTop": 0,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "#primary",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "#",
+        "type": "button"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "#",
+        "type": "button"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/contact-us/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/",
+        "type": "a"
+      }
+    ],
+    "hasForms": true,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgb(255, 255, 255)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 3,
+    "selector": "div.site",
+    "color": "black",
+    "headingSample": "Contact Us We Are Ready",
+    "approxHeight": 1024,
+    "approxTop": 0,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "#primary",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "#",
+        "type": "button"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "#",
+        "type": "button"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/contact-us/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/",
+        "type": "a"
+      }
+    ],
+    "hasForms": true,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 0,
+    "marginY": 90
+  },
+  {
+    "order": 4,
+    "selector": "div.wp-block-normand-contact",
+    "color": "orange",
+    "headingSample": "We Are Ready",
+    "approxHeight": 1024,
+    "approxTop": 0,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "tel:4076036031",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "mailto:office@normandpllc.com",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "tel:8889742175",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://maps.app.goo.gl/xc98brULtFBbmwLL7",
+        "type": "a"
+      }
+    ],
+    "hasForms": true,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgb(252, 90, 43)",
+    "paddingY": 235,
+    "marginY": 0
+  },
+  {
+    "order": 5,
+    "selector": "div.normand-contact-wrap",
+    "color": "black",
+    "headingSample": "We Are Ready",
+    "approxHeight": 480,
+    "approxTop": 55,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "tel:4076036031",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "mailto:office@normandpllc.com",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "tel:8889742175",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://maps.app.goo.gl/xc98brULtFBbmwLL7",
+        "type": "a"
+      }
+    ],
+    "hasForms": true,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 6,
+    "selector": "div.ginput_container",
+    "color": "black",
+    "headingSample": null,
+    "approxHeight": 78,
+    "approxTop": 685,
+    "ctas": [],
+    "hasForms": true,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 7,
+    "selector": "footer.site-footer",
+    "color": "white",
+    "headingSample": null,
+    "approxHeight": 90,
+    "approxTop": 900,
+    "ctas": [],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgb(1, 1, 1)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 8,
+    "selector": "div.preloader",
+    "color": "orange",
+    "headingSample": null,
+    "approxHeight": 900,
+    "approxTop": 900,
+    "ctas": [],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgb(252, 90, 43)",
+    "paddingY": 0,
+    "marginY": 0
+  }
+]

@@ -1,0 +1,63 @@
+{
+  "id": "normandpllc_visual_test",
+  "viewports": [
+    {
+      "label": "sm",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "label": "md",
+      "width": 768,
+      "height": 900
+    },
+    {
+      "label": "lg",
+      "width": 1024,
+      "height": 800
+    },
+    {
+      "label": "xl",
+      "width": 1440,
+      "height": 900
+    }
+  ],
+  "onBeforeScript": "puppet/onBefore.js",
+  "onReadyScript": "puppet/onReady.js",
+  "scenarios": [
+    {
+      "label": "Homepage",
+      "url": "http://localhost:3000/scaffold/hero.html",
+      "referenceUrl": "https://www.normandpllc.com/",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false
+    },
+    {
+      "label": "Contact",
+      "url": "http://localhost:3000/scaffold/footer.html",
+      "referenceUrl": "https://www.normandpllc.com/contact-us",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": ["browser"],
+  "engine": "playwright",
+  "engineOptions": {
+    "args": ["--no-sandbox", "--disable-font-subpixel-positioning"],
+    "headless": true,
+    "gotoTimeout": 30000
+  },
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}

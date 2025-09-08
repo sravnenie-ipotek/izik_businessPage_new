@@ -1,0 +1,118 @@
+{
+  "url": "https://www.normandpllc.com/",
+  "slug": "homepage",
+  "blocks": [
+    {
+      "order": 1,
+      "color": "white",
+      "headingSample": null,
+      "approxHeight": 100,
+      "ctas": [
+        {"label": "Contact", "href": "/contact-us/"},
+        {"label": "Menu", "href": "#menu"}
+      ],
+      "rawBg": "#ffffff",
+      "type": "header"
+    },
+    {
+      "order": 2,
+      "color": "white",
+      "headingSample": "Experts in Class Action",
+      "approxHeight": 500,
+      "ctas": [
+        {"label": "Contact US", "href": "/contact-us/"}
+      ],
+      "rawBg": "#ffffff",
+      "type": "hero"
+    },
+    {
+      "order": 3,
+      "color": "white",
+      "headingSample": "We Are Class Action",
+      "approxHeight": 600,
+      "ctas": [
+        {"label": "Learn More", "href": "/class-action/privacy/"},
+        {"label": "Learn More", "href": "/class-action/consumer-protection/"},
+        {"label": "Learn More", "href": "/class-action/insurance/"}
+      ],
+      "rawBg": "#ffffff",
+      "type": "services"
+    },
+    {
+      "order": 4,
+      "color": "white",
+      "headingSample": "We Are Strategy",
+      "approxHeight": 500,
+      "ctas": [
+        {"label": "View Case Study", "href": "/status-results/"},
+        {"label": "View Case Study", "href": "/status-results/"},
+        {"label": "View All", "href": "/status-results/"}
+      ],
+      "rawBg": "#f8f8f8",
+      "type": "case-studies"
+    },
+    {
+      "order": 5,
+      "color": "white",
+      "headingSample": "WE ARE SUCCESS",
+      "approxHeight": 400,
+      "ctas": [],
+      "rawBg": "#ffffff",
+      "type": "testimonials"
+    },
+    {
+      "order": 6,
+      "color": "white",
+      "headingSample": "We Are Experienced",
+      "approxHeight": 600,
+      "ctas": [
+        {"label": "Read More", "href": "/our-team/"}
+      ],
+      "rawBg": "#ffffff",
+      "type": "team"
+    },
+    {
+      "order": 7,
+      "color": "white",
+      "headingSample": null,
+      "approxHeight": 200,
+      "ctas": [],
+      "rawBg": "#f8f8f8",
+      "type": "media-logos"
+    },
+    {
+      "order": 8,
+      "color": "white",
+      "headingSample": "News & Articles",
+      "approxHeight": 400,
+      "ctas": [
+        {"label": "Read the post", "href": "/news-articles/"},
+        {"label": "Read the post", "href": "/news-articles/"}
+      ],
+      "rawBg": "#ffffff",
+      "type": "news"
+    },
+    {
+      "order": 9,
+      "color": "white",
+      "headingSample": "We Are Ready",
+      "approxHeight": 600,
+      "ctas": [
+        {"label": "Submit", "href": "#form"}
+      ],
+      "rawBg": "#ffffff",
+      "type": "contact"
+    },
+    {
+      "order": 10,
+      "color": "black",
+      "headingSample": null,
+      "approxHeight": 100,
+      "ctas": [],
+      "rawBg": "#000000",
+      "type": "footer"
+    }
+  ],
+  "colorSequence": "white → white → white → white → white → white → white → white → white → black",
+  "totalCTAs": 14
+}

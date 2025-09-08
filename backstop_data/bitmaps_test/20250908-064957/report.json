@@ -1,0 +1,1410 @@
+{
+  "testSuite": "BackstopJS",
+  "tests": [
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_contact-us_0_document_0_xl.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_contact-us_0_document_0_xl.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_contact-us_0_document_0_xl.png",
+        "label": "contact-us",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/contact-us/",
+        "referenceUrl": "https://www.normandpllc.com/contact-us/",
+        "expect": 0,
+        "viewportLabel": "xl",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -265
+          },
+          "rawMisMatchPercentage": 66.35670004768717,
+          "misMatchPercentage": "66.36",
+          "analysisTime": 388
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_contact-us_0_document_0_xl.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_contact-us_0_document_1_lg.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_contact-us_0_document_1_lg.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_contact-us_0_document_1_lg.png",
+        "label": "contact-us",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/contact-us/",
+        "referenceUrl": "https://www.normandpllc.com/contact-us/",
+        "expect": 0,
+        "viewportLabel": "lg",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -406
+          },
+          "rawMisMatchPercentage": 55.98747797470979,
+          "misMatchPercentage": "55.99",
+          "analysisTime": 269
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_contact-us_0_document_1_lg.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_contact-us_0_document_2_md.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_contact-us_0_document_2_md.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_contact-us_0_document_2_md.png",
+        "label": "contact-us",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/contact-us/",
+        "referenceUrl": "https://www.normandpllc.com/contact-us/",
+        "expect": 0,
+        "viewportLabel": "md",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -444
+          },
+          "rawMisMatchPercentage": 54.53055245535714,
+          "misMatchPercentage": "54.53",
+          "analysisTime": 133
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_contact-us_0_document_2_md.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_contact-us_0_document_3_sm.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_contact-us_0_document_3_sm.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_contact-us_0_document_3_sm.png",
+        "label": "contact-us",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/contact-us/",
+        "referenceUrl": "https://www.normandpllc.com/contact-us/",
+        "expect": 0,
+        "viewportLabel": "sm",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -764
+          },
+          "rawMisMatchPercentage": 40.72234978951397,
+          "misMatchPercentage": "40.72",
+          "analysisTime": 35
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_contact-us_0_document_3_sm.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_Homepage_0_document_0_xl.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_Homepage_0_document_0_xl.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_Homepage_0_document_0_xl.png",
+        "label": "Homepage",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/",
+        "referenceUrl": "https://www.normandpllc.com/",
+        "expect": 0,
+        "viewportLabel": "xl",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 2881
+          },
+          "rawMisMatchPercentage": 44.63797987485202,
+          "misMatchPercentage": "44.64",
+          "analysisTime": 260
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_Homepage_0_document_0_xl.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_Homepage_0_document_1_lg.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_Homepage_0_document_1_lg.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_Homepage_0_document_1_lg.png",
+        "label": "Homepage",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/",
+        "referenceUrl": "https://www.normandpllc.com/",
+        "expect": 0,
+        "viewportLabel": "lg",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 2747
+          },
+          "rawMisMatchPercentage": 43.71710593215415,
+          "misMatchPercentage": "43.72",
+          "analysisTime": 215
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_Homepage_0_document_1_lg.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_Homepage_0_document_2_md.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_Homepage_0_document_2_md.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_Homepage_0_document_2_md.png",
+        "label": "Homepage",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/",
+        "referenceUrl": "https://www.normandpllc.com/",
+        "expect": 0,
+        "viewportLabel": "md",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 494
+          },
+          "rawMisMatchPercentage": 49.76837164600365,
+          "misMatchPercentage": "49.77",
+          "analysisTime": 208
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_Homepage_0_document_2_md.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_Homepage_0_document_3_sm.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_Homepage_0_document_3_sm.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_Homepage_0_document_3_sm.png",
+        "label": "Homepage",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/",
+        "referenceUrl": "https://www.normandpllc.com/",
+        "expect": 0,
+        "viewportLabel": "sm",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 2303
+          },
+          "rawMisMatchPercentage": 37.11875350926446,
+          "misMatchPercentage": "37.12",
+          "analysisTime": 352
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_Homepage_0_document_3_sm.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_class-action_0_document_0_xl.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_class-action_0_document_0_xl.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_class-action_0_document_0_xl.png",
+        "label": "class-action",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/class-action/",
+        "referenceUrl": "https://www.normandpllc.com/class-action/",
+        "expect": 0,
+        "viewportLabel": "xl",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -4341
+          },
+          "rawMisMatchPercentage": 23.706581399116942,
+          "misMatchPercentage": "23.71",
+          "analysisTime": 184
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_class-action_0_document_0_xl.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_class-action_0_document_1_lg.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_class-action_0_document_1_lg.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_class-action_0_document_1_lg.png",
+        "label": "class-action",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/class-action/",
+        "referenceUrl": "https://www.normandpllc.com/class-action/",
+        "expect": 0,
+        "viewportLabel": "lg",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -4787
+          },
+          "rawMisMatchPercentage": 20.47592092562845,
+          "misMatchPercentage": "20.48",
+          "analysisTime": 158
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_class-action_0_document_1_lg.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_class-action_0_document_2_md.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_class-action_0_document_2_md.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_class-action_0_document_2_md.png",
+        "label": "class-action",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/class-action/",
+        "referenceUrl": "https://www.normandpllc.com/class-action/",
+        "expect": 0,
+        "viewportLabel": "md",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -3829
+          },
+          "rawMisMatchPercentage": 24.23594504830918,
+          "misMatchPercentage": "24.24",
+          "analysisTime": 339
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_class-action_0_document_2_md.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_class-action_0_document_3_sm.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_class-action_0_document_3_sm.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_class-action_0_document_3_sm.png",
+        "label": "class-action",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/class-action/",
+        "referenceUrl": "https://www.normandpllc.com/class-action/",
+        "expect": 0,
+        "viewportLabel": "sm",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -4458
+          },
+          "rawMisMatchPercentage": 22.25188222006359,
+          "misMatchPercentage": "22.25",
+          "analysisTime": 185
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_class-action_0_document_3_sm.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_class-action_privacy_0_document_0_xl.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_class-action_privacy_0_document_0_xl.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_class-action_privacy_0_document_0_xl.png",
+        "label": "class-action privacy",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/class-action/privacy/",
+        "referenceUrl": "https://www.normandpllc.com/class-action/privacy/",
+        "expect": 0,
+        "viewportLabel": "xl",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -4911
+          },
+          "rawMisMatchPercentage": 12.664427140098281,
+          "misMatchPercentage": "12.66",
+          "analysisTime": 184
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_class-action_privacy_0_document_0_xl.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_class-action_privacy_0_document_1_lg.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_class-action_privacy_0_document_1_lg.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_class-action_privacy_0_document_1_lg.png",
+        "label": "class-action privacy",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/class-action/privacy/",
+        "referenceUrl": "https://www.normandpllc.com/class-action/privacy/",
+        "expect": 0,
+        "viewportLabel": "lg",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -4723
+          },
+          "rawMisMatchPercentage": 11.941433833514395,
+          "misMatchPercentage": "11.94",
+          "analysisTime": 172
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_class-action_privacy_0_document_1_lg.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_class-action_privacy_0_document_2_md.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_class-action_privacy_0_document_2_md.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_class-action_privacy_0_document_2_md.png",
+        "label": "class-action privacy",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/class-action/privacy/",
+        "referenceUrl": "https://www.normandpllc.com/class-action/privacy/",
+        "expect": 0,
+        "viewportLabel": "md",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -4299
+          },
+          "rawMisMatchPercentage": 6.1391513592357505,
+          "misMatchPercentage": "6.14",
+          "analysisTime": 251
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_class-action_privacy_0_document_2_md.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_class-action_privacy_0_document_3_sm.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_class-action_privacy_0_document_3_sm.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_class-action_privacy_0_document_3_sm.png",
+        "label": "class-action privacy",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/class-action/privacy/",
+        "referenceUrl": "https://www.normandpllc.com/class-action/privacy/",
+        "expect": 0,
+        "viewportLabel": "sm",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -7311
+          },
+          "rawMisMatchPercentage": 3.5888946532723356,
+          "misMatchPercentage": "3.59",
+          "analysisTime": 247
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_class-action_privacy_0_document_3_sm.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_class-action_consumer-protection_0_document_0_xl.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_class-action_consumer-protection_0_document_0_xl.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_class-action_consumer-protection_0_document_0_xl.png",
+        "label": "class-action consumer-protection",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/class-action/consumer-protection/",
+        "referenceUrl": "https://www.normandpllc.com/class-action/consumer-protection/",
+        "expect": 0,
+        "viewportLabel": "xl",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -5747
+          },
+          "rawMisMatchPercentage": 11.1556905370844,
+          "misMatchPercentage": "11.16",
+          "analysisTime": 277
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_class-action_consumer-protection_0_document_0_xl.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_class-action_consumer-protection_0_document_1_lg.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_class-action_consumer-protection_0_document_1_lg.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_class-action_consumer-protection_0_document_1_lg.png",
+        "label": "class-action consumer-protection",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/class-action/consumer-protection/",
+        "referenceUrl": "https://www.normandpllc.com/class-action/consumer-protection/",
+        "expect": 0,
+        "viewportLabel": "lg",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -5380
+          },
+          "rawMisMatchPercentage": 10.699506346076051,
+          "misMatchPercentage": "10.70",
+          "analysisTime": 136
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_class-action_consumer-protection_0_document_1_lg.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_class-action_consumer-protection_0_document_2_md.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_class-action_consumer-protection_0_document_2_md.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_class-action_consumer-protection_0_document_2_md.png",
+        "label": "class-action consumer-protection",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/class-action/consumer-protection/",
+        "referenceUrl": "https://www.normandpllc.com/class-action/consumer-protection/",
+        "expect": 0,
+        "viewportLabel": "md",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -4900
+          },
+          "rawMisMatchPercentage": 5.771529274425288,
+          "misMatchPercentage": "5.77",
+          "analysisTime": 264
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_class-action_consumer-protection_0_document_2_md.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_class-action_consumer-protection_0_document_3_sm.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_class-action_consumer-protection_0_document_3_sm.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_class-action_consumer-protection_0_document_3_sm.png",
+        "label": "class-action consumer-protection",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/class-action/consumer-protection/",
+        "referenceUrl": "https://www.normandpllc.com/class-action/consumer-protection/",
+        "expect": 0,
+        "viewportLabel": "sm",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -7529
+          },
+          "rawMisMatchPercentage": 4.585679856192217,
+          "misMatchPercentage": "4.59",
+          "analysisTime": 235
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_class-action_consumer-protection_0_document_3_sm.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_class-action_insurance_0_document_0_xl.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_class-action_insurance_0_document_0_xl.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_class-action_insurance_0_document_0_xl.png",
+        "label": "class-action insurance",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/class-action/insurance/",
+        "referenceUrl": "https://www.normandpllc.com/class-action/insurance/",
+        "expect": 0,
+        "viewportLabel": "xl",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -4001
+          },
+          "rawMisMatchPercentage": 15.057924686571903,
+          "misMatchPercentage": "15.06",
+          "analysisTime": 132
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_class-action_insurance_0_document_0_xl.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_class-action_insurance_0_document_1_lg.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_class-action_insurance_0_document_1_lg.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_class-action_insurance_0_document_1_lg.png",
+        "label": "class-action insurance",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/class-action/insurance/",
+        "referenceUrl": "https://www.normandpllc.com/class-action/insurance/",
+        "expect": 0,
+        "viewportLabel": "lg",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -3870
+          },
+          "rawMisMatchPercentage": 14.161473668361884,
+          "misMatchPercentage": "14.16",
+          "analysisTime": 223
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_class-action_insurance_0_document_1_lg.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_class-action_insurance_0_document_2_md.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_class-action_insurance_0_document_2_md.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_class-action_insurance_0_document_2_md.png",
+        "label": "class-action insurance",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/class-action/insurance/",
+        "referenceUrl": "https://www.normandpllc.com/class-action/insurance/",
+        "expect": 0,
+        "viewportLabel": "md",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -3415
+          },
+          "rawMisMatchPercentage": 8.347244351100812,
+          "misMatchPercentage": "8.35",
+          "analysisTime": 194
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_class-action_insurance_0_document_2_md.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_class-action_insurance_0_document_3_sm.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_class-action_insurance_0_document_3_sm.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_class-action_insurance_0_document_3_sm.png",
+        "label": "class-action insurance",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/class-action/insurance/",
+        "referenceUrl": "https://www.normandpllc.com/class-action/insurance/",
+        "expect": 0,
+        "viewportLabel": "sm",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -5633
+          },
+          "rawMisMatchPercentage": 5.521312098431135,
+          "misMatchPercentage": "5.52",
+          "analysisTime": 362
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_class-action_insurance_0_document_3_sm.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_status-results_0_document_0_xl.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_status-results_0_document_0_xl.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_status-results_0_document_0_xl.png",
+        "label": "status-results",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/status-results/",
+        "referenceUrl": "https://www.normandpllc.com/status-results/",
+        "expect": 0,
+        "viewportLabel": "xl",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -6302
+          },
+          "rawMisMatchPercentage": 10.037605294825513,
+          "misMatchPercentage": "10.04",
+          "analysisTime": 167
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_status-results_0_document_0_xl.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_status-results_0_document_1_lg.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_status-results_0_document_1_lg.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_status-results_0_document_1_lg.png",
+        "label": "status-results",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/status-results/",
+        "referenceUrl": "https://www.normandpllc.com/status-results/",
+        "expect": 0,
+        "viewportLabel": "lg",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -4922
+          },
+          "rawMisMatchPercentage": 11.24702354945823,
+          "misMatchPercentage": "11.25",
+          "analysisTime": 261
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_status-results_0_document_1_lg.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_status-results_0_document_2_md.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_status-results_0_document_2_md.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_status-results_0_document_2_md.png",
+        "label": "status-results",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/status-results/",
+        "referenceUrl": "https://www.normandpllc.com/status-results/",
+        "expect": 0,
+        "viewportLabel": "md",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -4837
+          },
+          "rawMisMatchPercentage": 7.58403964034629,
+          "misMatchPercentage": "7.58",
+          "analysisTime": 361
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_status-results_0_document_2_md.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_status-results_0_document_3_sm.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_status-results_0_document_3_sm.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_status-results_0_document_3_sm.png",
+        "label": "status-results",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/status-results/",
+        "referenceUrl": "https://www.normandpllc.com/status-results/",
+        "expect": 0,
+        "viewportLabel": "sm",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -6441
+          },
+          "rawMisMatchPercentage": 5.918659697657638,
+          "misMatchPercentage": "5.92",
+          "analysisTime": 143
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_status-results_0_document_3_sm.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_our-team_0_document_0_xl.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_our-team_0_document_0_xl.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_our-team_0_document_0_xl.png",
+        "label": "our-team",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/our-team/",
+        "referenceUrl": "https://www.normandpllc.com/our-team/",
+        "expect": 0,
+        "viewportLabel": "xl",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -4283
+          },
+          "rawMisMatchPercentage": 13.876709649066393,
+          "misMatchPercentage": "13.88",
+          "analysisTime": 328
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_our-team_0_document_0_xl.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_our-team_0_document_1_lg.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_our-team_0_document_1_lg.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_our-team_0_document_1_lg.png",
+        "label": "our-team",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/our-team/",
+        "referenceUrl": "https://www.normandpllc.com/our-team/",
+        "expect": 0,
+        "viewportLabel": "lg",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -4553
+          },
+          "rawMisMatchPercentage": 11.93668416075098,
+          "misMatchPercentage": "11.94",
+          "analysisTime": 184
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_our-team_0_document_1_lg.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_our-team_0_document_2_md.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_our-team_0_document_2_md.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_our-team_0_document_2_md.png",
+        "label": "our-team",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/our-team/",
+        "referenceUrl": "https://www.normandpllc.com/our-team/",
+        "expect": 0,
+        "viewportLabel": "md",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -4247
+          },
+          "rawMisMatchPercentage": 10.711210211450036,
+          "misMatchPercentage": "10.71",
+          "analysisTime": 240
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_our-team_0_document_2_md.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_our-team_0_document_3_sm.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_our-team_0_document_3_sm.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_our-team_0_document_3_sm.png",
+        "label": "our-team",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/our-team/",
+        "referenceUrl": "https://www.normandpllc.com/our-team/",
+        "expect": 0,
+        "viewportLabel": "sm",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -6315
+          },
+          "rawMisMatchPercentage": 8.27948323967321,
+          "misMatchPercentage": "8.28",
+          "analysisTime": 160
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_our-team_0_document_3_sm.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_news-articles_0_document_0_xl.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_news-articles_0_document_0_xl.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_news-articles_0_document_0_xl.png",
+        "label": "news-articles",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/news-articles/",
+        "referenceUrl": "https://www.normandpllc.com/news-articles/",
+        "expect": 0,
+        "viewportLabel": "xl",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -5395
+          },
+          "rawMisMatchPercentage": 11.515036183920218,
+          "misMatchPercentage": "11.52",
+          "analysisTime": 207
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_news-articles_0_document_0_xl.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_news-articles_0_document_1_lg.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_news-articles_0_document_1_lg.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_news-articles_0_document_1_lg.png",
+        "label": "news-articles",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/news-articles/",
+        "referenceUrl": "https://www.normandpllc.com/news-articles/",
+        "expect": 0,
+        "viewportLabel": "lg",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -3950
+          },
+          "rawMisMatchPercentage": 13.548519736842104,
+          "misMatchPercentage": "13.55",
+          "analysisTime": 167
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_news-articles_0_document_1_lg.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_news-articles_0_document_2_md.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_news-articles_0_document_2_md.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_news-articles_0_document_2_md.png",
+        "label": "news-articles",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/news-articles/",
+        "referenceUrl": "https://www.normandpllc.com/news-articles/",
+        "expect": 0,
+        "viewportLabel": "md",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -3595
+          },
+          "rawMisMatchPercentage": 13.459862810530218,
+          "misMatchPercentage": "13.46",
+          "analysisTime": 70
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_news-articles_0_document_2_md.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_news-articles_0_document_3_sm.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_news-articles_0_document_3_sm.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_news-articles_0_document_3_sm.png",
+        "label": "news-articles",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/news-articles/",
+        "referenceUrl": "https://www.normandpllc.com/news-articles/",
+        "expect": 0,
+        "viewportLabel": "sm",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -4252
+          },
+          "rawMisMatchPercentage": 12.42684055870869,
+          "misMatchPercentage": "12.43",
+          "analysisTime": 169
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_news-articles_0_document_3_sm.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_disclaimer_0_document_0_xl.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_disclaimer_0_document_0_xl.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_disclaimer_0_document_0_xl.png",
+        "label": "disclaimer",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/disclaimer/",
+        "referenceUrl": "https://www.normandpllc.com/disclaimer/",
+        "expect": 0,
+        "viewportLabel": "xl",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -1691
+          },
+          "rawMisMatchPercentage": 28.224811312663494,
+          "misMatchPercentage": "28.22",
+          "analysisTime": 254
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_disclaimer_0_document_0_xl.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_disclaimer_0_document_1_lg.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_disclaimer_0_document_1_lg.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_disclaimer_0_document_1_lg.png",
+        "label": "disclaimer",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/disclaimer/",
+        "referenceUrl": "https://www.normandpllc.com/disclaimer/",
+        "expect": 0,
+        "viewportLabel": "lg",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -1535
+          },
+          "rawMisMatchPercentage": 28.001413610813703,
+          "misMatchPercentage": "28.00",
+          "analysisTime": 303
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_disclaimer_0_document_1_lg.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_disclaimer_0_document_2_md.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_disclaimer_0_document_2_md.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_disclaimer_0_document_2_md.png",
+        "label": "disclaimer",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/disclaimer/",
+        "referenceUrl": "https://www.normandpllc.com/disclaimer/",
+        "expect": 0,
+        "viewportLabel": "md",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -1046
+          },
+          "rawMisMatchPercentage": 17.03942649451867,
+          "misMatchPercentage": "17.04",
+          "analysisTime": 296
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_disclaimer_0_document_2_md.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_disclaimer_0_document_3_sm.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_disclaimer_0_document_3_sm.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_disclaimer_0_document_3_sm.png",
+        "label": "disclaimer",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/disclaimer/",
+        "referenceUrl": "https://www.normandpllc.com/disclaimer/",
+        "expect": 0,
+        "viewportLabel": "sm",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -1518
+          },
+          "rawMisMatchPercentage": 13.550337610456154,
+          "misMatchPercentage": "13.55",
+          "analysisTime": 113
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_disclaimer_0_document_3_sm.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_privacy-policy_0_document_0_xl.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_privacy-policy_0_document_0_xl.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_privacy-policy_0_document_0_xl.png",
+        "label": "privacy-policy",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/privacy-policy/",
+        "referenceUrl": "https://www.normandpllc.com/privacy-policy/",
+        "expect": 0,
+        "viewportLabel": "xl",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -5004
+          },
+          "rawMisMatchPercentage": 12.418569802017466,
+          "misMatchPercentage": "12.42",
+          "analysisTime": 146
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_privacy-policy_0_document_0_xl.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_privacy-policy_0_document_1_lg.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_privacy-policy_0_document_1_lg.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_privacy-policy_0_document_1_lg.png",
+        "label": "privacy-policy",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/privacy-policy/",
+        "referenceUrl": "https://www.normandpllc.com/privacy-policy/",
+        "expect": 0,
+        "viewportLabel": "lg",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -4376
+          },
+          "rawMisMatchPercentage": 12.672143667890262,
+          "misMatchPercentage": "12.67",
+          "analysisTime": 139
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_privacy-policy_0_document_1_lg.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_privacy-policy_0_document_2_md.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_privacy-policy_0_document_2_md.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_privacy-policy_0_document_2_md.png",
+        "label": "privacy-policy",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/privacy-policy/",
+        "referenceUrl": "https://www.normandpllc.com/privacy-policy/",
+        "expect": 0,
+        "viewportLabel": "md",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -3704
+          },
+          "rawMisMatchPercentage": 6.885741339052998,
+          "misMatchPercentage": "6.89",
+          "analysisTime": 354
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_privacy-policy_0_document_2_md.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_privacy-policy_0_document_3_sm.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_privacy-policy_0_document_3_sm.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_privacy-policy_0_document_3_sm.png",
+        "label": "privacy-policy",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/privacy-policy/",
+        "referenceUrl": "https://www.normandpllc.com/privacy-policy/",
+        "expect": 0,
+        "viewportLabel": "sm",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -5234
+          },
+          "rawMisMatchPercentage": 5.151660887100176,
+          "misMatchPercentage": "5.15",
+          "analysisTime": 99
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_privacy-policy_0_document_3_sm.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_normandlawpllc_0_document_0_xl.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_normandlawpllc_0_document_0_xl.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_normandlawpllc_0_document_0_xl.png",
+        "label": "normandlawpllc",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/normandlawpllc",
+        "referenceUrl": "https://www.normandpllc.com/normandlawpllc",
+        "expect": 0,
+        "viewportLabel": "xl",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -406
+          },
+          "rawMisMatchPercentage": 67.75805045091032,
+          "misMatchPercentage": "67.76",
+          "analysisTime": 396
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_normandlawpllc_0_document_0_xl.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_normandlawpllc_0_document_1_lg.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_normandlawpllc_0_document_1_lg.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_normandlawpllc_0_document_1_lg.png",
+        "label": "normandlawpllc",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/normandlawpllc",
+        "referenceUrl": "https://www.normandpllc.com/normandlawpllc",
+        "expect": 0,
+        "viewportLabel": "lg",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -381
+          },
+          "rawMisMatchPercentage": 65.71124510478408,
+          "misMatchPercentage": "65.71",
+          "analysisTime": 185
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_normandlawpllc_0_document_1_lg.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_normandlawpllc_0_document_2_md.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_normandlawpllc_0_document_2_md.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_normandlawpllc_0_document_2_md.png",
+        "label": "normandlawpllc",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/normandlawpllc",
+        "referenceUrl": "https://www.normandpllc.com/normandlawpllc",
+        "expect": 0,
+        "viewportLabel": "md",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -45
+          },
+          "rawMisMatchPercentage": 94.26614858906525,
+          "misMatchPercentage": "94.27",
+          "analysisTime": 215
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_normandlawpllc_0_document_2_md.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_normandlawpllc_0_document_3_sm.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_normandlawpllc_0_document_3_sm.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_normandlawpllc_0_document_3_sm.png",
+        "label": "normandlawpllc",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/normandlawpllc",
+        "referenceUrl": "https://www.normandpllc.com/normandlawpllc",
+        "expect": 0,
+        "viewportLabel": "sm",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 97.16368939117754,
+          "misMatchPercentage": "97.16",
+          "analysisTime": 40
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_normandlawpllc_0_document_3_sm.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_company_normand-law-pllc_0_document_0_xl.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_company_normand-law-pllc_0_document_0_xl.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_company_normand-law-pllc_0_document_0_xl.png",
+        "label": "company normand-law-pllc",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/company/normand-law-pllc",
+        "referenceUrl": "https://www.normandpllc.com/company/normand-law-pllc",
+        "expect": 0,
+        "viewportLabel": "xl",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -406
+          },
+          "rawMisMatchPercentage": 55.52008890590437,
+          "misMatchPercentage": "55.52",
+          "analysisTime": 187
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_company_normand-law-pllc_0_document_0_xl.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_company_normand-law-pllc_0_document_1_lg.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_company_normand-law-pllc_0_document_1_lg.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_company_normand-law-pllc_0_document_1_lg.png",
+        "label": "company normand-law-pllc",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/company/normand-law-pllc",
+        "referenceUrl": "https://www.normandpllc.com/company/normand-law-pllc",
+        "expect": 0,
+        "viewportLabel": "lg",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -381
+          },
+          "rawMisMatchPercentage": 54.550731636325146,
+          "misMatchPercentage": "54.55",
+          "analysisTime": 228
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_company_normand-law-pllc_0_document_1_lg.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_company_normand-law-pllc_0_document_2_md.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_company_normand-law-pllc_0_document_2_md.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_company_normand-law-pllc_0_document_2_md.png",
+        "label": "company normand-law-pllc",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/company/normand-law-pllc",
+        "referenceUrl": "https://www.normandpllc.com/company/normand-law-pllc",
+        "expect": 0,
+        "viewportLabel": "md",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -45
+          },
+          "rawMisMatchPercentage": 53.25810185185185,
+          "misMatchPercentage": "53.26",
+          "analysisTime": 257
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_company_normand-law-pllc_0_document_2_md.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/normandpllc_ci_company_normand-law-pllc_0_document_3_sm.png",
+        "test": "../bitmaps_test/20250908-064957/normandpllc_ci_company_normand-law-pllc_0_document_3_sm.png",
+        "selector": "document",
+        "fileName": "normandpllc_ci_company_normand-law-pllc_0_document_3_sm.png",
+        "label": "company normand-law-pllc",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/company/normand-law-pllc",
+        "referenceUrl": "https://www.normandpllc.com/company/normand-law-pllc",
+        "expect": 0,
+        "viewportLabel": "sm",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 76.00042532506987,
+          "misMatchPercentage": "76.00",
+          "analysisTime": 40
+        },
+        "diffImage": "../bitmaps_test/20250908-064957/failed_diff_normandpllc_ci_company_normand-law-pllc_0_document_3_sm.png"
+      },
+      "status": "fail"
+    }
+  ],
+  "id": "normandpllc_ci"
+}

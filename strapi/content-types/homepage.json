@@ -1,0 +1,67 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepage",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "Homepage",
+    "description": "Homepage content management"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.hero",
+      "required": true
+    },
+    "servicesOrange": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.services-orange"
+    },
+    "serviceCards": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.service-cards"
+    },
+    "caseStudies": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.case-studies"
+    },
+    "testimonials": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.testimonials"
+    },
+    "team": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.team"
+    },
+    "mediaLogos": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.media-logos"
+    },
+    "news": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.news"
+    },
+    "contact": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.contact"
+    }
+  }
+}

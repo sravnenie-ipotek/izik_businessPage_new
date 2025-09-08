@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_sections_services_oranges",
+  "info": {
+    "displayName": "Services Orange Section",
+    "icon": "briefcase",
+    "description": "Orange background services section with privacy overlay"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string",
+      "default": "OUR SERVICES"
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "WE ARE CLASS ACTION"
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "bottomImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "privacyTitle": {
+      "type": "string",
+      "default": "PRIVACY CLASS ACTION"
+    },
+    "privacyDescription": {
+      "type": "text"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "#fc5a2b"
+    }
+  }
+}

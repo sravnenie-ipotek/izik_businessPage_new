@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html data-wf-page="insurance-class-action" data-wf-site="normandpllc" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Insurance Class Action | First Party Insurance Claims | Car Rental Insurance Fraud | Normand PLLC</title>
+  <meta content="We are results. National leader in first party insurance class action cases. Multi-million dollar judgments and settlements against State Farm, GEICO, and Infinity Insurance. Investigating car rental insurance fraud and unfair charges. Free consultation." name="description">
+  <meta content="insurance class action, first party insurance, car rental insurance fraud, GEICO settlement, State Farm judgment, insurance underpayment, total loss claims, supplemental liability insurance, uninsured motorist, Normand PLLC, insurance litigation, class action lawsuit" name="keywords">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/aiziks-stellar-site.webflow.css" rel="stylesheet" type="text/css">
+  <!-- Using System Fonts Only - No External Font Loading -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <style>
+    * {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+    /* Insurance Teal Theme */
+    :root {
+      --insurance-teal: #fc5a2b; /* Orange accent only */
+      --insurance-teal-dark: #fc5a2b;
+      --insurance-teal-light: #fc5a2b;
+      --insurance-accent: #fc5a2b;
+      --insurance-bg: #f2f2f2;
+    }
+    
+    /* Hero Section - Insurance Theme */
+    .hero-section {
+      background: #ffffff; /* White background - NO GRADIENTS */
+      padding: 120px 20px;
+      position: relative;
+      overflow: hidden;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+    }
+    
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: 
+        repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.05) 35px, rgba(255,255,255,.05) 70px),
+        url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+    
+    .hero-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      color: white;
+    }
+    
+    .hero-tagline {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      font-weight: 300;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      opacity: 0.9;
+      color: var(--insurance-accent);
+    }
+    
+    .hero-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
+      font-size: clamp(48px, 8vw, 80px);
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    
+    .hero-subtitle {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      font-weight: 300;
+      margin-bottom: 30px;
+      opacity: 0.95;
+    }
+    
+    .hero-description {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto 40px;
+      opacity: 0.9;
+    }
+    
+    .hero-cta {
+      display: inline-block;
+      padding: 15px 40px;
+      background: white;
+      color: var(--insurance-teal);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: 2px solid white;
+    }
+    
+    .hero-cta:hover {
+      background: transparent;
+      color: white;
+      transform: translateY(-2px);
+    }
+    
+    /* Content Section */
+    .content-section {
+      padding: 80px 20px;
+      background: white;
+    }
+    
+    .content-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .section-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
+      font-size: 36px;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--insurance-teal);
+      position: relative;
+      padding-bottom: 20px;
+    }
+    
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: var(--insurance-accent);
+    }
+    
+    /* Focus Areas Section */
+    .focus-areas {
+      margin-bottom: 80px;
+    }
+    
+    .focus-card {
+      background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+      border-left: 4px solid var(--insurance-teal);
+      padding: 40px;
+      margin-bottom: 30px;
+      transition: all 0.3s ease;
+    }
+    
+    .focus-card:hover {
+      box-shadow: 0 10px 30px rgba(0,105,92,0.1);
+      transform: translateX(10px);
+    }
+    
+    .focus-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
+      font-size: 28px;
+      font-weight: 500;
+      color: var(--insurance-teal-dark);
+      margin-bottom: 20px;
+    }
+    
+    .focus-description {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    
+    .focus-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .focus-list li {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 15px;
+      font-family: 'Source Sans Pro', sans-serif;
+      color: #555;
+    }
+    
+    .focus-list li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: var(--insurance-accent);
+      font-size: 20px;
+    }
+    
+    /* Representative Cases */
+    .cases-section {
+      background: var(--insurance-bg);
+      padding: 80px 20px;
+      margin: 0 -20px;
+    }
+    
+    .cases-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .case-card {
+      background: white;
+      padding: 40px;
+      border-top: 5px solid var(--insurance-teal);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .case-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background: linear-gradient(90deg, var(--insurance-teal), var(--insurance-accent));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    
+    .case-card:hover::before {
+      transform: scaleX(1);
+    }
+    
+    .case-card:hover {
+      box-shadow: 0 15px 40px rgba(0,105,92,0.15);
+      transform: translateY(-5px);
+    }
+    
+    .case-company {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--insurance-teal-dark);
+      margin-bottom: 15px;
+    }
+    
+    .case-result {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--insurance-accent);
+      margin-bottom: 20px;
+    }
+    
+    .case-details {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #555;
+    }
+    
+    .case-details ul {
+      list-style: none;
+      padding: 0;
+      margin: 15px 0 0 0;
+    }
+    
+    .case-details li {
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 10px;
+    }
+    
+    .case-details li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--insurance-teal);
+      font-weight: bold;
+    }
+    
+    /* Quote Section */
+    .quote-section {
+      background: linear-gradient(135deg, var(--insurance-teal-dark) 0%, var(--insurance-teal) 100%);
+      padding: 60px 20px;
+      margin: 80px -20px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .quote-section::before {
+      content: '"';
+      position: absolute;
+      top: -20px;
+      left: 40px;
+      font-size: 150px;
+      color: rgba(255,255,255,0.1);
+      font-family: Georgia, serif;
+    }
+    
+    .quote-content {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .quote-text {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 1.6;
+      color: white;
+      margin-bottom: 30px;
+      font-style: italic;
+    }
+    
+    .quote-author {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--insurance-accent);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    
+    /* Contact Section */
+    .contact-section {
+      background: #f9f9f9;
+      padding: 80px 20px;
+      margin-top: 80px;
+    }
+    
+    .contact-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    
+    .contact-header h2 {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
+      font-size: 36px;
+      font-weight: 600;
+      color: var(--insurance-teal);
+      margin-bottom: 20px;
+    }
+    
+    .contact-header p {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 18px;
+      color: #666;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .contact-methods {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    .contact-method {
+      text-align: center;
+      padding: 30px;
+      background: white;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+    }
+    
+    .contact-method:hover {
+      border-color: var(--insurance-teal);
+      box-shadow: 0 10px 30px rgba(0,105,92,0.1);
+      transform: translateY(-5px);
+    }
+    
+    .contact-method h3 {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
+      font-size: 24px;
+      font-weight: 500;
+      color: var(--insurance-teal-dark);
+      margin-bottom: 20px;
+    }
+    
+    .contact-method p {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 15px;
+    }
+    
+    .contact-method a {
+      color: var(--insurance-teal);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+    
+    .contact-method a:hover {
+      color: var(--insurance-accent);
+    }
+    
+    /* Custom Cursor - Insurance Theme */
+    #cursor {
+      pointer-events: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+      display: none;
+    }
+    
+    @media (min-width: 768px) {
+      #cursor {
+        display: block;
+      }
+    }
+    
+    .cursor-inner {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: var(--insurance-teal);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      transition: width 0.3s, height 0.3s, background 0.3s;
+    }
+    
+    .cursor-outer {
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      border: 2px solid var(--insurance-teal);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 0.15s ease-out;
+    }
+    
+    #cursor.hover .cursor-inner {
+      width: 25px;
+      height: 25px;
+      background: var(--insurance-accent);
+      opacity: 0.5;
+    }
+    
+    #cursor.hover .cursor-outer {
+      width: 50px;
+      height: 50px;
+      border-color: var(--insurance-accent);
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .hero-section {
+        padding: 80px 20px;
+        min-height: 50vh;
+      }
+      
+      .section-title {
+        font-size: 28px;
+      }
+      
+      .cases-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .quote-text {
+        font-size: 20px;
+      }
+      
+      .focus-card {
+        padding: 25px;
+      }
+    }
+    
+    /* Active Menu State */
+    .nav-submenu a[href="insurance-class-action.html"] {
+      color: var(--insurance-teal) !important;
+      font-weight: 600;
+    }
+    
+    .nav-submenu a[href="insurance-class-action.html"].active {
+      background: linear-gradient(90deg, var(--insurance-teal), var(--insurance-accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  </style>
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div id="cursor">
+    <div class="cursor-inner"></div>
+    <div class="cursor-outer"></div>
+  </div>
+
+  <!-- Main Navigation (from index.html) -->
+  <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+    <div class="navigation-wrap">
+      <div class="menu">
+        <nav role="navigation" class="navigation-items w-nav-menu">
+          <a href="index.html" class="navigation-item w-nav-link">Home</a>
+          <a href="about.html" class="navigation-item w-nav-link">About</a>
+          <a href="projects.html" class="navigation-item w-nav-link">Projects</a>
+          <a href="team.html" class="navigation-item w-nav-link">Team</a>
+          <a href="blog.html" class="navigation-item w-nav-link">Blog</a>
+          <a href="contact.html" class="navigation-item w-nav-link">Contact</a>
+        </nav>
+        <div class="menu-button w-nav-button" id="menu-toggle">
+          <div class="menu-icon">
+            <div class="menu-icon-line-top"></div>
+            <div class="menu-icon-line-middle">
+              <div class="menu-icon-line-middle-inner"></div>
+            </div>
+            <div class="menu-icon-line-bottom"></div>
+          </div>
+        </div>
+      </div>
+      <a href="index.html" class="logo-link w-nav-brand">
+        <div class="logo-text">Normand PLLC</div>
+      </a>
+      <div class="nav-menu" id="nav-menu" style="display: none;">
+        <div class="nav-submenu">
+          <a href="class-action.html" class="nav-submenu-link">Class Action</a>
+          <a href="privacy-class-action.html" class="nav-submenu-link">Privacy & Data Breach</a>
+          <a href="consumer-protection.html" class="nav-submenu-link">Consumer Protection</a>
+          <a href="insurance-class-action.html" class="nav-submenu-link active">Insurance Class Action</a>
+          <a href="#" class="nav-submenu-link">Status & Results</a>
+          <a href="#" class="nav-submenu-link">Our Team</a>
+          <a href="#" class="nav-submenu-link">News & Articles</a>
+          <a href="#" class="nav-submenu-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <div class="hero-tagline">WE ARE RESULTS</div>
+      <h1 class="hero-title">INSURANCE</h1>
+      <div class="hero-subtitle">First Party Insurance Class Actions</div>
+      <p class="hero-description">
+        We have gained a national reputation as a leader in pursuing and winning first party insurance class action cases on behalf of consumers. Many times we investigate the case, identify the wrong and file suit for the very first time based on our investigation.
+      </p>
+      <a href="#consultation" class="hero-cta">Get Free Consultation</a>
+    </div>
+  </section>
+
+  <!-- Main Content Section -->
+  <section class="content-section">
+    <div class="content-wrapper">
+      
+      <!-- Focus Areas -->
+      <div class="focus-areas">
+        <h2 class="section-title">Our Insurance Practice Areas</h2>
+        
+        <div class="focus-card">
+          <h3 class="focus-title">Car Rental Insurance Class Actions</h3>
+          <p class="focus-description">
+            We target unfair and deceptive charges in the car rental industry and investigate potential insurance fraud affecting both United States and United Kingdom citizens.
+          </p>
+          <ul class="focus-list">
+            <li>Promised but undelivered supplemental liability insurance</li>
+            <li>Uninsured motorist insurance gaps</li>
+            <li>Hidden or illegal fees</li>
+            <li>Deceptive insurance coverage practices</li>
+          </ul>
+        </div>
+        
+        <div class="focus-card">
+          <h3 class="focus-title">Property Damage Insurance Claims</h3>
+          <p class="focus-description">
+            We pursue class actions against insurance companies that systematically underpay or deny legitimate property damage claims, ensuring policyholders receive full compensation.
+          </p>
+          <ul class="focus-list">
+            <li>Total loss vehicle underpayments</li>
+            <li>Sales tax recovery on insurance claims</li>
+            <li>Tag, title, and dealer fee recovery</li>
+            <li>Systematic claim undervaluation</li>
+          </ul>
+        </div>
+        
+        <div class="focus-card">
+          <h3 class="focus-title">First Party Insurance Disputes</h3>
+          <p class="focus-description">
+            We champion consumers' rights in first party insurance disputes, identifying patterns of wrongful denials and underpayments across the insurance industry.
+          </p>
+          <ul class="focus-list">
+            <li>Bad faith claim denials</li>
+            <li>Delayed claim processing</li>
+            <li>Improper coverage interpretations</li>
+            <li>Premium overcharges</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Quote Section -->
+      <div class="quote-section">
+        <div class="quote-content">
+          <p class="quote-text">
+            "Many times we investigate the case, identify the wrong and file suit for the very first time based on our investigation - pioneering new areas of consumer protection in insurance law."
+          </p>
+          <div class="quote-author">— Normand PLLC Insurance Practice</div>
+        </div>
+      </div>
+
+      <!-- Representative Cases -->
+      <div class="cases-section">
+        <h2 class="section-title">Representative Cases & Results</h2>
+        
+        <div class="cases-grid">
+          <div class="case-card">
+            <div class="case-company">State Farm Auto</div>
+            <div class="case-result">Multi-Million Dollar Judgment</div>
+            <div class="case-details">
+              Property Damage Class Action resulting in:
+              <ul>
+                <li>100% recovery for class members</li>
+                <li>Plus interest on all claims</li>
+                <li>Full compensation for underpayments</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="case-card">
+            <div class="case-company">GEICO</div>
+            <div class="case-result">$79 Million Settlement</div>
+            <div class="case-details">
+              Class Action Litigation for:
+              <ul>
+                <li>Underpayments in vehicle total loss claims</li>
+                <li>Recovery of sales tax for leased vehicles</li>
+                <li>Compensation for systematic undervaluation</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="case-card">
+            <div class="case-company">Infinity Insurance</div>
+            <div class="case-result">Groundbreaking Settlement</div>
+            <div class="case-details">
+              First known settlement of its kind:
+              <ul>
+                <li>Recovered sales tax on claims</li>
+                <li>Tag, title, and dealer fees included</li>
+                <li>Set precedent for future cases</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Insurance Violations -->
+      <div class="focus-areas">
+        <h2 class="section-title">Common Insurance Violations We Pursue</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+          <div class="focus-card">
+            <h3 class="focus-title">Claim Underpayments</h3>
+            <ul class="focus-list">
+              <li>Systematic undervaluation of vehicles</li>
+              <li>Failure to pay sales tax</li>
+              <li>Omission of fees and charges</li>
+              <li>Depreciation miscalculations</li>
+            </ul>
+          </div>
+          
+          <div class="focus-card">
+            <h3 class="focus-title">Coverage Denials</h3>
+            <ul class="focus-list">
+              <li>Bad faith claim denials</li>
+              <li>Misrepresentation of policy terms</li>
+              <li>Retroactive coverage changes</li>
+              <li>Unreasonable delays</li>
+            </ul>
+          </div>
+          
+          <div class="focus-card">
+            <h3 class="focus-title">Premium Issues</h3>
+            <ul class="focus-list">
+              <li>Unauthorized premium increases</li>
+              <li>Hidden fees and charges</li>
+              <li>Discriminatory pricing</li>
+              <li>Automatic renewal traps</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="consultation">
+    <div class="contact-header">
+      <h2>Fight for Your Insurance Rights</h2>
+      <p>If you believe you've been wronged by your insurance company, we want to hear from you. Free consultation for potential class action cases.</p>
+    </div>
+    
+    <div class="contact-methods">
+      <div class="contact-method">
+        <h3>Call Today</h3>
+        <p>Speak with our insurance litigation team</p>
+        <a href="tel:407-603-6031">407-603-6031</a>
+      </div>
+      
+      <div class="contact-method">
+        <h3>Email Us</h3>
+        <p>Send details of your insurance issue</p>
+        <a href="mailto:office@normandpllc.com">office@normandpllc.com</a>
+        <p style="margin-top: 10px;">Fax: 888-974-2175</p>
+      </div>
+      
+      <div class="contact-method">
+        <h3>Office Location</h3>
+        <p>3165 McCrory Place<br>Suite 175<br>Orlando, FL 32803</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <script src="js/content-manager.js"></script>
+  <script>
+    // Initialize custom cursor
+    function initializeCursor() {
+      if (window.innerWidth <= 768) return;
+      
+      const cursor = document.getElementById('cursor');
+      if (!cursor) return;
+      
+      const cursorInner = cursor.querySelector('.cursor-inner');
+      const cursorOuter = cursor.querySelector('.cursor-outer');
+      
+      let mouseX = 0;
+      let mouseY = 0;
+      let innerX = 0;
+      let innerY = 0;
+      let outerX = 0;
+      let outerY = 0;
+      
+      document.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+      });
+      
+      function animate() {
+        innerX += (mouseX - innerX) * 0.5;
+        innerY += (mouseY - innerY) * 0.5;
+        outerX += (mouseX - outerX) * 0.15;
+        outerY += (mouseY - outerY) * 0.15;
+        
+        if (cursorInner) {
+          cursorInner.style.left = `${innerX}px`;
+          cursorInner.style.top = `${innerY}px`;
+        }
+        
+        if (cursorOuter) {
+          cursorOuter.style.left = `${outerX}px`;
+          cursorOuter.style.top = `${outerY}px`;
+        }
+        
+        requestAnimationFrame(animate);
+      }
+      
+      animate();
+      
+      // Add hover effects
+      const hoverElements = document.querySelectorAll('a, button, .focus-card, .case-card, .contact-method');
+      
+      hoverElements.forEach(element => {
+        element.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+        element.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+      });
+    }
+    
+    // Menu toggle functionality
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    
+    if (menuToggle && navMenu) {
+      menuToggle.addEventListener('click', function(e) {
+        e.stopPropagation();
+        navMenu.style.display = navMenu.style.display === 'none' ? 'block' : 'none';
+      });
+      
+      // Close menu when clicking outside
+      document.addEventListener('click', function(e) {
+        if (!navMenu.contains(e.target) && e.target !== menuToggle) {
+          navMenu.style.display = 'none';
+        }
+      });
+      
+      // Close menu when clicking a link
+      const menuLinks = navMenu.querySelectorAll('a');
+      menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          navMenu.style.display = 'none';
+        });
+      });
+    }
+    
+    // GSAP Animations
+    document.addEventListener('DOMContentLoaded', function() {
+      initializeCursor();
+      
+      // Register ScrollTrigger
+      gsap.registerPlugin(ScrollTrigger);
+      
+      // Hero animations
+      gsap.timeline()
+        .from('.hero-tagline', { duration: 0.8, y: 30, opacity: 0 })
+        .from('.hero-title', { duration: 1, y: 50, opacity: 0 }, '-=0.4')
+        .from('.hero-subtitle', { duration: 0.8, y: 30, opacity: 0 }, '-=0.4')
+        .from('.hero-description', { duration: 0.8, y: 30, opacity: 0 }, '-=0.4')
+        .from('.hero-cta', { duration: 0.8, y: 30, opacity: 0 }, '-=0.4');
+      
+      // Focus cards animation
+      gsap.utils.toArray('.focus-card').forEach((card, i) => {
+        gsap.from(card, {
+          scrollTrigger: {
+            trigger: card,
+            start: 'top 80%',
+            toggleActions: 'play none none reverse'
+          },
+          duration: 0.8,
+          x: i % 2 === 0 ? -50 : 50,
+          opacity: 0,
+          delay: i * 0.1
+        });
+      });
+      
+      // Case cards animation
+      gsap.utils.toArray('.case-card').forEach((card, i) => {
+        gsap.from(card, {
+          scrollTrigger: {
+            trigger: card,
+            start: 'top 80%',
+            toggleActions: 'play none none reverse'
+          },
+          duration: 0.8,
+          y: 50,
+          opacity: 0,
+          delay: i * 0.15
+        });
+      });
+      
+      // Quote section animation
+      gsap.from('.quote-text', {
+        scrollTrigger: {
+          trigger: '.quote-section',
+          start: 'top 70%',
+          toggleActions: 'play none none reverse'
+        },
+        duration: 1,
+        scale: 0.9,
+        opacity: 0
+      });
+      
+      gsap.from('.quote-author', {
+        scrollTrigger: {
+          trigger: '.quote-section',
+          start: 'top 70%',
+          toggleActions: 'play none none reverse'
+        },
+        duration: 1,
+        y: 30,
+        opacity: 0,
+        delay: 0.3
+      });
+      
+      // Contact methods animation
+      gsap.utils.toArray('.contact-method').forEach((method, i) => {
+        gsap.from(method, {
+          scrollTrigger: {
+            trigger: method,
+            start: 'top 85%',
+            toggleActions: 'play none none reverse'
+          },
+          duration: 0.8,
+          y: 30,
+          opacity: 0,
+          delay: i * 0.1
+        });
+      });
+      
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

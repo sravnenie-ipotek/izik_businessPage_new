@@ -1,0 +1,419 @@
+[
+  {
+    "order": 1,
+    "selector": "header.site-header",
+    "color": "black",
+    "headingSample": null,
+    "approxHeight": 900,
+    "approxTop": 0,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "#",
+        "type": "button"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "#",
+        "type": "button"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/contact-us/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/class-action/",
+        "type": "a"
+      }
+    ],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 2,
+    "selector": "header.wp-block-normand-page-banner",
+    "color": "white",
+    "headingSample": "We AreClass ActionThe WinTriumphJusticeClass Action",
+    "approxHeight": 720,
+    "approxTop": 0,
+    "ctas": [],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgb(1, 1, 1)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 3,
+    "selector": "main.site-main",
+    "color": "black",
+    "headingSample": "Class Action We AreClass ActionThe WinTriumphJusticeClass Action CLASS ACTION Litigation What is a c",
+    "approxHeight": 8358,
+    "approxTop": 0,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/class-action/privacy/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/class-action/consumer-protection/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/class-action/insurance/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/john-richard-collection-data-breach/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/fidelity-national-information-services-data-breach-are-you-at-risk/",
+        "type": "a"
+      }
+    ],
+    "hasForms": true,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": true,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 4,
+    "selector": "body.wp-singular",
+    "color": "white",
+    "headingSample": "Class Action We AreClass ActionThe WinTriumphJusticeClass Action CLASS ACTION Litigation What is a c",
+    "approxHeight": 8538,
+    "approxTop": 0,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "#primary",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "#",
+        "type": "button"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "#",
+        "type": "button"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/contact-us/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/",
+        "type": "a"
+      }
+    ],
+    "hasForms": true,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": true,
+    "rawBg": "rgb(255, 255, 255)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 5,
+    "selector": "figure.banner-img-reveal",
+    "color": "black",
+    "headingSample": null,
+    "approxHeight": 449,
+    "approxTop": 0,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "#primary",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "#",
+        "type": "button"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "#",
+        "type": "button"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/contact-us/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/",
+        "type": "a"
+      }
+    ],
+    "hasForms": true,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": true,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 6,
+    "selector": "div.wp-block-normand-class-action",
+    "color": "white",
+    "headingSample": "CLASS ACTION Litigation What is a class action lawsuit? Why are class action suits important and val",
+    "approxHeight": 270,
+    "approxTop": 720,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/class-action/privacy/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/class-action/consumer-protection/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/class-action/insurance/",
+        "type": "a"
+      }
+    ],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": true,
+    "rawBg": "rgb(255, 255, 255)",
+    "paddingY": 160,
+    "marginY": 0
+  },
+  {
+    "order": 7,
+    "selector": "div.preloader",
+    "color": "orange",
+    "headingSample": null,
+    "approxHeight": 900,
+    "approxTop": 900,
+    "ctas": [],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgb(252, 90, 43)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 8,
+    "selector": "div.classaction-grid",
+    "color": "black",
+    "headingSample": "PRIVACY CLASS ACTION CONSUMER PROTECTION CLASS ACTION INSURANCE CLASS ACTION",
+    "approxHeight": 2803,
+    "approxTop": 3181,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/class-action/privacy/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/class-action/consumer-protection/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/class-action/insurance/",
+        "type": "a"
+      }
+    ],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": true,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 9,
+    "selector": "div.normand-articles",
+    "color": "white",
+    "headingSample": "John Richard Collection Data Breach Fidelity National Information Services 2023 Data Breach Impacts ",
+    "approxHeight": 1271,
+    "approxTop": 6064,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/john-richard-collection-data-breach/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/fidelity-national-information-services-data-breach-are-you-at-risk/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/news-articles/",
+        "type": "a"
+      }
+    ],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgb(242, 242, 242)",
+    "paddingY": 235,
+    "marginY": 0
+  },
+  {
+    "order": 10,
+    "selector": "div.normand-articles-posts-grid",
+    "color": "black",
+    "headingSample": "John Richard Collection Data Breach Fidelity National Information Services 2023 Data Breach Impacts ",
+    "approxHeight": 836,
+    "approxTop": 6252,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/john-richard-collection-data-breach/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/fidelity-national-information-services-data-breach-are-you-at-risk/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/john-richard-collection-data-breach/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/fidelity-national-information-services-data-breach-are-you-at-risk/",
+        "type": "a"
+      }
+    ],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 11,
+    "selector": "div.wp-block-normand-contact",
+    "color": "orange",
+    "headingSample": "WE ARE READY",
+    "approxHeight": 1024,
+    "approxTop": 7334,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": " tel:4076036031",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "mailto:office@normandpllc.com",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "tel:8889742175",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://maps.app.goo.gl/xc98brULtFBbmwLL7",
+        "type": "a"
+      }
+    ],
+    "hasForms": true,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgb(252, 90, 43)",
+    "paddingY": 235,
+    "marginY": 0
+  },
+  {
+    "order": 12,
+    "selector": "div.normand-contact-wrap",
+    "color": "black",
+    "headingSample": "WE ARE READY",
+    "approxHeight": 789,
+    "approxTop": 7389,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": " tel:4076036031",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "mailto:office@normandpllc.com",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "tel:8889742175",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://maps.app.goo.gl/xc98brULtFBbmwLL7",
+        "type": "a"
+      }
+    ],
+    "hasForms": true,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 0,
+    "marginY": 0
+  }
+]

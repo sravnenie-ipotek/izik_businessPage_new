@@ -1,0 +1,21 @@
+Report Location: backstop_data/html_report/index.html
+Test Run: 2025-09-08 01:18:06
+Results: 0 Passed, 52 Failed
+Average Mismatch: 10-50%
+
+To view report:
+open backstop_data/html_report/index.html
+
+Key Findings:
+- Homepage: 44.64% mismatch (xl), 43.72% (lg), 49.77% (md), 37.12% (sm)
+- Class Action: 23.71% mismatch (xl)
+- Contact: 7.74% mismatch (xl)
+- Our Team: 9.67% mismatch (xl)
+- Privacy Policy: 12.42% mismatch (xl)
+
+Main Issues:
+1. Typography - font sizes and letter-spacing need adjustment
+2. Container widths - may be too wide or narrow
+3. Section padding - vertical rhythm off
+4. Color blocks - background colors may not match exactly
+5. Missing components - hero images, icons, etc.

@@ -1,0 +1,192 @@
+{
+  "id": "normandpllc_ci",
+  "viewports": [
+    {
+      "label": "xl",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "label": "lg",
+      "width": 1024,
+      "height": 800
+    },
+    {
+      "label": "md",
+      "width": 768,
+      "height": 900
+    },
+    {
+      "label": "sm",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "contact-us",
+      "url": "http://localhost:3000/contact-us/",
+      "referenceUrl": "https://www.normandpllc.com/contact-us/",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "Homepage",
+      "url": "http://localhost:3000/",
+      "referenceUrl": "https://www.normandpllc.com/",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "class-action",
+      "url": "http://localhost:3000/class-action/",
+      "referenceUrl": "https://www.normandpllc.com/class-action/",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "class-action privacy",
+      "url": "http://localhost:3000/class-action/privacy/",
+      "referenceUrl": "https://www.normandpllc.com/class-action/privacy/",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "class-action consumer-protection",
+      "url": "http://localhost:3000/class-action/consumer-protection/",
+      "referenceUrl": "https://www.normandpllc.com/class-action/consumer-protection/",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "class-action insurance",
+      "url": "http://localhost:3000/class-action/insurance/",
+      "referenceUrl": "https://www.normandpllc.com/class-action/insurance/",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "status-results",
+      "url": "http://localhost:3000/status-results/",
+      "referenceUrl": "https://www.normandpllc.com/status-results/",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "our-team",
+      "url": "http://localhost:3000/our-team/",
+      "referenceUrl": "https://www.normandpllc.com/our-team/",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "news-articles",
+      "url": "http://localhost:3000/news-articles/",
+      "referenceUrl": "https://www.normandpllc.com/news-articles/",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "disclaimer",
+      "url": "http://localhost:3000/disclaimer/",
+      "referenceUrl": "https://www.normandpllc.com/disclaimer/",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "privacy-policy",
+      "url": "http://localhost:3000/privacy-policy/",
+      "referenceUrl": "https://www.normandpllc.com/privacy-policy/",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "normandlawpllc",
+      "url": "http://localhost:3000/normandlawpllc",
+      "referenceUrl": "https://www.normandpllc.com/normandlawpllc",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    },
+    {
+      "label": "company normand-law-pllc",
+      "url": "http://localhost:3000/company/normand-law-pllc",
+      "referenceUrl": "https://www.normandpllc.com/company/normand-law-pllc",
+      "delay": 2000,
+      "misMatchThreshold": 0.2,
+      "requireSameDimensions": false,
+      "selectors": [
+        "document"
+      ]
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": [
+    "browser"
+  ],
+  "engine": "playwright",
+  "engineOptions": {
+    "args": [
+      "--no-sandbox",
+      "--disable-font-subpixel-positioning"
+    ],
+    "headless": true,
+    "gotoTimeout": 30000
+  },
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false
+}

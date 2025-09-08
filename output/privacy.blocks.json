@@ -1,0 +1,62 @@
+{
+  "page": "privacy",
+  "url": "https://www.normandpllc.com/class-action/privacy/",
+  "blocks": [
+    {
+      "order": 1,
+      "color": "white",
+      "headingSample": "Privacy",
+      "approxHeight": 100,
+      "ctas": [
+        {"label": "Placeholder", "href": "/contact-us/"},
+        {"label": "Placeholder", "href": "/"}
+      ],
+      "rawBg": "#ffffff",
+      "features": ["navigation", "header"]
+    },
+    {
+      "order": 2,
+      "color": "white",
+      "headingSample": "Privacy Class Actions",
+      "approxHeight": 500,
+      "ctas": [
+        {"label": "Placeholder", "href": "/contact-us/"}
+      ],
+      "rawBg": "#ffffff",
+      "features": ["hero", "quote"]
+    },
+    {
+      "order": 3,
+      "color": "white",
+      "headingSample": "Data Breach and Loss of Private Data Cases",
+      "approxHeight": 600,
+      "ctas": [
+        {"label": "Placeholder", "href": "/status-results/"}
+      ],
+      "rawBg": "#ffffff",
+      "features": ["content", "case-studies"]
+    },
+    {
+      "order": 4,
+      "color": "white",
+      "headingSample": "Telephone Consumer Protection Act",
+      "approxHeight": 300,
+      "ctas": [
+        {"label": "Placeholder", "href": "tel:8005555555"}
+      ],
+      "rawBg": "#ffffff",
+      "features": ["content", "contact-info"]
+    },
+    {
+      "order": 5,
+      "color": "black",
+      "headingSample": "Copyright Notice",
+      "approxHeight": 100,
+      "ctas": [],
+      "rawBg": "#000000",
+      "features": ["footer"]
+    }
+  ],
+  "colorSequence": "white → white → white → white → black",
+  "totalCTAs": 5
+}

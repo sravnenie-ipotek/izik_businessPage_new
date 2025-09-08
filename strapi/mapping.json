@@ -1,0 +1,332 @@
+{
+  "template_1": {
+    "components": [
+      "cta_band",
+      "rich_text_block",
+      "contact_band",
+      "rich_text_block",
+      "gallery_grid",
+      "gallery_grid",
+      "rich_text_block",
+      "rich_text_block",
+      "rich_text_block",
+      "gallery_grid",
+      "rich_text_block",
+      "gallery_grid",
+      "gallery_grid",
+      "cta_band",
+      "cta_band",
+      "contact_band",
+      "contact_band"
+    ],
+    "themes": [
+      "black",
+      "white",
+      "black",
+      "white",
+      "orange",
+      "black",
+      "white",
+      "orange",
+      "black",
+      "white",
+      "black",
+      "black",
+      "black",
+      "white",
+      "black",
+      "orange",
+      "black"
+    ]
+  },
+  "template_2": {
+    "components": [
+      "contact_band",
+      "contact_band",
+      "contact_band",
+      "contact_band",
+      "contact_band",
+      "contact_band",
+      "rich_text_block",
+      "rich_text_block"
+    ],
+    "themes": [
+      "black",
+      "white",
+      "black",
+      "orange",
+      "black",
+      "black",
+      "white",
+      "orange"
+    ]
+  },
+  "template_3": {
+    "components": [
+      "cta_band",
+      "rich_text_block",
+      "contact_band",
+      "contact_band",
+      "contact_band",
+      "gallery_grid",
+      "rich_text_block",
+      "gallery_grid",
+      "cta_band",
+      "cta_band",
+      "contact_band",
+      "contact_band"
+    ],
+    "themes": [
+      "black",
+      "white",
+      "black",
+      "white",
+      "black",
+      "white",
+      "orange",
+      "black",
+      "white",
+      "black",
+      "orange",
+      "black"
+    ]
+  },
+  "template_4": {
+    "components": [
+      "cta_band",
+      "rich_text_block",
+      "cta_band",
+      "rich_text_block",
+      "rich_text_block",
+      "rich_text_block",
+      "cta_band"
+    ],
+    "themes": [
+      "black",
+      "white",
+      "black",
+      "black",
+      "white",
+      "orange",
+      "black"
+    ]
+  },
+  "template_5": {
+    "components": [
+      "cta_band",
+      "rich_text_block",
+      "cta_band",
+      "cta_band",
+      "rich_text_block",
+      "rich_text_block",
+      "rich_text_block",
+      "cta_band",
+      "cta_band",
+      "rich_text_block",
+      "rich_text_block",
+      "cta_band",
+      "rich_text_block",
+      "rich_text_block",
+      "rich_text_block",
+      "rich_text_block"
+    ],
+    "themes": [
+      "black",
+      "white",
+      "black",
+      "black",
+      "white",
+      "orange",
+      "black",
+      "black",
+      "black",
+      "black",
+      "black",
+      "black",
+      "black",
+      "black",
+      "black",
+      "black"
+    ]
+  },
+  "template_6": {
+    "components": [
+      "cta_band",
+      "rich_text_block",
+      "contact_band",
+      "contact_band",
+      "contact_band",
+      "gallery_grid",
+      "rich_text_block",
+      "rich_text_block",
+      "gallery_grid",
+      "cta_band",
+      "cta_band",
+      "contact_band",
+      "contact_band"
+    ],
+    "themes": [
+      "black",
+      "white",
+      "black",
+      "white",
+      "black",
+      "white",
+      "orange",
+      "black",
+      "black",
+      "white",
+      "black",
+      "orange",
+      "black"
+    ]
+  },
+  "template_7": {
+    "components": [
+      "cta_band",
+      "rich_text_block",
+      "gallery_grid",
+      "rich_text_block",
+      "rich_text_block",
+      "rich_text_block",
+      "rich_text_block",
+      "rich_text_block",
+      "rich_text_block"
+    ],
+    "themes": [
+      "black",
+      "white",
+      "black",
+      "white",
+      "orange",
+      "black",
+      "black",
+      "black",
+      "black"
+    ]
+  },
+  "template_8": {
+    "components": [
+      "cta_band",
+      "rich_text_block",
+      "cta_band",
+      "rich_text_block",
+      "rich_text_block",
+      "rich_text_block"
+    ],
+    "themes": [
+      "black",
+      "white",
+      "black",
+      "black",
+      "white",
+      "orange"
+    ]
+  },
+  "template_9": {
+    "components": [
+      "cta_band",
+      "rich_text_block",
+      "gallery_grid",
+      "gallery_grid",
+      "rich_text_block",
+      "rich_text_block",
+      "rich_text_block",
+      "rich_text_block"
+    ],
+    "themes": [
+      "black",
+      "white",
+      "black",
+      "black",
+      "white",
+      "orange",
+      "black",
+      "black"
+    ]
+  },
+  "template_10": {
+    "components": [
+      "cta_band",
+      "rich_text_block",
+      "contact_band",
+      "contact_band",
+      "rich_text_block",
+      "rich_text_block",
+      "contact_band",
+      "rich_text_block",
+      "rich_text_block"
+    ],
+    "themes": [
+      "black",
+      "white",
+      "black",
+      "black",
+      "white",
+      "orange",
+      "black",
+      "black",
+      "black"
+    ]
+  },
+  "template_11": {
+    "components": [
+      "cta_band",
+      "rich_text_block",
+      "cta_band",
+      "rich_text_block",
+      "rich_text_block",
+      "rich_text_block",
+      "rich_text_block"
+    ],
+    "themes": [
+      "black",
+      "white",
+      "black",
+      "white",
+      "orange",
+      "black",
+      "black"
+    ]
+  },
+  "template_12": {
+    "components": [
+      "cta_band",
+      "rich_text_block",
+      "cta_band",
+      "rich_text_block",
+      "rich_text_block",
+      "rich_text_block",
+      "rich_text_block",
+      "rich_text_block"
+    ],
+    "themes": [
+      "black",
+      "white",
+      "black",
+      "white",
+      "orange",
+      "black",
+      "black",
+      "black"
+    ]
+  },
+  "template_13": {
+    "components": [
+      "cta_band",
+      "rich_text_block",
+      "cta_band",
+      "rich_text_block",
+      "rich_text_block",
+      "cta_band"
+    ],
+    "themes": [
+      "black",
+      "white",
+      "black",
+      "white",
+      "orange",
+      "black"
+    ]
+  }
+}

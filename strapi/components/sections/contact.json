@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_sections_contacts",
+  "info": {
+    "displayName": "Contact Section",
+    "icon": "envelope",
+    "description": "Contact form and information"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string",
+      "default": "GET IN TOUCH"
+    },
+    "title": {
+      "type": "string",
+      "default": "Contact Us"
+    },
+    "description": {
+      "type": "text"
+    },
+    "formTitle": {
+      "type": "string",
+      "default": "Send us a message"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "hours": {
+      "type": "text"
+    },
+    "submitButtonText": {
+      "type": "string",
+      "default": "Submit"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "#333333"
+    }
+  }
+}

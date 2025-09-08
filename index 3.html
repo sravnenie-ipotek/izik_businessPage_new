@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en-US" data-theme="normal">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Normand PLLC - Experts in Class Action</title>
+  <meta name="description" content="Normand PLLC attorneys represent consumers around the world in important and often unprecedented complex class actions.">
+  
+  <!-- Using System Fonts Only - No External Font Loading -->
+  
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="js/content-manager.js"></script>
+  
+  <!-- Netlify Identity Widget for CMS Authentication -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  
+  <style>
+    /* CSS Custom Properties - Exact from normandpllc */
+    :root {
+      /* Typography - System Fonts Only (matching normandpllc.com) */
+      --global-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
+      --highlight-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
+      --h1-special-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
+      --body-font-alt: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
+      
+      /* Font Sizes (Responsive - Exact from site) */
+      --global-font-size: 14px;
+      --global-font-line-height: 1.7;
+      --heading-line-height: 1.1;
+      
+      --h1-font-size: calc(75px + (6500vw - 24375px)/1065);
+      --h2-font-size: calc(65px + (5500vw - 20625px)/1065);
+      --h3-font-size: calc(48px + (3200vw - 12000px)/1065);
+      --h4-font-size: calc(28px + (1200vw - 4500px)/1065);
+      --h5-font-size: calc(18px + (200vw - 750px)/1065);
+      --h6-font-size: calc(14px + (400vw - 1500px)/1065);
+      
+      /* Colors - Exact Palette */
+      --color-theme-primary: #fc5a2b;
+      --color-theme-secondary: #f2f2f2;
+      --color-theme-black: #010101;
+      --color-theme-white: #fff;
+      --color-theme-grey: #ccc;
+      --global-font-color: #000;
+      --color-link: #fc5a2b;
+      --color-nav-toggle-grey: #b3b3b3;
+      
+      /* Shadow system */
+      --shadow-light: 0 4px 15px rgba(0, 0, 0, 0.1);
+      --shadow-medium: 0 8px 25px rgba(0, 0, 0, 0.15);
+      --shadow-heavy: 0 12px 40px rgba(0, 0, 0, 0.2);
+      
+      /* Layout */
+      --content-width-static: 45rem;
+      --content-width: 45rem;
+      
+      /* Spacing System */
+      --spacing-20: 0.44rem;
+      --spacing-30: 0.67rem;
+      --spacing-40: 1rem;
+      --spacing-50: 1.5rem;
+      --spacing-60: 2.25rem;
+      --spacing-70: 3.38rem;
+      --spacing-80: 5.06rem;
+      
+      /* Animation */
+      --transition-timing-function: cubic-bezier(0, 0.55, 0.45, 1);
+    }
+    
+    @media screen and (min-width: 1200px) {
+      :root {
+        --content-width: 55rem;
+      }
+    }
+    
+    @media screen and (min-width: 1440px) {
+      :root {
+        --content-width: 67rem;
+      }
+    }
+    
+    /* Reset and Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+    body {
+      font-family: var(--global-font-family);
+      font-size: var(--global-font-size);
+      line-height: var(--global-font-line-height);
+      color: var(--global-font-color);
+      background: var(--color-theme-white);
+    }
+    
+    /* Typography - Exact Styles */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--highlight-font-family);
+      font-weight: 400;
+      font-stretch: condensed;
+      line-height: var(--heading-line-height);
+      text-transform: uppercase;
+      margin-bottom: var(--spacing-40);
+    }
+    
+    h1 {
+      font-family: var(--h1-special-font);
+      font-size: var(--h1-font-size);
+    }
+    
+    h2 {
+      font-size: var(--h2-font-size);
+    }
+    
+    h3 {
+      font-size: var(--h3-font-size);
+    }
+    
+    h4 {
+      font-size: var(--h4-font-size);
+    }
+    
+    /* Site Structure */
+    .site {
+      margin: 0 auto;
+      max-width: 100%;
+    }
+    
+    .site-main {
+      padding-top: 45px;
+      overflow-x: hidden;
+    }
+    
+    @media screen and (min-width: 960px) {
+      .site-main {
+        padding-top: 0;
+      }
+    }
+    
+    /* Content Container */
+    .content-container {
+      max-width: var(--content-width);
+      margin: 0 auto;
+      padding: 0 var(--spacing-50);
+    }
+    
+    /* Header Styles */
+    .site-header {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 0;
+      z-index: 1000;
+      background: transparent;
+      transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    
+    .site-header.scrolled {
+      background: var(--color-theme-white);
+      box-shadow: var(--shadow-light);
+    }
+    
+    @media screen and (min-width: 960px) {
+      .site-header {
+        width: auto;
+        height: 100%;
+      }
+    }
+    
+    /* Language Switcher Styles */
+    .language-switcher {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1002;
+      display: flex;
+      gap: 5px;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 5px;
+      border-radius: 25px;
+    }
+    
+    .lang-btn {
+      background: transparent;
+      color: var(--color-theme-white);
+      border: none;
+      padding: 8px 15px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      opacity: 0.7;
+    }
+    
+    .lang-btn:hover {
+      opacity: 1;
+      background: rgba(252, 90, 43, 0.2);
+    }
+    
+    .lang-btn.active {
+      background: var(--color-theme-primary);
+      opacity: 1;
+    }
+    
+    @media screen and (min-width: 960px) {
+      .language-switcher {
+        right: 80px;
+      }
+    }
+    
+    /* Navigation Toggle */
+    .menu-toggle {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 1em 0;
+      font-stretch: condensed;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border: 0;
+      color: var(--color-nav-toggle-grey);
+      background: var(--color-theme-black);
+      z-index: 1;
+      cursor: pointer;
+    }
+    
+    @media screen and (min-width: 960px) {
+      .menu-toggle {
+        width: 130px;
+        padding: 1em 0;
+        position: absolute;
+        top: 50%;
+        background: transparent;
+        transform: translateY(-50%) rotate(-90deg);
+      }
+    }
+    
+    @media screen and (min-width: 1440px) {
+      .menu-toggle {
+        width: 212px;
+        padding: 1em 1.75em;
+      }
+    }
+    
+    /* Navigation Menu */
+    .main-navigation {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: var(--color-theme-black);
+      z-index: 999;
+    }
+    
+    .main-navigation.active {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .nav-menu {
+      text-align: center;
+    }
+    
+    .nav-menu a {
+      display: block;
+      position: relative;
+      padding: 0.15em 0.25em;
+      font-family: var(--global-font-family);
+      font-size: calc(21px + (400vw - 1500px)/1065);
+      line-height: 1.4;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--color-theme-white);
+      margin: var(--spacing-40) 0;
+    }
+    
+    .nav-menu a:hover {
+      color: var(--color-theme-primary);
+    }
+    
+    .nav-submenu {
+      margin-left: var(--spacing-60);
+      font-size: 0.8em;
+    }
+    
+    /* Hero Section */
+    .hero-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: left;
+      position: relative;
+      background: var(--color-theme-black);
+      color: var(--color-theme-white);
+      padding-left: 150px;
+    }
+    
+    @media (max-width: 960px) {
+      .hero-section {
+        padding-left: var(--spacing-50);
+        text-align: center;
+      }
+    }
+    
+    .hero-content {
+      max-width: 60%;
+      padding: 0;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .hero-portrait {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 40%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%);
+      z-index: 1;
+    }
+    
+    /* Placeholder will only show if no image is set */
+    .hero-portrait:not([style*="background-image"])::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"><rect width="400" height="600" fill="%23333"/><circle cx="200" cy="180" r="80" fill="%23555"/><rect x="160" y="280" width="80" height="120" fill="%23555"/><text x="200" y="450" text-anchor="middle" fill="%23888" font-size="16">Professional Portrait</text></svg>') center/cover;
+    }
+    
+    .hero-tagline {
+      font-size: calc(14px + (200vw - 750px)/1065);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: var(--spacing-30);
+      color: var(--color-theme-primary);
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    
+    .hero-secondary {
+      font-size: var(--global-font-size);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: var(--spacing-40);
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    
+    .hero-title {
+      margin-bottom: var(--spacing-40);
+      color: var(--color-theme-primary);
+      font-size: var(--h1-font-size);
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    
+    .hero-subtitle {
+      font-size: calc(18px + (400vw - 1500px)/1065);
+      color: var(--color-theme-white);
+      margin-bottom: var(--spacing-60);
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    
+    /* Service Sections */
+    .service-section {
+      padding: var(--spacing-80) 0;
+      background: var(--color-theme-white);
+      color: var(--color-theme-black);
+    }
+    
+    .class-action-section {
+      padding: 80px 0 120px 0;
+      background: #fc5a2b;
+      color: #010101;
+      position: relative;
+    }
+    
+    .overlapping-title {
+      position: absolute;
+      bottom: -40px;
+      right: 60px;
+      z-index: 10;
+    }
+    
+    .overlapping-title h2 {
+      font-size: clamp(60px, 10vw, 120px);
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      color: #010101;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    
+    @media (max-width: 960px) {
+      .overlapping-title {
+        right: 20px;
+        bottom: -30px;
+      }
+      
+      .overlapping-title h2 {
+        font-size: clamp(40px, 8vw, 80px);
+      }
+    }
+    
+    .service-label {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      margin-bottom: 20px;
+      color: #ffffff;
+      font-weight: 600;
+    }
+    
+    .service-title {
+      font-size: clamp(60px, 9vw, 110px);
+      font-weight: 900;
+      line-height: 0.85;
+      letter-spacing: -0.03em;
+      margin-bottom: 35px;
+      color: #010101;
+      text-transform: uppercase;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial Black, Helvetica, sans-serif;
+    }
+    
+    .service-description {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #010101;
+      max-width: 600px;
+    }
+    
+    .service-intro-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .service-intro {
+      flex: 1;
+      text-align: left;
+    }
+    
+    .service-intro-image {
+      flex: 0 0 45%;
+      max-width: 500px;
+    }
+    
+    .legal-image-placeholder {
+      width: 100%;
+      height: 400px;
+      background: #f8f8f8;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    
+    @media (max-width: 960px) {
+      .service-intro-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+      }
+      
+      .service-intro {
+        text-align: center;
+      }
+      
+      .service-title {
+        font-size: clamp(36px, 6vw, 72px);
+      }
+      
+      .service-intro-image {
+        flex: 1;
+        max-width: 100%;
+      }
+    }
+    
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--spacing-60);
+      margin: var(--spacing-80) 0;
+    }
+    
+    @media screen and (min-width: 960px) {
+      .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    
+    .service-card {
+      text-align: center;
+      padding: var(--spacing-60);
+      background: transparent;
+      border-radius: 8px;
+      transition: all 250ms ease;
+    }
+    
+    .service-card:hover {
+      transform: translateY(-2px);
+    }
+    
+    .service-icon {
+      width: 80px;
+      height: 80px;
+      background: var(--color-theme-black);
+      margin: 0 auto var(--spacing-50);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      color: var(--color-theme-white);
+    }
+    
+    .service-icon.privacy::before {
+      content: "🔒";
+    }
+    
+    .service-icon.consumer::before {
+      content: "🛡️";
+    }
+    
+    .service-icon.insurance::before {
+      content: "☂️";
+    }
+    
+    .service-card h3 {
+      color: var(--color-theme-black);
+      margin-bottom: var(--spacing-40);
+    }
+    
+    /* Case Studies Section */
+    .case-studies {
+      background: var(--color-theme-secondary);
+      padding: var(--spacing-80) 0;
+      text-align: center;
+    }
+    
+    .stats {
+      margin: var(--spacing-60) 0;
+    }
+    
+    .stat-number {
+      font-size: var(--h1-font-size);
+      font-family: var(--highlight-font-family);
+      color: var(--color-theme-primary);
+    }
+    
+    /* Testimonial Section */
+    .testimonial {
+      padding: var(--spacing-80) 0;
+      text-align: center;
+      background: var(--color-theme-secondary);
+    }
+    
+    .quote {
+      font-size: calc(24px + (800vw - 3000px)/1065);
+      font-style: italic;
+      line-height: 1.4;
+      margin: var(--spacing-60) 0;
+    }
+    
+    /* Team Section */
+    .team-section {
+      background: var(--color-theme-white);
+      color: var(--global-font-color);
+      padding: var(--spacing-80) 0;
+    }
+    
+    .team-member {
+      text-align: center;
+    }
+    
+    .member-photo {
+      width: 200px;
+      height: 250px;
+      background: linear-gradient(135deg, var(--color-theme-grey) 0%, #999 100%);
+      margin: 0 auto var(--spacing-50);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 50px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .member-photo::after {
+      content: "👨‍💼";
+      opacity: 0.7;
+    }
+    
+    /* Contact Section */
+    .contact-section {
+      padding: var(--spacing-80) 0;
+      background: var(--color-theme-primary);
+      color: var(--color-theme-white);
+    }
+    
+    .contact-section h2 {
+      color: var(--color-theme-white);
+    }
+    
+    .contact-form {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 12px;
+      padding: var(--spacing-60);
+      margin-top: var(--spacing-50);
+    }
+    
+    .contact-info {
+      text-align: center;
+    }
+    
+    /* Footer */
+    .site-footer {
+      background: var(--color-theme-black);
+      color: var(--color-theme-white);
+      padding: var(--spacing-50) 0;
+      text-align: center;
+      font-size: 12px;
+    }
+    
+    /* Buttons - Exact Styles */
+    .button {
+      display: inline-block;
+      position: relative;
+      border: none;
+      color: var(--color-theme-white);
+      background-color: var(--color-theme-black);
+      font-size: 12px;
+      text-transform: uppercase;
+      padding: 10px 40px;
+      overflow: hidden;
+      z-index: 1;
+      transition-property: color;
+      transition-duration: 0.7s;
+      transition-timing-function: var(--transition-timing-function);
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    .button:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--color-theme-primary);
+      transition-property: transform;
+      transition-duration: 0.7s;
+      transition-timing-function: var(--transition-timing-function);
+      z-index: -1;
+      transform: translate3d(0, 100%, 0);
+    }
+    
+    .button:hover:before {
+      transform: translate3d(0, 0, 0);
+    }
+    
+    .button:hover {
+      color: var(--color-theme-white);
+    }
+    
+    /* Preloader */
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: var(--color-theme-primary);
+      z-index: 10000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .preloader-content {
+      text-align: center;
+      color: var(--color-theme-white);
+    }
+    
+    .preloader-counter {
+      font-size: 72px;
+      font-weight: bold;
+      color: var(--color-theme-white);
+      font-family: var(--highlight-font-family);
+    }
+    
+    /* Custom Cursor */
+    @media (min-width: 768px) {
+      * {
+        cursor: none !important;
+      }
+    }
+    
+    .custom-cursor {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 9999;
+      mix-blend-mode: difference;
+    }
+    
+    .cursor-inner {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: var(--color-theme-primary);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .cursor-outer {
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      border: 2px solid var(--color-theme-primary);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0.5;
+    }
+    
+    /* Animation Classes */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    
+    .fade-in.animate {
+      opacity: 1;
+      transform: translateY(0);
+      transition: all 0.8s var(--transition-timing-function);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- No preloader - normandpllc doesn't have one -->
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor" id="cursor">
+    <div class="cursor-inner"></div>
+    <div class="cursor-outer"></div>
+  </div>
+
+  <div class="site">
+    <!-- Header -->
+    <header class="site-header">
+      <button class="menu-toggle" id="menu-toggle">Menu</button>
+      
+      <!-- Language Switcher -->
+      <div class="language-switcher">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ru">RU</button>
+      </div>
+      
+      <nav class="main-navigation" id="main-navigation">
+        <div class="nav-menu">
+          <a href="index.html">Home</a>
+          <div class="nav-submenu">
+            <a href="class-action.html">Class Action</a>
+            <a href="privacy-class-action.html">Privacy</a>
+            <a href="consumer-protection.html">Consumer Protection</a>
+            <a href="insurance-class-action.html">Insurance</a>
+          </div>
+          <a href="status-results.html">Status &amp; Results</a>
+          <a href="our-team.html">Our Team</a>
+          <a href="news-articles.html">News &amp; Articles</a>
+          <div class="nav-submenu">
+            <a href="contact.html">Contact Us</a>
+            <a href="disclaimer.html">Disclaimer</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="site-main">
+      <!-- Hero Section -->
+      <section class="hero-section" id="home">
+        <div class="hero-portrait"></div>
+        <div class="hero-content">
+          <div class="hero-tagline">NORMAND</div>
+          <div class="hero-subtitle">EXPERTS IN CLASS ACTION</div>
+          <h1 class="hero-title">WE ARE RESULTS</h1>
+          <div class="hero-secondary">SCROLL DOWN ↓</div>
+        </div>
+      </section>
+
+      <!-- Our Services Section -->
+      <section class="class-action-section" id="class-action">
+        <div class="content-container">
+          <div class="service-intro-wrapper">
+            <div class="service-intro fade-in">
+              <div class="service-label">OUR SERVICES</div>
+              <h2 class="service-title">WE ARE<br>CLASS<br>ACTION</h2>
+              <p class="service-description">Normand PLLC attorneys represent consumers around the world in important and often unprecedented complex class actions. The Firm has been lead counsel in many of the largest insurance class action cases in the United States. The firm has successfully pursued Class Action cases involving consumer fraud, privacy, individuals victimized by abusive telemarketing practices, and deceptive consumer sales practices.</p>
+            </div>
+            <div class="service-intro-image fade-in">
+              <div class="legal-image-placeholder">
+                <svg width="100%" height="100%" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Gavel illustration -->
+                  <rect width="500" height="400" fill="#1a1a1a"/>
+                  <!-- Gavel handle -->
+                  <rect x="150" y="180" width="200" height="40" rx="20" fill="#4a4a4a"/>
+                  <!-- Gavel head -->
+                  <ellipse cx="350" cy="200" rx="60" ry="30" fill="#5a5a5a"/>
+                  <ellipse cx="150" cy="200" rx="60" ry="30" fill="#5a5a5a"/>
+                  <!-- Credit cards underneath -->
+                  <rect x="180" y="250" width="140" height="90" rx="8" fill="#2a2a2a"/>
+                  <rect x="200" y="260" width="140" height="90" rx="8" fill="#3a3a3a"/>
+                  <!-- Card details -->
+                  <rect x="210" y="280" width="60" height="8" fill="#666"/>
+                  <rect x="210" y="295" width="40" height="6" fill="#666"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Overlapping Title -->
+        <div class="overlapping-title">
+          <h2>PRIVACY CLASS</h2>
+        </div>
+      </section>
+
+      <!-- Services Grid -->
+      <section class="service-section">
+        <div class="content-container">
+          <div class="services-grid">
+            <div class="service-card fade-in" id="privacy">
+              <div class="service-icon privacy"></div>
+              <h3>Privacy Class Action</h3>
+              <p>You have a right to privacy in your home, in your personal life and with your private information.</p>
+            </div>
+            
+            <div class="service-card fade-in" id="consumer">
+              <div class="service-icon consumer"></div>
+              <h3>Consumer Protection Class Action</h3>
+              <p>False advertising, bait and switch practices, unconscionable or illegal pricing schemes, deceptive credit reporting, identity theft, violations of consumer protection laws, debt collection violations, and other consumer rights violations.</p>
+            </div>
+            
+            <div class="service-card fade-in" id="insurance">
+              <div class="service-icon insurance"></div>
+              <h3>Insurance Class Action</h3>
+              <p>When you pay your insurance premium and the time comes to make a claim you have a right to any and all benefits provided by the insurance policy.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Case Studies -->
+      <section class="case-studies" id="results">
+        <div class="content-container">
+          <h2 class="fade-in">Case Studies</h2>
+          <div class="stats fade-in">
+            <div class="stat-number">5</div>
+            <div>Won Cases</div>
+            <div>2021 - 2024</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonial / News -->
+      <section class="testimonial" id="news">
+        <div class="content-container">
+          <div class="quote fade-in">
+            "We are not insular: we are compassion. We know that when one is cheated we all suffer."
+          </div>
+          <div class="fade-in">Client testimonial</div>
+        </div>
+      </section>
+
+      <!-- Team Section -->
+      <section class="team-section" id="team">
+        <div class="content-container">
+          <h2 class="fade-in">Our Team</h2>
+          <div class="team-member fade-in">
+            <div class="member-photo"></div>
+            <h3>Edmund Normand</h3>
+            <p>Edmund Normand started his practice in 1991, specializing in personal injury law.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact-section" id="contact">
+        <div class="content-container">
+          <div class="contact-info fade-in">
+            <h2>Contact Information</h2>
+            <p><strong>Orlando Office:</strong></p>
+            <p>Phone: 407-603-6031</p>
+            <p>Email: office@normandpllc.com</p>
+            <p>Fax: 888-974-2175</p>
+            <p>Address: 3165 McCrory Place Suite 175, Orlando, FL 32803</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="content-container">
+        <div id="disclaimer">
+          <p><strong>Disclaimer:</strong> This website is for informational purposes only. No attorney-client relationship is formed.</p>
+        </div>
+        <div id="privacy-policy">
+          <p><strong>Privacy Policy:</strong> We respect your privacy and protect your personal information.</p>
+        </div>
+        <p>Copyright © Normand PLLC 2025</p>
+        <p>Website by ultramodern ✨</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Normandpllc-style Animations
+    gsap.registerPlugin(ScrollTrigger);
+    
+    // Configuration
+    const config = {
+      animations: {
+        default: { duration: 0.25, ease: "circ.out" },
+        header: { delay: 1.7, duration: 1, ease: "circ.out" },
+        cursor: { duration: 0.7, ease: "power3.out" },
+        preloader: { duration: 2, ease: "power2.inOut" }
+      }
+    };
+
+    gsap.defaults({
+      duration: config.animations.default.duration,
+      ease: config.animations.default.ease,
+      force3D: true
+    });
+
+    // Custom Cursor with null checks
+    function initializeCursor() {
+      if (window.innerWidth <= 768) return;
+      
+      const cursor = document.getElementById('cursor');
+      if (!cursor) {
+        console.warn('Cursor element not found');
+        return;
+      }
+      
+      const cursorInner = cursor.querySelector('.cursor-inner');
+      const cursorOuter = cursor.querySelector('.cursor-outer');
+      
+      if (!cursorInner || !cursorOuter) {
+        console.warn('Cursor inner/outer elements not found');
+        return;
+      }
+      
+      let mouseX = 0, mouseY = 0;
+      let posX = 0, posY = 0;
+
+      document.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+      });
+
+      function animateCursor() {
+        posX += (mouseX - posX) * 0.15;
+        posY += (mouseY - posY) * 0.15;
+
+        gsap.set(cursorInner, { x: mouseX, y: mouseY });
+        gsap.set(cursorOuter, { x: posX, y: posY });
+
+        requestAnimationFrame(animateCursor);
+      }
+      animateCursor();
+
+      // Hover effects
+      document.querySelectorAll('a, button').forEach(el => {
+        el.addEventListener('mouseenter', () => {
+          gsap.to(cursorOuter, { scale: 1.2, duration: 0.3 });
+        });
+        el.addEventListener('mouseleave', () => {
+          gsap.to(cursorOuter, { scale: 1, duration: 0.3 });
+        });
+      });
+    }
+
+    // Initialize cursor
+    initializeCursor();
+
+    // Initialize with content management
+    document.addEventListener('DOMContentLoaded', initializeWithContent);
+
+    async function initializeWithContent() {
+      try {
+        // Initialize content manager
+        const contentManager = new ContentManager();
+        
+        // Load and inject content first
+        await contentManager.loadContent();
+        contentManager.injectContent();
+        
+        // Make content manager globally available
+        window.contentManager = contentManager;
+        console.log('✅ Content management initialized successfully');
+      } catch (error) {
+        console.warn('⚠️ Content management initialization failed:', error);
+        // Continue with page initialization even if content management fails
+      }
+      
+      // Always start animations regardless of content management status
+      startPageAnimations();
+      
+      // Initialize language switcher
+      initializeLanguageSwitcher(window.contentManager);
+    }
+    
+    function initializeLanguageSwitcher(contentManager) {
+      const langButtons = document.querySelectorAll('.lang-btn');
+      
+      // Set active button based on current language
+      langButtons.forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === contentManager.currentLanguage);
+      });
+      
+      // Handle language switch clicks
+      langButtons.forEach(btn => {
+        btn.addEventListener('click', async (e) => {
+          const newLang = e.target.dataset.lang;
+          
+          // Don't reload if same language
+          if (newLang === contentManager.currentLanguage) return;
+          
+          // Update active states
+          langButtons.forEach(b => b.classList.remove('active'));
+          e.target.classList.add('active');
+          
+          // Show loading state
+          document.body.style.opacity = '0.5';
+          
+          // Switch language and reload content
+          await contentManager.setLanguage(newLang);
+          contentManager.injectContent();
+          
+          // Restore opacity
+          document.body.style.opacity = '1';
+          
+          console.log(`✅ Language switched to ${newLang}`);
+        });
+      });
+    }
+
+    function startPageAnimations() {
+      console.log('🚀 Starting page animations...');
+      
+      // Check if GSAP is loaded
+      if (typeof gsap === 'undefined') {
+        console.error('❌ GSAP not loaded! Making elements visible immediately.');
+        // Fallback: make elements visible immediately
+        document.querySelectorAll('.hero-tagline, .hero-subtitle, .hero-title, .hero-secondary').forEach(el => {
+          el.style.opacity = '1';
+          el.style.transform = 'translateY(0)';
+        });
+        return;
+      }
+      
+      console.log('✅ GSAP loaded, starting animations...');
+      
+      // Hero animations with staggered delay
+      const tl = gsap.timeline({ delay: 0.5 });
+      
+      tl.to('.hero-tagline', {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power3.out",
+        onComplete: () => console.log('📝 Tagline animation complete')
+      })
+      .to('.hero-subtitle', {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: "power3.out",
+        onComplete: () => console.log('📝 Subtitle animation complete')
+      }, "-=0.6")
+      .to('.hero-title', {
+        opacity: 1,
+        y: 0,
+        duration: 1.2,
+        ease: "power3.out",
+        onComplete: () => console.log('📝 Title animation complete')
+      }, "-=0.4")
+      .to('.hero-secondary', {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: "power3.out"
+      }, "-=0.4");
+
+      // Scroll-triggered animations
+      gsap.utils.toArray('.fade-in').forEach(element => {
+        gsap.fromTo(element, {
+          opacity: 0,
+          y: 30
+        }, {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: element,
+            start: "top 80%",
+            end: "bottom 20%",
+            toggleActions: "play none none reverse"
+          }
+        });
+      });
+
+      // Service cards stagger
+      gsap.fromTo('.service-card', {
+        opacity: 0,
+        y: 50
+      }, {
+        opacity: 1,
+        y: 0,
+        duration: 0.6,
+        stagger: 0.2,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: '.services-grid',
+          start: "top 80%"
+        }
+      });
+    }
+
+    // Navigation Toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const mainNav = document.getElementById('main-navigation');
+    let isMenuOpen = false;
+
+    menuToggle.addEventListener('click', () => {
+      if (!isMenuOpen) {
+        mainNav.classList.add('active');
+        gsap.fromTo('.nav-menu a', {
+          x: -50,
+          opacity: 0
+        }, {
+          x: 0,
+          opacity: 1,
+          duration: 0.4,
+          stagger: 0.1,
+          ease: "power2.out"
+        });
+        isMenuOpen = true;
+      } else {
+        gsap.to('.nav-menu a', {
+          x: 50,
+          opacity: 0,
+          duration: 0.3,
+          stagger: 0.05,
+          ease: "power2.in",
+          onComplete: () => {
+            mainNav.classList.remove('active');
+          }
+        });
+        isMenuOpen = false;
+      }
+    });
+
+    // Close menu when clicking on links (both main menu and submenu)
+    document.querySelectorAll('.nav-menu a, .nav-submenu a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (isMenuOpen) {
+          menuToggle.click();
+        }
+      });
+    });
+
+    // Header scroll effect
+    const header = document.querySelector('.site-header');
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      
+      if (currentScroll > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+      
+      lastScroll = currentScroll;
+    });
+    
+    // Netlify Identity initialization
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+</body>
+</html>

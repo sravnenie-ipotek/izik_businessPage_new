@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_sections_media_logos",
+  "info": {
+    "displayName": "Media Logos Section",
+    "icon": "newspaper",
+    "description": "Media mentions and press logos"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string",
+      "default": "AS SEEN IN"
+    },
+    "title": {
+      "type": "string",
+      "default": "Media Coverage"
+    },
+    "logos": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "#f2f2f2"
+    }
+  }
+}

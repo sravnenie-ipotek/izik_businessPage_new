@@ -1,0 +1,65 @@
+{
+  "page": "consumer-protection",
+  "url": "https://www.normandpllc.com/class-action/consumer-protection/",
+  "blocks": [
+    {
+      "order": 1,
+      "color": "white",
+      "headingSample": "Consumer Protection",
+      "approxHeight": 100,
+      "ctas": [
+        {"label": "Placeholder", "href": "/contact-us/"},
+        {"label": "Placeholder", "href": "/"}
+      ],
+      "rawBg": "#ffffff",
+      "features": ["navigation", "header"]
+    },
+    {
+      "order": 2,
+      "color": "white",
+      "headingSample": "Consumer Protection Class Action",
+      "approxHeight": 400,
+      "ctas": [
+        {"label": "Placeholder", "href": "/contact-us/"}
+      ],
+      "rawBg": "#ffffff",
+      "features": ["hero", "content"]
+    },
+    {
+      "order": 3,
+      "color": "white",
+      "headingSample": "Car Rental Class Action",
+      "approxHeight": 250,
+      "ctas": [
+        {"label": "Placeholder", "href": "/status-results/"}
+      ],
+      "rawBg": "#ffffff",
+      "features": ["case-example"]
+    },
+    {
+      "order": 4,
+      "color": "white",
+      "headingSample": "Airline Disputes",
+      "approxHeight": 200,
+      "ctas": [
+        {"label": "Placeholder", "href": "/contact-us/"}
+      ],
+      "rawBg": "#ffffff",
+      "features": ["content", "covid-info"]
+    },
+    {
+      "order": 5,
+      "color": "white",
+      "headingSample": "Bank Fee Class Action",
+      "approxHeight": 350,
+      "ctas": [
+        {"label": "Placeholder", "href": "/contact-us/"},
+        {"label": "Placeholder", "href": "/consultation/"}
+      ],
+      "rawBg": "#ffffff",
+      "features": ["content", "cta-section"]
+    }
+  ],
+  "colorSequence": "white → white → white → white → white",
+  "totalCTAs": 7
+}

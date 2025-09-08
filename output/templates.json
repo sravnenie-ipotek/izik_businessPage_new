@@ -1,0 +1,3694 @@
+[
+  {
+    "id": "template_1",
+    "fingerprint": {
+      "blockCount": 17,
+      "colorRhythm": "black-white-black-white-orange-black-white-orange-black-white-black-black-black-white-black-orange-black",
+      "hasHero": false,
+      "hasFAQ": false,
+      "hasForms": true,
+      "hasGallery": true,
+      "headingSequence": 14,
+      "totalHeight": 16250
+    },
+    "pages": [
+      "https://www.normandpllc.com/"
+    ],
+    "sampleBlocks": [
+      {
+        "order": 1,
+        "selector": "header.site-header",
+        "color": "black",
+        "headingSample": "Normand",
+        "approxHeight": 900,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/contact-us/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/class-action/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 2,
+        "selector": "header.wp-block-normand-banner",
+        "color": "white",
+        "headingSample": "We AreResultsConfidenceAdvocacyVictoryResults",
+        "approxHeight": 900,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/contact-us/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(1, 1, 1)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 3,
+        "selector": "main.site-main",
+        "color": "black",
+        "headingSample": "We AreResultsConfidenceAdvocacyVictoryResults We Are Class Action Privacy Class Action Consumer Prot",
+        "approxHeight": 564,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/contact-us/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/class-action/privacy/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/class-action/consumer-protection/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/class-action/insurance/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/status-results/",
+            "type": "a"
+          }
+        ],
+        "hasForms": true,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": true,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 4,
+        "selector": "footer.site-footer",
+        "color": "white",
+        "headingSample": null,
+        "approxHeight": 90,
+        "approxTop": 900,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(1, 1, 1)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 5,
+        "selector": "div.preloader",
+        "color": "orange",
+        "headingSample": null,
+        "approxHeight": 2602,
+        "approxTop": 900,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/class-action/privacy/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/class-action/consumer-protection/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/class-action/insurance/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": true,
+        "rawBg": "rgb(252, 90, 43)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 6,
+        "selector": "div.services-grid",
+        "color": "black",
+        "headingSample": "Privacy Class Action Consumer Protection Class Action Insurance Class Action",
+        "approxHeight": 203,
+        "approxTop": 1209,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/class-action/privacy/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/class-action/consumer-protection/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/class-action/insurance/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": true,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 7,
+        "selector": "div.wp-block-normand-heading",
+        "color": "white",
+        "headingSample": "We Are Strategy",
+        "approxHeight": 883,
+        "approxTop": 3502,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/status-results/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(242, 242, 242)",
+        "paddingY": 80,
+        "marginY": 0
+      },
+      {
+        "order": 8,
+        "selector": "div.wp-block-normand-testimonials",
+        "color": "orange",
+        "headingSample": "WE ARE SUCCESS Arthur Miller Sean Domnick",
+        "approxHeight": 1280,
+        "approxTop": 4386,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(252, 90, 43)",
+        "paddingY": 160,
+        "marginY": 0
+      },
+      {
+        "order": 9,
+        "selector": "div.testimonials-header",
+        "color": "black",
+        "headingSample": "WE ARE SUCCESS",
+        "approxHeight": 1119,
+        "approxTop": 4466,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 10,
+        "selector": "div.wp-block-normand-team",
+        "color": "white",
+        "headingSample": "We Are Experienced FounderEdmund Normand AlexCouch ChristopherHudon AmyJudkins JannaSherwood Kaitlyn",
+        "approxHeight": 1928,
+        "approxTop": 5665,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/our-team/edmund-normand/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": true,
+        "rawBg": "rgb(255, 255, 255)",
+        "paddingY": 195,
+        "marginY": 0
+      },
+      {
+        "order": 11,
+        "selector": "div.featured-team-grid",
+        "color": "black",
+        "headingSample": "FounderEdmund Normand",
+        "approxHeight": 455,
+        "approxTop": 5964,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/our-team/edmund-normand/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/our-team/edmund-normand/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 80
+      },
+      {
+        "order": 12,
+        "selector": "div.general-team-grid-wrap",
+        "color": "black",
+        "headingSample": "AlexCouch ChristopherHudon AmyJudkins JannaSherwood Kaitlyn THOMPSON GiselleJase DavidSeals DEVIRAMP",
+        "approxHeight": 979,
+        "approxTop": 6499,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": true,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 13,
+        "selector": "div.wp-block-normand-heading",
+        "color": "black",
+        "headingSample": "",
+        "approxHeight": 427,
+        "approxTop": 7594,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": true,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 80,
+        "marginY": 0
+      },
+      {
+        "order": 14,
+        "selector": "div.normand-articles",
+        "color": "white",
+        "headingSample": "John Richard Collection Data Breach Fidelity National Information Services 2023 Data Breach Impacts ",
+        "approxHeight": 1271,
+        "approxTop": 8021,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/john-richard-collection-data-breach/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/fidelity-national-information-services-data-breach-are-you-at-risk/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/news-articles/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(242, 242, 242)",
+        "paddingY": 235,
+        "marginY": 0
+      },
+      {
+        "order": 15,
+        "selector": "div.normand-articles-posts-grid",
+        "color": "black",
+        "headingSample": "John Richard Collection Data Breach Fidelity National Information Services 2023 Data Breach Impacts ",
+        "approxHeight": 836,
+        "approxTop": 8209,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/john-richard-collection-data-breach/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/fidelity-national-information-services-data-breach-are-you-at-risk/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/john-richard-collection-data-breach/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/fidelity-national-information-services-data-breach-are-you-at-risk/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 16,
+        "selector": "div.wp-block-normand-contact",
+        "color": "orange",
+        "headingSample": "We Are Ready",
+        "approxHeight": 1024,
+        "approxTop": 9292,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "tel:4076036031",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "mailto:office@normandpllc.com",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "tel:8889742175",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://maps.app.goo.gl/xc98brULtFBbmwLL7",
+            "type": "a"
+          }
+        ],
+        "hasForms": true,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(252, 90, 43)",
+        "paddingY": 235,
+        "marginY": 0
+      },
+      {
+        "order": 17,
+        "selector": "div.normand-contact-wrap",
+        "color": "black",
+        "headingSample": "We Are Ready",
+        "approxHeight": 789,
+        "approxTop": 9347,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "tel:4076036031",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "mailto:office@normandpllc.com",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "tel:8889742175",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://maps.app.goo.gl/xc98brULtFBbmwLL7",
+            "type": "a"
+          }
+        ],
+        "hasForms": true,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      }
+    ]
+  },
+  {
+    "id": "template_2",
+    "fingerprint": {
+      "blockCount": 8,
+      "colorRhythm": "black-white-black-orange-black-black-white-orange",
+      "hasHero": false,
+      "hasFAQ": false,
+      "hasForms": true,
+      "hasGallery": false,
+      "headingSequence": 4,
+      "totalHeight": 5824
+    },
+    "pages": [
+      "https://www.normandpllc.com/contact-us"
+    ],
+    "sampleBlocks": [
+      {
+        "order": 1,
+        "selector": "header.site-header",
+        "color": "black",
+        "headingSample": null,
+        "approxHeight": 1024,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/contact-us/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/class-action/",
+            "type": "a"
+          }
+        ],
+        "hasForms": true,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 2,
+        "selector": "body.wp-singular",
+        "color": "white",
+        "headingSample": "Contact Us We Are Ready",
+        "approxHeight": 1204,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "#primary",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/contact-us/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/",
+            "type": "a"
+          }
+        ],
+        "hasForms": true,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(255, 255, 255)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 3,
+        "selector": "div.site",
+        "color": "black",
+        "headingSample": "Contact Us We Are Ready",
+        "approxHeight": 1024,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "#primary",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/contact-us/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/",
+            "type": "a"
+          }
+        ],
+        "hasForms": true,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 90
+      },
+      {
+        "order": 4,
+        "selector": "div.wp-block-normand-contact",
+        "color": "orange",
+        "headingSample": "We Are Ready",
+        "approxHeight": 1024,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "tel:4076036031",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "mailto:office@normandpllc.com",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "tel:8889742175",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://maps.app.goo.gl/xc98brULtFBbmwLL7",
+            "type": "a"
+          }
+        ],
+        "hasForms": true,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(252, 90, 43)",
+        "paddingY": 235,
+        "marginY": 0
+      },
+      {
+        "order": 5,
+        "selector": "div.normand-contact-wrap",
+        "color": "black",
+        "headingSample": "We Are Ready",
+        "approxHeight": 480,
+        "approxTop": 55,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "tel:4076036031",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "mailto:office@normandpllc.com",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "tel:8889742175",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://maps.app.goo.gl/xc98brULtFBbmwLL7",
+            "type": "a"
+          }
+        ],
+        "hasForms": true,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 6,
+        "selector": "div.ginput_container",
+        "color": "black",
+        "headingSample": null,
+        "approxHeight": 78,
+        "approxTop": 685,
+        "ctas": [],
+        "hasForms": true,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 7,
+        "selector": "footer.site-footer",
+        "color": "white",
+        "headingSample": null,
+        "approxHeight": 90,
+        "approxTop": 900,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(1, 1, 1)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 8,
+        "selector": "div.preloader",
+        "color": "orange",
+        "headingSample": null,
+        "approxHeight": 900,
+        "approxTop": 900,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(252, 90, 43)",
+        "paddingY": 0,
+        "marginY": 0
+      }
+    ]
+  },
+  {
+    "id": "template_3",
+    "fingerprint": {
+      "blockCount": 12,
+      "colorRhythm": "black-white-black-white-black-white-orange-black-white-black-orange-black",
+      "hasHero": false,
+      "hasFAQ": false,
+      "hasForms": true,
+      "hasGallery": true,
+      "headingSequence": 9,
+      "totalHeight": 26858
+    },
+    "pages": [
+      "https://www.normandpllc.com/class-action"
+    ],
+    "sampleBlocks": [
+      {
+        "order": 1,
+        "selector": "header.site-header",
+        "color": "black",
+        "headingSample": null,
+        "approxHeight": 900,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/contact-us/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/class-action/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 2,
+        "selector": "header.wp-block-normand-page-banner",
+        "color": "white",
+        "headingSample": "We AreClass ActionThe WinTriumphJusticeClass Action",
+        "approxHeight": 720,
+        "approxTop": 0,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(1, 1, 1)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 3,
+        "selector": "main.site-main",
+        "color": "black",
+        "headingSample": "Class Action We AreClass ActionThe WinTriumphJusticeClass Action CLASS ACTION Litigation What is a c",
+        "approxHeight": 8358,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/class-action/privacy/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/class-action/consumer-protection/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/class-action/insurance/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/john-richard-collection-data-breach/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/fidelity-national-information-services-data-breach-are-you-at-risk/",
+            "type": "a"
+          }
+        ],
+        "hasForms": true,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": true,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 4,
+        "selector": "body.wp-singular",
+        "color": "white",
+        "headingSample": "Class Action We AreClass ActionThe WinTriumphJusticeClass Action CLASS ACTION Litigation What is a c",
+        "approxHeight": 8538,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "#primary",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/contact-us/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/",
+            "type": "a"
+          }
+        ],
+        "hasForms": true,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": true,
+        "rawBg": "rgb(255, 255, 255)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 5,
+        "selector": "figure.banner-img-reveal",
+        "color": "black",
+        "headingSample": null,
+        "approxHeight": 449,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "#primary",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/contact-us/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/",
+            "type": "a"
+          }
+        ],
+        "hasForms": true,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": true,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 6,
+        "selector": "div.wp-block-normand-class-action",
+        "color": "white",
+        "headingSample": "CLASS ACTION Litigation What is a class action lawsuit? Why are class action suits important and val",
+        "approxHeight": 270,
+        "approxTop": 720,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/class-action/privacy/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/class-action/consumer-protection/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/class-action/insurance/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": true,
+        "rawBg": "rgb(255, 255, 255)",
+        "paddingY": 160,
+        "marginY": 0
+      },
+      {
+        "order": 7,
+        "selector": "div.preloader",
+        "color": "orange",
+        "headingSample": null,
+        "approxHeight": 900,
+        "approxTop": 900,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(252, 90, 43)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 8,
+        "selector": "div.classaction-grid",
+        "color": "black",
+        "headingSample": "PRIVACY CLASS ACTION CONSUMER PROTECTION CLASS ACTION INSURANCE CLASS ACTION",
+        "approxHeight": 2803,
+        "approxTop": 3181,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/class-action/privacy/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/class-action/consumer-protection/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/class-action/insurance/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": true,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 9,
+        "selector": "div.normand-articles",
+        "color": "white",
+        "headingSample": "John Richard Collection Data Breach Fidelity National Information Services 2023 Data Breach Impacts ",
+        "approxHeight": 1271,
+        "approxTop": 6064,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/john-richard-collection-data-breach/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/fidelity-national-information-services-data-breach-are-you-at-risk/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/news-articles/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(242, 242, 242)",
+        "paddingY": 235,
+        "marginY": 0
+      },
+      {
+        "order": 10,
+        "selector": "div.normand-articles-posts-grid",
+        "color": "black",
+        "headingSample": "John Richard Collection Data Breach Fidelity National Information Services 2023 Data Breach Impacts ",
+        "approxHeight": 836,
+        "approxTop": 6252,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/john-richard-collection-data-breach/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/fidelity-national-information-services-data-breach-are-you-at-risk/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/john-richard-collection-data-breach/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/fidelity-national-information-services-data-breach-are-you-at-risk/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 11,
+        "selector": "div.wp-block-normand-contact",
+        "color": "orange",
+        "headingSample": "WE ARE READY",
+        "approxHeight": 1024,
+        "approxTop": 7334,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": " tel:4076036031",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "mailto:office@normandpllc.com",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "tel:8889742175",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://maps.app.goo.gl/xc98brULtFBbmwLL7",
+            "type": "a"
+          }
+        ],
+        "hasForms": true,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(252, 90, 43)",
+        "paddingY": 235,
+        "marginY": 0
+      },
+      {
+        "order": 12,
+        "selector": "div.normand-contact-wrap",
+        "color": "black",
+        "headingSample": "WE ARE READY",
+        "approxHeight": 789,
+        "approxTop": 7389,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": " tel:4076036031",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "mailto:office@normandpllc.com",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "tel:8889742175",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://maps.app.goo.gl/xc98brULtFBbmwLL7",
+            "type": "a"
+          }
+        ],
+        "hasForms": true,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      }
+    ]
+  },
+  {
+    "id": "template_4",
+    "fingerprint": {
+      "blockCount": 7,
+      "colorRhythm": "black-white-black-black-white-orange-black",
+      "hasHero": false,
+      "hasFAQ": false,
+      "hasForms": false,
+      "hasGallery": false,
+      "headingSequence": 3,
+      "totalHeight": 8132
+    },
+    "pages": [
+      "https://www.normandpllc.com/class-action/privacy",
+      "https://www.normandpllc.com/class-action/consumer-protection",
+      "https://www.normandpllc.com/class-action/insurance",
+      "https://www.normandpllc.com/case-studies/geico-insurance-class-actions"
+    ],
+    "sampleBlocks": [
+      {
+        "order": 1,
+        "selector": "header.site-header",
+        "color": "black",
+        "headingSample": null,
+        "approxHeight": 900,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/contact-us/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/class-action/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 2,
+        "selector": "header.singular-header",
+        "color": "white",
+        "headingSample": "Privacy",
+        "approxHeight": 720,
+        "approxTop": 0,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(1, 1, 1)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 3,
+        "selector": "main.site-main",
+        "color": "black",
+        "headingSample": "Privacy Privacy Class Actions Data Privacy & Cybersecurity CLAIMS INVOLVING STOLEN PRIVATE INFORMATI",
+        "approxHeight": 411,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "tel:4076036031",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "tel:4076036031",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#primary",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 4,
+        "selector": "div.entry-content",
+        "color": "black",
+        "headingSample": "Privacy Class Actions Data Privacy & Cybersecurity CLAIMS INVOLVING STOLEN PRIVATE INFORMATION DATA ",
+        "approxHeight": 4788,
+        "approxTop": 816,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "tel:4076036031",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 180,
+        "marginY": 0
+      },
+      {
+        "order": 5,
+        "selector": "footer.site-footer",
+        "color": "white",
+        "headingSample": null,
+        "approxHeight": 90,
+        "approxTop": 900,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(1, 1, 1)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 6,
+        "selector": "div.preloader",
+        "color": "orange",
+        "headingSample": null,
+        "approxHeight": 900,
+        "approxTop": 900,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(252, 90, 43)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 7,
+        "selector": "div.wp-block-group__inner-container",
+        "color": "black",
+        "headingSample": null,
+        "approxHeight": 323,
+        "approxTop": 5101,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "tel:4076036031",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "tel:4076036031",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "tel:4076036031",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      }
+    ]
+  },
+  {
+    "id": "template_5",
+    "fingerprint": {
+      "blockCount": 16,
+      "colorRhythm": "black-white-black-black-white-orange-black-black-black-black-black-black-black-black-black-black",
+      "hasHero": false,
+      "hasFAQ": false,
+      "hasForms": false,
+      "hasGallery": false,
+      "headingSequence": 12,
+      "totalHeight": 6212
+    },
+    "pages": [
+      "https://www.normandpllc.com/status-results"
+    ],
+    "sampleBlocks": [
+      {
+        "order": 1,
+        "selector": "header.site-header",
+        "color": "black",
+        "headingSample": null,
+        "approxHeight": 900,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/contact-us/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/class-action/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 2,
+        "selector": "header.wp-block-normand-page-banner",
+        "color": "white",
+        "headingSample": "We AreStrategyAmbitionEfficiencyOPPORTUNITYStrategy",
+        "approxHeight": 720,
+        "approxTop": 0,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(1, 1, 1)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 3,
+        "selector": "main.site-main",
+        "color": "black",
+        "headingSample": "Status & Results We AreStrategyAmbitionEfficiencyOPPORTUNITYStrategy Buffington v Progressive Insura",
+        "approxHeight": 449,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/buffington-v-progressive-insurance/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/angellvgeico/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/volinoprogressivecasualityinsurance/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/carrie-andrews-v-state-auto-mutual-insurance-company/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/geico-insurance-class-actions/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 4,
+        "selector": "div.blog-content",
+        "color": "black",
+        "headingSample": "Buffington v Progressive Insurance Angell v Geico Insurance Volino v Progressive Casuality insurance",
+        "approxHeight": 480,
+        "approxTop": 720,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/buffington-v-progressive-insurance/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/angellvgeico/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/volinoprogressivecasualityinsurance/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/carrie-andrews-v-state-auto-mutual-insurance-company/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/geico-insurance-class-actions/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 384,
+        "marginY": 0
+      },
+      {
+        "order": 5,
+        "selector": "footer.site-footer",
+        "color": "white",
+        "headingSample": null,
+        "approxHeight": 90,
+        "approxTop": 900,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(1, 1, 1)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 6,
+        "selector": "div.preloader",
+        "color": "orange",
+        "headingSample": null,
+        "approxHeight": 900,
+        "approxTop": 900,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(252, 90, 43)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 7,
+        "selector": "div.entry-content",
+        "color": "black",
+        "headingSample": null,
+        "approxHeight": 213,
+        "approxTop": 987,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/buffington-v-progressive-insurance/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 8,
+        "selector": "article.entry-listing",
+        "color": "black",
+        "headingSample": "Angell v Geico Insurance",
+        "approxHeight": 303,
+        "approxTop": 1439,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/angellvgeico/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/angellvgeico/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/angellvgeico/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 225
+      },
+      {
+        "order": 9,
+        "selector": "article.entry-listing",
+        "color": "black",
+        "headingSample": "Volino v Progressive Casuality insurance",
+        "approxHeight": 304,
+        "approxTop": 1981,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/volinoprogressivecasualityinsurance/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/volinoprogressivecasualityinsurance/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/volinoprogressivecasualityinsurance/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 225
+      },
+      {
+        "order": 10,
+        "selector": "article.entry-listing",
+        "color": "black",
+        "headingSample": "Carrie Andrews v. State Auto Mutual Insurance Company",
+        "approxHeight": 333,
+        "approxTop": 2524,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/carrie-andrews-v-state-auto-mutual-insurance-company/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/carrie-andrews-v-state-auto-mutual-insurance-company/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 225
+      },
+      {
+        "order": 11,
+        "selector": "article.entry-listing",
+        "color": "black",
+        "headingSample": "Geico Insurance Class Actions",
+        "approxHeight": 280,
+        "approxTop": 3095,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/geico-insurance-class-actions/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/geico-insurance-class-actions/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 225
+      },
+      {
+        "order": 12,
+        "selector": "article.entry-listing",
+        "color": "black",
+        "headingSample": "Junior v. Infinity Insurance Company",
+        "approxHeight": 304,
+        "approxTop": 3614,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/junior-v-infinity-insurance-company/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/junior-v-infinity-insurance-company/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/junior-v-infinity-insurance-company/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 225
+      },
+      {
+        "order": 13,
+        "selector": "article.entry-listing",
+        "color": "black",
+        "headingSample": "Sos v. State Farm Mutual Insurance Company",
+        "approxHeight": 280,
+        "approxTop": 4157,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/sos-v-state-farm-mutual-insurance-company/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/sos-v-state-farm-mutual-insurance-company/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 225
+      },
+      {
+        "order": 14,
+        "selector": "article.entry-listing",
+        "color": "black",
+        "headingSample": "Resnick v. AvMed, Inc.",
+        "approxHeight": 176,
+        "approxTop": 4675,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 225
+      },
+      {
+        "order": 15,
+        "selector": "article.entry-listing",
+        "color": "black",
+        "headingSample": "Venerus v. Avis Budget",
+        "approxHeight": 280,
+        "approxTop": 5077,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/venerus-v-avis-budget/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/venerus-v-avis-budget/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 225
+      },
+      {
+        "order": 16,
+        "selector": "article.entry-listing",
+        "color": "black",
+        "headingSample": "Parker v. Universal",
+        "approxHeight": 200,
+        "approxTop": 5595,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 225
+      }
+    ]
+  },
+  {
+    "id": "template_6",
+    "fingerprint": {
+      "blockCount": 13,
+      "colorRhythm": "black-white-black-white-black-white-orange-black-black-white-black-orange-black",
+      "hasHero": false,
+      "hasFAQ": false,
+      "hasForms": true,
+      "hasGallery": true,
+      "headingSequence": 10,
+      "totalHeight": 18587
+    },
+    "pages": [
+      "https://www.normandpllc.com/our-team"
+    ],
+    "sampleBlocks": [
+      {
+        "order": 1,
+        "selector": "header.site-header",
+        "color": "black",
+        "headingSample": null,
+        "approxHeight": 900,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/contact-us/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/class-action/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 2,
+        "selector": "header.wp-block-normand-page-banner",
+        "color": "white",
+        "headingSample": "We AreExperiencedWork EthicIntensityNOT Status QuoExperienced",
+        "approxHeight": 720,
+        "approxTop": 0,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(1, 1, 1)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 3,
+        "selector": "main.site-main",
+        "color": "black",
+        "headingSample": "Our Team We AreExperiencedWork EthicIntensityNOT Status QuoExperienced The Normand Team Senior Partn",
+        "approxHeight": 4919,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/our-team/edmund-normand/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/john-richard-collection-data-breach/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/fidelity-national-information-services-data-breach-are-you-at-risk/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/news-articles/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/",
+            "type": "a"
+          }
+        ],
+        "hasForms": true,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": true,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 4,
+        "selector": "body.wp-singular",
+        "color": "white",
+        "headingSample": "Our Team We AreExperiencedWork EthicIntensityNOT Status QuoExperienced The Normand Team Senior Partn",
+        "approxHeight": 5099,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "#primary",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/contact-us/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/",
+            "type": "a"
+          }
+        ],
+        "hasForms": true,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": true,
+        "rawBg": "rgb(255, 255, 255)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 5,
+        "selector": "figure.banner-img-reveal",
+        "color": "black",
+        "headingSample": null,
+        "approxHeight": 449,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "#primary",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/contact-us/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/",
+            "type": "a"
+          }
+        ],
+        "hasForms": true,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": true,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 6,
+        "selector": "div.wp-block-normand-team",
+        "color": "white",
+        "headingSample": "The Normand Team Senior PartnerEdmund Normand AlexCouch Christopher hudon AmyJudkins JannaSherwood K",
+        "approxHeight": 270,
+        "approxTop": 720,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/our-team/edmund-normand/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": true,
+        "rawBg": "rgb(255, 255, 255)",
+        "paddingY": 195,
+        "marginY": 0
+      },
+      {
+        "order": 7,
+        "selector": "div.preloader",
+        "color": "orange",
+        "headingSample": null,
+        "approxHeight": 900,
+        "approxTop": 900,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(252, 90, 43)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 8,
+        "selector": "div.featured-team-grid",
+        "color": "black",
+        "headingSample": "Senior PartnerEdmund Normand",
+        "approxHeight": 431,
+        "approxTop": 1019,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/our-team/edmund-normand/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/our-team/edmund-normand/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 80
+      },
+      {
+        "order": 9,
+        "selector": "div.general-team-grid-wrap",
+        "color": "black",
+        "headingSample": "AlexCouch Christopher hudon AmyJudkins JannaSherwood KaitlynTHOMPSON GiselleJase davidSeals DeviRamp",
+        "approxHeight": 979,
+        "approxTop": 1530,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": true,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 10,
+        "selector": "div.normand-articles",
+        "color": "white",
+        "headingSample": "John Richard Collection Data Breach Fidelity National Information Services 2023 Data Breach Impacts ",
+        "approxHeight": 1271,
+        "approxTop": 2625,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/john-richard-collection-data-breach/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/fidelity-national-information-services-data-breach-are-you-at-risk/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/news-articles/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(242, 242, 242)",
+        "paddingY": 235,
+        "marginY": 0
+      },
+      {
+        "order": 11,
+        "selector": "div.normand-articles-posts-grid",
+        "color": "black",
+        "headingSample": "John Richard Collection Data Breach Fidelity National Information Services 2023 Data Breach Impacts ",
+        "approxHeight": 836,
+        "approxTop": 2812,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/john-richard-collection-data-breach/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/fidelity-national-information-services-data-breach-are-you-at-risk/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/john-richard-collection-data-breach/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/fidelity-national-information-services-data-breach-are-you-at-risk/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 12,
+        "selector": "div.wp-block-normand-contact",
+        "color": "orange",
+        "headingSample": "WE ARE READY",
+        "approxHeight": 1024,
+        "approxTop": 3895,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "tel:4076036031",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "mailto:office@normandpllc.com",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "tel:8889742175",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://maps.app.goo.gl/xc98brULtFBbmwLL7",
+            "type": "a"
+          }
+        ],
+        "hasForms": true,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(252, 90, 43)",
+        "paddingY": 235,
+        "marginY": 0
+      },
+      {
+        "order": 13,
+        "selector": "div.normand-contact-wrap",
+        "color": "black",
+        "headingSample": "WE ARE READY",
+        "approxHeight": 789,
+        "approxTop": 3950,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "tel:4076036031",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "mailto:office@normandpllc.com",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "tel:8889742175",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://maps.app.goo.gl/xc98brULtFBbmwLL7",
+            "type": "a"
+          }
+        ],
+        "hasForms": true,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      }
+    ]
+  },
+  {
+    "id": "template_7",
+    "fingerprint": {
+      "blockCount": 9,
+      "colorRhythm": "black-white-black-white-orange-black-black-black-black",
+      "hasHero": false,
+      "hasFAQ": false,
+      "hasForms": false,
+      "hasGallery": true,
+      "headingSequence": 6,
+      "totalHeight": 6567
+    },
+    "pages": [
+      "https://www.normandpllc.com/news-articles"
+    ],
+    "sampleBlocks": [
+      {
+        "order": 1,
+        "selector": "header.site-header",
+        "color": "black",
+        "headingSample": null,
+        "approxHeight": 900,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/contact-us/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/class-action/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 2,
+        "selector": "header.page-header",
+        "color": "white",
+        "headingSample": "News & Articles",
+        "approxHeight": 720,
+        "approxTop": 0,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(1, 1, 1)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 3,
+        "selector": "main.site-main",
+        "color": "black",
+        "headingSample": "News & Articles John Richard Collection Data Breach Fidelity National Information Services 2023 Data",
+        "approxHeight": 1512,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/john-richard-collection-data-breach/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/fidelity-national-information-services-data-breach-are-you-at-risk/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/edmund-normand-joins-2024-super-lawyers/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/car-insurance-total-loss-claims/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/illegal-automated-robocalls-and-robotexts/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": true,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 4,
+        "selector": "footer.site-footer",
+        "color": "white",
+        "headingSample": null,
+        "approxHeight": 90,
+        "approxTop": 900,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(1, 1, 1)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 5,
+        "selector": "div.preloader",
+        "color": "orange",
+        "headingSample": null,
+        "approxHeight": 900,
+        "approxTop": 900,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(252, 90, 43)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 6,
+        "selector": "article.entry-listing",
+        "color": "black",
+        "headingSample": "Fidelity National Information Services 2023 Data Breach Impacts Consumers",
+        "approxHeight": 645,
+        "approxTop": 1737,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/fidelity-national-information-services-data-breach-are-you-at-risk/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 225
+      },
+      {
+        "order": 7,
+        "selector": "article.entry-listing",
+        "color": "black",
+        "headingSample": "Edmund Normand Joins 2024 Super Lawyers",
+        "approxHeight": 592,
+        "approxTop": 2607,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/edmund-normand-joins-2024-super-lawyers/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 225
+      },
+      {
+        "order": 8,
+        "selector": "article.entry-listing",
+        "color": "black",
+        "headingSample": "Car Insurance Total Loss Claims",
+        "approxHeight": 592,
+        "approxTop": 3425,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/car-insurance-total-loss-claims/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 225
+      },
+      {
+        "order": 9,
+        "selector": "article.entry-listing",
+        "color": "black",
+        "headingSample": "Illegal Automated Robocalls and Robotexts",
+        "approxHeight": 616,
+        "approxTop": 4242,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/illegal-automated-robocalls-and-robotexts/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 225
+      }
+    ]
+  },
+  {
+    "id": "template_8",
+    "fingerprint": {
+      "blockCount": 6,
+      "colorRhythm": "black-white-black-black-white-orange",
+      "hasHero": false,
+      "hasFAQ": false,
+      "hasForms": false,
+      "hasGallery": false,
+      "headingSequence": 3,
+      "totalHeight": 4591
+    },
+    "pages": [
+      "https://www.normandpllc.com/disclaimer",
+      "https://www.normandpllc.com/privacy-policy",
+      "https://www.normandpllc.com/case-studies/buffington-v-progressive-insurance",
+      "https://www.normandpllc.com/case-studies/angellvgeico",
+      "https://www.normandpllc.com/case-studies/volinoprogressivecasualityinsurance",
+      "https://www.normandpllc.com/case-studies/carrie-andrews-v-state-auto-mutual-insurance-company",
+      "https://www.normandpllc.com/case-studies/junior-v-infinity-insurance-company",
+      "https://www.normandpllc.com/case-studies/sos-v-state-farm-mutual-insurance-company",
+      "https://www.normandpllc.com/case-studies/resnick-v-avmed-inc",
+      "https://www.normandpllc.com/case-studies/venerus-v-avis-budget",
+      "https://www.normandpllc.com/case-studies/parker-v-universal"
+    ],
+    "sampleBlocks": [
+      {
+        "order": 1,
+        "selector": "header.site-header",
+        "color": "black",
+        "headingSample": null,
+        "approxHeight": 900,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/contact-us/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/class-action/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 2,
+        "selector": "header.singular-header",
+        "color": "white",
+        "headingSample": "Disclaimer",
+        "approxHeight": 720,
+        "approxTop": 0,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(1, 1, 1)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 3,
+        "selector": "main.site-main",
+        "color": "black",
+        "headingSample": "Disclaimer Disclaimer for Normand PLLC Explanation of website for Normand PLLC",
+        "approxHeight": 411,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "#primary",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/contact-us/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 4,
+        "selector": "div.entry-content",
+        "color": "black",
+        "headingSample": "Disclaimer for Normand PLLC Explanation of website for Normand PLLC",
+        "approxHeight": 1570,
+        "approxTop": 816,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 180,
+        "marginY": 0
+      },
+      {
+        "order": 5,
+        "selector": "footer.site-footer",
+        "color": "white",
+        "headingSample": null,
+        "approxHeight": 90,
+        "approxTop": 900,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(1, 1, 1)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 6,
+        "selector": "div.preloader",
+        "color": "orange",
+        "headingSample": null,
+        "approxHeight": 900,
+        "approxTop": 900,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(252, 90, 43)",
+        "paddingY": 0,
+        "marginY": 0
+      }
+    ]
+  },
+  {
+    "id": "template_9",
+    "fingerprint": {
+      "blockCount": 8,
+      "colorRhythm": "black-white-black-black-white-orange-black-black",
+      "hasHero": false,
+      "hasFAQ": false,
+      "hasForms": false,
+      "hasGallery": true,
+      "headingSequence": 3,
+      "totalHeight": 8294
+    },
+    "pages": [
+      "https://www.normandpllc.com/our-team/edmund-normand",
+      "https://www.normandpllc.com/car-insurance-total-loss-claims"
+    ],
+    "sampleBlocks": [
+      {
+        "order": 1,
+        "selector": "header.site-header",
+        "color": "black",
+        "headingSample": null,
+        "approxHeight": 900,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/contact-us/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/class-action/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 2,
+        "selector": "header.singular-header",
+        "color": "white",
+        "headingSample": "Edmund Normand",
+        "approxHeight": 720,
+        "approxTop": 0,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(1, 1, 1)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 3,
+        "selector": "main.site-main",
+        "color": "black",
+        "headingSample": "Edmund Normand Founder Edmund Normand Primary Focus & Experience Awards & Recognitions Speaking Enga",
+        "approxHeight": 411,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "#primary",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/contact-us/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": true,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 4,
+        "selector": "div.entry-content",
+        "color": "black",
+        "headingSample": "Founder Edmund Normand Primary Focus & Experience Awards & Recognitions Speaking Engagements & Publi",
+        "approxHeight": 4989,
+        "approxTop": 816,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": true,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 180,
+        "marginY": 0
+      },
+      {
+        "order": 5,
+        "selector": "footer.site-footer",
+        "color": "white",
+        "headingSample": null,
+        "approxHeight": 90,
+        "approxTop": 900,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(1, 1, 1)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 6,
+        "selector": "div.preloader",
+        "color": "orange",
+        "headingSample": null,
+        "approxHeight": 900,
+        "approxTop": 900,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(252, 90, 43)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 7,
+        "selector": "div.wp-block-columns",
+        "color": "black",
+        "headingSample": null,
+        "approxHeight": 104,
+        "approxTop": 5032,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 24.5
+      },
+      {
+        "order": 8,
+        "selector": "div.wp-block-spacer",
+        "color": "black",
+        "headingSample": null,
+        "approxHeight": 180,
+        "approxTop": 5446,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 180,
+        "marginY": 0
+      }
+    ]
+  },
+  {
+    "id": "template_10",
+    "fingerprint": {
+      "blockCount": 9,
+      "colorRhythm": "black-white-black-black-white-orange-black-black-black",
+      "hasHero": false,
+      "hasFAQ": false,
+      "hasForms": true,
+      "hasGallery": false,
+      "headingSequence": 4,
+      "totalHeight": 5601
+    },
+    "pages": [
+      "https://www.normandpllc.com/john-richard-collection-data-breach"
+    ],
+    "sampleBlocks": [
+      {
+        "order": 1,
+        "selector": "header.site-header",
+        "color": "black",
+        "headingSample": null,
+        "approxHeight": 900,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/contact-us/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/class-action/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 2,
+        "selector": "header.singular-header",
+        "color": "white",
+        "headingSample": "John Richard Collection Data Breach",
+        "approxHeight": 720,
+        "approxTop": 0,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(1, 1, 1)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 3,
+        "selector": "main.site-main",
+        "color": "black",
+        "headingSample": "John Richard Collection Data Breach Were You Affected by the John Richard Collection Data Breach? He",
+        "approxHeight": 682,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "#primary",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/contact-us/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/",
+            "type": "a"
+          }
+        ],
+        "hasForms": true,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 4,
+        "selector": "div.entry-content",
+        "color": "black",
+        "headingSample": "Were You Affected by the John Richard Collection Data Breach? Here’s How Normand PLLC Can Help What ",
+        "approxHeight": 1635,
+        "approxTop": 766,
+        "ctas": [],
+        "hasForms": true,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 180,
+        "marginY": 0
+      },
+      {
+        "order": 5,
+        "selector": "footer.site-footer",
+        "color": "white",
+        "headingSample": null,
+        "approxHeight": 90,
+        "approxTop": 900,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(1, 1, 1)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 6,
+        "selector": "div.preloader",
+        "color": "orange",
+        "headingSample": null,
+        "approxHeight": 900,
+        "approxTop": 900,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(252, 90, 43)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 7,
+        "selector": "div.gf_browser_chrome",
+        "color": "black",
+        "headingSample": null,
+        "approxHeight": 362,
+        "approxTop": 1597,
+        "ctas": [],
+        "hasForms": true,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 8,
+        "selector": "div.wp-block-spacer",
+        "color": "black",
+        "headingSample": null,
+        "approxHeight": 180,
+        "approxTop": 2040,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 180,
+        "marginY": 0
+      },
+      {
+        "order": 9,
+        "selector": "nav.navigation",
+        "color": "black",
+        "headingSample": "Post navigation",
+        "approxHeight": 132,
+        "approxTop": 2400,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 56,
+        "marginY": 28
+      }
+    ]
+  },
+  {
+    "id": "template_11",
+    "fingerprint": {
+      "blockCount": 7,
+      "colorRhythm": "black-white-black-white-orange-black-black",
+      "hasHero": false,
+      "hasFAQ": false,
+      "hasForms": false,
+      "hasGallery": false,
+      "headingSequence": 3,
+      "totalHeight": 4436
+    },
+    "pages": [
+      "https://www.normandpllc.com/fidelity-national-information-services-data-breach-are-you-at-risk",
+      "https://www.normandpllc.com/illegal-automated-robocalls-and-robotexts"
+    ],
+    "sampleBlocks": [
+      {
+        "order": 1,
+        "selector": "header.site-header",
+        "color": "black",
+        "headingSample": null,
+        "approxHeight": 900,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/contact-us/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/class-action/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 2,
+        "selector": "header.singular-header",
+        "color": "white",
+        "headingSample": "Fidelity National Information Services 2023 Data Breach Impacts Consumers",
+        "approxHeight": 818,
+        "approxTop": 0,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(1, 1, 1)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 3,
+        "selector": "main.site-main",
+        "color": "black",
+        "headingSample": "Fidelity National Information Services 2023 Data Breach Impacts Consumers Post navigation",
+        "approxHeight": 1298,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "tel:4076036031",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "tel:4076036031",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#primary",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 4,
+        "selector": "footer.site-footer",
+        "color": "white",
+        "headingSample": null,
+        "approxHeight": 90,
+        "approxTop": 900,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(1, 1, 1)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 5,
+        "selector": "div.preloader",
+        "color": "orange",
+        "headingSample": null,
+        "approxHeight": 900,
+        "approxTop": 900,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(252, 90, 43)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 6,
+        "selector": "div.wp-block-columns",
+        "color": "black",
+        "headingSample": null,
+        "approxHeight": 298,
+        "approxTop": 2379,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "tel:4076036031",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 180,
+        "marginY": 24.5
+      },
+      {
+        "order": 7,
+        "selector": "nav.navigation",
+        "color": "black",
+        "headingSample": "Post navigation",
+        "approxHeight": 132,
+        "approxTop": 2882,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 56,
+        "marginY": 28
+      }
+    ]
+  },
+  {
+    "id": "template_12",
+    "fingerprint": {
+      "blockCount": 8,
+      "colorRhythm": "black-white-black-white-orange-black-black-black",
+      "hasHero": false,
+      "hasFAQ": false,
+      "hasForms": false,
+      "hasGallery": false,
+      "headingSequence": 3,
+      "totalHeight": 6405
+    },
+    "pages": [
+      "https://www.normandpllc.com/edmund-normand-joins-2024-super-lawyers"
+    ],
+    "sampleBlocks": [
+      {
+        "order": 1,
+        "selector": "header.site-header",
+        "color": "black",
+        "headingSample": null,
+        "approxHeight": 900,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/contact-us/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/class-action/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 2,
+        "selector": "header.singular-header",
+        "color": "white",
+        "headingSample": "Edmund Normand Joins 2024 Super Lawyers",
+        "approxHeight": 720,
+        "approxTop": 0,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(1, 1, 1)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 3,
+        "selector": "main.site-main",
+        "color": "black",
+        "headingSample": "Edmund Normand Joins 2024 Super Lawyers Edmund Normand Joins 2024 Super Lawyers, Once Again Joining ",
+        "approxHeight": 2981,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "#primary",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/contact-us/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 4,
+        "selector": "footer.site-footer",
+        "color": "white",
+        "headingSample": null,
+        "approxHeight": 90,
+        "approxTop": 900,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(1, 1, 1)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 5,
+        "selector": "div.preloader",
+        "color": "orange",
+        "headingSample": null,
+        "approxHeight": 900,
+        "approxTop": 900,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(252, 90, 43)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 6,
+        "selector": "div.wp-block-cover",
+        "color": "black",
+        "headingSample": null,
+        "approxHeight": 502,
+        "approxTop": 928,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 28,
+        "marginY": 0
+      },
+      {
+        "order": 7,
+        "selector": "div.wp-block-spacer",
+        "color": "black",
+        "headingSample": null,
+        "approxHeight": 180,
+        "approxTop": 2621,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 180,
+        "marginY": 0
+      },
+      {
+        "order": 8,
+        "selector": "nav.navigation",
+        "color": "black",
+        "headingSample": "Post navigation",
+        "approxHeight": 132,
+        "approxTop": 2981,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 56,
+        "marginY": 28
+      }
+    ]
+  },
+  {
+    "id": "template_13",
+    "fingerprint": {
+      "blockCount": 6,
+      "colorRhythm": "black-white-black-white-orange-black",
+      "hasHero": false,
+      "hasFAQ": false,
+      "hasForms": false,
+      "hasGallery": false,
+      "headingSequence": 2,
+      "totalHeight": 6057
+    },
+    "pages": [
+      "https://www.normandpllc.com/practice-area/total-loss"
+    ],
+    "sampleBlocks": [
+      {
+        "order": 1,
+        "selector": "header.site-header",
+        "color": "black",
+        "headingSample": null,
+        "approxHeight": 900,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/contact-us/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/class-action/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 2,
+        "selector": "header.page-header",
+        "color": "white",
+        "headingSample": "Practice Area: Total Loss",
+        "approxHeight": 720,
+        "approxTop": 0,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(1, 1, 1)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 3,
+        "selector": "main.site-main",
+        "color": "black",
+        "headingSample": "Practice Area: Total Loss Volino v Progressive Casuality insurance Carrie Andrews v. State Auto Mutu",
+        "approxHeight": 1866,
+        "approxTop": 0,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/volinoprogressivecasualityinsurance/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/carrie-andrews-v-state-auto-mutual-insurance-company/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#primary",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "#",
+            "type": "button"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 4,
+        "selector": "footer.site-footer",
+        "color": "white",
+        "headingSample": null,
+        "approxHeight": 90,
+        "approxTop": 900,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(1, 1, 1)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 5,
+        "selector": "div.preloader",
+        "color": "orange",
+        "headingSample": null,
+        "approxHeight": 900,
+        "approxTop": 900,
+        "ctas": [],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgb(252, 90, 43)",
+        "paddingY": 0,
+        "marginY": 0
+      },
+      {
+        "order": 6,
+        "selector": "div.entry-content",
+        "color": "black",
+        "headingSample": null,
+        "approxHeight": 1581,
+        "approxTop": 1279,
+        "ctas": [
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/volinoprogressivecasualityinsurance/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/carrie-andrews-v-state-auto-mutual-insurance-company/",
+            "type": "a"
+          },
+          {
+            "label": "CTA Placeholder",
+            "href": "https://www.normandpllc.com/case-studies/carrie-andrews-v-state-auto-mutual-insurance-company/",
+            "type": "a"
+          }
+        ],
+        "hasForms": false,
+        "hasHero": false,
+        "hasFAQ": false,
+        "hasGallery": false,
+        "rawBg": "rgba(0, 0, 0, 0)",
+        "paddingY": 180,
+        "marginY": 0
+      }
+    ]
+  }
+]

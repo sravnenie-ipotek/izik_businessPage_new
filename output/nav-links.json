@@ -1,0 +1,82 @@
+{
+  "topNav": [
+    {
+      "label": "Contact",
+      "url": "https://www.normandpllc.com/contact-us/"
+    },
+    {
+      "label": "Home",
+      "url": "https://www.normandpllc.com/"
+    },
+    {
+      "label": "Class Action",
+      "url": "https://www.normandpllc.com/class-action/"
+    },
+    {
+      "label": "Privacy",
+      "url": "https://www.normandpllc.com/class-action/privacy/"
+    },
+    {
+      "label": "Consumer Protection",
+      "url": "https://www.normandpllc.com/class-action/consumer-protection/"
+    },
+    {
+      "label": "Insurance",
+      "url": "https://www.normandpllc.com/class-action/insurance/"
+    },
+    {
+      "label": "Status & Results",
+      "url": "https://www.normandpllc.com/status-results/"
+    },
+    {
+      "label": "Our Team",
+      "url": "https://www.normandpllc.com/our-team/"
+    },
+    {
+      "label": "News & Articles",
+      "url": "https://www.normandpllc.com/news-articles/"
+    },
+    {
+      "label": "Contact Us",
+      "url": "https://www.normandpllc.com/contact-us/"
+    },
+    {
+      "label": "Disclaimer",
+      "url": "https://www.normandpllc.com/disclaimer/"
+    },
+    {
+      "label": "Privacy Policy",
+      "url": "https://www.normandpllc.com/privacy-policy/"
+    },
+    {
+      "label": "",
+      "url": "https://www.facebook.com/normandlawpllc"
+    },
+    {
+      "label": "",
+      "url": "https://www.instagram.com/normandlawpllc"
+    },
+    {
+      "label": "",
+      "url": "https://www.linkedin.com/company/normand-law-pllc"
+    },
+    {
+      "label": "Normand PLLC",
+      "url": "https://www.normandpllc.com/"
+    },
+    {
+      "label": "Orlando Phone: 407-603-6031",
+      "url": "tel:4076036031"
+    },
+    {
+      "label": "Fax: 888-974-2175",
+      "url": "tel:8889742175"
+    }
+  ],
+  "footerNav": [
+    {
+      "label": "ultramodern ✨",
+      "url": "https://www.ultramodern.us/"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+[
+  {
+    "order": 1,
+    "color": "white",
+    "headingSample": null,
+    "approxHeight": 160,
+    "ctas": [],
+    "rawBg": "rgb(255, 255, 255)"
+  },
+  {
+    "order": 2,
+    "color": "white",
+    "headingSample": "Normand",
+    "approxHeight": 900,
+    "ctas": [
+      {
+        "label": "Placeholder CTA",
+        "href": "https://www.normandpllc.com/contact-us/"
+      },
+      {
+        "label": "Placeholder CTA",
+        "href": "https://www.normandpllc.com/"
+      },
+      {
+        "label": "Placeholder CTA",
+        "href": "https://www.normandpllc.com/class-action/"
+      }
+    ],
+    "rawBg": "rgba(0, 0, 0, 0)"
+  },
+  {
+    "order": 3,
+    "color": "black",
+    "headingSample": "We AreResultsConfidenceAdvocacyVictoryResults",
+    "approxHeight": 900,
+    "ctas": [],
+    "rawBg": "rgb(1, 1, 1)"
+  },
+  {
+    "order": 4,
+    "color": "white",
+    "headingSample": "We AreResultsConfidenceAdvocacyVictoryResults",
+    "approxHeight": 10422,
+    "ctas": [
+      {
+        "label": "Placeholder CTA",
+        "href": "https://www.normandpllc.com/class-action/privacy/"
+      },
+      {
+        "label": "Placeholder CTA",
+        "href": "https://www.normandpllc.com/class-action/consumer-protection/"
+      },
+      {
+        "label": "Placeholder CTA",
+        "href": "https://www.normandpllc.com/class-action/insurance/"
+      }
+    ],
+    "rawBg": "rgba(0, 0, 0, 0)"
+  }
+]

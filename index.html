@@ -390,113 +390,186 @@
       color: var(--color-theme-black);
     }
     
-    .class-action-section {
-      padding: 80px 0 120px 0;
+    /* Orange Services Section */
+    .services-orange-section {
+      padding: 160px 0 200px 0;
       background: #fc5a2b;
       color: #010101;
       position: relative;
+      min-height: 750px;
     }
     
-    .overlapping-title {
-      position: absolute;
-      bottom: -40px;
-      right: 60px;
-      z-index: 10;
-    }
-    
-    .overlapping-title h2 {
-      font-size: clamp(60px, 10vw, 120px);
-      font-weight: 900;
-      line-height: 1;
-      letter-spacing: -0.02em;
-      color: #010101;
-      text-transform: uppercase;
-      margin: 0;
-    }
-    
-    @media (max-width: 960px) {
-      .overlapping-title {
-        right: 20px;
-        bottom: -30px;
-      }
-      
-      .overlapping-title h2 {
-        font-size: clamp(40px, 8vw, 80px);
-      }
-    }
-    
-    .service-label {
+    .services-subtitle {
       font-size: 14px;
       text-transform: uppercase;
       letter-spacing: 0.2em;
       margin-bottom: 20px;
       color: #ffffff;
       font-weight: 600;
+      text-align: center;
     }
     
-    .service-title {
-      font-size: clamp(60px, 9vw, 110px);
+    .services-main-title {
+      font-size: clamp(60px, 8vw, 96px);
       font-weight: 900;
-      line-height: 0.85;
+      line-height: 0.9;
       letter-spacing: -0.03em;
-      margin-bottom: 35px;
+      margin-bottom: 60px;
       color: #010101;
       text-transform: uppercase;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial Black, Helvetica, sans-serif;
+      text-align: center;
     }
     
-    .service-description {
+    .services-content-wrapper {
+      display: flex;
+      align-items: flex-start;
+      gap: 80px;
+      max-width: 1200px;
+      margin: 0 auto 60px auto;
+    }
+    
+    .services-text-content {
+      flex: 1;
+      font-size: 18px;
+      line-height: 1.7;
+      color: #010101;
+    }
+    
+    .services-image {
+      flex: 0 0 40%;
+      max-width: 450px;
+      height: 400px;
+    }
+    
+    .services-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #f0f0f0;
+    }
+    
+    /* Privacy Overlap Section */
+    .privacy-overlap-section {
+      margin-top: 60px;
+      padding-top: 40px;
+    }
+    
+    .privacy-overlap-title {
+      font-size: clamp(48px, 7vw, 80px);
+      font-weight: 900;
+      line-height: 0.9;
+      letter-spacing: -0.02em;
+      margin-bottom: 30px;
+      color: #010101;
+      text-transform: uppercase;
+    }
+    
+    .privacy-overlap-text {
       font-size: 16px;
-      line-height: 1.6;
+      line-height: 1.7;
       color: #010101;
       max-width: 600px;
     }
     
-    .service-intro-wrapper {
+    .services-bottom-image {
+      margin-top: 60px;
+      margin-bottom: 80px;
       display: flex;
-      align-items: center;
-      gap: 60px;
+      justify-content: flex-start;
+    }
+    
+    .services-bottom-image img {
+      border-radius: 8px;
+      background: rgba(0,0,0,0.15);
+      padding: 30px;
+      width: 450px;
+      height: auto;
+    }
+    
+    
+    /* Service Cards Section - White Background */
+    .service-cards-section {
+      padding: 80px 0;
+      background: #ffffff;
+    }
+    
+    .service-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
       max-width: 1200px;
       margin: 0 auto;
     }
     
-    .service-intro {
-      flex: 1;
-      text-align: left;
+    .service-card {
+      text-align: center;
+      padding: 20px;
     }
     
-    .service-intro-image {
-      flex: 0 0 45%;
-      max-width: 500px;
-    }
-    
-    .legal-image-placeholder {
-      width: 100%;
-      height: 400px;
+    .service-card-image {
+      width: 200px;
+      height: 200px;
+      margin: 0 auto 30px;
       background: #f8f8f8;
       border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .service-card-image img {
+      max-width: 150px;
+      height: auto;
+    }
+    
+    .service-card h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #010101;
+      text-transform: uppercase;
+    }
+    
+    .service-card p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 25px;
+    }
+    
+    .service-card-link {
+      display: inline-block;
+      padding: 12px 30px;
+      background: #fc5a2b;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 0.05em;
+      transition: all 0.3s ease;
+    }
+    
+    .service-card-link:hover {
+      background: #e04a1f;
+      transform: translateY(-2px);
     }
     
     @media (max-width: 960px) {
-      .service-intro-wrapper {
+      .services-content-wrapper {
         flex-direction: column;
-        text-align: center;
-        gap: 40px;
       }
       
-      .service-intro {
-        text-align: center;
-      }
-      
-      .service-title {
-        font-size: clamp(36px, 6vw, 72px);
-      }
-      
-      .service-intro-image {
+      .services-image {
         flex: 1;
         max-width: 100%;
+      }
+      
+      .service-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
       }
     }
     
@@ -641,11 +714,75 @@
     
     /* Footer */
     .site-footer {
-      background: var(--color-theme-black);
-      color: var(--color-theme-white);
-      padding: var(--spacing-50) 0;
+      background: #010101;
+      color: #ffffff;
+      padding: 60px 0 30px;
+      font-size: 14px;
+    }
+    
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .footer-column h4 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #fc5a2b;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    
+    .footer-column p {
+      line-height: 1.6;
+      color: rgba(255,255,255,0.7);
+    }
+    
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .footer-column ul li {
+      margin-bottom: 10px;
+    }
+    
+    .footer-column ul li a {
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .footer-column ul li a:hover {
+      color: #fc5a2b;
+    }
+    
+    .footer-bottom {
       text-align: center;
+      color: rgba(255,255,255,0.5);
+    }
+    
+    .footer-bottom p {
+      margin: 10px 0;
+    }
+    
+    .footer-disclaimer {
       font-size: 12px;
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    @media (max-width: 960px) {
+      .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
     }
     
     /* Buttons - Exact Styles */
@@ -764,6 +901,401 @@
       transform: translateY(0);
       transition: all 0.8s var(--transition-timing-function);
     }
+    
+    /* Section Title Style */
+    .section-title {
+      font-size: clamp(48px, 6vw, 72px);
+      font-weight: 900;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 60px;
+      color: #010101;
+      letter-spacing: -0.02em;
+    }
+    
+    /* Case Studies Section */
+    .case-studies-section {
+      padding: 80px 0;
+      background: #ffffff;
+    }
+    
+    .case-studies-list {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    .case-study-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px;
+      margin-bottom: 20px;
+      background: #f8f8f8;
+      border-left: 4px solid #fc5a2b;
+      transition: all 0.3s ease;
+    }
+    
+    .case-study-item:hover {
+      transform: translateX(10px);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+    
+    .case-study-info h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #010101;
+    }
+    
+    .case-study-info p {
+      color: #666;
+      margin: 0;
+    }
+    
+    .case-study-link {
+      padding: 10px 25px;
+      background: #fc5a2b;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+    
+    /* Testimonials Section */
+    .testimonials-section {
+      padding: 80px 0;
+      background: #f2f2f2;
+    }
+    
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    .testimonial-card {
+      background: white;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+    
+    .testimonial-image {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+    }
+    
+    .testimonial-quote {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: #333;
+      font-style: italic;
+    }
+    
+    .testimonial-author {
+      font-weight: 700;
+      color: #010101;
+      margin-bottom: 5px;
+    }
+    
+    .testimonial-title {
+      color: #666;
+      font-size: 14px;
+    }
+    
+    /* Team Section */
+    .team-section {
+      padding: 80px 0;
+      background: #ffffff;
+    }
+    
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    
+    .team-member {
+      text-align: center;
+    }
+    
+    .team-member-image {
+      width: 200px;
+      height: 200px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: #f0f0f0;
+    }
+    
+    .team-member h3 {
+      font-size: 22px;
+      margin-bottom: 5px;
+      color: #010101;
+    }
+    
+    .team-title {
+      color: #fc5a2b;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    
+    .team-bio {
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    
+    .team-link {
+      color: #fc5a2b;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    
+    /* Media Section */
+    .media-section {
+      padding: 60px 0;
+      background: #f8f8f8;
+    }
+    
+    .media-title {
+      text-align: center;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      margin-bottom: 40px;
+      color: #666;
+    }
+    
+    .media-logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    .media-logo {
+      font-size: 18px;
+      font-weight: 700;
+      color: #999;
+      opacity: 0.7;
+      transition: opacity 0.3s ease;
+    }
+    
+    .media-logo:hover {
+      opacity: 1;
+    }
+    
+    /* News Section */
+    .news-section {
+      padding: 80px 0;
+      background: #ffffff;
+    }
+    
+    .news-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 40px;
+      max-width: 1100px;
+      margin: 0 auto 40px;
+    }
+    
+    .news-item.featured {
+      display: flex;
+      gap: 30px;
+    }
+    
+    .news-image {
+      flex: 0 0 400px;
+      height: 250px;
+      background: #f0f0f0;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    .news-content {
+      flex: 1;
+    }
+    
+    .news-date {
+      color: #fc5a2b;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    
+    .news-item h3 {
+      font-size: 24px;
+      margin: 15px 0;
+      color: #010101;
+    }
+    
+    .news-item p {
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    
+    .news-link {
+      color: #fc5a2b;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    
+    .view-more-news {
+      display: inline-block;
+      padding: 12px 30px;
+      background: #fc5a2b;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin: 0 auto;
+      display: block;
+      width: fit-content;
+    }
+    
+    /* Contact Section */
+    .contact-section {
+      padding: 80px 0;
+      background: #010101;
+      color: white;
+    }
+    
+    .contact-section .section-title {
+      color: white;
+    }
+    
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 35% 65%;
+      gap: 60px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .contact-info h3,
+    .contact-form h3 {
+      font-size: 24px;
+      margin-bottom: 30px;
+      color: #fc5a2b;
+    }
+    
+    .contact-address,
+    .contact-phone,
+    .contact-email {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+    
+    .social-links {
+      display: flex;
+      gap: 20px;
+      margin-top: 30px;
+    }
+    
+    .social-links a {
+      width: 40px;
+      height: 40px;
+      background: #fc5a2b;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    
+    .social-links a:hover {
+      background: #e04a1f;
+      transform: translateY(-3px);
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 20px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: white;
+      border-radius: 6px;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+    
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      outline: none;
+      border-color: #fc5a2b;
+      background: rgba(255,255,255,0.15);
+      transform: translateY(-1px);
+    }
+    
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+      color: rgba(255,255,255,0.6);
+    }
+    
+    .submit-btn {
+      padding: 12px 40px;
+      background: #fc5a2b;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-weight: 600;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .submit-btn:hover {
+      background: #e04a1f;
+      transform: translateY(-2px);
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 960px) {
+      .case-study-item {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .testimonials-grid,
+      .team-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .news-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .news-item.featured {
+        flex-direction: column;
+      }
+      
+      .news-image {
+        flex: 1;
+        width: 100%;
+      }
+      
+      .contact-wrapper {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 
@@ -820,97 +1352,293 @@
         </div>
       </section>
 
-      <!-- Our Services Section -->
-      <section class="class-action-section" id="class-action">
+      <!-- Our Services Section - Orange -->
+      <section class="services-orange-section" id="class-action">
         <div class="content-container">
-          <div class="service-intro-wrapper">
-            <div class="service-intro fade-in">
-              <div class="service-label">OUR SERVICES</div>
-              <h2 class="service-title">WE ARE<br>CLASS<br>ACTION</h2>
-              <p class="service-description">Normand PLLC attorneys represent consumers around the world in important and often unprecedented complex class actions. The Firm has been lead counsel in many of the largest insurance class action cases in the United States. The firm has successfully pursued Class Action cases involving consumer fraud, privacy, individuals victimized by abusive telemarketing practices, and deceptive consumer sales practices.</p>
+          <p class="services-subtitle">OUR SERVICES</p>
+          <h2 class="services-main-title">WE ARE CLASS ACTION</h2>
+          
+          <div class="services-content-wrapper">
+            <div class="services-text-content">
+              <p>Normand PLLC attorneys represent consumers around the world in important and often unprecedented complex class actions. The Firm has been lead counsel in many of the largest insurance class action cases in the United States. The firm has successfully pursued Class Action cases involving consumer fraud, privacy, individuals victimized by abusive telemarketing practices, and deceptive consumer sales practices.</p>
             </div>
-            <div class="service-intro-image fade-in">
-              <div class="legal-image-placeholder">
-                <svg width="100%" height="100%" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
-                  <!-- Gavel illustration -->
-                  <rect width="500" height="400" fill="#1a1a1a"/>
-                  <!-- Gavel handle -->
-                  <rect x="150" y="180" width="200" height="40" rx="20" fill="#4a4a4a"/>
-                  <!-- Gavel head -->
-                  <ellipse cx="350" cy="200" rx="60" ry="30" fill="#5a5a5a"/>
-                  <ellipse cx="150" cy="200" rx="60" ry="30" fill="#5a5a5a"/>
-                  <!-- Credit cards underneath -->
-                  <rect x="180" y="250" width="140" height="90" rx="8" fill="#2a2a2a"/>
-                  <rect x="200" y="260" width="140" height="90" rx="8" fill="#3a3a3a"/>
-                  <!-- Card details -->
-                  <rect x="210" y="280" width="60" height="8" fill="#666"/>
-                  <rect x="210" y="295" width="40" height="6" fill="#666"/>
+            <div class="services-image">
+              <img src="https://live-normand.pantheonsite.io/wp-content/uploads/2021/06/consumer-protection-470x336.png" alt="Gavel with Credit Card" style="width: 100%; height: auto; object-fit: cover;">
+            </div>
+          </div>
+          
+          <!-- Bottom Left Image Element -->
+          <div class="services-bottom-image">
+            <img src="https://live-normand.pantheonsite.io/wp-content/uploads/2021/06/scales-justice.png" alt="Consumer Law" style="width: 400px; height: auto;">
+          </div>
+          
+          <!-- Overlapping Privacy Section -->
+          <div class="privacy-overlap-section">
+            <h2 class="privacy-overlap-title">PRIVACY CLASS<br>ACTION</h2>
+            <p class="privacy-overlap-text">You have a right to privacy in your home, in your personal life and with your private information. Our firm has experience in pursuing privacy claim class actions. These cases range from suing over intrusive robocalls, to data breach lawsuits, to lawsuits to prevent website spying activities by companies that you thought you could trust with your private information.</p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Service Cards Section - White Background -->
+      <section class="service-cards-section">
+        <div class="content-container">
+          <div class="service-cards-grid">
+            <!-- Privacy Card -->
+            <div class="service-card">
+              <div class="service-card-image">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="width: 150px; height: 150px;">
+                  <!-- Gavel -->
+                  <rect x="40" y="80" width="120" height="20" rx="10" fill="#8B4513"/>
+                  <ellipse cx="160" cy="90" rx="30" ry="20" fill="#654321"/>
+                  <ellipse cx="40" cy="90" rx="30" ry="20" fill="#654321"/>
+                  <!-- Credit Card -->
+                  <rect x="60" y="110" width="80" height="50" rx="5" fill="#1a1a1a"/>
+                  <rect x="70" y="120" width="40" height="6" fill="#ffd700"/>
+                  <rect x="70" y="135" width="25" height="4" fill="#666"/>
+                  <text x="100" y="180" text-anchor="middle" font-family="Arial" font-size="10" fill="#666">Privacy</text>
                 </svg>
+              </div>
+              <h3>PRIVACY CLASS ACTION</h3>
+              <p>You have a right to privacy in your home, in your personal life and with your private information. Our firm has experience in pursuing privacy claim class actions.</p>
+              <a href="privacy-class-action.html" class="service-card-link">Learn More</a>
+            </div>
+            
+            <!-- Consumer Protection Card -->
+            <div class="service-card">
+              <div class="service-card-image">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="width: 150px; height: 150px;">
+                  <!-- Shield -->
+                  <path d="M100 40 L140 60 L140 120 L100 150 L60 120 L60 60 Z" fill="#2e7d32"/>
+                  <!-- Checkmark -->
+                  <path d="M75 85 L90 100 L125 65" stroke="white" stroke-width="6" fill="none" stroke-linecap="round"/>
+                  <text x="100" y="170" text-anchor="middle" font-family="Arial" font-size="10" fill="#666">Consumer</text>
+                </svg>
+              </div>
+              <h3>CONSUMER PROTECTION CLASS ACTION</h3>
+              <p>False advertising, bait and switch practices, unconscionable or illegal pricing schemes, and charging for services or products that are never provided.</p>
+              <a href="consumer-protection.html" class="service-card-link">Learn More</a>
+            </div>
+            
+            <!-- Insurance Card -->
+            <div class="service-card">
+              <div class="service-card-image">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="width: 150px; height: 150px;">
+                  <!-- Gavel -->
+                  <rect x="40" y="60" width="120" height="20" rx="10" fill="#8B4513"/>
+                  <ellipse cx="160" cy="70" rx="30" ry="20" fill="#654321"/>
+                  <ellipse cx="40" cy="70" rx="30" ry="20" fill="#654321"/>
+                  <!-- Certificate -->
+                  <rect x="65" y="95" width="70" height="70" rx="3" fill="white" stroke="#333" stroke-width="2"/>
+                  <rect x="75" y="105" width="50" height="4" fill="#333"/>
+                  <rect x="75" y="115" width="45" height="3" fill="#666"/>
+                  <rect x="75" y="122" width="48" height="3" fill="#666"/>
+                  <!-- Seal -->
+                  <circle cx="100" cy="145" r="12" fill="#fc5a2b" opacity="0.7"/>
+                  <text x="100" y="180" text-anchor="middle" font-family="Arial" font-size="10" fill="#666">Insurance</text>
+                </svg>
+              </div>
+              <h3>INSURANCE CLASS ACTION</h3>
+              <p>When you pay your insurance premium and the time comes to make a claim you have a right to any and all benefits provided by the insurance policy.</p>
+              <a href="insurance-class-action.html" class="service-card-link">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Case Studies Section -->
+      <section class="case-studies-section" id="results">
+        <div class="content-container">
+          <h2 class="section-title fade-in">WE ARE STRATEGY</h2>
+          <div class="case-studies-list">
+            <div class="case-study-item fade-in">
+              <div class="case-study-info">
+                <h3>$50 Million Settlement</h3>
+                <p>Major insurance class action settlement achieved for policyholders nationwide.</p>
+              </div>
+              <a href="#" class="case-study-link">View Case Study</a>
+            </div>
+            <div class="case-study-item fade-in">
+              <div class="case-study-info">
+                <h3>Privacy Rights Victory</h3>
+                <p>Landmark data breach case protecting consumer privacy rights.</p>
+              </div>
+              <a href="#" class="case-study-link">View Case Study</a>
+            </div>
+            <div class="case-study-item fade-in">
+              <div class="case-study-info">
+                <h3>Consumer Protection Win</h3>
+                <p>Successfully challenged deceptive business practices affecting thousands.</p>
+              </div>
+              <a href="#" class="case-study-link">View Case Study</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Testimonials Section -->
+      <section class="testimonials-section" id="testimonials">
+        <div class="content-container">
+          <h2 class="section-title fade-in">WE ARE SUCCESS</h2>
+          <div class="testimonials-grid">
+            <div class="testimonial-card fade-in">
+              <div class="testimonial-image">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="50" cy="50" r="45" fill="#e0e0e0"/>
+                  <circle cx="50" cy="35" r="15" fill="#999"/>
+                  <ellipse cx="50" cy="70" rx="25" ry="20" fill="#999"/>
+                </svg>
+              </div>
+              <div class="testimonial-content">
+                <p class="testimonial-quote">"The team at Normand PLLC fought tirelessly for our case. Their dedication and expertise made all the difference."</p>
+                <p class="testimonial-author">Arthur Miller</p>
+                <p class="testimonial-title">Class Representative</p>
+              </div>
+            </div>
+            <div class="testimonial-card fade-in">
+              <div class="testimonial-image">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="50" cy="50" r="45" fill="#e0e0e0"/>
+                  <circle cx="50" cy="35" r="15" fill="#999"/>
+                  <ellipse cx="50" cy="70" rx="25" ry="20" fill="#999"/>
+                </svg>
+              </div>
+              <div class="testimonial-content">
+                <p class="testimonial-quote">"Professional, responsive, and results-driven. They achieved an outcome we didn't think was possible."</p>
+                <p class="testimonial-author">Sean Dominick</p>
+                <p class="testimonial-title">Lead Plaintiff</p>
               </div>
             </div>
           </div>
         </div>
-        <!-- Overlapping Title -->
-        <div class="overlapping-title">
-          <h2>PRIVACY CLASS<br>ACTION</h2>
-        </div>
       </section>
-
-      <!-- Services Grid -->
-      <section class="service-section">
-        <div class="content-container">
-          <div class="services-grid">
-            <div class="service-card fade-in" id="privacy">
-              <div class="service-icon privacy"></div>
-              <h3>Privacy Class Action</h3>
-              <p>You have a right to privacy in your home, in your personal life and with your private information.</p>
-            </div>
-            
-            <div class="service-card fade-in" id="consumer">
-              <div class="service-icon consumer"></div>
-              <h3>Consumer Protection Class Action</h3>
-              <p>False advertising, bait and switch practices, unconscionable or illegal pricing schemes, deceptive credit reporting, identity theft, violations of consumer protection laws, debt collection violations, and other consumer rights violations.</p>
-            </div>
-            
-            <div class="service-card fade-in" id="insurance">
-              <div class="service-icon insurance"></div>
-              <h3>Insurance Class Action</h3>
-              <p>When you pay your insurance premium and the time comes to make a claim you have a right to any and all benefits provided by the insurance policy.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Case Studies -->
-      <section class="case-studies" id="results">
-        <div class="content-container">
-          <h2 class="fade-in">Case Studies</h2>
-          <div class="stats fade-in">
-            <div class="stat-number">5</div>
-            <div>Won Cases</div>
-            <div>2021 - 2024</div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Testimonial / News -->
-      <section class="testimonial" id="news">
-        <div class="content-container">
-          <div class="quote fade-in">
-            "We are not insular: we are compassion. We know that when one is cheated we all suffer."
-          </div>
-          <div class="fade-in">Client testimonial</div>
-        </div>
-      </section>
-
+      
       <!-- Team Section -->
       <section class="team-section" id="team">
         <div class="content-container">
-          <h2 class="fade-in">Our Team</h2>
-          <div class="team-member fade-in">
-            <div class="member-photo"></div>
-            <h3>Edmund Normand</h3>
-            <p>Edmund Normand started his practice in 1991, specializing in personal injury law.</p>
+          <h2 class="section-title fade-in">WE ARE EXPERIENCED</h2>
+          <div class="team-grid">
+            <div class="team-member fade-in">
+              <div class="team-member-image">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="200" height="200" fill="#f0f0f0"/>
+                  <circle cx="100" cy="80" r="40" fill="#999"/>
+                  <ellipse cx="100" cy="160" rx="60" ry="50" fill="#999"/>
+                  <text x="100" y="190" text-anchor="middle" font-family="Arial" font-size="10" fill="#666">Ed Normand</text>
+                </svg>
+              </div>
+              <h3>Edmund Normand</h3>
+              <p class="team-title">Founding Partner</p>
+              <p class="team-bio">Leading class action attorney with over 20 years of experience representing consumers nationwide.</p>
+              <a href="#" class="team-link">Read More</a>
+            </div>
+            <div class="team-member fade-in">
+              <div class="team-member-image">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="200" height="200" fill="#f0f0f0"/>
+                  <circle cx="100" cy="80" r="40" fill="#999"/>
+                  <ellipse cx="100" cy="160" rx="60" ry="50" fill="#999"/>
+                </svg>
+              </div>
+              <h3>Senior Attorney</h3>
+              <p class="team-title">Partner</p>
+              <p class="team-bio">Specializing in consumer protection and privacy class actions.</p>
+              <a href="#" class="team-link">Read More</a>
+            </div>
+            <div class="team-member fade-in">
+              <div class="team-member-image">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="200" height="200" fill="#f0f0f0"/>
+                  <circle cx="100" cy="80" r="40" fill="#999"/>
+                  <ellipse cx="100" cy="160" rx="60" ry="50" fill="#999"/>
+                </svg>
+              </div>
+              <h3>Associate Attorney</h3>
+              <p class="team-title">Associate</p>
+              <p class="team-bio">Focus on insurance litigation and regulatory compliance.</p>
+              <a href="#" class="team-link">Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Media Logos Section -->
+      <section class="media-section">
+        <div class="content-container">
+          <p class="media-title fade-in">CASES FEATURED IN</p>
+          <div class="media-logos">
+            <div class="media-logo fade-in">USA TODAY</div>
+            <div class="media-logo fade-in">NEW YORK TIMES</div>
+            <div class="media-logo fade-in">LAW360</div>
+            <div class="media-logo fade-in">BLOOMBERG</div>
+            <div class="media-logo fade-in">REUTERS</div>
+            <div class="media-logo fade-in">WSJ</div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- News & Articles Section -->
+      <section class="news-section" id="news">
+        <div class="content-container">
+          <h2 class="section-title fade-in">NEWS & ARTICLES</h2>
+          <div class="news-grid">
+            <article class="news-item featured fade-in">
+              <div class="news-image">
+                <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="400" height="250" fill="#e0e0e0"/>
+                  <rect x="50" y="50" width="300" height="150" fill="#ccc"/>
+                  <text x="200" y="125" text-anchor="middle" font-family="Arial" font-size="14" fill="#666">Featured Article</text>
+                </svg>
+              </div>
+              <div class="news-content">
+                <span class="news-date">December 2024</span>
+                <h3>Major Settlement Reached in Data Breach Class Action</h3>
+                <p>Normand PLLC announces a significant settlement in a nationwide data breach case affecting millions of consumers...</p>
+                <a href="#" class="news-link">Read the post</a>
+              </div>
+            </article>
+            <article class="news-item fade-in">
+              <span class="news-date">November 2024</span>
+              <h3>New Insurance Class Action Filed</h3>
+              <p>The firm has filed a new class action lawsuit challenging unfair insurance claim denials...</p>
+              <a href="#" class="news-link">Read the post</a>
+            </article>
+          </div>
+          <a href="#" class="view-more-news fade-in">View More News & Articles</a>
+        </div>
+      </section>
+      
+      <!-- Contact Section -->
+      <section class="contact-section" id="contact">
+        <div class="content-container">
+          <h2 class="section-title fade-in">WE ARE READY</h2>
+          <div class="contact-wrapper">
+            <div class="contact-info fade-in">
+              <h3>Contact Us</h3>
+              <p class="contact-address">
+                123 Main Street<br>
+                Suite 500<br>
+                New York, NY 10001
+              </p>
+              <p class="contact-phone">Phone: (555) 123-4567</p>
+              <p class="contact-email">Email: info@normandpllc.com</p>
+              <div class="social-links">
+                <a href="#" aria-label="Facebook">f</a>
+                <a href="#" aria-label="Twitter">t</a>
+                <a href="#" aria-label="LinkedIn">in</a>
+              </div>
+            </div>
+            <div class="contact-form fade-in">
+              <h3>Free Case Evaluation</h3>
+              <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone">
+                <textarea placeholder="Describe your case" rows="5" required></textarea>
+                <button type="submit" class="submit-btn">Submit</button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -933,14 +1661,41 @@
     <!-- Footer -->
     <footer class="site-footer">
       <div class="content-container">
-        <div id="disclaimer">
-          <p><strong>Disclaimer:</strong> This website is for informational purposes only. No attorney-client relationship is formed.</p>
+        <div class="footer-content">
+          <div class="footer-column">
+            <h4>Normand PLLC</h4>
+            <p>Leading class action attorneys representing consumers nationwide in complex litigation.</p>
+          </div>
+          <div class="footer-column">
+            <h4>Practice Areas</h4>
+            <ul>
+              <li><a href="privacy-class-action.html">Privacy Class Action</a></li>
+              <li><a href="consumer-protection.html">Consumer Protection</a></li>
+              <li><a href="insurance-class-action.html">Insurance Class Action</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#results">Case Results</a></li>
+              <li><a href="#news">News & Articles</a></li>
+              <li><a href="#team">Our Team</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#disclaimer">Disclaimer</a></li>
+              <li><a href="#privacy">Privacy Policy</a></li>
+              <li><a href="#terms">Terms of Use</a></li>
+            </ul>
+          </div>
         </div>
-        <div id="privacy-policy">
-          <p><strong>Privacy Policy:</strong> We respect your privacy and protect your personal information.</p>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Normand PLLC. All rights reserved.</p>
+          <p class="footer-disclaimer">The information on this website is for general information purposes only. Nothing on this site should be taken as legal advice.</p>
         </div>
-        <p>Copyright © Normand PLLC 2025</p>
-        <p>Website by ultramodern ✨</p>
       </div>
     </footer>
   </div>
@@ -1144,8 +1899,8 @@
         });
       });
 
-      // Service cards stagger
-      gsap.fromTo('.service-card', {
+      // Service section animations
+      gsap.fromTo('.normand-st-reveal', {
         opacity: 0,
         y: 50
       }, {
@@ -1155,8 +1910,24 @@
         stagger: 0.2,
         ease: "power2.out",
         scrollTrigger: {
-          trigger: '.services-grid',
+          trigger: '.normand-services',
           start: "top 80%"
+        }
+      });
+      
+      // Service images animation
+      gsap.fromTo('.normand-st-reveal-img', {
+        opacity: 0,
+        scale: 0.95
+      }, {
+        opacity: 1,
+        scale: 1,
+        duration: 0.8,
+        stagger: 0.15,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: '.services-grid',
+          start: "top 75%"
         }
       });
     }

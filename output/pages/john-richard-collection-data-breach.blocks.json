@@ -1,0 +1,198 @@
+[
+  {
+    "order": 1,
+    "selector": "header.site-header",
+    "color": "black",
+    "headingSample": null,
+    "approxHeight": 900,
+    "approxTop": 0,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "#",
+        "type": "button"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "#",
+        "type": "button"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/contact-us/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/class-action/",
+        "type": "a"
+      }
+    ],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 2,
+    "selector": "header.singular-header",
+    "color": "white",
+    "headingSample": "John Richard Collection Data Breach",
+    "approxHeight": 720,
+    "approxTop": 0,
+    "ctas": [],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgb(1, 1, 1)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 3,
+    "selector": "main.site-main",
+    "color": "black",
+    "headingSample": "John Richard Collection Data Breach Were You Affected by the John Richard Collection Data Breach? He",
+    "approxHeight": 682,
+    "approxTop": 0,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "#primary",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "#",
+        "type": "button"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "#",
+        "type": "button"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/contact-us/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/",
+        "type": "a"
+      }
+    ],
+    "hasForms": true,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 4,
+    "selector": "div.entry-content",
+    "color": "black",
+    "headingSample": "Were You Affected by the John Richard Collection Data Breach? Here’s How Normand PLLC Can Help What ",
+    "approxHeight": 1635,
+    "approxTop": 766,
+    "ctas": [],
+    "hasForms": true,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 180,
+    "marginY": 0
+  },
+  {
+    "order": 5,
+    "selector": "footer.site-footer",
+    "color": "white",
+    "headingSample": null,
+    "approxHeight": 90,
+    "approxTop": 900,
+    "ctas": [],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgb(1, 1, 1)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 6,
+    "selector": "div.preloader",
+    "color": "orange",
+    "headingSample": null,
+    "approxHeight": 900,
+    "approxTop": 900,
+    "ctas": [],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgb(252, 90, 43)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 7,
+    "selector": "div.gf_browser_chrome",
+    "color": "black",
+    "headingSample": null,
+    "approxHeight": 362,
+    "approxTop": 1597,
+    "ctas": [],
+    "hasForms": true,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 8,
+    "selector": "div.wp-block-spacer",
+    "color": "black",
+    "headingSample": null,
+    "approxHeight": 180,
+    "approxTop": 2040,
+    "ctas": [],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 180,
+    "marginY": 0
+  },
+  {
+    "order": 9,
+    "selector": "nav.navigation",
+    "color": "black",
+    "headingSample": "Post navigation",
+    "approxHeight": 132,
+    "approxTop": 2400,
+    "ctas": [],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 56,
+    "marginY": 28
+  }
+]

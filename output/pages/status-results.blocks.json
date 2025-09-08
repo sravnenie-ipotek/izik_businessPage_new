@@ -1,0 +1,434 @@
+[
+  {
+    "order": 1,
+    "selector": "header.site-header",
+    "color": "black",
+    "headingSample": null,
+    "approxHeight": 900,
+    "approxTop": 0,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "#",
+        "type": "button"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "#",
+        "type": "button"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/contact-us/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/class-action/",
+        "type": "a"
+      }
+    ],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 2,
+    "selector": "header.wp-block-normand-page-banner",
+    "color": "white",
+    "headingSample": "We AreStrategyAmbitionEfficiencyOPPORTUNITYStrategy",
+    "approxHeight": 720,
+    "approxTop": 0,
+    "ctas": [],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgb(1, 1, 1)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 3,
+    "selector": "main.site-main",
+    "color": "black",
+    "headingSample": "Status & Results We AreStrategyAmbitionEfficiencyOPPORTUNITYStrategy Buffington v Progressive Insura",
+    "approxHeight": 449,
+    "approxTop": 0,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/case-studies/buffington-v-progressive-insurance/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/case-studies/angellvgeico/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/case-studies/volinoprogressivecasualityinsurance/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/case-studies/carrie-andrews-v-state-auto-mutual-insurance-company/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/case-studies/geico-insurance-class-actions/",
+        "type": "a"
+      }
+    ],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 4,
+    "selector": "div.blog-content",
+    "color": "black",
+    "headingSample": "Buffington v Progressive Insurance Angell v Geico Insurance Volino v Progressive Casuality insurance",
+    "approxHeight": 480,
+    "approxTop": 720,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/case-studies/buffington-v-progressive-insurance/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/case-studies/angellvgeico/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/case-studies/volinoprogressivecasualityinsurance/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/case-studies/carrie-andrews-v-state-auto-mutual-insurance-company/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/case-studies/geico-insurance-class-actions/",
+        "type": "a"
+      }
+    ],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 384,
+    "marginY": 0
+  },
+  {
+    "order": 5,
+    "selector": "footer.site-footer",
+    "color": "white",
+    "headingSample": null,
+    "approxHeight": 90,
+    "approxTop": 900,
+    "ctas": [],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgb(1, 1, 1)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 6,
+    "selector": "div.preloader",
+    "color": "orange",
+    "headingSample": null,
+    "approxHeight": 900,
+    "approxTop": 900,
+    "ctas": [],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgb(252, 90, 43)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 7,
+    "selector": "div.entry-content",
+    "color": "black",
+    "headingSample": null,
+    "approxHeight": 213,
+    "approxTop": 987,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/case-studies/buffington-v-progressive-insurance/",
+        "type": "a"
+      }
+    ],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 8,
+    "selector": "article.entry-listing",
+    "color": "black",
+    "headingSample": "Angell v Geico Insurance",
+    "approxHeight": 303,
+    "approxTop": 1439,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/case-studies/angellvgeico/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/case-studies/angellvgeico/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/case-studies/angellvgeico/",
+        "type": "a"
+      }
+    ],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 0,
+    "marginY": 225
+  },
+  {
+    "order": 9,
+    "selector": "article.entry-listing",
+    "color": "black",
+    "headingSample": "Volino v Progressive Casuality insurance",
+    "approxHeight": 304,
+    "approxTop": 1981,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/case-studies/volinoprogressivecasualityinsurance/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/case-studies/volinoprogressivecasualityinsurance/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/case-studies/volinoprogressivecasualityinsurance/",
+        "type": "a"
+      }
+    ],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 0,
+    "marginY": 225
+  },
+  {
+    "order": 10,
+    "selector": "article.entry-listing",
+    "color": "black",
+    "headingSample": "Carrie Andrews v. State Auto Mutual Insurance Company",
+    "approxHeight": 333,
+    "approxTop": 2524,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/case-studies/carrie-andrews-v-state-auto-mutual-insurance-company/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/case-studies/carrie-andrews-v-state-auto-mutual-insurance-company/",
+        "type": "a"
+      }
+    ],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 0,
+    "marginY": 225
+  },
+  {
+    "order": 11,
+    "selector": "article.entry-listing",
+    "color": "black",
+    "headingSample": "Geico Insurance Class Actions",
+    "approxHeight": 280,
+    "approxTop": 3095,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/case-studies/geico-insurance-class-actions/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/case-studies/geico-insurance-class-actions/",
+        "type": "a"
+      }
+    ],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 0,
+    "marginY": 225
+  },
+  {
+    "order": 12,
+    "selector": "article.entry-listing",
+    "color": "black",
+    "headingSample": "Junior v. Infinity Insurance Company",
+    "approxHeight": 304,
+    "approxTop": 3614,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/case-studies/junior-v-infinity-insurance-company/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/case-studies/junior-v-infinity-insurance-company/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/case-studies/junior-v-infinity-insurance-company/",
+        "type": "a"
+      }
+    ],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 0,
+    "marginY": 225
+  },
+  {
+    "order": 13,
+    "selector": "article.entry-listing",
+    "color": "black",
+    "headingSample": "Sos v. State Farm Mutual Insurance Company",
+    "approxHeight": 280,
+    "approxTop": 4157,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/case-studies/sos-v-state-farm-mutual-insurance-company/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/case-studies/sos-v-state-farm-mutual-insurance-company/",
+        "type": "a"
+      }
+    ],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 0,
+    "marginY": 225
+  },
+  {
+    "order": 14,
+    "selector": "article.entry-listing",
+    "color": "black",
+    "headingSample": "Resnick v. AvMed, Inc.",
+    "approxHeight": 176,
+    "approxTop": 4675,
+    "ctas": [],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 0,
+    "marginY": 225
+  },
+  {
+    "order": 15,
+    "selector": "article.entry-listing",
+    "color": "black",
+    "headingSample": "Venerus v. Avis Budget",
+    "approxHeight": 280,
+    "approxTop": 5077,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/case-studies/venerus-v-avis-budget/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/case-studies/venerus-v-avis-budget/",
+        "type": "a"
+      }
+    ],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 0,
+    "marginY": 225
+  },
+  {
+    "order": 16,
+    "selector": "article.entry-listing",
+    "color": "black",
+    "headingSample": "Parker v. Universal",
+    "approxHeight": 200,
+    "approxTop": 5595,
+    "ctas": [],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 0,
+    "marginY": 225
+  }
+]

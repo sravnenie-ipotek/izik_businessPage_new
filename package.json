@@ -3,13 +3,24 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "playwright test",
+    "dev": "serve . -l 3000",
+    "backstop:reference": "backstop reference",
+    "backstop:test": "backstop test",
+    "backstop:approve": "backstop approve",
+    "backstop:open": "open ./backstop_data/html_report/index.html || xdg-open ./backstop_data/html_report/index.html || start ./backstop_data/html_report/index.html",
+    "visual:test": "npm run dev & sleep 5 && npm run backstop:test && npm run backstop:open",
+    "visual:ref": "npm run dev & sleep 5 && npm run backstop:reference && npm run backstop:open",
+    "visual:approve": "npm run backstop:approve"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@playwright/test": "^1.55.0"
+    "@playwright/test": "^1.55.0",
+    "backstopjs": "^6.3.25",
+    "playwright": "^1.55.0",
+    "serve": "^14.2.5"
   }
 }

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Normand PLLC</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandBg: '#010101',
+            brandText: '#ffffff',
+            brandGray: '#b3b3b3',
+            brandLightGray: '#f2f2f2',
+            brandOrange: '#fc5a2b',
+          },
+          fontFamily: {
+            heading: ['Bebas Neue', 'Impact', 'sans-serif'],
+            body: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          fontSize: {
+            'heading-xl': ['72px', '1'],
+            'heading-lg': ['48px', '1.1'],
+            'heading-md': ['36px', '1.2'],
+            'heading-sm': ['24px', '1.2'],
+            'heading-xs': ['18px', '1.3'],
+            'body-sm': ['14px', '1.6'],
+            'body-xs': ['12px', '1.5'],
+          },
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-size: 14px; line-height: 1.6; }
+  </style>
+</head>
+<body class="font-body text-body-sm bg-white">
+  
+  <!-- Navigation - Black text on transparent -->
+  <nav class="absolute top-0 left-0 right-0 z-50 px-6 py-4 bg-white/90">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="font-heading text-[20px] tracking-wider text-brandBg">NORMAND</div>
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="#" class="text-brandBg text-xs uppercase tracking-wider hover:text-brandOrange">Home</a>
+        <a href="#" class="text-brandBg text-xs uppercase tracking-wider hover:text-brandOrange">Class Action</a>
+        <a href="#" class="text-brandBg text-xs uppercase tracking-wider hover:text-brandOrange">Our Team</a>
+        <a href="#" class="text-brandBg text-xs uppercase tracking-wider hover:text-brandOrange">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Orange Section 1: WE ARE CLASS ACTION with service cards -->
+  <section class="bg-brandOrange text-white pt-20 pb-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <!-- Main Heading -->
+      <h1 class="font-heading text-heading-xl mb-6">WE ARE CLASS ACTION</h1>
+      
+      <!-- Description -->
+      <p class="max-w-3xl text-body-sm mb-12 leading-relaxed">
+        Normand PLLC attorneys represent consumers around the country in lawsuits and class actions 
+        against companies who have violated their rights. We focus on privacy class actions, consumer 
+        protection class actions, and insurance class actions.
+      </p>
+
+      <!-- Three Service Cards -->
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Privacy Class Action -->
+        <div class="bg-white/10 backdrop-blur">
+          <div class="h-40 bg-black/20 flex items-center justify-center">
+            <div class="text-6xl opacity-50">⚖️</div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-heading text-heading-sm mb-3">PRIVACY CLASS<br/>ACTION</h3>
+            <p class="text-body-xs opacity-90 mb-4">
+              Protecting consumer data and privacy rights through litigation
+            </p>
+            <a href="#" class="inline-block bg-white text-brandOrange px-4 py-2 text-xs uppercase tracking-wider font-medium">
+              Learn More
+            </a>
+          </div>
+        </div>
+
+        <!-- Consumer Protection -->
+        <div class="bg-white/10 backdrop-blur">
+          <div class="h-40 bg-black/20 flex items-center justify-center">
+            <div class="text-6xl opacity-50">⚖️</div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-heading text-heading-sm mb-3">CONSUMER PROTECTION<br/>CLASS ACTION</h3>
+            <p class="text-body-xs opacity-90 mb-4">
+              Fighting unfair and deceptive business practices
+            </p>
+            <a href="#" class="inline-block bg-white text-brandOrange px-4 py-2 text-xs uppercase tracking-wider font-medium">
+              Learn More
+            </a>
+          </div>
+        </div>
+
+        <!-- Insurance Class Action -->
+        <div class="bg-white/10 backdrop-blur">
+          <div class="h-40 bg-black/20 flex items-center justify-center">
+            <div class="text-6xl opacity-50">⚖️</div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-heading text-heading-sm mb-3">INSURANCE<br/>CLASS ACTION</h3>
+            <p class="text-body-xs opacity-90 mb-4">
+              Holding insurers accountable for wrongful denials
+            </p>
+            <a href="#" class="inline-block bg-white text-brandOrange px-4 py-2 text-xs uppercase tracking-wider font-medium">
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- White Section: WE ARE STRATEGY -->
+  <section class="bg-white py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
+        <!-- Left: Heading and List -->
+        <div>
+          <h2 class="font-heading text-heading-xl mb-8">WE ARE<br/>STRATEGY</h2>
+          <div class="space-y-3">
+            <div class="flex items-start">
+              <span class="text-brandOrange mr-3 text-lg">■</span>
+              <span class="text-gray-700">Comprehensive case evaluation</span>
+            </div>
+            <div class="flex items-start">
+              <span class="text-brandOrange mr-3 text-lg">■</span>
+              <span class="text-gray-700">Strategic litigation planning</span>
+            </div>
+            <div class="flex items-start">
+              <span class="text-brandOrange mr-3 text-lg">■</span>
+              <span class="text-gray-700">Aggressive representation</span>
+            </div>
+            <div class="flex items-start">
+              <span class="text-brandOrange mr-3 text-lg">■</span>
+              <span class="text-gray-700">Maximum recovery for clients</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right: Grid Pattern -->
+        <div class="grid grid-cols-2 gap-3">
+          <div class="bg-brandOrange h-32"></div>
+          <div class="bg-brandBg h-32"></div>
+          <div class="bg-brandBg h-32"></div>
+          <div class="bg-brandOrange h-32"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Orange Section 2: WE ARE SUCCESS -->
+  <section class="bg-brandOrange text-white py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="font-heading text-heading-xl text-center mb-8">WE ARE<br/>SUCCESS</h2>
+      
+      <p class="text-center max-w-3xl mx-auto mb-12">
+        Our attorneys have recovered millions of dollars for consumers nationwide through 
+        successful class action litigation against major corporations.
+      </p>
+
+      <!-- Testimonials Grid -->
+      <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div class="bg-white/10 p-6">
+          <div class="flex items-start mb-4">
+            <div class="w-12 h-12 bg-white/20 rounded-full mr-3"></div>
+            <div>
+              <div class="font-heading text-heading-xs">ARTHUR MILLER</div>
+              <div class="text-xs opacity-75">Client</div>
+            </div>
+          </div>
+          <p class="text-body-sm italic opacity-90">
+            "Normand PLLC fought tirelessly for our rights. Their expertise and dedication 
+            resulted in a successful outcome for our class."
+          </p>
+        </div>
+
+        <div class="bg-white/10 p-6">
+          <div class="flex items-start mb-4">
+            <div class="w-12 h-12 bg-white/20 rounded-full mr-3"></div>
+            <div>
+              <div class="font-heading text-heading-xs">SEAN DOMNICK</div>
+              <div class="text-xs opacity-75">Client</div>
+            </div>
+          </div>
+          <p class="text-body-sm italic opacity-90">
+            "Professional, responsive, and committed to justice. I couldn't have asked for 
+            better representation in our class action."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- White Section: WE ARE EXPERIENCED -->
+  <section class="bg-white py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="font-heading text-heading-xl text-center mb-12">WE ARE<br/>EXPERIENCED</h2>
+      
+      <!-- Founder Section -->
+      <div class="grid md:grid-cols-2 gap-8 items-center mb-16 max-w-4xl mx-auto">
+        <div class="h-64 bg-brandLightGray"></div>
+        <div>
+          <div class="text-brandOrange text-xs uppercase tracking-wider mb-2">Founder</div>
+          <h3 class="font-heading text-heading-lg mb-3">EDMUND NORMAND</h3>
+          <p class="text-body-sm text-gray-600">
+            Edmund Normand has dedicated his career to fighting for consumer rights and 
+            holding corporations accountable through class action litigation.
+          </p>
+        </div>
+      </div>
+
+      <!-- Team Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="text-center">
+          <div class="h-32 bg-brandLightGray mb-3"></div>
+          <div class="font-heading text-heading-xs">ALEX<br/>COUCH</div>
+          <div class="text-xs text-gray-600">Attorney</div>
+        </div>
+        <div class="text-center">
+          <div class="h-32 bg-brandLightGray mb-3"></div>
+          <div class="font-heading text-heading-xs">CHRISTOPHER<br/>HUDON</div>
+          <div class="text-xs text-gray-600">Attorney</div>
+        </div>
+        <div class="text-center">
+          <div class="h-32 bg-brandLightGray mb-3"></div>
+          <div class="font-heading text-heading-xs">AMY<br/>JUDKINS</div>
+          <div class="text-xs text-gray-600">Paralegal</div>
+        </div>
+        <div class="text-center">
+          <div class="h-32 bg-brandLightGray mb-3"></div>
+          <div class="font-heading text-heading-xs">JANNA<br/>SHERWOOD</div>
+          <div class="text-xs text-gray-600">Case Manager</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Light Gray Section: Latest Articles -->
+  <section class="bg-brandLightGray py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="font-heading text-heading-lg mb-8">LATEST NEWS</h2>
+      
+      <div class="grid md:grid-cols-2 gap-6">
+        <article class="bg-white">
+          <div class="h-48 bg-brandLightGray"></div>
+          <div class="p-6">
+            <h3 class="font-heading text-heading-sm mb-3">JOHN RICHARD COLLECTION<br/>DATA BREACH</h3>
+            <p class="text-body-sm text-gray-600 mb-4">
+              Important information for customers affected by the recent data security incident.
+            </p>
+            <a href="#" class="text-brandOrange text-sm font-medium">Read More →</a>
+          </div>
+        </article>
+
+        <article class="bg-white">
+          <div class="h-48 bg-brandLightGray"></div>
+          <div class="p-6">
+            <h3 class="font-heading text-heading-sm mb-3">FIDELITY NATIONAL INFORMATION<br/>SERVICES DATA BREACH IMPACTS<br/>CONSUMERS</h3>
+            <p class="text-body-sm text-gray-600 mb-4">
+              Understanding your rights following the FIS data breach.
+            </p>
+            <a href="#" class="text-brandOrange text-sm font-medium">Read More →</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="text-center mt-8">
+        <a href="#" class="inline-block bg-brandBg text-white px-6 py-3 text-xs uppercase tracking-wider">
+          View All Articles
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Orange Section 3: WE ARE READY -->
+  <section class="bg-brandOrange text-white py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="font-heading text-heading-xl text-center mb-12">WE ARE<br/>READY</h2>
+      
+      <div class="grid lg:grid-cols-2 gap-12 max-w-4xl mx-auto">
+        <!-- Contact Form -->
+        <div>
+          <form class="space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+              <input type="text" placeholder="First Name" 
+                class="bg-transparent border border-white/50 px-4 py-2 text-sm placeholder-white/70">
+              <input type="text" placeholder="Last Name" 
+                class="bg-transparent border border-white/50 px-4 py-2 text-sm placeholder-white/70">
+            </div>
+            <input type="email" placeholder="Email" 
+              class="w-full bg-transparent border border-white/50 px-4 py-2 text-sm placeholder-white/70">
+            <input type="tel" placeholder="Phone" 
+              class="w-full bg-transparent border border-white/50 px-4 py-2 text-sm placeholder-white/70">
+            <textarea placeholder="How can we help?" rows="5" 
+              class="w-full bg-transparent border border-white/50 px-4 py-2 text-sm placeholder-white/70 resize-none"></textarea>
+            <button type="submit" 
+              class="bg-white text-brandOrange px-6 py-2 text-xs uppercase tracking-wider font-medium">
+              Submit
+            </button>
+          </form>
+        </div>
+        
+        <!-- Contact Info -->
+        <div class="space-y-6">
+          <div>
+            <h3 class="font-heading text-heading-sm mb-2">OFFICE</h3>
+            <p class="text-body-sm">
+              123 Main Street, Suite 100<br/>
+              Orlando, FL 32801
+            </p>
+          </div>
+          
+          <div>
+            <h3 class="font-heading text-heading-sm mb-2">CONTACT</h3>
+            <p class="text-body-sm">
+              Phone: (407) 603-6031<br/>
+              Toll Free: (888) 974-2175<br/>
+              Email: office@normandpllc.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brandBg text-white py-6">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-xs text-brandGray">© 2024 Normand PLLC. All rights reserved.</p>
+        <div class="flex space-x-4 mt-4 md:mt-0">
+          <a href="#" class="text-xs text-brandGray hover:text-white">Privacy Policy</a>
+          <a href="#" class="text-xs text-brandGray hover:text-white">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

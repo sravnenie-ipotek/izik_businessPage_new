@@ -1,0 +1,66 @@
+{
+  "page": "insurance",
+  "url": "https://www.normandpllc.com/class-action/insurance/",
+  "blocks": [
+    {
+      "order": 1,
+      "color": "white",
+      "headingSample": "Normand",
+      "approxHeight": 100,
+      "ctas": [
+        {"label": "Placeholder", "href": "/contact-us/"},
+        {"label": "Placeholder", "href": "/"}
+      ],
+      "rawBg": "#ffffff",
+      "features": ["navigation", "header"]
+    },
+    {
+      "order": 2,
+      "color": "white",
+      "headingSample": "Insurance",
+      "approxHeight": 300,
+      "ctas": [
+        {"label": "Placeholder", "href": "/contact-us/"}
+      ],
+      "rawBg": "#ffffff",
+      "features": ["hero", "quote"]
+    },
+    {
+      "order": 3,
+      "color": "white",
+      "headingSample": "CAR RENTAL INSURANCE CLASS ACTIONS",
+      "approxHeight": 500,
+      "ctas": [
+        {"label": "Placeholder", "href": "/contact-us/"},
+        {"label": "Placeholder", "href": "/consultation/"}
+      ],
+      "rawBg": "#ffffff",
+      "features": ["content", "warning"]
+    },
+    {
+      "order": 4,
+      "color": "white",
+      "headingSample": "Representative Cases",
+      "approxHeight": 800,
+      "ctas": [
+        {"label": "Placeholder", "href": "/status-results/"}
+      ],
+      "rawBg": "#ffffff",
+      "features": ["case-list", "testimonials"]
+    },
+    {
+      "order": 5,
+      "color": "white",
+      "headingSample": "Copyright © Normand PLLC 2025",
+      "approxHeight": 150,
+      "ctas": [
+        {"label": "Placeholder", "href": "/contact-us/"},
+        {"label": "Placeholder", "href": "/"}
+      ],
+      "rawBg": "#ffffff",
+      "features": ["footer", "copyright"]
+    }
+  ],
+  "colorSequence": "white → white → white → white → white",
+  "totalCTAs": 8
+}

@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Class Actions - Data Breach & Privacy Rights | Normand PLLC</title>
+  <meta name="description" content="Leaders in Data Accountability Class Action Lawsuits. Protecting consumer privacy rights and pursuing data breach claims. Free consultation available.">
+  <meta name="keywords" content="privacy class action, data breach, data privacy rights, cybersecurity lawsuits, identity theft protection">
+  
+  <!-- GSAP Core -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="js/content-manager.js"></script>
+  
+  <!-- Netlify Identity Widget -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+  <style>
+    /* CSS Variables */
+    :root {
+      --color-theme-primary: #fc5a2b;
+      --color-theme-black: #010101;
+      --color-theme-white: #fff;
+      --color-theme-grey: #ccc;
+      --color-nav-toggle-grey: #b3b3b3;
+      --color-menu-items-grey: grey;
+      --font-primary: 'Montserrat', sans-serif;
+      --font-heading: 'Oswald', sans-serif;
+      --color-privacy-accent: #2c5aa0; /* Privacy blue theme */
+    }
+
+    /* Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-primary);
+      background: var(--color-theme-white);
+      color: var(--color-theme-black);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Header Styles */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+      padding: 1rem 0;
+    }
+
+    .site-header.scrolled {
+      background: rgba(255, 255, 255, 0.98);
+      box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    }
+
+    /* Language Switcher */
+    .lang-switcher {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1100;
+    }
+
+    .lang-btn {
+      background: var(--color-theme-primary);
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      margin: 0 2px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .lang-btn:hover {
+      background: var(--color-theme-black);
+    }
+
+    .lang-btn.active {
+      background: var(--color-theme-black);
+      transform: scale(1.1);
+    }
+
+    /* Menu Toggle */
+    .menu-toggle {
+      position: fixed;
+      top: 50%;
+      left: 50px;
+      transform: translateY(-50%) rotate(-90deg);
+      z-index: 1100;
+      background: transparent;
+      border: none;
+      color: var(--color-nav-toggle-grey);
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      letter-spacing: 0.1em;
+      transition: all 0.3s ease;
+    }
+
+    .menu-toggle:hover {
+      color: var(--color-theme-primary);
+    }
+
+    /* Navigation */
+    .main-navigation {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: var(--color-theme-white);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1050;
+    }
+
+    .main-navigation.active {
+      display: flex;
+    }
+    
+    .nav-menu {
+      text-align: center;
+    }
+    
+    .nav-menu a {
+      display: block;
+      position: relative;
+      padding: 0.15em 0.25em;
+      color: var(--color-menu-items-grey);
+      text-decoration: none;
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 500;
+      text-transform: uppercase;
+      line-height: 1.2;
+      margin: 0.5em 0;
+      transition: color 0.3s ease;
+    }
+    
+    .nav-menu a:hover, .nav-menu a.active {
+      color: var(--color-theme-primary);
+    }
+
+    .nav-submenu {
+      margin-left: 2rem;
+      margin-top: 0.5rem;
+    }
+
+    .nav-submenu a {
+      font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+      margin: 0.3em 0;
+    }
+
+    /* Main Content */
+    .page-content {
+      margin-top: 0;
+    }
+
+    /* Hero Section - Privacy Specific */
+    .hero-section {
+      position: relative;
+      min-height: 100vh;
+      background: linear-gradient(135deg, rgba(44, 90, 160, 0.9), rgba(1, 1, 1, 0.8)), 
+                  url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23f8f9fa" width="1200" height="600"/><g fill="%23e9ecef"><circle cx="200" cy="150" r="20"/><circle cx="400" cy="300" r="25"/><circle cx="800" cy="200" r="15"/><circle cx="1000" cy="400" r="30"/><rect x="300" y="100" width="40" height="40" rx="5"/><rect x="600" y="350" width="50" height="50" rx="8"/><rect x="100" y="400" width="35" height="35" rx="5"/></g></svg>') center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 900px;
+      padding: 0 2rem;
+    }
+
+    .hero-tagline {
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      margin-bottom: 1rem;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .hero-title {
+      font-family: var(--font-heading);
+      font-size: clamp(4rem, 10vw, 8rem);
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 0.9;
+      margin-bottom: 1rem;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
+      font-weight: 300;
+      line-height: 1.3;
+      margin-bottom: 3rem;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .hero-description {
+      font-size: 1.2rem;
+      font-weight: 300;
+      line-height: 1.6;
+      margin-bottom: 3rem;
+      opacity: 0;
+      transform: translateY(30px);
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-cta {
+      display: inline-block;
+      background: var(--color-theme-primary);
+      color: white;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .hero-cta:hover {
+      background: var(--color-theme-white);
+      color: var(--color-theme-black);
+      transform: translateY(-3px);
+    }
+
+    /* Content Sections */
+    .content-section {
+      padding: 6rem 0;
+    }
+
+    .content-section:nth-child(even) {
+      background: #f8f9fa;
+    }
+
+    .content-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      line-height: 1.2;
+      color: var(--color-privacy-accent);
+    }
+
+    .section-content p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      color: #444;
+    }
+
+    .section-content p:first-child {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: var(--color-theme-black);
+    }
+
+    /* Quote Section */
+    .expert-quote {
+      background: var(--color-privacy-accent);
+      color: white;
+      padding: 4rem 0;
+      text-align: center;
+      margin: 4rem 0;
+    }
+
+    .quote-text {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-style: italic;
+      line-height: 1.4;
+      margin-bottom: 2rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .quote-attribution {
+      font-size: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    /* Case Examples */
+    .case-examples {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 3rem;
+      margin: 4rem 0;
+    }
+
+    .case-card {
+      background: white;
+      padding: 3rem 2rem;
+      border-radius: 10px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+      border-left: 5px solid var(--color-privacy-accent);
+    }
+
+    .case-title {
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--color-privacy-accent);
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+
+    .case-settlement {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--color-theme-primary);
+      margin-bottom: 1rem;
+    }
+
+    .case-description {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      background: var(--color-theme-black);
+      color: white;
+      padding: 6rem 0;
+      text-align: center;
+    }
+
+    .contact-header {
+      margin-bottom: 3rem;
+    }
+
+    .contact-header h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .contact-methods {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .contact-method {
+      background: rgba(255,255,255,0.1);
+      padding: 2rem;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+    }
+
+    .contact-method h3 {
+      font-family: var(--font-heading);
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      color: var(--color-theme-primary);
+    }
+
+    .contact-method a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .contact-method a:hover {
+      color: var(--color-theme-primary);
+    }
+
+    /* Technical Info Boxes */
+    .info-box {
+      background: #e8f4f8;
+      border: 2px solid var(--color-privacy-accent);
+      border-radius: 10px;
+      padding: 2rem;
+      margin: 2rem 0;
+    }
+
+    .info-box h3 {
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      color: var(--color-privacy-accent);
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+
+    .info-box p {
+      color: #555;
+      margin-bottom: 1rem;
+    }
+
+    .info-box ul {
+      color: #555;
+      padding-left: 1.5rem;
+    }
+
+    .info-box li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Footer */
+    .site-footer {
+      background: var(--color-theme-black);
+      color: var(--color-theme-white);
+      padding: 3rem 0;
+      text-align: center;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .menu-toggle {
+        left: 20px;
+        transform: translateY(-50%);
+        writing-mode: horizontal-tb;
+      }
+
+      .case-examples {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-methods {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-content {
+        padding: 0 1rem;
+      }
+
+      .content-container {
+        padding: 0 1rem;
+      }
+    }
+
+    /* Custom Cursor */
+    body {
+      cursor: none !important;
+    }
+
+    .custom-cursor {
+      position: fixed;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    .cursor-inner {
+      width: 8px;
+      height: 8px;
+      background: var(--color-privacy-accent);
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    .cursor-outer {
+      width: 30px;
+      height: 30px;
+      border: 2px solid rgba(44, 90, 160, 0.3);
+      border-radius: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      transition: all 0.1s ease;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        cursor: auto !important;
+      }
+      
+      .custom-cursor {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Custom Cursor -->
+  <div class="custom-cursor" id="cursor">
+    <div class="cursor-inner"></div>
+    <div class="cursor-outer"></div>
+  </div>
+
+  <!-- Language Switcher -->
+  <div class="lang-switcher">
+    <button class="lang-btn active" data-lang="en">EN</button>
+    <button class="lang-btn" data-lang="ru">RU</button>
+  </div>
+  
+  <!-- Menu Toggle -->
+  <button class="menu-toggle" id="menu-toggle">Menu</button>
+  
+  <!-- Header with Navigation -->
+  <header class="site-header">
+    <nav class="main-navigation" id="main-navigation">
+      <div class="nav-menu">
+        <a href="index.html">Home</a>
+        <div class="nav-submenu">
+          <a href="class-action.html">Class Action</a>
+          <a href="privacy-class-action.html" class="active">Privacy</a>
+          <a href="consumer-protection.html">Consumer Protection</a>
+          <a href="insurance-class-action.html">Insurance</a>
+        </div>
+        <a href="status-results.html">Status &amp; Results</a>
+        <a href="our-team.html">Our Team</a>
+        <a href="news-articles.html">News &amp; Articles</a>
+        <div class="nav-submenu">
+          <a href="contact.html">Contact Us</a>
+          <a href="disclaimer.html">Disclaimer</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-content">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <div class="hero-tagline privacy-tagline">DATA ACCOUNTABILITY LEADERS</div>
+        <h1 class="hero-title privacy-title">PRIVACY</h1>
+        <div class="hero-subtitle privacy-subtitle">Privacy Class Actions</div>
+        <div class="hero-description privacy-description">Leaders in Data Accountability Class Action Lawsuits. Digital and online data security is a critical personal and financial safety issue affecting every consumer.</div>
+        <a href="#consultation" class="hero-cta">Free Privacy Consultation</a>
+      </div>
+    </section>
+
+    <!-- Data Privacy Overview Section -->
+    <section class="content-section">
+      <div class="content-container">
+        <h2 class="section-title">Data Privacy & Cybersecurity</h2>
+        <div class="section-content">
+          <p>In today's digital age, your personal information is constantly at risk. Every online transaction, social media interaction, and digital communication creates data that can be stolen, misused, or sold without your consent.</p>
+          <p>Data breaches have become increasingly common, affecting millions of consumers annually. When companies fail to protect your sensitive information, they must be held accountable through legal action.</p>
+          <p>Our firm specializes in privacy class action lawsuits, fighting for consumers whose personal data has been compromised through corporate negligence or deliberate misconduct.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expert Quote Section -->
+    <section class="expert-quote">
+      <div class="content-container">
+        <div class="quote-text">"There are only two types of companies: those that have been hacked, and those that will be."</div>
+        <div class="quote-attribution">— Robert Mueller, Former FBI Director</div>
+      </div>
+    </section>
+
+    <!-- Claims Section -->
+    <section class="content-section">
+      <div class="content-container">
+        <h2 class="section-title">Claims Involving Stolen Private Information</h2>
+        <div class="section-content">
+          <p>When your personal data is compromised, you have legal rights. Privacy class action lawsuits address violations including:</p>
+        </div>
+        
+        <div class="info-box">
+          <h3>Types of Privacy Violations</h3>
+          <ul>
+            <li><strong>Unauthorized data collection</strong> - Companies gathering personal information without proper consent</li>
+            <li><strong>Data security failures</strong> - Inadequate protection leading to breaches and identity theft</li>
+            <li><strong>Illegal data sharing</strong> - Selling or sharing personal information without authorization</li>
+            <li><strong>Surveillance violations</strong> - Unauthorized monitoring of personal communications or activities</li>
+            <li><strong>Biometric data misuse</strong> - Improper collection or storage of fingerprints, facial recognition data</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Data Breach Definition -->
+    <section class="content-section">
+      <div class="content-container">
+        <h2 class="section-title">What is a Data Breach?</h2>
+        <div class="section-content">
+          <p>A data breach occurs when sensitive, protected, or confidential information is accessed, disclosed, or stolen by unauthorized individuals or entities. This can include:</p>
+        </div>
+        
+        <div class="info-box">
+          <h3>Common Types of Compromised Data</h3>
+          <ul>
+            <li>Social Security numbers and government identification</li>
+            <li>Credit card numbers and financial account information</li>
+            <li>Medical records and health insurance information</li>
+            <li>Personal addresses, phone numbers, and email addresses</li>
+            <li>Login credentials and passwords</li>
+            <li>Biometric data (fingerprints, facial recognition)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Harm to Consumers -->
+    <section class="content-section">
+      <div class="content-container">
+        <h2 class="section-title">Harm to Consumers from Data Breaches</h2>
+        <div class="section-content">
+          <p>Data breaches can cause significant financial and personal harm to consumers, including:</p>
+          <p><strong>Identity theft and fraud:</strong> Criminals use stolen personal information to open fraudulent accounts, make unauthorized purchases, or file false tax returns.</p>
+          <p><strong>Financial losses:</strong> Direct monetary losses from fraudulent transactions, plus costs for credit monitoring, identity restoration services, and legal fees.</p>
+          <p><strong>Credit damage:</strong> Identity theft can severely damage your credit score, affecting your ability to obtain loans, credit cards, or even employment.</p>
+          <p><strong>Time and stress:</strong> Victims spend countless hours resolving identity theft issues, contacting financial institutions, and restoring their good name.</p>
+          <p><strong>Privacy invasion:</strong> Once personal information is compromised, it can be sold on the dark web and used for years of continued harassment and fraud.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Examples -->
+    <section class="content-section">
+      <div class="content-container">
+        <h2 class="section-title">Data Breach Case Results</h2>
+        <div class="section-content">
+          <p>Our firm has successfully pursued major data breach settlements, holding corporations accountable for their failure to protect consumer data:</p>
+        </div>
+        
+        <div class="case-examples">
+          <div class="case-card">
+            <div class="case-title">Resnick v. AvMed</div>
+            <div class="case-settlement">$3 Million Settlement</div>
+            <div class="case-description">Major healthcare data breach affecting over 1.2 million patients. Personal health information including Social Security numbers and medical records were compromised due to inadequate security measures.</div>
+          </div>
+          
+          <div class="case-card">
+            <div class="case-title">Warcraft Text Campaign</div>
+            <div class="case-settlement">$19 Million Settlement</div>
+            <div class="case-description">Unauthorized text message marketing campaign violated consumer privacy rights under the Telephone Consumer Protection Act, resulting in significant monetary recovery for affected consumers.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="consultation">
+      <div class="content-container">
+        <div class="contact-header">
+          <h2>Protect Your Privacy Rights</h2>
+          <p style="font-size: 1.2rem; margin-bottom: 2rem;">If your personal data has been compromised, you may be entitled to compensation. Contact us for a free consultation about your privacy rights.</p>
+        </div>
+        
+        <div class="contact-methods">
+          <div class="contact-method">
+            <h3>Call Today</h3>
+            <a href="tel:407-603-6031">407-603-6031</a>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">Free consultation available</p>
+          </div>
+          
+          <div class="contact-method">
+            <h3>Email Us</h3>
+            <a href="mailto:office@normandpllc.com">office@normandpllc.com</a>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">Confidential case review</p>
+          </div>
+          
+          <div class="contact-method">
+            <h3>Office Location</h3>
+            <p>3165 McCrory Place Suite 175<br>Orlando, FL 32803</p>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">Fax: 888-974-2175</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>Copyright © Normand PLLC 2025</p>
+      <p>Website by ultramodern ✨</p>
+    </div>
+  </footer>
+
+  <script>
+    // GSAP Configuration and Animations
+    gsap.registerPlugin(ScrollTrigger);
+    
+    gsap.defaults({
+      duration: 0.7,
+      ease: "power2.out",
+      force3D: true
+    });
+
+    // Custom Cursor
+    function initializeCursor() {
+      if (window.innerWidth <= 768) return;
+      
+      const cursor = document.getElementById('cursor');
+      if (!cursor) return;
+      
+      const cursorInner = cursor.querySelector('.cursor-inner');
+      const cursorOuter = cursor.querySelector('.cursor-outer');
+      
+      if (!cursorInner || !cursorOuter) return;
+      
+      let mouseX = 0, mouseY = 0;
+      let posX = 0, posY = 0;
+
+      document.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+      });
+
+      function animateCursor() {
+        posX += (mouseX - posX) * 0.15;
+        posY += (mouseY - posY) * 0.15;
+
+        gsap.set(cursorInner, { x: mouseX, y: mouseY });
+        gsap.set(cursorOuter, { x: posX, y: posY });
+
+        requestAnimationFrame(animateCursor);
+      }
+      animateCursor();
+
+      // Hover effects
+      document.querySelectorAll('a, button').forEach(el => {
+        el.addEventListener('mouseenter', () => {
+          gsap.to(cursorOuter, { scale: 1.5, duration: 0.3 });
+        });
+        el.addEventListener('mouseleave', () => {
+          gsap.to(cursorOuter, { scale: 1, duration: 0.3 });
+        });
+      });
+    }
+
+    initializeCursor();
+
+    // Page Animations
+    document.addEventListener('DOMContentLoaded', () => {
+      // Hero animations
+      const tl = gsap.timeline({ delay: 0.5 });
+      
+      tl.to('.privacy-tagline', { opacity: 1, y: 0, duration: 1, ease: "power3.out" })
+        .to('.privacy-title', { opacity: 1, y: 0, duration: 1.2, ease: "power3.out" }, "-=0.6")
+        .to('.privacy-subtitle', { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }, "-=0.4")
+        .to('.privacy-description', { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }, "-=0.4")
+        .to('.hero-cta', { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }, "-=0.4");
+
+      // Scroll-triggered animations
+      gsap.utils.toArray('.section-title').forEach(title => {
+        gsap.fromTo(title, {
+          opacity: 0,
+          y: 30
+        }, {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: title,
+            start: "top 80%",
+            end: "bottom 20%",
+            toggleActions: "play none none reverse"
+          }
+        });
+      });
+
+      // Case cards animation
+      gsap.utils.toArray('.case-card').forEach((card, index) => {
+        gsap.fromTo(card, {
+          opacity: 0,
+          y: 50
+        }, {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          ease: "power3.out",
+          delay: index * 0.2,
+          scrollTrigger: {
+            trigger: card,
+            start: "top 80%",
+            end: "bottom 20%",
+            toggleActions: "play none none reverse"
+          }
+        });
+      });
+
+      // Info boxes animation
+      gsap.utils.toArray('.info-box').forEach(box => {
+        gsap.fromTo(box, {
+          opacity: 0,
+          scale: 0.95
+        }, {
+          opacity: 1,
+          scale: 1,
+          duration: 0.8,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: box,
+            start: "top 80%",
+            end: "bottom 20%",
+            toggleActions: "play none none reverse"
+          }
+        });
+      });
+
+      // Quote section animation
+      gsap.fromTo('.expert-quote', {
+        opacity: 0,
+        y: 50
+      }, {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: '.expert-quote',
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none reverse"
+        }
+      });
+    });
+
+    // Navigation functionality
+    const menuToggle = document.getElementById('menu-toggle');
+    const mainNav = document.getElementById('main-navigation');
+    let isMenuOpen = false;
+
+    menuToggle.addEventListener('click', () => {
+      if (!isMenuOpen) {
+        mainNav.classList.add('active');
+        gsap.fromTo('.nav-menu a', {
+          x: -50,
+          opacity: 0
+        }, {
+          x: 0,
+          opacity: 1,
+          duration: 0.4,
+          stagger: 0.1,
+          ease: "power2.out"
+        });
+        isMenuOpen = true;
+      } else {
+        gsap.to('.nav-menu a', {
+          x: 50,
+          opacity: 0,
+          duration: 0.3,
+          stagger: 0.05,
+          ease: "power2.in",
+          onComplete: () => {
+            mainNav.classList.remove('active');
+          }
+        });
+        isMenuOpen = false;
+      }
+    });
+
+    // Close menu when clicking on links
+    document.querySelectorAll('.nav-menu a, .nav-submenu a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (isMenuOpen) {
+          menuToggle.click();
+        }
+      });
+    });
+
+    // Header scroll effect
+    const header = document.querySelector('.site-header');
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

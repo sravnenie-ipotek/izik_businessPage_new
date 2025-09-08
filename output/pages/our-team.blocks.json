@@ -1,0 +1,420 @@
+[
+  {
+    "order": 1,
+    "selector": "header.site-header",
+    "color": "black",
+    "headingSample": null,
+    "approxHeight": 900,
+    "approxTop": 0,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "#",
+        "type": "button"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "#",
+        "type": "button"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/contact-us/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/class-action/",
+        "type": "a"
+      }
+    ],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 2,
+    "selector": "header.wp-block-normand-page-banner",
+    "color": "white",
+    "headingSample": "We AreExperiencedWork EthicIntensityNOT Status QuoExperienced",
+    "approxHeight": 720,
+    "approxTop": 0,
+    "ctas": [],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgb(1, 1, 1)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 3,
+    "selector": "main.site-main",
+    "color": "black",
+    "headingSample": "Our Team We AreExperiencedWork EthicIntensityNOT Status QuoExperienced The Normand Team Senior Partn",
+    "approxHeight": 4919,
+    "approxTop": 0,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/our-team/edmund-normand/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/john-richard-collection-data-breach/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/fidelity-national-information-services-data-breach-are-you-at-risk/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/news-articles/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/",
+        "type": "a"
+      }
+    ],
+    "hasForms": true,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": true,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 4,
+    "selector": "body.wp-singular",
+    "color": "white",
+    "headingSample": "Our Team We AreExperiencedWork EthicIntensityNOT Status QuoExperienced The Normand Team Senior Partn",
+    "approxHeight": 5099,
+    "approxTop": 0,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "#primary",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "#",
+        "type": "button"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "#",
+        "type": "button"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/contact-us/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/",
+        "type": "a"
+      }
+    ],
+    "hasForms": true,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": true,
+    "rawBg": "rgb(255, 255, 255)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 5,
+    "selector": "figure.banner-img-reveal",
+    "color": "black",
+    "headingSample": null,
+    "approxHeight": 449,
+    "approxTop": 0,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "#primary",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "#",
+        "type": "button"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "#",
+        "type": "button"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/contact-us/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/",
+        "type": "a"
+      }
+    ],
+    "hasForms": true,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": true,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 6,
+    "selector": "div.wp-block-normand-team",
+    "color": "white",
+    "headingSample": "The Normand Team Senior PartnerEdmund Normand AlexCouch Christopher hudon AmyJudkins JannaSherwood K",
+    "approxHeight": 270,
+    "approxTop": 720,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/our-team/edmund-normand/",
+        "type": "a"
+      }
+    ],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": true,
+    "rawBg": "rgb(255, 255, 255)",
+    "paddingY": 195,
+    "marginY": 0
+  },
+  {
+    "order": 7,
+    "selector": "div.preloader",
+    "color": "orange",
+    "headingSample": null,
+    "approxHeight": 900,
+    "approxTop": 900,
+    "ctas": [],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgb(252, 90, 43)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 8,
+    "selector": "div.featured-team-grid",
+    "color": "black",
+    "headingSample": "Senior PartnerEdmund Normand",
+    "approxHeight": 431,
+    "approxTop": 1019,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/our-team/edmund-normand/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/our-team/edmund-normand/",
+        "type": "a"
+      }
+    ],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 0,
+    "marginY": 80
+  },
+  {
+    "order": 9,
+    "selector": "div.general-team-grid-wrap",
+    "color": "black",
+    "headingSample": "AlexCouch Christopher hudon AmyJudkins JannaSherwood KaitlynTHOMPSON GiselleJase davidSeals DeviRamp",
+    "approxHeight": 979,
+    "approxTop": 1530,
+    "ctas": [],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": true,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 10,
+    "selector": "div.normand-articles",
+    "color": "white",
+    "headingSample": "John Richard Collection Data Breach Fidelity National Information Services 2023 Data Breach Impacts ",
+    "approxHeight": 1271,
+    "approxTop": 2625,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/john-richard-collection-data-breach/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/fidelity-national-information-services-data-breach-are-you-at-risk/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/news-articles/",
+        "type": "a"
+      }
+    ],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgb(242, 242, 242)",
+    "paddingY": 235,
+    "marginY": 0
+  },
+  {
+    "order": 11,
+    "selector": "div.normand-articles-posts-grid",
+    "color": "black",
+    "headingSample": "John Richard Collection Data Breach Fidelity National Information Services 2023 Data Breach Impacts ",
+    "approxHeight": 836,
+    "approxTop": 2812,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/john-richard-collection-data-breach/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/fidelity-national-information-services-data-breach-are-you-at-risk/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/john-richard-collection-data-breach/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/fidelity-national-information-services-data-breach-are-you-at-risk/",
+        "type": "a"
+      }
+    ],
+    "hasForms": false,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 0,
+    "marginY": 0
+  },
+  {
+    "order": 12,
+    "selector": "div.wp-block-normand-contact",
+    "color": "orange",
+    "headingSample": "WE ARE READY",
+    "approxHeight": 1024,
+    "approxTop": 3895,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "tel:4076036031",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "mailto:office@normandpllc.com",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "tel:8889742175",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://maps.app.goo.gl/xc98brULtFBbmwLL7",
+        "type": "a"
+      }
+    ],
+    "hasForms": true,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgb(252, 90, 43)",
+    "paddingY": 235,
+    "marginY": 0
+  },
+  {
+    "order": 13,
+    "selector": "div.normand-contact-wrap",
+    "color": "black",
+    "headingSample": "WE ARE READY",
+    "approxHeight": 789,
+    "approxTop": 3950,
+    "ctas": [
+      {
+        "label": "CTA Placeholder",
+        "href": "https://www.normandpllc.com/",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "tel:4076036031",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "mailto:office@normandpllc.com",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "tel:8889742175",
+        "type": "a"
+      },
+      {
+        "label": "CTA Placeholder",
+        "href": "https://maps.app.goo.gl/xc98brULtFBbmwLL7",
+        "type": "a"
+      }
+    ],
+    "hasForms": true,
+    "hasHero": false,
+    "hasFAQ": false,
+    "hasGallery": false,
+    "rawBg": "rgba(0, 0, 0, 0)",
+    "paddingY": 0,
+    "marginY": 0
+  }
+]

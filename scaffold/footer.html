@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer Section</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandBg: '#010101',
+            brandText: '#ffffff',
+            brandOrange: '#fc5a2b',
+          },
+          fontFamily: {
+            heading: ['Bebas Neue', 'Impact', 'sans-serif'],
+            body: ['Inter', 'Roboto', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <!-- Footer/Contact Section with extracted tokens -->
+  <footer class="bg-brandBg text-brandText py-16 lg:py-24">
+    <div class="max-w-[1440px] mx-auto px-4 md:px-8">
+      <!-- Two-column layout at ≥1024px -->
+      <div class="lg:grid lg:grid-cols-2 lg:gap-16">
+        <!-- Left Column - Contact Form -->
+        <div>
+          <h2 class="font-heading text-4xl md:text-5xl lg:text-6xl uppercase tracking-tightSm mb-8">
+            Get In Touch
+          </h2>
+          <form class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-4">
+              <input 
+                type="text" 
+                placeholder="First Name"
+                class="w-full h-[48px] px-4 bg-transparent border border-gray-600 text-brandText placeholder-gray-500 focus:border-brandOrange focus:outline-none transition-colors"
+              />
+              <input 
+                type="text" 
+                placeholder="Last Name"
+                class="w-full h-[48px] px-4 bg-transparent border border-gray-600 text-brandText placeholder-gray-500 focus:border-brandOrange focus:outline-none transition-colors"
+              />
+            </div>
+            <input 
+              type="email" 
+              placeholder="Email Address"
+              class="w-full h-[48px] px-4 bg-transparent border border-gray-600 text-brandText placeholder-gray-500 focus:border-brandOrange focus:outline-none transition-colors"
+            />
+            <input 
+              type="tel" 
+              placeholder="Phone Number"
+              class="w-full h-[48px] px-4 bg-transparent border border-gray-600 text-brandText placeholder-gray-500 focus:border-brandOrange focus:outline-none transition-colors"
+            />
+            <textarea 
+              placeholder="Your Message"
+              rows="4"
+              class="w-full px-4 py-3 bg-transparent border border-gray-600 text-brandText placeholder-gray-500 focus:border-brandOrange focus:outline-none transition-colors resize-none"
+            ></textarea>
+            <button 
+              type="submit"
+              class="h-[48px] px-8 bg-brandOrange text-brandText font-body uppercase tracking-wideSm hover:bg-opacity-90 transition-all"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Right Column - Info -->
+        <div class="mt-12 lg:mt-0">
+          <div class="space-y-8">
+            <!-- Office Info -->
+            <div>
+              <h3 class="font-heading text-2xl uppercase tracking-wideSm mb-4">Office</h3>
+              <p class="font-body text-gray-400 leading-[1.7]">
+                123 Placeholder Street<br/>
+                Suite 456<br/>
+                City, State 12345
+              </p>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+              <h3 class="font-heading text-2xl uppercase tracking-wideSm mb-4">Contact</h3>
+              <p class="font-body text-gray-400 leading-[1.7]">
+                <a href="tel:+1234567890" class="text-brandText hover:text-brandOrange transition-colors">
+                  (123) 456-7890
+                </a><br/>
+                <a href="mailto:info@example.com" class="text-brandText hover:text-brandOrange transition-colors">
+                  info@example.com
+                </a>
+              </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+              <h3 class="font-heading text-2xl uppercase tracking-wideSm mb-4">Quick Links</h3>
+              <div class="space-y-2">
+                <a href="#" class="block font-body text-gray-400 hover:text-brandOrange transition-colors">About Us</a>
+                <a href="#" class="block font-body text-gray-400 hover:text-brandOrange transition-colors">Services</a>
+                <a href="#" class="block font-body text-gray-400 hover:text-brandOrange transition-colors">Case Studies</a>
+                <a href="#" class="block font-body text-gray-400 hover:text-brandOrange transition-colors">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="mt-16 pt-8 border-t border-gray-800">
+        <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <p class="font-body text-sm text-gray-500">
+            © 2024 Placeholder Company. All rights reserved.
+          </p>
+          <div class="flex space-x-6">
+            <a href="#" class="text-gray-500 hover:text-brandOrange transition-colors text-sm">Privacy Policy</a>
+            <a href="#" class="text-gray-500 hover:text-brandOrange transition-colors text-sm">Terms of Service</a>
+            <a href="#" class="text-gray-500 hover:text-brandOrange transition-colors text-sm">Disclaimer</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+digraph SiteFlow {
+  rankdir=TB;
+  node [shape=box, style="rounded,filled", fillcolor=lightblue, fontname="Arial"];
+  edge [color=gray, arrowsize=0.7];
+  
+  // Main nodes
+  home [label="Homepage\n(/)", fillcolor="#fc5a2b", fontcolor=white];
+  contact [label="Contact Us\n(/contact-us)", fillcolor=lightgreen];
+  class_action [label="Class Action\n(/class-action)", fillcolor=lightblue];
+  privacy [label="Privacy Class Action\n(/class-action/privacy)", fillcolor=lightblue];
+  consumer [label="Consumer Protection\n(/class-action/consumer-protection)", fillcolor=lightblue];
+  insurance [label="Insurance Class Action\n(/class-action/insurance)", fillcolor=lightblue];
+  status [label="Status Results\n(/status-results)", fillcolor=lightgray];
+  team [label="Our Team\n(/our-team)", fillcolor=lightgray];
+  news [label="News & Articles\n(/news-articles)", fillcolor=lightgray];
+  disclaimer [label="Disclaimer\n(/disclaimer)", fillcolor=lightyellow];
+  privacy_policy [label="Privacy Policy\n(/privacy-policy)", fillcolor=lightyellow];
+  
+  // Case studies cluster
+  subgraph cluster_cases {
+    label="Case Studies";
+    style=dashed;
+    color=gray;
+    buffington [label="Buffington v Progressive"];
+    angell [label="Angell v GEICO"];
+    volino [label="Volino v Progressive"];
+    andrews [label="Andrews v State Auto"];
+    geico_class [label="GEICO Class Actions"];
+  }
+  
+  // Team member
+  edmund [label="Edmund Normand\n(/our-team/edmund-normand)", fillcolor=lightgray];
+  
+  // Data breach pages
+  john_richard [label="John Richard Data Breach", fillcolor=lightyellow];
+  fidelity [label="Fidelity National Data Breach", fillcolor=lightyellow];
+  
+  // Main navigation flow
+  home -> contact [weight=10];
+  home -> class_action [weight=10];
+  home -> team [weight=8];
+  home -> news [weight=8];
+  home -> status [weight=5];
+  
+  // Class action sub-navigation
+  class_action -> privacy [weight=10];
+  class_action -> consumer [weight=10];
+  class_action -> insurance [weight=10];
+  
+  // Footer links
+  home -> disclaimer [style=dashed, weight=1];
+  home -> privacy_policy [style=dashed, weight=1];
+  
+  // Case studies connections
+  home -> buffington [style=dotted];
+  home -> angell [style=dotted];
+  home -> volino [style=dotted];
+  home -> andrews [style=dotted];
+  home -> geico_class [style=dotted];
+  
+  // Team connections
+  team -> edmund;
+  
+  // News connections
+  news -> john_richard [style=dotted];
+  news -> fidelity [style=dotted];
+  
+  // Back navigation (implicit)
+  {privacy consumer insurance} -> class_action [style=dashed, color=lightgray];
+  {contact status team news} -> home [style=dashed, color=lightgray];
+}

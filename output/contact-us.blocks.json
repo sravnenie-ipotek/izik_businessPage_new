@@ -1,0 +1,31 @@
+[
+  {
+    "order": 1,
+    "color": "white",
+    "headingSample": null,
+    "approxHeight": 160,
+    "ctas": [],
+    "rawBg": "rgb(255, 255, 255)"
+  },
+  {
+    "order": 2,
+    "color": "white",
+    "headingSample": null,
+    "approxHeight": 1075,
+    "ctas": [
+      {
+        "label": "Placeholder CTA",
+        "href": "https://www.normandpllc.com/contact-us/"
+      },
+      {
+        "label": "Placeholder CTA",
+        "href": "https://www.normandpllc.com/"
+      },
+      {
+        "label": "Placeholder CTA",
+        "href": "https://www.normandpllc.com/class-action/"
+      }
+    ],
+    "rawBg": "rgba(0, 0, 0, 0)"
+  }
+]

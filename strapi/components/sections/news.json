@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_sections_news",
+  "info": {
+    "displayName": "News Section",
+    "icon": "newspaper",
+    "description": "Latest news and updates"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string",
+      "default": "LATEST NEWS"
+    },
+    "title": {
+      "type": "string",
+      "default": "Updates & Insights"
+    },
+    "articles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.news-article",
+      "min": 1,
+      "max": 6
+    },
+    "viewAllText": {
+      "type": "string",
+      "default": "View More News"
+    },
+    "viewAllLink": {
+      "type": "string"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "#ffffff"
+    }
+  }
+}

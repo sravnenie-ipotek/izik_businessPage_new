@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_shared_news_articles",
+  "info": {
+    "displayName": "News Article",
+    "icon": "file-text",
+    "description": "Individual news article"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "excerpt": {
+      "type": "text",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "author": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "ctaText": {
+      "type": "string",
+      "default": "Read More"
+    },
+    "ctaLink": {
+      "type": "string"
+    }
+  }
+}

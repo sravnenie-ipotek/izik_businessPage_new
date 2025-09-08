@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consumer Protection Class Action - Unfair Trade Practices | Normand PLLC</title>
+  <meta name="description" content="Consumer Justice - Protecting consumer rights against unfair practices and deceptive trade practices. Expert consumer protection attorneys fighting corporate misconduct. Free consultation available.">
+  <meta name="keywords" content="consumer protection, unfair practices, deceptive advertising, consumer rights, class action, consumer fraud">
+  
+  <!-- GSAP Core -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="js/content-manager.js"></script>
+  
+  <!-- Netlify Identity Widget -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+  <style>
+    /* CSS Variables */
+    :root {
+      --color-theme-primary: #fc5a2b;
+      --color-theme-black: #010101;
+      --color-theme-white: #fff;
+      --color-theme-grey: #ccc;
+      --color-nav-toggle-grey: #b3b3b3;
+      --color-menu-items-grey: grey;
+      --font-primary: 'Montserrat', sans-serif;
+      --font-heading: 'Oswald', sans-serif;
+      --color-consumer-accent: #fc5a2b; /* Orange accent only */
+    }
+
+    /* Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-primary);
+      background: var(--color-theme-white);
+      color: var(--color-theme-black);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Header Styles */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+      padding: 1rem 0;
+    }
+
+    .site-header.scrolled {
+      background: rgba(255, 255, 255, 0.98);
+      box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    }
+
+    /* Language Switcher */
+    .lang-switcher {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1100;
+    }
+
+    .lang-btn {
+      background: var(--color-theme-primary);
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      margin: 0 2px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .lang-btn:hover {
+      background: var(--color-theme-black);
+    }
+
+    .lang-btn.active {
+      background: var(--color-theme-black);
+      transform: scale(1.1);
+    }
+
+    /* Menu Toggle */
+    .menu-toggle {
+      position: fixed;
+      top: 50%;
+      left: 50px;
+      transform: translateY(-50%) rotate(-90deg);
+      z-index: 1100;
+      background: transparent;
+      border: none;
+      color: var(--color-nav-toggle-grey);
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      letter-spacing: 0.1em;
+      transition: all 0.3s ease;
+    }
+
+    .menu-toggle:hover {
+      color: var(--color-theme-primary);
+    }
+
+    /* Navigation */
+    .main-navigation {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: var(--color-theme-white);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1050;
+    }
+
+    .main-navigation.active {
+      display: flex;
+    }
+    
+    .nav-menu {
+      text-align: center;
+    }
+    
+    .nav-menu a {
+      display: block;
+      position: relative;
+      padding: 0.15em 0.25em;
+      color: var(--color-menu-items-grey);
+      text-decoration: none;
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 500;
+      text-transform: uppercase;
+      line-height: 1.2;
+      margin: 0.5em 0;
+      transition: color 0.3s ease;
+    }
+    
+    .nav-menu a:hover, .nav-menu a.active {
+      color: var(--color-theme-primary);
+    }
+
+    .nav-submenu {
+      margin-left: 2rem;
+      margin-top: 0.5rem;
+    }
+
+    .nav-submenu a {
+      font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+      margin: 0.3em 0;
+    }
+
+    /* Main Content */
+    .page-content {
+      margin-top: 0;
+    }
+
+    /* Hero Section - Consumer Protection Specific */
+    .hero-section {
+      position: relative;
+      min-height: 100vh;
+      background: #ffffff; /* White background - NO GRADIENTS, NO PATTERNS */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #010101; /* Black text on white */
+    }
+
+    .hero-content {
+      max-width: 900px;
+      padding: 0 2rem;
+    }
+
+    .hero-tagline {
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      margin-bottom: 1rem;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .hero-title {
+      font-family: var(--font-heading);
+      font-size: clamp(3rem, 9vw, 7rem);
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 0.9;
+      margin-bottom: 1rem;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
+      font-weight: 300;
+      line-height: 1.3;
+      margin-bottom: 3rem;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .hero-description {
+      font-size: 1.2rem;
+      font-weight: 300;
+      line-height: 1.6;
+      margin-bottom: 3rem;
+      opacity: 0;
+      transform: translateY(30px);
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-cta {
+      display: inline-block;
+      background: var(--color-theme-primary);
+      color: white;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .hero-cta:hover {
+      background: var(--color-theme-white);
+      color: var(--color-theme-black);
+      transform: translateY(-3px);
+    }
+
+    /* Initial states for animations - CRITICAL */
+    .consumer-tagline,
+    .consumer-title,
+    .consumer-subtitle,
+    .consumer-description {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .hero-cta {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .case-card,
+    .violation-category,
+    .section-title,
+    .quote-box {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    /* Content Sections */
+    .content-section {
+      padding: 6rem 0;
+    }
+
+    .content-section:nth-child(even) {
+      background: #f1f8e9;
+    }
+
+    .content-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      line-height: 1.2;
+      color: var(--color-consumer-accent);
+    }
+
+    .section-content p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      color: #444;
+    }
+
+    .section-content p:first-child {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: var(--color-theme-black);
+    }
+
+    .section-content p.intro-paragraph {
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: var(--color-theme-black);
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+
+    /* Legal Framework Section */
+    .legal-framework {
+      background: var(--color-consumer-accent);
+      color: white;
+      padding: 4rem 0;
+      text-align: center;
+    }
+
+    .statute-reference {
+      font-size: 1.1rem;
+      font-weight: 600;
+      font-family: 'Courier New', monospace;
+      background: rgba(255,255,255,0.1);
+      padding: 1rem;
+      border-radius: 5px;
+      margin: 1rem 0;
+      backdrop-filter: blur(10px);
+    }
+
+    /* Case Examples */
+    .case-examples {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 3rem;
+      margin: 4rem 0;
+    }
+
+    .case-card {
+      background: white;
+      padding: 3rem 2rem;
+      border-radius: 10px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+      border-left: 5px solid var(--color-consumer-accent);
+    }
+
+    .case-title {
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--color-consumer-accent);
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+
+    .case-type {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--color-theme-primary);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+    }
+
+    .case-company {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--color-theme-primary);
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .case-settlement {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--color-consumer-accent);
+      margin-bottom: 1rem;
+      font-family: var(--font-heading);
+    }
+
+    .case-description {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* Violations List */
+    .violations-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+
+    .violation-category {
+      background: #e8f5e8;
+      border: 2px solid var(--color-consumer-accent);
+      border-radius: 10px;
+      padding: 2rem;
+    }
+
+    .violation-category h3 {
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      color: var(--color-consumer-accent);
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+
+    .violation-category ul {
+      color: #555;
+      padding-left: 1.5rem;
+    }
+
+    .violation-category li {
+      margin-bottom: 0.8rem;
+      font-size: 1.05rem;
+    }
+
+    .violation-category li strong {
+      color: var(--color-consumer-accent);
+    }
+
+    /* Contact Section */
+    .contact-section {
+      background: var(--color-theme-black);
+      color: white;
+      padding: 6rem 0;
+      text-align: center;
+    }
+
+    .contact-header {
+      margin-bottom: 3rem;
+    }
+
+    .contact-header h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .contact-methods {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .contact-method {
+      background: rgba(255,255,255,0.1);
+      padding: 2rem;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+    }
+
+    .contact-method h3 {
+      font-family: var(--font-heading);
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      color: var(--color-theme-primary);
+    }
+
+    .contact-method a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .contact-method a:hover {
+      color: var(--color-theme-primary);
+    }
+
+    /* Quote Callout */
+    .quote-callout {
+      background: #fff3e0;
+      border-left: 5px solid var(--color-theme-primary);
+      padding: 2rem;
+      margin: 2rem 0;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    /* Footer */
+    .site-footer {
+      background: var(--color-theme-black);
+      color: var(--color-theme-white);
+      padding: 3rem 0;
+      text-align: center;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .menu-toggle {
+        left: 20px;
+        transform: translateY(-50%);
+        writing-mode: horizontal-tb;
+      }
+
+      .case-examples {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-methods {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-content {
+        padding: 0 1rem;
+      }
+
+      .content-container {
+        padding: 0 1rem;
+      }
+
+      .violations-list {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Custom Cursor */
+    body {
+      cursor: none !important;
+    }
+
+    .custom-cursor {
+      position: fixed;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    .cursor-inner {
+      width: 8px;
+      height: 8px;
+      background: var(--color-consumer-accent);
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    .cursor-outer {
+      width: 30px;
+      height: 30px;
+      border: 2px solid rgba(46, 125, 50, 0.3);
+      border-radius: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      transition: all 0.1s ease;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        cursor: auto !important;
+      }
+      
+      .custom-cursor {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Custom Cursor -->
+  <div class="custom-cursor" id="cursor">
+    <div class="cursor-inner"></div>
+    <div class="cursor-outer"></div>
+  </div>
+
+  <!-- Language Switcher -->
+  <div class="lang-switcher">
+    <button class="lang-btn active" data-lang="en">EN</button>
+    <button class="lang-btn" data-lang="ru">RU</button>
+  </div>
+  
+  <!-- Menu Toggle -->
+  <button class="menu-toggle" id="menu-toggle">Menu</button>
+  
+  <!-- Header with Navigation -->
+  <header class="site-header">
+    <nav class="main-navigation" id="main-navigation">
+      <div class="nav-menu">
+        <a href="index.html">Home</a>
+        <div class="nav-submenu">
+          <a href="class-action.html">Class Action</a>
+          <a href="privacy-class-action.html">Privacy</a>
+          <a href="consumer-protection.html" class="active">Consumer Protection</a>
+          <a href="insurance-class-action.html">Insurance</a>
+        </div>
+        <a href="status-results.html">Status &amp; Results</a>
+        <a href="our-team.html">Our Team</a>
+        <a href="news-articles.html">News &amp; Articles</a>
+        <div class="nav-submenu">
+          <a href="contact.html">Contact Us</a>
+          <a href="disclaimer.html">Disclaimer</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-content">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <div class="hero-tagline consumer-tagline">CONSUMER JUSTICE</div>
+        <h1 class="hero-title consumer-title">CONSUMER PROTECTION</h1>
+        <div class="hero-subtitle consumer-subtitle">Consumer Class Actions</div>
+        <div class="hero-description consumer-description">Protecting Your Consumer Rights - Families who purchase products and services are entitled to truthful information and fair practices when they spend their hard-earned money.</div>
+        <a href="#consultation" class="hero-cta">Free Consumer Rights Consultation</a>
+      </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="content-section">
+      <div class="content-container">
+        <div class="section-content">
+          <p class="intro-paragraph">Families who purchase products and services are entitled to truthful information and fair practices when they spend their hard-earned money. When financial institutions, insurance companies, rental car agencies and other corporations deceive or take advantage of consumers through deceptive and unfair practices, we level the playing field.</p>
+          <p>Consumer protection law exists to ensure that corporations cannot take advantage of individuals through fraud, deception, or unfair business practices. When companies violate these protections, class action lawsuits provide an effective remedy for affected consumers.</p>
+          <p>Our firm represents consumers across the United States and internationally, serving clients from Afghanistan to Yemen, with extensive experience in Florida consumer protection law and federal regulations.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Legal Framework Section -->
+    <section class="legal-framework">
+      <div class="content-container">
+        <h2 style="font-family: var(--font-heading); font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 2rem; text-transform: uppercase;">Legal Framework for Consumer Protection</h2>
+        <p style="font-size: 1.2rem; margin-bottom: 2rem;">Multiple federal and state laws provide robust protections for consumers against unfair and deceptive trade practices.</p>
+        
+        <ul style="text-align: left; max-width: 800px; margin: 2rem auto; font-size: 1.1rem; line-height: 1.8;">
+          <li><strong>Florida Deceptive and Unfair Trade Practices Act (FDUTPA)</strong> - Chapter 501, Florida Statutes (501.204)</li>
+          <li><strong>Magnuson-Moss Warranty Act</strong> - 15 U.S.C. § 2301 et seq.</li>
+          <li><strong>Fair Credit Reporting Act (FCRA)</strong> - 15 U.S.C. § 1681 et seq.</li>
+          <li><strong>Truth in Lending Act (TILA)</strong> - 15 U.S.C. § 1601 et seq.</li>
+          <li><strong>Fair Debt Collection Practices Act</strong> - 15 U.S.C. § 1692 et seq.</li>
+        </ul>
+        
+        <p style="font-size: 1.1rem; margin-top: 2rem;">These statutes provide significant remedies including actual damages, attorney's fees, and injunctive relief for affected consumers.</p>
+      </div>
+    </section>
+
+    <!-- Consumer Rights Violations -->
+    <section class="content-section">
+      <div class="content-container">
+        <h2 class="section-title">Consumer Fraud and Deceptive Trade Practices</h2>
+        <div class="section-content">
+          <p>Consumer protection violations can take many forms, from outright fraud to subtle deceptive practices. Common violations include:</p>
+        </div>
+        
+        <h2 class="section-title">Common Consumer Protection Violations</h2>
+        <div class="violations-list">
+          <div class="violation-category">
+            <h3>Deceptive Advertising</h3>
+            <ul>
+              <li><strong>False advertising</strong> - Misleading claims about products, services, or pricing</li>
+              <li><strong>Bait and switch tactics</strong> - Advertising products at low prices then pushing higher-priced alternatives</li>
+              <li><strong>Hidden fees and charges</strong> - Undisclosed costs added to transactions</li>
+              <li><strong>Comparison deception</strong> - False comparisons with competitors</li>
+            </ul>
+          </div>
+          
+          <div class="violation-category">
+            <h3>Unfair Business Practices</h3>
+            <ul>
+              <li><strong>Warranty violations</strong> - Refusing to honor legitimate warranty claims</li>
+              <li><strong>Defective products</strong> - Selling products known to be defective or dangerous</li>
+              <li><strong>Auto dealer fraud</strong> - Misrepresentation of vehicle condition, financing terms</li>
+              <li><strong>Service contract deception</strong> - Misleading extended warranty offerings</li>
+            </ul>
+          </div>
+          
+          <div class="violation-category">
+            <h3>Financial Services Violations</h3>
+            <ul>
+              <li><strong>Unfair debt collection</strong> - Aggressive or deceptive collection practices</li>
+              <li><strong>Credit reporting errors</strong> - Failure to investigate disputed information</li>
+              <li><strong>Predatory lending</strong> - Deceptive mortgage and loan practices</li>
+            </ul>
+          </div>
+          
+          <div class="violation-category">
+            <h3>Product/Service Issues</h3>
+            <ul>
+              <li><strong>Non-delivery of goods</strong> - Taking payment without providing services</li>
+              <li><strong>Quality misrepresentation</strong> - Products not meeting advertised standards</li>
+              <li><strong>Return policy violations</strong> - Refusing legitimate returns or refunds</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="quote-callout">
+          <p>"Trade or commerce" includes the advertising, soliciting, providing, offering, or distributing of any good or service, or any property, whether tangible or intangible, real, personal, or mixed, and any other article, commodity, or thing of value, wherever situated.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Examples */
+    <section class="content-section">
+      <div class="content-container">
+        <h2 class="section-title">Consumer Protection Case Results</h2>
+        <div class="section-content">
+          <p>Our firm has successfully pursued consumer protection cases across multiple industries, holding corporations accountable for deceptive practices:</p>
+        </div>
+        
+        <h2 class="section-title">Recent Case Examples</h2>
+        <div class="case-examples">
+          <div class="case-card">
+            <div class="case-type">Car Rental Class Action</div>
+            <div class="case-title">Car Rental Overcharges</div>
+            <div class="case-company">Avis/Budget</div>
+            <div class="case-settlement">$8.2 Million</div>
+            <div class="case-description">Successfully challenged rental car companies for hidden fees and deceptive billing practices that sold liability insurance to customers but never actually purchased the coverage, leaving consumers unprotected and financially exposed.</div>
+          </div>
+          
+          <div class="case-card">
+            <div class="case-type">Airline Disputes</div>
+            <div class="case-title">Airline Fee Deception</div>
+            <div class="case-company">Major Airlines</div>
+            <div class="case-settlement">$12.5 Million</div>
+            <div class="case-description">Represented consumers against airlines for undisclosed baggage fees that refused to provide refunds for canceled flights during the COVID-19 pandemic, violating federal regulations and consumer protection laws.</div>
+          </div>
+          
+          <div class="case-card">
+            <div class="case-type">Bank Fee Class Action</div>
+            <div class="case-title">Bank Overdraft Practices</div>
+            <div class="case-company">National Banks</div>
+            <div class="case-settlement">$15 Million</div>
+            <div class="case-description">Challenged banks for manipulating transaction order that manipulated transaction processing order to maximize overdraft fees, processing largest transactions first to trigger more overdraft charges than would naturally occur.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Complaint Resources -->
+    <section class="content-section">
+      <div class="content-container">
+        <h2 class="section-title">Who Can You Complain to in Florida?</h2>
+        <div class="section-content">
+          <p>Florida consumers have multiple avenues for reporting unfair and deceptive trade practices:</p>
+          <p><strong>Florida Attorney General's Office:</strong> The primary enforcement agency for consumer protection violations in Florida.</p>
+          <p><strong>Federal Trade Commission (FTC):</strong> Federal agency that handles interstate commerce and national consumer protection issues.</p>
+          <p><strong>Better Business Bureau:</strong> While not a government agency, provides dispute resolution services and maintains business ratings.</p>
+        </div>
+        
+        <h2 class="section-title">How to Pursue a Consumer Protection Claim</h2>
+        <div class="section-content">
+          <p>Florida consumers have multiple avenues for pursuing consumer protection claims and reporting unfair practices.</p>
+        </div>
+        
+        <div class="violations-list">
+          <h3>Possible Penalties for Deceptive Practices</h3>
+          <ul>
+            <li><strong>Civil penalties</strong> up to $10,000 per violation for businesses</li>
+            <li><strong>Attorney's fees and costs</strong> for successful consumer plaintiffs</li>
+            <li><strong>Actual damages</strong> plus additional statutory damages as provided by law</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="consultation">
+      <div class="content-container">
+        <div class="contact-header">
+          <h2>Protect Your Consumer Rights</h2>
+          <p style="font-size: 1.2rem; margin-bottom: 2rem;">If you've been the victim of consumer fraud or deceptive business practices, you may be entitled to compensation. Contact us for a free consultation about your consumer protection rights.</p>
+        </div>
+        
+        <div class="contact-methods">
+          <div class="contact-method">
+            <h3>Call Today</h3>
+            <a href="tel:407-603-6031">407-603-6031</a>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">Free consultation available</p>
+          </div>
+          
+          <div class="contact-method">
+            <h3>Email Us</h3>
+            <a href="mailto:office@normandpllc.com">office@normandpllc.com</a>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">Confidential case review</p>
+          </div>
+          
+          <div class="contact-method">
+            <h3>Office Location</h3>
+            <p>3165 McCrory Place Suite 175<br>Orlando, FL 32803</p>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">Fax: 888-974-2175</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>Copyright © Normand PLLC 2025</p>
+      <p>Website by ultramodern ✨</p>
+    </div>
+  </footer>
+
+  <script>
+    // GSAP Configuration and Animations
+    gsap.registerPlugin(ScrollTrigger);
+    
+    gsap.defaults({
+      duration: 0.7,
+      ease: "power2.out",
+      force3D: true
+    });
+
+    // Custom Cursor
+    function initializeCursor() {
+      if (window.innerWidth <= 768) return;
+      
+      const cursor = document.getElementById('cursor');
+      if (!cursor) return;
+      
+      const cursorInner = cursor.querySelector('.cursor-inner');
+      const cursorOuter = cursor.querySelector('.cursor-outer');
+      
+      if (!cursorInner || !cursorOuter) return;
+      
+      let mouseX = 0, mouseY = 0;
+      let posX = 0, posY = 0;
+
+      document.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+      });
+
+      function animateCursor() {
+        posX += (mouseX - posX) * 0.15;
+        posY += (mouseY - posY) * 0.15;
+
+        gsap.set(cursorInner, { x: mouseX, y: mouseY });
+        gsap.set(cursorOuter, { x: posX, y: posY });
+
+        requestAnimationFrame(animateCursor);
+      }
+      animateCursor();
+
+      // Hover effects
+      document.querySelectorAll('a, button').forEach(el => {
+        el.addEventListener('mouseenter', () => {
+          gsap.to(cursorOuter, { scale: 1.5, duration: 0.3 });
+        });
+        el.addEventListener('mouseleave', () => {
+          gsap.to(cursorOuter, { scale: 1, duration: 0.3 });
+        });
+      });
+    }
+
+    initializeCursor();
+
+    // Page Animations
+    document.addEventListener('DOMContentLoaded', () => {
+      // Hero animations
+      const tl = gsap.timeline({ delay: 0.3 });
+      
+      // Animate hero elements
+      tl.to('.consumer-tagline', { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" })
+        .to('.consumer-title', { opacity: 1, y: 0, duration: 1, ease: "power2.out" }, "-=0.5")
+        .to('.consumer-subtitle', { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }, "-=0.3")
+        .to('.consumer-description', { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }, "-=0.3")
+        .to('.hero-cta', { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, "-=0.3");
+
+      // Scroll-triggered animations
+      gsap.utils.toArray('.section-title').forEach(title => {
+        gsap.to(title, {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: title,
+            start: "top 85%",
+            toggleActions: "play none none none"
+          }
+        });
+      });
+
+      // Case cards animation
+      gsap.utils.toArray('.case-card').forEach((card, index) => {
+        gsap.to(card, {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: card,
+            start: "top 85%",
+            toggleActions: "play none none none"
+          },
+          delay: index * 0.1
+        });
+      });
+
+      // Violations lists animation
+      gsap.utils.toArray('.violations-list').forEach(box => {
+        gsap.fromTo(box, {
+          opacity: 0,
+          scale: 0.95
+        }, {
+          opacity: 1,
+          scale: 1,
+          duration: 0.8,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: box,
+            start: "top 80%",
+            end: "bottom 20%",
+            toggleActions: "play none none reverse"
+          }
+        });
+      });
+
+      // Legal framework animation
+      gsap.fromTo('.legal-framework', {
+        opacity: 0,
+        y: 50
+      }, {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: '.legal-framework',
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none reverse"
+        }
+      });
+    });
+
+    // Navigation functionality
+    const menuToggle = document.getElementById('menu-toggle');
+    const mainNav = document.getElementById('main-navigation');
+    let isMenuOpen = false;
+
+    menuToggle.addEventListener('click', () => {
+      if (!isMenuOpen) {
+        mainNav.classList.add('active');
+        gsap.fromTo('.nav-menu a', {
+          x: -50,
+          opacity: 0
+        }, {
+          x: 0,
+          opacity: 1,
+          duration: 0.4,
+          stagger: 0.1,
+          ease: "power2.out"
+        });
+        isMenuOpen = true;
+      } else {
+        gsap.to('.nav-menu a', {
+          x: 50,
+          opacity: 0,
+          duration: 0.3,
+          stagger: 0.05,
+          ease: "power2.in",
+          onComplete: () => {
+            mainNav.classList.remove('active');
+          }
+        });
+        isMenuOpen = false;
+      }
+    });
+
+    // Close menu when clicking on links
+    document.querySelectorAll('.nav-menu a, .nav-submenu a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (isMenuOpen) {
+          menuToggle.click();
+        }
+      });
+    });
+
+    // Header scroll effect
+    const header = document.querySelector('.site-header');
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
