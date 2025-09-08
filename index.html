@@ -1179,8 +1179,8 @@
     }
     
     .contact-wrapper {
-      display: grid;
-      grid-template-columns: 35% 65%;
+      display: flex;
+      flex-direction: column;
       gap: 60px;
       max-width: 1200px;
       margin: 0 auto;
@@ -1191,6 +1191,10 @@
       font-size: 24px;
       margin-bottom: 30px;
       color: #fc5a2b;
+    }
+    
+    .contact-info {
+      text-align: center;
     }
     
     .contact-address,
@@ -1224,6 +1228,11 @@
       transform: translateY(-3px);
     }
     
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
     .contact-form input,
     .contact-form textarea {
       width: 100%;
@@ -1251,15 +1260,17 @@
     }
     
     .submit-btn {
-      padding: 12px 40px;
+      padding: 15px 50px;
       background: #fc5a2b;
       color: white;
       border: none;
-      border-radius: 4px;
+      border-radius: 6px;
       font-weight: 600;
+      font-size: 16px;
       text-transform: uppercase;
       cursor: pointer;
       transition: all 0.3s ease;
+      width: 100%;
     }
     
     .submit-btn:hover {
@@ -1615,14 +1626,15 @@
           <h2 class="section-title fade-in">WE ARE READY</h2>
           <div class="contact-wrapper">
             <div class="contact-info fade-in">
-              <h3>Contact Us</h3>
+              <h3>Contact Information</h3>
               <p class="contact-address">
-                123 Main Street<br>
-                Suite 500<br>
-                New York, NY 10001
+                <strong>Orlando Office:</strong><br>
+                3165 McCrory Place Suite 175<br>
+                Orlando, FL 32803
               </p>
-              <p class="contact-phone">Phone: (555) 123-4567</p>
-              <p class="contact-email">Email: info@normandpllc.com</p>
+              <p class="contact-phone">Phone: 407-603-6031</p>
+              <p class="contact-email">Email: office@normandpllc.com</p>
+              <p class="contact-fax">Fax: 888-974-2175</p>
               <div class="social-links">
                 <a href="#" aria-label="Facebook">f</a>
                 <a href="#" aria-label="Twitter">t</a>
@@ -1639,20 +1651,6 @@
                 <button type="submit" class="submit-btn">Submit</button>
               </form>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section class="contact-section" id="contact">
-        <div class="content-container">
-          <div class="contact-info fade-in">
-            <h2>Contact Information</h2>
-            <p><strong>Orlando Office:</strong></p>
-            <p>Phone: 407-603-6031</p>
-            <p>Email: office@normandpllc.com</p>
-            <p>Fax: 888-974-2175</p>
-            <p>Address: 3165 McCrory Place Suite 175, Orlando, FL 32803</p>
           </div>
         </div>
       </section>

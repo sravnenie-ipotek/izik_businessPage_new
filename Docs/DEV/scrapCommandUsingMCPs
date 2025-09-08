@@ -1,4 +1,4 @@
-ROLE: Layout Mimic + Flow Mapper for JAMstack (static HTML + Strapi).
+ROLE: Layout Mimic + Flow Mapper for JAMstack (static HTML + Netlify CMS).
 REFERENCE (structure only, no content copy): https://www.normandpllc.com/
 ASSETS: Use the two screenshots I attached as visual hints for color rhythm/spacing.
 TOOLS: Firecrawl MCP, Playwright MCP, Graphviz (dot).
@@ -16,11 +16,11 @@ GOALS
      orange≈bg-orange-500 text-white, else=bg-gray-50 text-gray-900
    - Layout: max-w-7xl mx-auto px-4 md:px-6, py-16 md:py-24
    - Preserve CTA counts/relative positions with generic labels (“Learn More” etc.)
-5) Propose Strapi schemas (JSON drafts, not exports):
-   - ./strapi/schemas/components.json → hero_section, split_media, feature_band, logo_wall, cta_band, faq_section, contact_band
-     Fields: title, subtitle, rich_text, media, ctas[{label,url}], theme{bg: enum[black,white,orange,custom], invertText:boolean}
-   - ./strapi/schemas/collections.json → pages{slug,title,seo,sections:dynamic zone}, navigation, settings
-6) README: ./README.MIMIC.md with integration steps (Tailwind build for static HTML, mapping Strapi dynamic zones to sections), and any color approximations/ambiguous boundaries.
+5) Propose Netlify CMS config structure (config.yml):
+   - Collections for pages, navigation, settings
+   - Widgets for hero_section, split_media, feature_band, logo_wall, cta_band, faq_section, contact_band
+   - Fields: title, subtitle, rich_text, media, ctas[{label,url}], theme{bg: enum[black,white,orange,custom], invertText:boolean}
+6) README: ./README.MIMIC.md with integration steps (Tailwind build for static HTML, mapping Netlify CMS collections to sections), and any color approximations/ambiguous boundaries.
 
 BLOCK EXTRACTION HEURISTICS
 - Block boundary if: <section>|<header>|<main>|<footer>, bg-color change, height≥160px, or total vertical padding≥40px.
@@ -43,6 +43,6 @@ EXECUTE NOW
 - Firecrawl MCP: crawl https://www.normandpllc.com/ depth=2 same-origin → save sitemap.json
 - Playwright MCP: for each top page (including /), run the segmentation, save blocks.json + screenshot
 - Graphviz MCP: render site-flow.dot → site-flow.png
-- Generate all HTML scaffolds + Strapi schema JSON + README
+- Generate all HTML scaffolds + Netlify CMS config + README
 - Finish with a summary per page:
   - /<slug>: N blocks, color sequence, CTA count, notes (sticky bars/modals)
