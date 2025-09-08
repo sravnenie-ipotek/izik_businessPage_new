@@ -1,0 +1,671 @@
+{
+  "mediaQueries": {
+    "aiziks-stellar-site.webflow.css": [
+      {
+        "condition": "screen and (max-width: 767px)",
+        "rules": ".w-commerce-commercelayoutcontainer {\n    flex-direction: column;\n    align-items: stretch;\n  }\n\n  .w-commerce-commercelayoutmain {\n    flex-basis: auto;\n    margin-right: 0;\n  }\n\n  .w-commerce-commercelayoutsidebar {\n    flex-basis: auto;\n  }",
+        "lineNumber": 1189
+      },
+      {
+        "condition": "screen and (max-width: 479px)",
+        "rules": ".w-commerce-commercecartcontainerwrapper--cartType-modal {\n    flex-direction: row;\n    justify-content: center;\n    align-items: stretch;\n  }\n\n  .w-commerce-commercecartcontainerwrapper--cartType-leftDropdown, .w-commerce-commercecartcontainerwrapper--cartType-rightDropdown {\n    flex-direction: row;\n    justify-content: center;\n    align-items: stretch;\n    display: flex;\n    position: fixed;\n    inset: 0;\n  }\n\n  .w-commerce-commercecartquantity, .w-commerce-commerceaddtocartquantityinput, .w-commerce-commercecheckoutemailinput, .w-commerce-commercecheckoutshippingfullname, .w-commerce-commercecheckoutshippingstreetaddress, .w-commerce-commercecheckoutshippingstreetaddressoptional {\n    font-size: 16px;\n  }\n\n  .w-commerce-commercecheckoutrow {\n    flex-direction: column;\n  }\n\n  .w-commerce-commercecheckoutshippingcity, .w-commerce-commercecheckoutshippingstateprovince, .w-commerce-commercecheckoutshippingzippostalcode, .w-commerce-commercecheckoutshippingcountryselector, .w-commerce-commercecheckoutcardnumber, .w-commerce-commercecheckoutcardexpirationdate, .w-commerce-commercecheckoutcardsecuritycode, .w-commerce-commercecheckoutbillingfullname, .w-commerce-commercecheckoutbillingstreetaddress, .w-commerce-commercecheckoutbillingstreetaddressoptional, .w-commerce-commercecheckoutbillingcity, .w-commerce-commercecheckoutbillingstateprovince, .w-commerce-commercecheckoutbillingzippostalcode, .w-commerce-commercecheckoutbillingcountryselector {\n    font-size: 16px;\n  }",
+        "lineNumber": 1205
+      },
+      {
+        "condition": "screen and (min-width: 1280px)",
+        "rules": ".partner-component-grid, .partner-row-wrapper {\n    grid-column-gap: 6rem;\n    grid-row-gap: 6rem;\n  }\n\n  .work-details-grid-wrapper {\n    grid-template-columns: .5fr 1fr;\n  }",
+        "lineNumber": 3736
+      },
+      {
+        "condition": "screen and (min-width: 1440px)",
+        "rules": ".work-details-grid-wrapper {\n    grid-template-columns: .75fr 1fr;\n  }",
+        "lineNumber": 3747
+      },
+      {
+        "condition": "screen and (min-width: 1920px)",
+        "rules": ".heading-style-h1-large {\n    font-size: 14rem;\n  }\n\n  .footer-text {\n    font-size: 24rem;\n  }\n\n  .number {\n    height: 10rem;\n    min-height: 10rem;\n    font-size: 10rem;\n  }\n\n  .roll-numbers, .roll-numbers-wrapper {\n    height: 10rem;\n    min-height: 10rem;\n  }",
+        "lineNumber": 3753
+      },
+      {
+        "condition": "screen and (max-width: 991px)",
+        "rules": ".margin-xhuge {\n    margin: 6rem;\n  }\n\n  .padding-vertical {\n    padding-left: 0;\n    padding-right: 0;\n  }\n\n  .fs-styleguide-heading-header {\n    font-size: 4rem;\n  }\n\n  .padding-section-medium {\n    padding-top: 4rem;\n    padding-bottom: 4rem;\n  }\n\n  .spacer-xhuge {\n    padding-top: 6rem;\n  }\n\n  .max-width-full-tablet {\n    width: 100%;\n    max-width: none;\n  }\n\n  .fs-styleguide-2-col {\n    grid-column-gap: 2rem;\n    grid-row-gap: 2rem;\n    grid-template-columns: 1fr;\n  }\n\n  .spacer-xlarge {\n    padding-top: 3rem;\n  }\n\n  .padding-xxlarge {\n    padding: 4rem;\n  }\n\n  .fs-styleguide-4-col {\n    grid-template-columns: 1fr;\n  }\n\n  .margin-top {\n    margin-bottom: 0;\n    margin-left: 0;\n    margin-right: 0;\n  }\n\n  .hide-tablet {\n    display: none;\n  }\n\n  .margin-xxhuge {\n    margin: 8rem;\n  }\n\n  .margin-huge {\n    margin: 5rem;\n  }\n\n  .fs-styleguide-section {\n    grid-column-gap: 2.5rem;\n    grid-template-columns: 1fr;\n  }\n\n  .padding-left {\n    padding-top: 0;\n    padding-bottom: 0;\n    padding-right: 0;\n  }\n\n  .spacer-xxhuge {\n    padding-top: 8rem;\n  }\n\n  .margin-medium {\n    margin: 1.5rem;\n  }\n\n  .margin-xxlarge {\n    margin: 4rem;\n  }\n\n  .margin-xlarge {\n    margin: 3rem;\n  }\n\n  .margin-horizontal {\n    margin-top: 0;\n    margin-bottom: 0;\n  }\n\n  .padding-bottom {\n    padding-top: 0;\n    padding-left: 0;\n    padding-right: 0;\n  }\n\n  .spacer-huge {\n    padding-top: 5rem;\n  }\n\n  .fs-styleguide-3-col {\n    grid-template-columns: 1fr;\n  }\n\n  .padding-right {\n    padding-top: 0;\n    padding-bottom: 0;\n    padding-left: 0;\n  }\n\n  .margin-right {\n    margin-top: 0;\n    margin-bottom: 0;\n    margin-left: 0;\n  }\n\n  .padding-xlarge {\n    padding: 3rem;\n  }\n\n  .spacer-large {\n    padding-top: 2.5rem;\n  }\n\n  .padding-large {\n    padding: 2.5rem;\n  }\n\n  .padding-top {\n    padding-bottom: 0;\n    padding-left: 0;\n    padding-right: 0;\n  }\n\n  .margin-left {\n    margin-top: 0;\n    margin-bottom: 0;\n    margin-right: 0;\n  }\n\n  .padding-horizontal {\n    padding-top: 0;\n    padding-bottom: 0;\n  }\n\n  .fs-styleguide-heading-medium {\n    font-size: 3rem;\n  }\n\n  .padding-xxhuge {\n    padding: 8rem;\n  }\n\n  .spacer-xxlarge {\n    padding-top: 4rem;\n  }\n\n  .margin-vertical {\n    margin-left: 0;\n    margin-right: 0;\n  }\n\n  .padding-medium {\n    padding: 1.5rem;\n  }\n\n  .spacer-medium {\n    padding-top: 1.5rem;\n  }\n\n  .margin-bottom {\n    margin-top: 0;\n    margin-left: 0;\n    margin-right: 0;\n  }\n\n  .fs-styleguide-1-col {\n    grid-column-gap: 2rem;\n    grid-row-gap: 2rem;\n  }\n\n  .nav-button {\n    color: #fff;\n  }\n\n  .padding-huge {\n    padding: 5rem;\n  }\n\n  .margin-large {\n    margin: 2.5rem;\n  }\n\n  .heading-style-h1 {\n    font-size: 8rem;\n  }\n\n  .nav-style-guide {\n    width: 80vw;\n    padding-top: 1.25rem;\n    padding-bottom: 1.25rem;\n  }\n\n  .nav-style-guide-link {\n    width: 2.25rem;\n    height: 2.25rem;\n  }\n\n  .nav-style-guide-icon {\n    font-size: 1.5rem;\n  }\n\n  .header-content-item {\n    padding-top: 20px;\n  }\n\n  .header-component-grid {\n    margin-top: 2rem;\n  }\n\n  .partner-component-grid, .partner-row-wrapper {\n    grid-column-gap: 3rem;\n    grid-row-gap: 3rem;\n  }\n\n  .sticky-container-wrapper {\n    flex-direction: column;\n    grid-template-columns: 1fr 1fr;\n  }\n\n  .sticky-content-block._02 {\n    margin-top: 10vh;\n  }\n\n  .sticky-content-block._03 {\n    margin-top: 15vh;\n  }\n\n  .sticky-content-block._04 {\n    margin-top: 25vh;\n  }\n\n  .bottom-footer {\n    margin-bottom: 1rem;\n  }\n\n  .footer-text {\n    text-shadow: 5px 5px 0 var(--black);\n  }\n\n  .footer-component-grid {\n    grid-column-gap: 2.5rem;\n    grid-row-gap: 2.5rem;\n    grid-template-columns: auto 1fr 1fr 1fr;\n  }\n\n  .nav-text {\n    font-size: 5rem;\n  }\n\n  .arrow-link {\n    color: var(--black);\n  }\n\n  .asterisk {\n    height: 3.5rem;\n  }\n\n  .team-member-component-grid {\n    grid-template-columns: 1fr 1fr;\n    width: 100%;\n  }\n\n  .work-details-grid-wrapper {\n    grid-template-columns: .25fr 1fr;\n  }\n\n  .work-details-component-grid {\n    width: 80%;\n  }\n\n  .plus-icon-circle:hover {\n    background-position: 50%;\n  }\n\n  .accordion-heading {\n    color: #1a1a1a;\n  }\n\n  .product-steps-grid {\n    grid-template-columns: 1fr;\n  }",
+        "lineNumber": 3774
+      },
+      {
+        "condition": "screen and (max-width: 767px)",
+        "rules": "h1 {\n    font-size: 3rem;\n  }\n\n  h2 {\n    font-size: 2rem;\n  }\n\n  h3 {\n    font-size: 1.5rem;\n  }\n\n  h4 {\n    font-size: 1.25rem;\n  }\n\n  h5 {\n    font-size: 1rem;\n  }\n\n  h6 {\n    font-size: .875rem;\n  }\n\n  .margin-xhuge {\n    margin: 4rem;\n  }\n\n  .heading-style-h4 {\n    font-size: 1.25rem;\n  }\n\n  .text-size-small.text-style-nowrap {\n    white-space: nowrap;\n  }\n\n  .padding-vertical {\n    padding-left: 0;\n    padding-right: 0;\n  }\n\n  .padding-section-medium {\n    padding-top: 3rem;\n    padding-bottom: 3rem;\n  }\n\n  .fs-styleguide-section-header {\n    font-size: .875rem;\n  }\n\n  .spacer-xhuge {\n    padding-top: 4rem;\n  }\n\n  .spacer-xlarge {\n    padding-top: 2rem;\n  }\n\n  .padding-xxlarge {\n    padding: 3rem;\n  }\n\n  .margin-top {\n    margin-bottom: 0;\n    margin-left: 0;\n    margin-right: 0;\n  }\n\n  .padding-xhuge {\n    padding: 6rem;\n  }\n\n  .margin-xxhuge {\n    margin: 4.5rem;\n  }\n\n  .margin-huge {\n    margin: 3.5rem;\n  }\n\n  .padding-left {\n    padding-top: 0;\n    padding-bottom: 0;\n    padding-right: 0;\n  }\n\n  .hide-mobile-landscape {\n    display: none;\n  }\n\n  .spacer-xxhuge {\n    padding-top: 4.5rem;\n  }\n\n  .margin-medium {\n    margin: 1.25rem;\n  }\n\n  .margin-xxlarge {\n    margin: 3rem;\n  }\n\n  .margin-xlarge {\n    margin: 2rem;\n  }\n\n  .margin-horizontal {\n    margin-top: 0;\n    margin-bottom: 0;\n  }\n\n  .heading-style-h2 {\n    font-size: 4rem;\n  }\n\n  .padding-bottom {\n    padding-top: 0;\n    padding-left: 0;\n    padding-right: 0;\n  }\n\n  .spacer-huge {\n    padding-top: 3.5rem;\n  }\n\n  .heading-style-h3 {\n    font-size: 1.5rem;\n  }\n\n  .padding-right {\n    padding-top: 0;\n    padding-bottom: 0;\n    padding-left: 0;\n  }\n\n  .margin-right {\n    margin-top: 0;\n    margin-bottom: 0;\n    margin-left: 0;\n  }\n\n  .padding-xlarge {\n    padding: 2rem;\n  }\n\n  .spacer-large {\n    padding-top: 1.5rem;\n  }\n\n  .padding-large {\n    padding: 1.5rem;\n  }\n\n  .padding-section-small {\n    padding-top: 2rem;\n    padding-bottom: 2rem;\n  }\n\n  .padding-top {\n    padding-bottom: 0;\n    padding-left: 0;\n    padding-right: 0;\n  }\n\n  .max-width-full-mobile-landscape {\n    width: 100%;\n    max-width: none;\n  }\n\n  .margin-left {\n    margin-top: 0;\n    margin-bottom: 0;\n    margin-right: 0;\n  }\n\n  .padding-horizontal {\n    padding-top: 0;\n    padding-bottom: 0;\n  }\n\n  .padding-global {\n    padding-left: 1.25rem;\n    padding-right: 1.25rem;\n  }\n\n  .text-style-nowrap {\n    white-space: normal;\n  }\n\n  .fs-styleguide-heading-medium {\n    font-size: 2rem;\n  }\n\n  .padding-xxhuge {\n    padding: 4.5rem;\n  }\n\n  .spacer-xxlarge {\n    padding-top: 3rem;\n  }\n\n  .margin-vertical {\n    margin-left: 0;\n    margin-right: 0;\n  }\n\n  .heading-style-h6 {\n    font-size: .875rem;\n  }\n\n  .padding-medium {\n    padding: 1.25rem;\n  }\n\n  .spacer-medium {\n    padding-top: 1.25rem;\n  }\n\n  .margin-bottom {\n    margin-top: 0;\n    margin-left: 0;\n    margin-right: 0;\n  }\n\n  .heading-style-h5 {\n    font-size: 1rem;\n  }\n\n  .padding-huge {\n    padding: 3.5rem;\n  }\n\n  .margin-large {\n    margin: 1.5rem;\n  }\n\n  .heading-style-h1 {\n    font-size: 4rem;\n  }\n\n  .checkout-title {\n    font-size: 1.5rem;\n  }\n\n  .header-content-item {\n    padding-top: 30px;\n  }\n\n  .heading-style-h1-large {\n    font-size: 16vw;\n  }\n\n  .outline-title {\n    -webkit-text-stroke-width: 1px;\n  }\n\n  .partner-component-grid {\n    grid-column-gap: 2.5rem;\n    grid-row-gap: 2.5rem;\n    width: auto;\n  }\n\n  .partner-row-wrapper {\n    grid-column-gap: 2.5rem;\n    grid-row-gap: 2.5rem;\n    padding-top: 2rem;\n  }\n\n  .partner-logo {\n    width: 8rem;\n  }\n\n  .service-title {\n    font-size: 3rem;\n  }\n\n  .sticky-container-wrapper {\n    grid-template-columns: 1fr;\n  }\n\n  .sticky-content-block._02, .sticky-content-block._03, .sticky-content-block._04 {\n    margin-top: 5vh;\n  }\n\n  .padding-footer {\n    padding-top: 6rem;\n  }\n\n  .footer-text {\n    -webkit-text-stroke-width: 1px;\n    text-shadow: 4px 4px 0 var(--black);\n  }\n\n  .footer-component-grid {\n    grid-column-gap: 3rem;\n    grid-row-gap: 3rem;\n    grid-template-columns: 1fr;\n  }\n\n  .cross-text-component-grid {\n    margin-top: 0;\n  }\n\n  .cross-text {\n    font-size: 6rem;\n  }\n\n  .cursor {\n    width: 5rem;\n    height: 5rem;\n  }\n\n  .work-info-grid {\n    top: 6%;\n    left: 5%;\n    right: 5%;\n  }\n\n  .footer-text-overflow {\n    padding-bottom: 5px;\n  }\n\n  .nav-text {\n    font-size: 4rem;\n  }\n\n  .asterisk {\n    height: 3rem;\n  }\n\n  .numbers-content-wrapper {\n    padding-top: 1rem;\n  }\n\n  .about-component-grid {\n    grid-template-columns: .5fr;\n  }\n\n  .text-component-grid {\n    grid-column-gap: 3rem;\n    grid-row-gap: 3rem;\n    grid-template-columns: 1fr;\n  }\n\n  .team-member-component-grid {\n    grid-template-columns: 1fr 1fr;\n  }\n\n  .work-details-component-grid {\n    grid-column-gap: 2rem;\n    grid-row-gap: 2rem;\n    grid-template-columns: 1fr;\n    width: 100%;\n  }\n\n  .form-block {\n    width: 100%;\n    max-width: none;\n  }\n\n  .plus-icon-circle {\n    background-image: none;\n  }\n\n  .accordion-answer-text {\n    padding-top: 2rem;\n    padding-left: .5rem;\n    padding-right: .5rem;\n  }\n\n  .membership-component-grid, .membership-step-grid, .blog-component-grid {\n    grid-template-columns: 1fr;\n  }\n\n  .cart-text {\n    font-size: 1.75rem;\n  }",
+        "lineNumber": 4074
+      },
+      {
+        "condition": "screen and (max-width: 479px)",
+        "rules": ".padding-vertical {\n    padding-left: 0;\n    padding-right: 0;\n  }\n\n  .margin-top {\n    margin-bottom: 0;\n    margin-left: 0;\n    margin-right: 0;\n  }\n\n  .hide-mobile-portrait {\n    display: none;\n  }\n\n  .padding-left {\n    padding-top: 0;\n    padding-bottom: 0;\n    padding-right: 0;\n  }\n\n  .max-width-full-mobile-portrait {\n    width: 100%;\n    max-width: none;\n  }\n\n  .margin-horizontal {\n    margin-top: 0;\n    margin-bottom: 0;\n  }\n\n  .heading-style-h2 {\n    font-size: 3rem;\n  }\n\n  .padding-bottom {\n    padding-top: 0;\n    padding-left: 0;\n    padding-right: 0;\n  }\n\n  .padding-right {\n    padding-top: 0;\n    padding-bottom: 0;\n    padding-left: 0;\n  }\n\n  .margin-right {\n    margin-top: 0;\n    margin-bottom: 0;\n    margin-left: 0;\n  }\n\n  .fs-styleguide-row {\n    flex-wrap: wrap;\n  }\n\n  .padding-top {\n    padding-bottom: 0;\n    padding-left: 0;\n    padding-right: 0;\n  }\n\n  .margin-left {\n    margin-top: 0;\n    margin-bottom: 0;\n    margin-right: 0;\n  }\n\n  .padding-horizontal {\n    padding-top: 0;\n    padding-bottom: 0;\n  }\n\n  .margin-vertical {\n    margin-left: 0;\n    margin-right: 0;\n  }\n\n  .padding-section-large {\n    padding-top: 6rem;\n    padding-bottom: 6rem;\n  }\n\n  .margin-bottom {\n    margin-top: 0;\n    margin-left: 0;\n    margin-right: 0;\n  }\n\n  .heading-style-h1 {\n    font-size: 3rem;\n  }\n\n  .nav-style-guide {\n    width: 92vw;\n    padding: 1rem;\n  }\n\n  .nav-style-guide-link {\n    width: 2rem;\n    height: 2rem;\n  }\n\n  .nav-style-guide-icon {\n    font-size: 1.25rem;\n  }\n\n  .checkout-form, .paypal-checkout-form, .order-confirmation-form {\n    padding: 0;\n  }\n\n  .changelog-content-flex {\n    grid-column-gap: 4rem;\n    grid-row-gap: 4rem;\n    flex-direction: column;\n    align-items: flex-start;\n  }\n\n  .changelog-flex {\n    flex-direction: column;\n    align-items: flex-start;\n  }\n\n  .header-content-item.text-description {\n    order: -1;\n  }\n\n  .heading-style-h1-large {\n    font-size: 17vw;\n  }\n\n  .header-component-grid {\n    margin-top: 0;\n  }\n\n  .menu-button {\n    margin-right: -.5rem;\n  }\n\n  .lottie-menu {\n    width: 3rem;\n    height: 3rem;\n  }\n\n  .outline-title:hover {\n    text-shadow: 3px 3px #000;\n  }\n\n  .outline-title.is-alternate:hover {\n    text-shadow: 3px 4px 0 var(--white);\n  }\n\n  .partner-row-wrapper {\n    padding-top: 2rem;\n    padding-bottom: 2rem;\n  }\n\n  .service-title {\n    font-size: 2.5rem;\n  }\n\n  .service-icon {\n    height: 2.75rem;\n  }\n\n  .padding-footer {\n    padding-top: 6rem;\n  }\n\n  .bottom-footer {\n    grid-column-gap: 1.5rem;\n    grid-row-gap: 1.5rem;\n    flex-flow: column;\n    margin-top: 3rem;\n  }\n\n  .cross-text-item {\n    grid-column-gap: 1rem;\n    grid-row-gap: 1rem;\n  }\n\n  .cross-text {\n    font-size: 5rem;\n  }\n\n  .back-to-top-link {\n    width: 4rem;\n    height: 4rem;\n  }\n\n  .up-arrow {\n    width: 1rem;\n    height: 1rem;\n  }\n\n  .work-info-grid {\n    grid-template-columns: auto 1fr;\n    top: 8%;\n    left: 6%;\n    right: 6%;\n  }\n\n  .work-info-text {\n    font-size: 12px;\n  }\n\n  .footer-text-overflow {\n    padding-bottom: 5px;\n  }\n\n  .nav-text {\n    font-size: 3rem;\n  }\n\n  .header-bottom.project-page {\n    flex-flow: column;\n    justify-content: space-between;\n    align-items: flex-start;\n  }\n\n  .heading-item {\n    padding-right: 5px;\n  }\n\n  .heading-item._03 {\n    grid-column-gap: 5px;\n    grid-row-gap: 5px;\n  }\n\n  .asterisk {\n    height: 2rem;\n    margin-top: 5px;\n  }\n\n  .number {\n    height: 15vw;\n    min-height: 15vw;\n    font-size: 15vw;\n  }\n\n  .numbers-grid {\n    grid-column-gap: 1.5rem;\n    grid-row-gap: 1.5rem;\n  }\n\n  .roll-numbers, .roll-numbers-wrapper, .roll-awards-wrapper {\n    height: 15vw;\n    min-height: 15vw;\n  }\n\n  .mission-small-text-block {\n    margin-top: 0;\n  }\n\n  .team-member-component-grid, .work-details-grid-wrapper {\n    grid-template-columns: 1fr;\n  }\n\n  .quantity-icon {\n    width: 30px;\n  }\n\n  .form {\n    padding: 2rem 1.5rem;\n  }\n\n  .plus-icon-circle {\n    width: 2.5rem;\n    height: 2.5rem;\n  }\n\n  .accordion-top-wrap {\n    grid-column-gap: .5rem;\n    grid-row-gap: .5rem;\n  }\n\n  .accordion-heading {\n    font-size: 1.5rem;\n  }\n\n  .membership-content-block {\n    padding: 2.5rem 1.5rem;\n  }\n\n  .membership-title {\n    font-size: 2.25rem;\n  }\n\n  .product-steps-grid {\n    grid-template-rows: auto;\n    grid-template-columns: 1fr;\n  }\n\n  .category {\n    bottom: 6%;\n    left: 6%;\n  }\n\n  .nav-menu-cart {\n    padding-right: 3rem;\n  }\n\n  .close-button {\n    margin-top: -3px;\n    margin-right: 4rem;\n  }",
+        "lineNumber": 4454
+      },
+      {
+        "condition": "screen and (max-width: 991px)",
+        "rules": "#w-node-be0c51d0-397b-6d10-0bbb-f62f04352e3e-2c1b6e0a {\n    grid-column-start: 1;\n  }\n\n  #w-node-_44c535c7-60ff-2ddc-4b44-bb763603998c-2c1b6e0c {\n    grid-row: 4 / 5;\n    grid-column-start: 1;\n  }\n\n  #w-node-_72682f05-3421-4c34-468e-0f361fa15134-2c1b6e0c {\n    justify-self: start;\n  }\n\n  #w-node-d4272b50-4a06-ffe5-3c9b-cadfb5ff61fe-2c1b6e0c {\n    justify-self: end;\n  }\n\n  #w-node-_786ae733-e2d6-dfe0-b100-937197ae87d1-2c1b6e0d {\n    grid-row: 4 / 5;\n    grid-column-start: 1;\n  }\n\n  #w-node-_2aab25b9-4374-6fef-cf4c-0ab139035f08-2c1b6e13 {\n    grid-area: 2 / 1 / 3 / 2;\n  }\n\n  #w-node-_2aab25b9-4374-6fef-cf4c-0ab139035f0d-2c1b6e13 {\n    grid-area: 3 / 1 / 4 / 2;\n    justify-self: auto;\n  }\n\n  #w-node-a3a731d0-f292-4870-840a-2bd2d5e2b5b3-2c1b6e1c, #w-node-_3374da3e-087a-d253-de77-22d4b27fd06e-2c1b6e1d {\n    grid-row: 4 / 5;\n    grid-column-start: 1;\n  }",
+        "lineNumber": 5183
+      },
+      {
+        "condition": "screen and (max-width: 767px)",
+        "rules": "#w-node-be0c51d0-397b-6d10-0bbb-f62f04352e35-2c1b6e0a {\n    grid-column-end: 6;\n    justify-self: start;\n  }\n\n  #w-node-be0c51d0-397b-6d10-0bbb-f62f04352e3b-2c1b6e0a {\n    grid-column-start: 3;\n    justify-self: end;\n  }\n\n  #w-node-be0c51d0-397b-6d10-0bbb-f62f04352e3e-2c1b6e0a {\n    grid-row: 4 / 5;\n    grid-column-end: 5;\n    justify-self: start;\n  }\n\n  #w-node-_9ea78c38-1077-dd72-75f3-713a5f3bf633-5f3bf62e {\n    grid-area: 4 / 1 / 5 / 2;\n    justify-self: end;\n  }\n\n  #w-node-_9ea78c38-1077-dd72-75f3-713a5f3bf636-5f3bf62e, #w-node-_9ea78c38-1077-dd72-75f3-713a5f3bf66d-5f3bf62e, #w-node-_9ea78c38-1077-dd72-75f3-713a5f3bf69b-5f3bf62e {\n    grid-area: span 1 / span 1 / span 1 / span 1;\n    justify-self: start;\n  }\n\n  #w-node-_44c535c7-60ff-2ddc-4b44-bb7636039981-2c1b6e0c {\n    grid-column-end: 6;\n    justify-self: end;\n  }\n\n  #w-node-_44c535c7-60ff-2ddc-4b44-bb7636039984-2c1b6e0c {\n    grid-column-end: 6;\n  }\n\n  #w-node-_44c535c7-60ff-2ddc-4b44-bb7636039989-2c1b6e0c {\n    grid-column: 1 / 6;\n    justify-self: end;\n  }\n\n  #w-node-_44c535c7-60ff-2ddc-4b44-bb763603998c-2c1b6e0c {\n    grid-row: 4 / 5;\n    grid-column-end: 7;\n    justify-self: start;\n  }\n\n  #w-node-_72682f05-3421-4c34-468e-0f361fa15134-2c1b6e0c {\n    justify-self: start;\n  }\n\n  #w-node-_72682f05-3421-4c34-468e-0f361fa15164-2c1b6e0c {\n    justify-self: center;\n  }\n\n  #w-node-d4272b50-4a06-ffe5-3c9b-cadfb5ff61fe-2c1b6e0c {\n    justify-self: end;\n  }\n\n  #w-node-_489ecdce-02c0-367f-a176-850d9ffd46a6-2c1b6e0c {\n    grid-column: 1 / 3;\n    justify-self: start;\n  }\n\n  #w-node-_8ad8e780-2208-dd48-162e-11f5ba456621-2c1b6e0c {\n    grid-row: 2 / 3;\n    grid-column-start: 1;\n  }\n\n  #w-node-_8ad8e780-2208-dd48-162e-11f5ba456624-2c1b6e0c {\n    grid-area: 3 / 1 / 4 / 4;\n  }\n\n  #w-node-_786ae733-e2d6-dfe0-b100-937197ae87c3-2c1b6e0d {\n    grid-column-end: 6;\n    justify-self: start;\n  }\n\n  #w-node-_786ae733-e2d6-dfe0-b100-937197ae87c7-2c1b6e0d {\n    grid-column: 3 / 6;\n    justify-self: center;\n  }\n\n  #w-node-_786ae733-e2d6-dfe0-b100-937197ae87cd-2c1b6e0d {\n    grid-column-start: 1;\n    justify-self: start;\n  }\n\n  #w-node-_786ae733-e2d6-dfe0-b100-937197ae87d1-2c1b6e0d {\n    grid-row: 4 / 5;\n    grid-column-end: 5;\n    justify-self: start;\n  }\n\n  #w-node-a48d1cbf-144d-2722-af10-936ad13d4394-2c1b6e13 {\n    justify-self: start;\n  }\n\n  #w-node-ff6920e5-93fa-fa9c-dbd5-7f4fb95dc622-2c1b6e1b {\n    order: -9999;\n  }\n\n  #w-node-a3a731d0-f292-4870-840a-2bd2d5e2b5a4-2c1b6e1c {\n    grid-column-end: 6;\n    justify-self: end;\n  }\n\n  #w-node-a3a731d0-f292-4870-840a-2bd2d5e2b5a8-2c1b6e1c {\n    grid-column-end: 7;\n    justify-self: end;\n  }\n\n  #w-node-a3a731d0-f292-4870-840a-2bd2d5e2b5ae-2c1b6e1c {\n    grid-column: 1 / 6;\n    justify-self: end;\n  }\n\n  #w-node-a3a731d0-f292-4870-840a-2bd2d5e2b5b3-2c1b6e1c {\n    grid-row: 4 / 5;\n    grid-column-end: 7;\n    justify-self: start;\n  }\n\n  #w-node-b2220ad3-ca62-9a23-d0b7-54205c0eb825-2c1b6e1d {\n    grid-column-end: 6;\n    justify-self: start;\n  }\n\n  #w-node-b2220ad3-ca62-9a23-d0b7-54205c0eb829-2c1b6e1d {\n    grid-column: 3 / 6;\n    justify-self: center;\n  }\n\n  #w-node-b2220ad3-ca62-9a23-d0b7-54205c0eb82e-2c1b6e1d {\n    grid-column-start: 1;\n    justify-self: start;\n  }\n\n  #w-node-_3374da3e-087a-d253-de77-22d4b27fd06e-2c1b6e1d {\n    grid-row: 4 / 5;\n    grid-column-end: 7;\n    justify-self: start;\n  }",
+        "lineNumber": 5221
+      },
+      {
+        "condition": "screen and (max-width: 479px)",
+        "rules": "#w-node-be0c51d0-397b-6d10-0bbb-f62f04352e35-2c1b6e0a {\n    grid-column-end: 6;\n    justify-self: start;\n  }\n\n  #w-node-be0c51d0-397b-6d10-0bbb-f62f04352e3b-2c1b6e0a {\n    grid-column-start: 2;\n    justify-self: end;\n  }\n\n  #w-node-be0c51d0-397b-6d10-0bbb-f62f04352e3e-2c1b6e0a {\n    grid-column-end: 7;\n  }\n\n  #w-node-_44c535c7-60ff-2ddc-4b44-bb7636039981-2c1b6e0c {\n    grid-column: 3 / 7;\n    justify-self: center;\n  }\n\n  #w-node-_44c535c7-60ff-2ddc-4b44-bb7636039989-2c1b6e0c {\n    grid-column: 3 / 7;\n    justify-self: start;\n  }\n\n  #w-node-_44c535c7-60ff-2ddc-4b44-bb763603998c-2c1b6e0c {\n    grid-column-end: 7;\n  }\n\n  #w-node-_8ad8e780-2208-dd48-162e-11f5ba456621-2c1b6e0c {\n    grid-area: 2 / 1 / 3 / 2;\n  }\n\n  #w-node-_8ad8e780-2208-dd48-162e-11f5ba456624-2c1b6e0c {\n    grid-row: 3 / 4;\n    grid-column-end: 2;\n    justify-self: start;\n  }\n\n  #w-node-_786ae733-e2d6-dfe0-b100-937197ae87c3-2c1b6e0d {\n    grid-column-end: 6;\n    justify-self: start;\n  }\n\n  #w-node-_786ae733-e2d6-dfe0-b100-937197ae87c7-2c1b6e0d {\n    justify-self: end;\n  }\n\n  #w-node-_786ae733-e2d6-dfe0-b100-937197ae87cd-2c1b6e0d {\n    grid-column-start: 1;\n    justify-self: start;\n  }\n\n  #w-node-_786ae733-e2d6-dfe0-b100-937197ae87d1-2c1b6e0d {\n    grid-column-end: 7;\n  }\n\n  #w-node-_2aab25b9-4374-6fef-cf4c-0ab139035f03-2c1b6e13 {\n    grid-area: span 1 / span 1 / span 1 / span 1;\n  }\n\n  #w-node-_2aab25b9-4374-6fef-cf4c-0ab139035f08-2c1b6e13, #w-node-_2aab25b9-4374-6fef-cf4c-0ab139035f0d-2c1b6e13 {\n    grid-area: span 1 / span 1 / span 1 / span 1;\n    justify-self: start;\n  }\n\n  #w-node-ff6920e5-93fa-fa9c-dbd5-7f4fb95dc618-2c1b6e1b {\n    grid-column: 1 / 2;\n  }\n\n  #w-node-a3a731d0-f292-4870-840a-2bd2d5e2b5a4-2c1b6e1c, #w-node-a3a731d0-f292-4870-840a-2bd2d5e2b5ae-2c1b6e1c {\n    grid-column: 1 / 7;\n    justify-self: start;\n  }\n\n  #w-node-a3a731d0-f292-4870-840a-2bd2d5e2b5b3-2c1b6e1c {\n    grid-column-end: 7;\n  }\n\n  #w-node-b2220ad3-ca62-9a23-d0b7-54205c0eb825-2c1b6e1d {\n    grid-column-end: 6;\n    justify-self: start;\n  }\n\n  #w-node-b2220ad3-ca62-9a23-d0b7-54205c0eb829-2c1b6e1d {\n    justify-self: end;\n  }\n\n  #w-node-b2220ad3-ca62-9a23-d0b7-54205c0eb82e-2c1b6e1d {\n    grid-column-start: 1;\n    justify-self: end;\n  }\n\n  #w-node-_3374da3e-087a-d253-de77-22d4b27fd06e-2c1b6e1d {\n    grid-column-end: 7;\n  }",
+        "lineNumber": 5366
+      }
+    ],
+    "normandpllc-animations.css": [
+      {
+        "condition": "(min-width: 769px)",
+        "rules": "* {\n    cursor: none !important;\n  }",
+        "lineNumber": 93
+      },
+      {
+        "condition": "(max-width: 768px)",
+        "rules": ".custom-cursor {\n    display: none;\n  }\n  \n  * {\n    cursor: auto !important;\n  }",
+        "lineNumber": 100
+      },
+      {
+        "condition": "(max-width: 768px)",
+        "rules": "/* Disable complex animations on mobile */\n  [data-scroll] {\n    opacity: 1 !important;\n    transform: none !important;\n  }\n  \n  .parallax-img {\n    transform: none !important;\n  }\n  \n  /* Simplify hover effects */\n  .card:hover {\n    transform: none;\n  }\n  \n  /* Reduce animation complexity */\n  .fade-in,\n  .fade-in-left,\n  .fade-in-right,\n  .scale-in {\n    opacity: 1;\n    transform: none;\n    transition: opacity 0.3s;\n  }",
+        "lineNumber": 328
+      },
+      {
+        "condition": "(prefers-reduced-motion: reduce)",
+        "rules": "*,\n  *::before,\n  *::after {\n    animation-duration: 0.01ms !important;\n    animation-iteration-count: 1 !important;\n    transition-duration: 0.01ms !important;\n    scroll-behavior: auto !important;\n  }\n  \n  .preloader {\n    display: none;\n  }\n  \n  .fade-in,\n  .fade-in-left,\n  .fade-in-right,\n  .scale-in,\n  .hero-tagline,\n  .hero-subtitle,\n  .hero-title,\n  .hero-secondary {\n    opacity: 1;\n    transform: none;\n  }",
+        "lineNumber": 376
+      }
+    ],
+    "normandpllc-menu.css": [
+      {
+        "condition": "screen and (min-width: 960px)",
+        "rules": ".site-header {\n    height: auto;\n    width: 130px;\n  }",
+        "lineNumber": 41
+      },
+      {
+        "condition": "screen and (min-width: 1440px)",
+        "rules": ".site-header {\n    width: 212px;\n  }",
+        "lineNumber": 48
+      },
+      {
+        "condition": "screen and (max-width: 959px)",
+        "rules": ".menu-toggle {\n    background: var(--color-theme-black);\n    position: fixed;\n    top: 0;\n    left: 0;\n    right: 0;\n    height: 45px;\n    z-index: var(--z-menu-toggle);\n  }",
+        "lineNumber": 81
+      },
+      {
+        "condition": "screen and (min-width: 960px)",
+        "rules": ".menu-toggle,\n  .menu-toggle-close {\n    width: 130px;\n    padding: 1em 0;\n    position: fixed;\n    top: 50%;\n    left: 0;\n    transform: translateY(-50%) rotate(-90deg);\n    transform-origin: center;\n    writing-mode: vertical-rl;\n    text-orientation: mixed;\n  }\n  \n  .menu-toggle span,\n  .menu-toggle-close span {\n    display: inline-block;\n    transform: rotate(180deg);\n  }",
+        "lineNumber": 94
+      },
+      {
+        "condition": "screen and (min-width: 1440px)",
+        "rules": ".menu-toggle,\n  .menu-toggle-close {\n    width: 212px;\n    padding: 1em 1.75em;\n  }",
+        "lineNumber": 116
+      },
+      {
+        "condition": "screen and (min-width: 960px)",
+        "rules": ".menu-border {\n    display: block;\n    left: 130px;\n  }",
+        "lineNumber": 160
+      },
+      {
+        "condition": "screen and (min-width: 1440px)",
+        "rules": ".menu-border {\n    left: 212px;\n  }",
+        "lineNumber": 167
+      },
+      {
+        "condition": "screen and (min-width: 960px)",
+        "rules": ".menu-quick-contact-link {\n    display: block;\n    position: fixed;\n    bottom: 2em;\n    left: 0;\n    width: 130px;\n    text-align: center;\n    transform: rotate(-90deg);\n    transform-origin: center;\n  }",
+        "lineNumber": 178
+      },
+      {
+        "condition": "screen and (min-width: 1440px)",
+        "rules": ".menu-quick-contact-link {\n    width: 212px;\n  }",
+        "lineNumber": 191
+      },
+      {
+        "condition": "screen and (min-width: 960px)",
+        "rules": ".menu-item > a {\n    font-size: calc(28px + (600vw - 2250px)/1065);\n  }",
+        "lineNumber": 255
+      },
+      {
+        "condition": "screen and (min-width: 1440px)",
+        "rules": ".menu-item > a {\n    font-size: calc(36px + (800vw - 3000px)/1065);\n  }",
+        "lineNumber": 261
+      },
+      {
+        "condition": "screen and (min-width: 960px)",
+        "rules": ".sub-menu .menu-item > a {\n    font-size: calc(22px + (400vw - 1500px)/1065);\n  }",
+        "lineNumber": 318
+      },
+      {
+        "condition": "screen and (max-width: 959px)",
+        "rules": ".primary-menu-container {\n    padding-top: 60px;\n  }\n  \n  .menu-toggle-close {\n    top: 0;\n    left: 0;\n    right: 0;\n    height: 45px;\n    transform: none;\n    writing-mode: initial;\n  }",
+        "lineNumber": 420
+      },
+      {
+        "condition": "screen and (max-width: 959px) and (orientation: landscape)",
+        "rules": ".menu-item > a {\n    font-size: 18px;\n  }\n  \n  .primary-menu-container {\n    padding: 1em;\n  }",
+        "lineNumber": 436
+      },
+      {
+        "condition": "print",
+        "rules": ".site-header,\n  .main-navigation {\n    display: none;\n  }",
+        "lineNumber": 447
+      },
+      {
+        "condition": "screen and (min-width: 960px)",
+        "rules": ".site-main {\n    padding-top: 0;\n    padding-left: 150px;\n  }",
+        "lineNumber": 461
+      },
+      {
+        "condition": "screen and (min-width: 1440px)",
+        "rules": ".site-main {\n    padding-left: 230px;\n  }",
+        "lineNumber": 468
+      }
+    ],
+    "normandpllc-styles.css": [
+      {
+        "condition": "(min-width: 768px)",
+        "rules": "* {\n    cursor: none !important;\n  }",
+        "lineNumber": 25
+      },
+      {
+        "condition": "(max-width: 991px)",
+        "rules": ".nav-menu {\n    position: fixed;\n    top: 0;\n    right: 0;\n    width: 100%;\n    height: 100vh;\n    background: var(--primary-black);\n    transform: translateX(100%);\n    transition: transform var(--transition-smooth);\n    overflow-y: auto;\n    z-index: 1000;\n  }\n\n  .nav-menu.open {\n    transform: translateX(0);\n  }\n\n  .nav-menu .nav-link {\n    color: var(--primary-white);\n    font-size: 32px;\n    padding: 20px 40px;\n    border-bottom: 1px solid rgba(255, 255, 255, 0.1);\n  }\n\n  .nav-menu .nav-link:hover {\n    background: rgba(255, 107, 53, 0.1);\n  }",
+        "lineNumber": 200
+      },
+      {
+        "condition": "(max-width: 768px)",
+        "rules": ".section {\n    padding: 60px 0;\n  }",
+        "lineNumber": 327
+      },
+      {
+        "condition": "(prefers-reduced-motion: reduce)",
+        "rules": "*,\n  *::before,\n  *::after {\n    animation-duration: 0.01ms !important;\n    animation-iteration-count: 1 !important;\n    transition-duration: 0.01ms !important;\n  }\n  \n  .custom-cursor {\n    display: none;\n  }\n  \n  * {\n    cursor: auto !important;\n  }",
+        "lineNumber": 359
+      },
+      {
+        "condition": "(max-width: 768px)",
+        "rules": ".container-clean {\n    padding: 0 20px;\n  }",
+        "lineNumber": 462
+      }
+    ],
+    "webflow.css": [
+      {
+        "condition": "screen and (max-width: 991px)",
+        "rules": ".w-container {\n    max-width: 728px;\n  }\n  .w-hidden-main {\n    display: inherit !important;\n  }\n  .w-hidden-medium {\n    display: none !important;\n  }\n  .w-col-medium-1 {\n    width: 8.33333333%;\n  }\n  .w-col-medium-2 {\n    width: 16.66666667%;\n  }\n  .w-col-medium-3 {\n    width: 25%;\n  }\n  .w-col-medium-4 {\n    width: 33.33333333%;\n  }\n  .w-col-medium-5 {\n    width: 41.66666667%;\n  }\n  .w-col-medium-6 {\n    width: 50%;\n  }\n  .w-col-medium-7 {\n    width: 58.33333333%;\n  }\n  .w-col-medium-8 {\n    width: 66.66666667%;\n  }\n  .w-col-medium-9 {\n    width: 75%;\n  }\n  .w-col-medium-10 {\n    width: 83.33333333%;\n  }\n  .w-col-medium-11 {\n    width: 91.66666667%;\n  }\n  .w-col-medium-12 {\n    width: 100%;\n  }\n  .w-col-stack {\n    width: 100%;\n    left: auto;\n    right: auto;\n  }",
+        "lineNumber": 585
+      },
+      {
+        "condition": "screen and (max-width: 767px)",
+        "rules": ".w-hidden-main {\n    display: inherit !important;\n  }\n  .w-hidden-medium {\n    display: inherit !important;\n  }\n  .w-hidden-small {\n    display: none !important;\n  }\n  .w-row,\n  .w-container .w-row {\n    margin-left: 0;\n    margin-right: 0;\n  }\n  .w-col {\n    width: 100%;\n    left: auto;\n    right: auto;\n  }\n  .w-col-small-1 {\n    width: 8.33333333%;\n  }\n  .w-col-small-2 {\n    width: 16.66666667%;\n  }\n  .w-col-small-3 {\n    width: 25%;\n  }\n  .w-col-small-4 {\n    width: 33.33333333%;\n  }\n  .w-col-small-5 {\n    width: 41.66666667%;\n  }\n  .w-col-small-6 {\n    width: 50%;\n  }\n  .w-col-small-7 {\n    width: 58.33333333%;\n  }\n  .w-col-small-8 {\n    width: 66.66666667%;\n  }\n  .w-col-small-9 {\n    width: 75%;\n  }\n  .w-col-small-10 {\n    width: 83.33333333%;\n  }\n  .w-col-small-11 {\n    width: 91.66666667%;\n  }\n  .w-col-small-12 {\n    width: 100%;\n  }",
+        "lineNumber": 637
+      },
+      {
+        "condition": "screen and (max-width: 479px)",
+        "rules": ".w-container {\n    max-width: none;\n  }\n  .w-hidden-main {\n    display: inherit !important;\n  }\n  .w-hidden-medium {\n    display: inherit !important;\n  }\n  .w-hidden-small {\n    display: inherit !important;\n  }\n  .w-hidden-tiny {\n    display: none !important;\n  }\n  .w-col {\n    width: 100%;\n  }\n  .w-col-tiny-1 {\n    width: 8.33333333%;\n  }\n  .w-col-tiny-2 {\n    width: 16.66666667%;\n  }\n  .w-col-tiny-3 {\n    width: 25%;\n  }\n  .w-col-tiny-4 {\n    width: 33.33333333%;\n  }\n  .w-col-tiny-5 {\n    width: 41.66666667%;\n  }\n  .w-col-tiny-6 {\n    width: 50%;\n  }\n  .w-col-tiny-7 {\n    width: 58.33333333%;\n  }\n  .w-col-tiny-8 {\n    width: 66.66666667%;\n  }\n  .w-col-tiny-9 {\n    width: 75%;\n  }\n  .w-col-tiny-10 {\n    width: 83.33333333%;\n  }\n  .w-col-tiny-11 {\n    width: 91.66666667%;\n  }\n  .w-col-tiny-12 {\n    width: 100%;\n  }",
+        "lineNumber": 694
+      },
+      {
+        "condition": "screen and (max-width: 767px)",
+        "rules": ".w-nav-brand {\n    padding-left: 10px;\n  }",
+        "lineNumber": 1121
+      },
+      {
+        "condition": "(min-width: 768px)",
+        "rules": ".w-lightbox-content {\n    height: 96vh;\n    margin-top: 2vh;\n  }\n  .w-lightbox-view,\n  .w-lightbox-view:before {\n    height: 96vh;\n  }\n  /* .w-lightbox-content */\n  .w-lightbox-group,\n  .w-lightbox-group .w-lightbox-view,\n  .w-lightbox-group .w-lightbox-view:before {\n    height: 84vh;\n  }\n  .w-lightbox-image {\n    max-width: 96vw;\n    max-height: 96vh;\n  }\n  .w-lightbox-group .w-lightbox-image {\n    max-width: 82.3vw;\n    max-height: 84vh;\n  }\n  .w-lightbox-left,\n  .w-lightbox-right {\n    display: block;\n    opacity: 0.5;\n  }\n  .w-lightbox-close {\n    opacity: 0.8;\n  }\n  .w-lightbox-control:hover {\n    opacity: 1;\n  }",
+        "lineNumber": 1400
+      },
+      {
+        "condition": "screen and (max-width: 991px)",
+        "rules": ".w-nav[data-collapse='medium'] .w-nav-menu {\n    display: none;\n  }\n  .w-nav[data-collapse='medium'] .w-nav-button {\n    display: block;\n  }",
+        "lineNumber": 1685
+      },
+      {
+        "condition": "screen and (max-width: 767px)",
+        "rules": ".w-nav[data-collapse='small'] .w-nav-menu {\n    display: none;\n  }\n  .w-nav[data-collapse='small'] .w-nav-button {\n    display: block;\n  }\n  .w-nav-brand {\n    padding-left: 10px;\n  }",
+        "lineNumber": 1693
+      },
+      {
+        "condition": "screen and (max-width: 479px)",
+        "rules": ".w-nav[data-collapse='tiny'] .w-nav-menu {\n    display: none;\n  }\n  .w-nav[data-collapse='tiny'] .w-nav-button {\n    display: block;\n  }",
+        "lineNumber": 1704
+      },
+      {
+        "condition": "screen and (max-width: 479px)",
+        "rules": ".w-tab-link {\n    display: block;\n  }",
+        "lineNumber": 1759
+      }
+    ]
+  },
+  "responsiveUnits": {
+    "aiziks-stellar-site.webflow.css": {
+      "%": 166,
+      "vw": 19,
+      "vh": 13,
+      "rem": 473,
+      "em": 1
+    },
+    "normalize.css": {
+      "%": 4,
+      "em": 9
+    },
+    "normandpllc-animations.css": {
+      "%": 17,
+      "vw": 2,
+      "vh": 5,
+      "em": 2
+    },
+    "normandpllc-menu.css": {
+      "%": 5,
+      "vw": 7,
+      "vh": 2,
+      "rem": 2,
+      "em": 27
+    },
+    "normandpllc-styles.css": {
+      "%": 36,
+      "vw": 3,
+      "vh": 3,
+      "em": 2
+    },
+    "webflow.css": {
+      "%": 106,
+      "vw": 5,
+      "vh": 18,
+      "em": 15
+    }
+  },
+  "fixedUnits": {
+    "aiziks-stellar-site.webflow.css": {
+      "px": 450
+    },
+    "normalize.css": {
+      "px": 4
+    },
+    "normandpllc-animations.css": {
+      "px": 19
+    },
+    "normandpllc-menu.css": {
+      "px": 64
+    },
+    "normandpllc-styles.css": {
+      "px": 56
+    },
+    "webflow.css": {
+      "px": 189
+    }
+  },
+  "webflowClasses": {
+    "aiziks-stellar-site.webflow.css": {
+      "w-layout-grid": 1,
+      "w-commerce-commercecartwrapper": 1,
+      "w-commerce-commercecartopenlink": 1,
+      "w-commerce-commercecartopenlinkicon": 1,
+      "w-commerce-commercecartopenlinkcount": 1,
+      "w-commerce-commercecartcontainerwrapper": 1,
+      "w-commerce-commercecartcontainerwrapper--cart": 8,
+      "w-commerce-commercecartcontainer": 1,
+      "w-commerce-commercecartheader": 1,
+      "w-commerce-commercecartheading": 1,
+      "w-commerce-commercecartcloselink": 1,
+      "w-commerce-commercecartformwrapper": 1,
+      "w-commerce-commercecartform": 1,
+      "w-commerce-commercecartlist": 1,
+      "w-commerce-commercecartitem": 1,
+      "w-commerce-commercecartitemimage": 1,
+      "w-commerce-commercecartiteminfo": 1,
+      "w-commerce-commercecartproductname": 1,
+      "w-commerce-commercecartoptionlist": 1,
+      "w-commerce-commercecartquantity": 4,
+      "w-commerce-commercecartfooter": 1,
+      "w-commerce-commercecartlineitem": 1,
+      "w-commerce-commercecartordervalue": 1,
+      "w-commerce-commercecartapplepaybutton": 1,
+      "w-commerce-commercecartapplepayicon": 1,
+      "w-commerce-commercecartquickcheckoutbutton": 1,
+      "w-commerce-commercequickcheckoutgoogleicon": 1,
+      "w-commerce-commercequickcheckoutmicrosofticon": 1,
+      "w-commerce-commercecartcheckoutbutton": 1,
+      "w-commerce-commercecartemptystate": 1,
+      "w-commerce-commercecarterrorstate": 1,
+      "w-checkbox": 3,
+      "w-checkbox-input": 1,
+      "w-checkbox-input--input": 3,
+      "w--redirected-checked": 4,
+      "w--redirected-focus": 4,
+      "w-form-formradioinput--input": 3,
+      "w-commerce-commerceaddtocartform": 1,
+      "w-commerce-commerceaddtocartoptionpillgroup": 1,
+      "w-commerce-commerceaddtocartoptionpill": 3,
+      "w--ecommerce-pill-selected": 1,
+      "w--ecommerce-pill-disabled": 1,
+      "w-commerce-commerceaddtocartquantityinput": 4,
+      "w-commerce-commerceaddtocartbutton": 2,
+      "w--ecommerce-add-to-cart-disabled": 1,
+      "w-commerce-commercebuynowbutton": 2,
+      "w--ecommerce-buy-now-disabled": 1,
+      "w-commerce-commerceaddtocartoutofstock": 1,
+      "w-commerce-commerceaddtocarterror": 1,
+      "w-commerce-commercecheckoutformcontainer": 1,
+      "w-commerce-commercelayoutcontainer": 2,
+      "w-commerce-commercelayoutmain": 2,
+      "w-commerce-commercecheckoutcustomerinfowrapper": 1,
+      "w-commerce-commercecheckoutblockheader": 1,
+      "w-commerce-commercecheckoutblockcontent": 1,
+      "w-commerce-commercecheckoutlabel": 1,
+      "w-commerce-commercecheckoutemailinput": 4,
+      "w-commerce-commercecheckoutshippingaddresswrapper": 1,
+      "w-commerce-commercecheckoutshippingfullname": 4,
+      "w-commerce-commercecheckoutshippingstreetaddress": 4,
+      "w-commerce-commercecheckoutshippingstreetaddressoptional": 4,
+      "w-commerce-commercecheckoutrow": 2,
+      "w-commerce-commercecheckoutcolumn": 1,
+      "w-commerce-commercecheckoutshippingcity": 4,
+      "w-commerce-commercecheckoutshippingstateprovince": 4,
+      "w-commerce-commercecheckoutshippingzippostalcode": 4,
+      "w-commerce-commercecheckoutshippingcountryselector": 4,
+      "w-commerce-commercecheckoutshippingmethodswrapper": 1,
+      "w-commerce-commercecheckoutshippingmethodslist": 1,
+      "w-commerce-commercecheckoutshippingmethoditem": 1,
+      "w-commerce-commercecheckoutshippingmethoddescriptionblock": 1,
+      "w-commerce-commerceboldtextblock": 1,
+      "w-commerce-commercecheckoutshippingmethodsemptystate": 1,
+      "w-commerce-commercecheckoutpaymentinfowrapper": 1,
+      "w-commerce-commercecheckoutcardnumber": 5,
+      "w-commerce-commercecheckoutcardexpirationdate": 5,
+      "w-commerce-commercecheckoutcardsecuritycode": 5,
+      "w-commerce-commercecheckoutbillingaddresstogglewrapper": 1,
+      "w-commerce-commercecheckoutbillingaddresstogglecheckbox": 1,
+      "w-commerce-commercecheckoutbillingaddresstogglelabel": 1,
+      "w-commerce-commercecheckoutbillingaddresswrapper": 1,
+      "w-commerce-commercecheckoutbillingfullname": 4,
+      "w-commerce-commercecheckoutbillingstreetaddress": 4,
+      "w-commerce-commercecheckoutbillingstreetaddressoptional": 4,
+      "w-commerce-commercecheckoutbillingcity": 4,
+      "w-commerce-commercecheckoutbillingstateprovince": 4,
+      "w-commerce-commercecheckoutbillingzippostalcode": 4,
+      "w-commerce-commercecheckoutbillingcountryselector": 4,
+      "w-commerce-commercecheckoutorderitemswrapper": 1,
+      "w-commerce-commercecheckoutsummaryblockheader": 1,
+      "w-commerce-commercecheckoutorderitemslist": 1,
+      "w-commerce-commercecheckoutorderitem": 1,
+      "w-commerce-commercecheckoutorderitemdescriptionwrapper": 1,
+      "w-commerce-commercecheckoutorderitemquantitywrapper": 1,
+      "w-commerce-commercecheckoutorderitemoptionlist": 1,
+      "w-commerce-commercelayoutsidebar": 2,
+      "w-commerce-commercecheckoutordersummarywrapper": 1,
+      "w-commerce-commercecheckoutsummarylineitem": 1,
+      "w-commerce-commercecheckoutordersummaryextraitemslistitem": 1,
+      "w-commerce-commercecheckoutsummarytotal": 1,
+      "w-commerce-commercecheckoutplaceorderbutton": 1,
+      "w-commerce-commercecheckouterrorstate": 1,
+      "w-commerce-commercepaypalcheckoutformcontainer": 1,
+      "w-commerce-commercecheckoutcustomerinfosummarywrapper": 1,
+      "w-commerce-commercecheckoutsummaryitem": 1,
+      "w-commerce-commercecheckoutsummarylabel": 1,
+      "w-commerce-commercecheckoutsummaryflexboxdiv": 1,
+      "w-commerce-commercecheckoutsummarytextspacingondiv": 1,
+      "w-commerce-commercecheckoutpaymentsummarywrapper": 1,
+      "w-commerce-commercepaypalcheckouterrorstate": 1,
+      "w-commerce-commerceorderconfirmationcontainer": 1,
+      "w-commerce-commercecheckoutshippingsummarywrapper": 1,
+      "w--open": 1,
+      "w--current": 3
+    },
+    "normalize.css": {
+      "w-button": 1
+    },
+    "normandpllc-styles.css": {
+      "w-button": 1,
+      "w-dyn-item": 1,
+      "w-layout-grid": 2
+    },
+    "webflow.css": {
+      "w-icon-slider-right": 2,
+      "w-icon-slider-left": 2,
+      "w-icon-nav-menu": 1,
+      "w-icon-arrow-down": 1,
+      "w-icon-dropdown-toggle": 2,
+      "w-icon-file-upload-remove": 2,
+      "w-icon-file-upload-icon": 2,
+      "w-mod-touch": 1,
+      "w-block": 1,
+      "w-inline-block": 1,
+      "w-clearfix": 3,
+      "w-hidden": 5,
+      "w-button": 2,
+      "w-code-block": 2,
+      "w-optimization": 1,
+      "w-webflow-badge": 4,
+      "w-list-unstyled": 1,
+      "w-embed": 3,
+      "w-video": 4,
+      "w-form": 1,
+      "w-form-done": 1,
+      "w-form-fail": 1,
+      "w-input": 10,
+      "w-select": 12,
+      "w-input-disabled": 4,
+      "w-form-label": 1,
+      "w-radio": 4,
+      "w-radio-input": 2,
+      "w-file-upload": 1,
+      "w-file-upload-input": 1,
+      "w-file-upload-default": 2,
+      "w-file-upload-uploading": 2,
+      "w-file-upload-success": 2,
+      "w-file-upload-error": 2,
+      "w-file-upload-uploading-btn": 1,
+      "w-file-upload-file": 1,
+      "w-file-upload-file-name": 1,
+      "w-file-remove-link": 1,
+      "w-file-upload-error-msg": 1,
+      "w-file-upload-info": 1,
+      "w-file-upload-label": 1,
+      "w-icon-file-upload-uploading": 2,
+      "w-container": 8,
+      "w-row": 8,
+      "w-col": 5,
+      "w-col-": 12,
+      "w-hidden-main": 4,
+      "w-hidden-medium": 3,
+      "w-col-medium-": 12,
+      "w-col-stack": 1,
+      "w-hidden-small": 2,
+      "w-col-small-": 12,
+      "w-hidden-tiny": 1,
+      "w-col-tiny-": 12,
+      "w-widget": 1,
+      "w-widget-map": 5,
+      "w-widget-twitter": 1,
+      "w-widget-twitter-count-shim": 21,
+      "w-widget-twitter-count-inner": 3,
+      "w-widget-twitter-count-clear": 1,
+      "w--large": 6,
+      "w--vertical": 15,
+      "w-background-video": 3,
+      "w-background-video--control": 2,
+      "w-slider": 1,
+      "w-slider-mask": 1,
+      "w-slide": 1,
+      "w-slider-nav": 4,
+      "w-round": 1,
+      "w-num": 1,
+      "w-shadow": 1,
+      "w-slider-nav-invert": 3,
+      "w-active": 3,
+      "w-slider-dot": 4,
+      "w-slider-arrow-left": 5,
+      "w-slider-arrow-right": 5,
+      "w-slider-aria-label": 1,
+      "w-slider-force-show": 1,
+      "w-dropdown": 1,
+      "w-dropdown-btn": 1,
+      "w-dropdown-toggle": 3,
+      "w-dropdown-link": 4,
+      "w-dropdown-list": 2,
+      "w--open": 2,
+      "w--current": 3,
+      "w-nav-brand": 3,
+      "w-lightbox-backdrop": 2,
+      "w-lightbox-container": 1,
+      "w-lightbox-content": 4,
+      "w-lightbox-view": 9,
+      "w-lightbox-group": 9,
+      "w-lightbox-frame": 1,
+      "w-lightbox-figure": 2,
+      "w-lightbox-img": 1,
+      "w-lightbox-image": 4,
+      "w-lightbox-caption": 1,
+      "w-lightbox-embed": 1,
+      "w-lightbox-control": 2,
+      "w-lightbox-left": 2,
+      "w-lightbox-right": 2,
+      "w-lightbox-close": 2,
+      "w-lightbox-strip": 1,
+      "w-lightbox-item": 1,
+      "w-lightbox-active": 1,
+      "w-lightbox-thumbnail": 3,
+      "w-lightbox-thumbnail-image": 1,
+      "w-lightbox-tall": 1,
+      "w-lightbox-wide": 1,
+      "w-lightbox-spinner": 2,
+      "w-lightbox-hide": 1,
+      "w-lightbox-noscroll": 1,
+      "w-lightbox-inactive": 2,
+      "w-richtext": 39,
+      "w-richtext-figure-selected": 4,
+      "w-richtext-figure-type-video": 5,
+      "w-richtext-figure-type-image": 5,
+      "w-richtext-figcaption-placeholder": 1,
+      "w-richtext-align-center": 3,
+      "w-richtext-align-normal": 1,
+      "w-richtext-align-fullwidth": 3,
+      "w-richtext-align-floatleft": 1,
+      "w-richtext-align-floatright": 1,
+      "w-nav": 18,
+      "w-nav-link": 2,
+      "w-nav-menu": 5,
+      "w--nav-link-open": 1,
+      "w-nav-overlay": 6,
+      "w-nav-button": 7,
+      "w--nav-dropdown-open": 1,
+      "w--nav-dropdown-toggle-open": 1,
+      "w--nav-dropdown-list-open": 1,
+      "w-tabs": 4,
+      "w-tab-menu": 1,
+      "w-tab-link": 4,
+      "w-tab-content": 1,
+      "w-tab-pane": 1,
+      "w--tab-active": 1,
+      "w-ix-emptyfix": 1,
+      "w-dyn-empty": 1,
+      "w-dyn-hide": 1,
+      "w-dyn-bind-empty": 1,
+      "w-condition-invisible": 1
+    }
+  },
+  "potentialIssues": [
+    {
+      "file": "aiziks-stellar-site.webflow.css",
+      "issue": "Font size 11px might be too small for mobile readability (minimum 14px recommended)",
+      "line": 97,
+      "severity": "major"
+    },
+    {
+      "file": "aiziks-stellar-site.webflow.css",
+      "issue": "Font size 12px might be too small for mobile readability (minimum 14px recommended)",
+      "line": 3633,
+      "severity": "major"
+    },
+    {
+      "file": "aiziks-stellar-site.webflow.css",
+      "issue": "Font size 12px might be too small for mobile readability (minimum 14px recommended)",
+      "line": 4659,
+      "severity": "major"
+    },
+    {
+      "file": "aiziks-stellar-site.webflow.css",
+      "issue": "Many overflow:hidden rules (20) - check for content clipping",
+      "severity": "minor"
+    },
+    {
+      "file": "aiziks-stellar-site.webflow.css",
+      "issue": "6 fixed position elements found - ensure they work on mobile",
+      "severity": "major"
+    },
+    {
+      "file": "normandpllc-animations.css",
+      "issue": "3 fixed position elements found - ensure they work on mobile",
+      "severity": "major"
+    },
+    {
+      "file": "normandpllc-menu.css",
+      "issue": "Font size 13px might be too small for mobile readability (minimum 14px recommended)",
+      "line": 201,
+      "severity": "major"
+    },
+    {
+      "file": "normandpllc-menu.css",
+      "issue": "7 fixed position elements found - ensure they work on mobile",
+      "severity": "major"
+    },
+    {
+      "file": "normandpllc-styles.css",
+      "issue": "4 fixed position elements found - ensure they work on mobile",
+      "severity": "major"
+    },
+    {
+      "file": "webflow.css",
+      "issue": "Font size 12px might be too small for mobile readability (minimum 14px recommended)",
+      "line": 176,
+      "severity": "major"
+    },
+    {
+      "file": "webflow.css",
+      "issue": "Font size 12px might be too small for mobile readability (minimum 14px recommended)",
+      "line": 230,
+      "severity": "major"
+    },
+    {
+      "file": "webflow.css",
+      "issue": "Font size 10px might be too small for mobile readability (minimum 14px recommended)",
+      "line": 466,
+      "severity": "major"
+    },
+    {
+      "file": "webflow.css",
+      "issue": "Font size 0px might be too small for mobile readability (minimum 14px recommended)",
+      "line": 1492,
+      "severity": "major"
+    },
+    {
+      "file": "webflow.css",
+      "issue": "Many overflow:hidden rules (13) - check for content clipping",
+      "severity": "minor"
+    },
+    {
+      "file": "webflow.css",
+      "issue": "2 fixed position elements found - ensure they work on mobile",
+      "severity": "major"
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": "medium",
+      "category": "Mobile-First",
+      "recommendation": "Consider implementing mobile-first responsive design",
+      "details": "Use min-width media queries starting from mobile sizes for better performance"
+    },
+    {
+      "priority": "low",
+      "category": "High-DPI",
+      "recommendation": "Add support for high-DPI displays",
+      "details": "Use media queries for device-pixel-ratio or resolution for crisp images on retina displays"
+    }
+  ]
+}
