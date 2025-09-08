@@ -1,0 +1,13 @@
+{
+  "pageTitle": "Our Team - Normand PLLC",
+  "heroTitle": "OUR TEAM",
+  "teamMembers": [
+    {
+      "name": "Edmund Normand",
+      "position": "Founding Partner",
+      "bio": "Edmund Normand has been practicing law since 1991, specializing in class action litigation and consumer protection. He has successfully represented thousands of consumers in complex litigation matters.",
+      "photo": "/images/edmund-normand.jpg",
+      "linkedin": "https://linkedin.com/in/edmund-normand"
+    }
+  ]
+}

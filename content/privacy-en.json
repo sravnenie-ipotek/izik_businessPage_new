@@ -1,0 +1,19 @@
+{
+  "pageTitle": "Privacy Class Action - Normand PLLC",
+  "heroTitle": "PRIVACY CLASS ACTION",
+  "content": "## Your Privacy Rights Matter\n\nIn today's digital age, protecting your personal information is more important than ever. We fight for consumers whose privacy rights have been violated.",
+  "privacyRights": [
+    {
+      "right": "Data Protection",
+      "description": "Your personal information should be protected from unauthorized access"
+    },
+    {
+      "right": "Notice & Consent",
+      "description": "Companies must inform you about data collection and get your consent"
+    },
+    {
+      "right": "Access & Control",
+      "description": "You have the right to access and control your personal data"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "pageTitle": "Наша команда - Normand PLLC",
+  "heroTitle": "НАША КОМАНДА",
+  "teamMembers": [
+    {
+      "name": "Эдмунд Норманд",
+      "position": "Основатель и партнер",
+      "bio": "Эдмунд Норманд практикует право с 1991 года, специализируясь на коллективных исках и защите потребителей.",
+      "photo": "/images/edmund-normand.jpg",
+      "linkedin": "https://linkedin.com/in/edmund-normand"
+    }
+  ]
+}

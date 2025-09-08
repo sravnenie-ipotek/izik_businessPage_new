@@ -1,0 +1,19 @@
+{
+  "pageTitle": "Insurance Class Action - Normand PLLC",
+  "heroTitle": "INSURANCE CLASS ACTION",
+  "content": "## Fighting for Policyholders\n\nWhen insurance companies fail to honor their obligations, we fight for the benefits you deserve.",
+  "insuranceTypes": [
+    {
+      "type": "Health Insurance",
+      "description": "Denials of legitimate medical claims"
+    },
+    {
+      "type": "Property Insurance",
+      "description": "Underpayment or denial of property damage claims"
+    },
+    {
+      "type": "Life Insurance",
+      "description": "Wrongful denial of life insurance benefits"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "pageTitle": "Контакты - Normand PLLC",
+  "heroTitle": "СВЯЖИТЕСЬ С НАМИ",
+  "formTitle": "Связаться",
+  "formDescription": "Есть вопросы или нужна юридическая помощь? Свяжитесь с нами сегодня для бесплатной консультации.",
+  "locations": [
+    {
+      "city": "Орландо",
+      "address": "3165 McCrory Place Suite 175, Orlando, FL 32803",
+      "phone": "407-603-6031",
+      "email": "office@normandpllc.com"
+    }
+  ]
+}

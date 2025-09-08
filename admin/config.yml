@@ -84,6 +84,129 @@ collections:
               - {label: "Copyright", name: "copyright", widget: "string"}
               - {label: "Credit", name: "credit", widget: "string"}
 
+      - name: "english-class-action"
+        label: "Class Action (English)"
+        file: "content/class-action-en.json"
+        fields:
+          - {label: "Page Title", name: "pageTitle", widget: "string"}
+          - {label: "Hero Title", name: "heroTitle", widget: "string"}
+          - {label: "Hero Subtitle", name: "heroSubtitle", widget: "string"}
+          - {label: "Content", name: "content", widget: "markdown"}
+          - label: "Practice Areas"
+            name: "practiceAreas"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Icon", name: "icon", widget: "string"}
+
+      - name: "english-privacy"
+        label: "Privacy Class Action (English)"
+        file: "content/privacy-en.json"
+        fields:
+          - {label: "Page Title", name: "pageTitle", widget: "string"}
+          - {label: "Hero Title", name: "heroTitle", widget: "string"}
+          - {label: "Content", name: "content", widget: "markdown"}
+          - label: "Privacy Rights"
+            name: "privacyRights"
+            widget: "list"
+            fields:
+              - {label: "Right", name: "right", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+
+      - name: "english-consumer"
+        label: "Consumer Protection (English)"
+        file: "content/consumer-en.json"
+        fields:
+          - {label: "Page Title", name: "pageTitle", widget: "string"}
+          - {label: "Hero Title", name: "heroTitle", widget: "string"}
+          - {label: "Content", name: "content", widget: "markdown"}
+          - label: "Protection Areas"
+            name: "protectionAreas"
+            widget: "list"
+            fields:
+              - {label: "Area", name: "area", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+
+      - name: "english-insurance"
+        label: "Insurance Class Action (English)"
+        file: "content/insurance-en.json"
+        fields:
+          - {label: "Page Title", name: "pageTitle", widget: "string"}
+          - {label: "Hero Title", name: "heroTitle", widget: "string"}
+          - {label: "Content", name: "content", widget: "markdown"}
+          - label: "Insurance Types"
+            name: "insuranceTypes"
+            widget: "list"
+            fields:
+              - {label: "Type", name: "type", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+
+      - name: "english-team"
+        label: "Our Team (English)"
+        file: "content/team-en.json"
+        fields:
+          - {label: "Page Title", name: "pageTitle", widget: "string"}
+          - {label: "Hero Title", name: "heroTitle", widget: "string"}
+          - label: "Team Members"
+            name: "teamMembers"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Position", name: "position", widget: "string"}
+              - {label: "Bio", name: "bio", widget: "markdown"}
+              - {label: "Photo", name: "photo", widget: "image"}
+              - {label: "LinkedIn", name: "linkedin", widget: "string", required: false}
+
+      - name: "english-news"
+        label: "News & Articles (English)"
+        file: "content/news-en.json"
+        fields:
+          - {label: "Page Title", name: "pageTitle", widget: "string"}
+          - {label: "Hero Title", name: "heroTitle", widget: "string"}
+          - label: "Articles"
+            name: "articles"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Date", name: "date", widget: "datetime"}
+              - {label: "Author", name: "author", widget: "string"}
+              - {label: "Excerpt", name: "excerpt", widget: "text"}
+              - {label: "Content", name: "content", widget: "markdown"}
+              - {label: "Featured Image", name: "image", widget: "image", required: false}
+
+      - name: "english-contact"
+        label: "Contact Us (English)"
+        file: "content/contact-en.json"
+        fields:
+          - {label: "Page Title", name: "pageTitle", widget: "string"}
+          - {label: "Hero Title", name: "heroTitle", widget: "string"}
+          - {label: "Form Title", name: "formTitle", widget: "string"}
+          - {label: "Form Description", name: "formDescription", widget: "text"}
+          - label: "Office Locations"
+            name: "locations"
+            widget: "list"
+            fields:
+              - {label: "City", name: "city", widget: "string"}
+              - {label: "Address", name: "address", widget: "text"}
+              - {label: "Phone", name: "phone", widget: "string"}
+              - {label: "Email", name: "email", widget: "string"}
+
+      - name: "english-disclaimer"
+        label: "Disclaimer (English)"
+        file: "content/disclaimer-en.json"
+        fields:
+          - {label: "Page Title", name: "pageTitle", widget: "string"}
+          - {label: "Content", name: "content", widget: "markdown"}
+
+      - name: "english-privacy-policy"
+        label: "Privacy Policy (English)"
+        file: "content/privacy-policy-en.json"
+        fields:
+          - {label: "Page Title", name: "pageTitle", widget: "string"}
+          - {label: "Last Updated", name: "lastUpdated", widget: "date"}
+          - {label: "Content", name: "content", widget: "markdown"}
+
   - name: "russian-content"
     label: "Russian Content"
     files:
@@ -161,3 +284,126 @@ collections:
             fields:
               - {label: "Copyright", name: "copyright", widget: "string"}
               - {label: "Credit", name: "credit", widget: "string"}
+
+      - name: "russian-class-action"
+        label: "Коллективные иски (Russian)"
+        file: "content/class-action-ru.json"
+        fields:
+          - {label: "Заголовок страницы", name: "pageTitle", widget: "string"}
+          - {label: "Заголовок героя", name: "heroTitle", widget: "string"}
+          - {label: "Подзаголовок героя", name: "heroSubtitle", widget: "string"}
+          - {label: "Содержание", name: "content", widget: "markdown"}
+          - label: "Области практики"
+            name: "practiceAreas"
+            widget: "list"
+            fields:
+              - {label: "Название", name: "title", widget: "string"}
+              - {label: "Описание", name: "description", widget: "text"}
+              - {label: "Иконка", name: "icon", widget: "string"}
+
+      - name: "russian-privacy"
+        label: "Конфиденциальность (Russian)"
+        file: "content/privacy-ru.json"
+        fields:
+          - {label: "Заголовок страницы", name: "pageTitle", widget: "string"}
+          - {label: "Заголовок героя", name: "heroTitle", widget: "string"}
+          - {label: "Содержание", name: "content", widget: "markdown"}
+          - label: "Права на конфиденциальность"
+            name: "privacyRights"
+            widget: "list"
+            fields:
+              - {label: "Право", name: "right", widget: "string"}
+              - {label: "Описание", name: "description", widget: "text"}
+
+      - name: "russian-consumer"
+        label: "Защита потребителей (Russian)"
+        file: "content/consumer-ru.json"
+        fields:
+          - {label: "Заголовок страницы", name: "pageTitle", widget: "string"}
+          - {label: "Заголовок героя", name: "heroTitle", widget: "string"}
+          - {label: "Содержание", name: "content", widget: "markdown"}
+          - label: "Области защиты"
+            name: "protectionAreas"
+            widget: "list"
+            fields:
+              - {label: "Область", name: "area", widget: "string"}
+              - {label: "Описание", name: "description", widget: "text"}
+
+      - name: "russian-insurance"
+        label: "Страхование (Russian)"
+        file: "content/insurance-ru.json"
+        fields:
+          - {label: "Заголовок страницы", name: "pageTitle", widget: "string"}
+          - {label: "Заголовок героя", name: "heroTitle", widget: "string"}
+          - {label: "Содержание", name: "content", widget: "markdown"}
+          - label: "Типы страхования"
+            name: "insuranceTypes"
+            widget: "list"
+            fields:
+              - {label: "Тип", name: "type", widget: "string"}
+              - {label: "Описание", name: "description", widget: "text"}
+
+      - name: "russian-team"
+        label: "Наша команда (Russian)"
+        file: "content/team-ru.json"
+        fields:
+          - {label: "Заголовок страницы", name: "pageTitle", widget: "string"}
+          - {label: "Заголовок героя", name: "heroTitle", widget: "string"}
+          - label: "Члены команды"
+            name: "teamMembers"
+            widget: "list"
+            fields:
+              - {label: "Имя", name: "name", widget: "string"}
+              - {label: "Должность", name: "position", widget: "string"}
+              - {label: "Биография", name: "bio", widget: "markdown"}
+              - {label: "Фото", name: "photo", widget: "image"}
+              - {label: "LinkedIn", name: "linkedin", widget: "string", required: false}
+
+      - name: "russian-news"
+        label: "Новости и статьи (Russian)"
+        file: "content/news-ru.json"
+        fields:
+          - {label: "Заголовок страницы", name: "pageTitle", widget: "string"}
+          - {label: "Заголовок героя", name: "heroTitle", widget: "string"}
+          - label: "Статьи"
+            name: "articles"
+            widget: "list"
+            fields:
+              - {label: "Название", name: "title", widget: "string"}
+              - {label: "Дата", name: "date", widget: "datetime"}
+              - {label: "Автор", name: "author", widget: "string"}
+              - {label: "Отрывок", name: "excerpt", widget: "text"}
+              - {label: "Содержание", name: "content", widget: "markdown"}
+              - {label: "Изображение", name: "image", widget: "image", required: false}
+
+      - name: "russian-contact"
+        label: "Контакты (Russian)"
+        file: "content/contact-ru.json"
+        fields:
+          - {label: "Заголовок страницы", name: "pageTitle", widget: "string"}
+          - {label: "Заголовок героя", name: "heroTitle", widget: "string"}
+          - {label: "Заголовок формы", name: "formTitle", widget: "string"}
+          - {label: "Описание формы", name: "formDescription", widget: "text"}
+          - label: "Офисы"
+            name: "locations"
+            widget: "list"
+            fields:
+              - {label: "Город", name: "city", widget: "string"}
+              - {label: "Адрес", name: "address", widget: "text"}
+              - {label: "Телефон", name: "phone", widget: "string"}
+              - {label: "Email", name: "email", widget: "string"}
+
+      - name: "russian-disclaimer"
+        label: "Отказ от ответственности (Russian)"
+        file: "content/disclaimer-ru.json"
+        fields:
+          - {label: "Заголовок страницы", name: "pageTitle", widget: "string"}
+          - {label: "Содержание", name: "content", widget: "markdown"}
+
+      - name: "russian-privacy-policy"
+        label: "Политика конфиденциальности (Russian)"
+        file: "content/privacy-policy-ru.json"
+        fields:
+          - {label: "Заголовок страницы", name: "pageTitle", widget: "string"}
+          - {label: "Последнее обновление", name: "lastUpdated", widget: "date"}
+          - {label: "Содержание", name: "content", widget: "markdown"}

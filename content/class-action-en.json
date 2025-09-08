@@ -1,0 +1,23 @@
+{
+  "pageTitle": "Class Action - Normand PLLC",
+  "heroTitle": "WE ARE CLASS ACTION",
+  "heroSubtitle": "Fighting for consumer rights nationwide",
+  "content": "## Class Action Litigation\n\nNormand PLLC represents consumers in complex class action litigation across the United States. We fight against corporate misconduct and seek justice for those who have been wronged.",
+  "practiceAreas": [
+    {
+      "title": "Privacy Class Actions",
+      "description": "Protecting your personal information and privacy rights",
+      "icon": "🔒"
+    },
+    {
+      "title": "Consumer Protection",
+      "description": "Fighting deceptive business practices and false advertising",
+      "icon": "🛡️"
+    },
+    {
+      "title": "Insurance Disputes",
+      "description": "Ensuring fair treatment from insurance companies",
+      "icon": "☂️"
+    }
+  ]
+}

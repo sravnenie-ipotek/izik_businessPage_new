@@ -1,0 +1,14 @@
+{
+  "pageTitle": "News & Articles - Normand PLLC",
+  "heroTitle": "NEWS & ARTICLES",
+  "articles": [
+    {
+      "title": "New Privacy Class Action Filed",
+      "date": "2025-01-15T00:00:00Z",
+      "author": "Normand PLLC",
+      "excerpt": "We have filed a new class action lawsuit regarding data privacy violations.",
+      "content": "Full article content here...",
+      "image": "/images/news-1.jpg"
+    }
+  ]
+}
